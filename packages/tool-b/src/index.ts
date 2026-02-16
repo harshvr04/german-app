@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { AdjectiveSchema, NounSchema, VerbSchema } from "@german/core/schemas";
 import type { Level } from "@german/core/types";
 import { LEVELS } from "@german/core/types";
+import type { z } from "zod";
 import { processBatches } from "./batch.js";
 import { buildAdjectivePrompt } from "./prompts/adjective-prompt.js";
 import { buildNounPrompt } from "./prompts/noun-prompt.js";
@@ -116,8 +117,11 @@ async function fill() {
 		return;
 	}
 
-	const schema = type === "nouns" ? NounSchema : type === "verbs" ? VerbSchema : AdjectiveSchema;
-	const { valid, errors } = validateBatchResults(rawResults, schema);
+	const schema = SCHEMA_MAP[type];
+	const { valid, errors } = validateBatchResults(
+		rawResults,
+		schema as z.ZodType<z.infer<typeof schema>>,
+	);
 
 	if (errors.length > 0) {
 		console.error(`\n${errors.length} validation error(s):`);
