@@ -1,0 +1,42 @@
+[
+  {
+    "word": "Tisch",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "table"
+  },
+  {
+    "word": "Lampe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "lamp"
+  },
+  {
+    "word": "Buch",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "book"
+  },
+  {
+    "word": "Student",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "student (male)"
+  },
+  {
+    "word": "Haus",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "house"
+  }
+]

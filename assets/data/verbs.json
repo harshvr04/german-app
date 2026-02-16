@@ -1,0 +1,93 @@
+[
+  {
+    "infinitiv": "machen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "mach",
+    "partizip_ii": "gemacht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A1",
+    "meaning": "to make / to do"
+  },
+  {
+    "infinitiv": "gehen",
+    "type": "irregular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "ging",
+    "partizip_ii": "gegangen",
+    "konjunktiv_ii_root": "ging",
+    "prepositions": [],
+    "connections": [],
+    "level": "A1",
+    "meaning": "to go"
+  },
+  {
+    "infinitiv": "geben",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "e→i",
+    "present_forms": null,
+    "praeteritum_root": "gab",
+    "partizip_ii": "gegeben",
+    "konjunktiv_ii_root": "gäb",
+    "prepositions": [],
+    "connections": [],
+    "level": "A1",
+    "meaning": "to give"
+  },
+  {
+    "infinitiv": "bringen",
+    "type": "mixed",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "brach",
+    "partizip_ii": "gebracht",
+    "konjunktiv_ii_root": "bräch",
+    "prepositions": [],
+    "connections": [],
+    "level": "A1",
+    "meaning": "to bring"
+  },
+  {
+    "infinitiv": "warten",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "warte",
+    "partizip_ii": "gewartet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [{ "preposition": "auf", "case": "acc", "meaning": "to wait for" }],
+    "connections": [],
+    "level": "A1",
+    "meaning": "to wait"
+  },
+  {
+    "infinitiv": "können",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": {
+      "ich": "kann",
+      "du": "kannst",
+      "er/sie/es": "kann",
+      "wir": "können",
+      "ihr": "könnt",
+      "sie/Sie": "können"
+    },
+    "praeteritum_root": "konnt",
+    "partizip_ii": "gekonnt",
+    "konjunktiv_ii_root": "könnt",
+    "prepositions": [],
+    "connections": [],
+    "level": "A1",
+    "meaning": "to be able to / can"
+  }
+]

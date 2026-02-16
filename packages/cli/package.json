@@ -1,0 +1,26 @@
+{
+  "name": "@german/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "german": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/bin.js",
+    "dev": "tsup --watch",
+    "lint": "biome check src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@german/core": "workspace:*",
+    "ink": "^5.1.0",
+    "react": "^18.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@types/react": "^18.3.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  }
+}

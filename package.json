@@ -1,0 +1,30 @@
+{
+  "name": "german-app",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "german": "pnpm --filter @german/cli run start",
+    "tool-b": "pnpm --filter @german/tool-b run start",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "husky": "^9.1.0",
+    "lint-staged": "^15.2.0",
+    "turbo": "^2.4.0",
+    "typescript": "^5.7.0"
+  },
+  "lint-staged": {
+    "*": "biome check --write --no-errors-on-unmatched"
+  },
+  "packageManager": "pnpm@10.29.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
+  }
+}

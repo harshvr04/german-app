@@ -1,0 +1,42 @@
+[
+  {
+    "word": "gut",
+    "is_declinable": true,
+    "komparativ": "besser",
+    "superlativ": "besten",
+    "level": "A1",
+    "meaning": "good"
+  },
+  {
+    "word": "groß",
+    "is_declinable": true,
+    "komparativ": "größer",
+    "superlativ": "größten",
+    "level": "A1",
+    "meaning": "big / tall"
+  },
+  {
+    "word": "klein",
+    "is_declinable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "small / short"
+  },
+  {
+    "word": "alt",
+    "is_declinable": true,
+    "komparativ": "älter",
+    "superlativ": "ältesten",
+    "level": "A1",
+    "meaning": "old"
+  },
+  {
+    "word": "prima",
+    "is_declinable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "great / excellent"
+  }
+]
