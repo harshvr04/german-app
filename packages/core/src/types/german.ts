@@ -12,11 +12,14 @@ export type AdjectiveParadigm = "no_article" | "definite" | "indefinite_possessi
 export type GenderOrPlural = Gender | "pl";
 
 export type Category = "vocab" | "verbs" | "nouns" | "adjectives";
+export type VocabDirection = "de_to_en" | "en_to_de";
 
 export interface SessionConfig {
 	level: Level;
 	category: Category;
 	batchSize: number;
+	/** Only relevant when category is "vocab". */
+	vocabDirection?: VocabDirection | undefined;
 }
 
 export interface SessionStats {

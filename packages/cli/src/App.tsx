@@ -1,4 +1,4 @@
-import type { Category, Level } from "@german/core/types";
+import type { Category, Level, VocabDirection } from "@german/core/types";
 import { useApp } from "ink";
 import { Complete } from "./components/Complete.js";
 import { Flashcard } from "./components/Flashcard.js";
@@ -12,8 +12,13 @@ export function App() {
 	if (state.phase === "setup") {
 		return (
 			<Setup
-				onComplete={(level: Level, category: Category, batchSize: number) => {
-					start({ level, category, batchSize });
+				onComplete={(
+					level: Level,
+					category: Category,
+					batchSize: number,
+					vocabDirection?: VocabDirection,
+				) => {
+					start({ level, category, batchSize, vocabDirection });
 				}}
 			/>
 		);

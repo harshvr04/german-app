@@ -19,7 +19,13 @@ function resolveCards(config: SessionConfig): Card[] {
 
 	switch (config.category) {
 		case "vocab":
-			return generateVocabCards(nouns, verbs, adjectives, config.batchSize);
+			return generateVocabCards(
+				nouns,
+				verbs,
+				adjectives,
+				config.batchSize,
+				config.vocabDirection ?? "de_to_en",
+			);
 		case "nouns":
 			return generateNounCards(nouns, config.batchSize);
 		case "verbs":

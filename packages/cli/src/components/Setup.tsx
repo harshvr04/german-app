@@ -1,15 +1,24 @@
-import type { Category, Level } from "@german/core/types";
+import type { Category, Level, VocabDirection } from "@german/core/types";
 import { LEVELS } from "@german/core/types";
 import { Box, Text, useInput } from "ink";
 import { useState } from "react";
 
-type Step = "level" | "category" | "batchSize";
+type Step = "level" | "category" | "vocabDirection" | "batchSize";
 
 const CATEGORIES: Category[] = ["vocab", "verbs", "nouns", "adjectives"];
+const VOCAB_DIRECTIONS: { value: VocabDirection; label: string }[] = [
+	{ value: "de_to_en", label: "German → English" },
+	{ value: "en_to_de", label: "English → German" },
+];
 const BATCH_SIZES = [10, 20, 50, 100];
 
 interface Props {
-	onComplete: (level: Level, category: Category, batchSize: number) => void;
+	onComplete: (
+		level: Level,
+		category: Category,
+		batchSize: number,
+		vocabDirection?: VocabDirection,
+	) => void;
 }
 
 export function Setup({ onComplete }: Props) {
@@ -17,13 +26,16 @@ export function Setup({ onComplete }: Props) {
 	const [cursor, setCursor] = useState(0);
 	const [level, setLevel] = useState<Level | null>(null);
 	const [category, setCategory] = useState<Category | null>(null);
+	const [vocabDirection, setVocabDirection] = useState<VocabDirection | undefined>(undefined);
 
 	const items =
 		step === "level"
 			? (LEVELS as readonly string[])
 			: step === "category"
 				? CATEGORIES
-				: BATCH_SIZES.map(String);
+				: step === "vocabDirection"
+					? VOCAB_DIRECTIONS.map((d) => d.label)
+					: BATCH_SIZES.map(String);
 
 	useInput((_input, key) => {
 		if (key.upArrow) {
@@ -36,11 +48,20 @@ export function Setup({ onComplete }: Props) {
 				setStep("category");
 				setCursor(0);
 			} else if (step === "category") {
-				setCategory(CATEGORIES[cursor]!);
+				const selected = CATEGORIES[cursor]!;
+				setCategory(selected);
+				if (selected === "vocab") {
+					setStep("vocabDirection");
+				} else {
+					setStep("batchSize");
+				}
+				setCursor(0);
+			} else if (step === "vocabDirection") {
+				setVocabDirection(VOCAB_DIRECTIONS[cursor]!.value);
 				setStep("batchSize");
 				setCursor(0);
 			} else {
-				onComplete(level!, category!, BATCH_SIZES[cursor]!);
+				onComplete(level!, category!, BATCH_SIZES[cursor]!, vocabDirection);
 			}
 		}
 	});
@@ -50,7 +71,9 @@ export function Setup({ onComplete }: Props) {
 			? "Select Level"
 			: step === "category"
 				? "Select Category"
-				: "Select Batch Size";
+				: step === "vocabDirection"
+					? "Select Direction"
+					: "Select Batch Size";
 
 	return (
 		<Box flexDirection="column" padding={1}>
