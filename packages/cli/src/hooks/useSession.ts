@@ -1,6 +1,6 @@
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadAdjectives, loadNouns, loadVerbs } from "@german/core/data";
+import { loadAdjectives, loadNouns, loadOthers, loadVerbs } from "@german/core/data";
 import { generateVocabCards } from "@german/core/generators";
 import { generateNounCards } from "@german/core/generators";
 import { generateVerbCards } from "@german/core/generators";
@@ -16,6 +16,7 @@ function resolveCards(config: SessionConfig): Card[] {
 	const nouns = loadNouns(DATA_DIR, config.level);
 	const verbs = loadVerbs(DATA_DIR, config.level);
 	const adjectives = loadAdjectives(DATA_DIR, config.level);
+	const others = loadOthers(DATA_DIR, config.level);
 
 	switch (config.category) {
 		case "vocab":
@@ -25,6 +26,7 @@ function resolveCards(config: SessionConfig): Card[] {
 				adjectives,
 				config.batchSize,
 				config.vocabDirection ?? "de_to_en",
+				others,
 			);
 		case "nouns":
 			return generateNounCards(nouns, config.batchSize);

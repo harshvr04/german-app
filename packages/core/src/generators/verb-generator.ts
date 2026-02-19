@@ -14,12 +14,19 @@ function randomPerson(): Person {
 	return PERSONS[Math.floor(Math.random() * PERSONS.length)]!;
 }
 
+type ConjugationFn = (verb: Verb, person: Person) => string;
+
+function buildConjugationTable(verb: Verb, conjugate: ConjugationFn): string {
+	return PERSONS.map((p) => `${p} ${conjugate(verb, p)}`).join("\n");
+}
+
 function presentCard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-pres-${verb.infinitiv}-${person}`,
 		question: `${person} (${verb.infinitiv}, Präsens)?`,
 		answer: `${person} ${conjugatePresent(verb, person)}`,
+		details: buildConjugationTable(verb, conjugatePresent),
 	};
 }
 
@@ -29,6 +36,7 @@ function praeteritumCard(verb: Verb): Card {
 		id: `verb-praet-${verb.infinitiv}-${person}`,
 		question: `${person} (${verb.infinitiv}, Präteritum)?`,
 		answer: `${person} ${conjugatePraeteritum(verb, person)}`,
+		details: buildConjugationTable(verb, conjugatePraeteritum),
 	};
 }
 
@@ -38,6 +46,7 @@ function perfektCard(verb: Verb): Card {
 		id: `verb-perfekt-${verb.infinitiv}-${person}`,
 		question: `${person} (${verb.infinitiv}, Perfekt)?`,
 		answer: `${person} ${conjugatePerfekt(verb, person)}`,
+		details: buildConjugationTable(verb, conjugatePerfekt),
 	};
 }
 
@@ -47,6 +56,7 @@ function konjunktivIICard(verb: Verb): Card {
 		id: `verb-konj2-${verb.infinitiv}-${person}`,
 		question: `${person} (${verb.infinitiv}, Konjunktiv II)?`,
 		answer: `${person} ${conjugateKonjunktivII(verb, person)}`,
+		details: buildConjugationTable(verb, conjugateKonjunktivII),
 	};
 }
 

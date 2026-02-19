@@ -10,6 +10,7 @@ export const NounSchema = z.object({
 	is_n_dekl: z.boolean(),
 	level: LevelSchema,
 	meaning: z.string(),
+	example: z.string(),
 });
 
 const PersonFormsSchema = z.object({
@@ -43,20 +44,32 @@ export const VerbSchema = z.object({
 	connections: z.array(z.string()),
 	level: LevelSchema,
 	meaning: z.string(),
+	example: z.string(),
 });
 
 export const AdjectiveSchema = z.object({
 	word: z.string(),
 	/** false for prima, super, lila, rosa, etc. — cannot take declension endings. */
 	is_declinable: z.boolean(),
+	/** false for Absolutadjektive (nicht steigerungsfähig) like arbeitslos, ledig, etc. — no Komparativ/Superlativ forms. */
+	is_comparable: z.boolean(),
 	/** Irregular comparative stem. null if regular (word + "er"). e.g. gut → "besser", hoch → "höher". */
 	komparativ: z.string().nullable(),
 	/** Irregular superlative stem. null if regular (word + "sten"). e.g. gut → "besten", hoch → "höchsten". */
 	superlativ: z.string().nullable(),
 	level: LevelSchema,
 	meaning: z.string(),
+	example: z.string(),
+});
+
+export const OtherSchema = z.object({
+	word: z.string(),
+	level: LevelSchema,
+	meaning: z.string(),
+	example: z.string(),
 });
 
 export type Noun = z.infer<typeof NounSchema>;
 export type Verb = z.infer<typeof VerbSchema>;
 export type Adjective = z.infer<typeof AdjectiveSchema>;
+export type Other = z.infer<typeof OtherSchema>;

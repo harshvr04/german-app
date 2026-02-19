@@ -53,7 +53,7 @@ function komparativCard(adj: Adjective): Card {
 }
 
 function superlativCard(adj: Adjective): Card {
-	const form = adj.superlativ ?? `am ${adj.word}sten`;
+	const form = adj.superlativ ?? `${adj.word}sten`;
 	return {
 		id: `adj-super-${adj.word}`,
 		question: `Superlativ von "${adj.word}"?`,
@@ -70,10 +70,12 @@ export function generateAdjectiveCards(adjectives: Adjective[], batchSize: numbe
 	const cards: Card[] = [];
 
 	for (const adj of adjectives) {
-		cards.push(komparativCard(adj));
-		cards.push(superlativCard(adj));
-
 		if (!adj.is_declinable) continue;
+
+		if (adj.is_comparable) {
+			cards.push(komparativCard(adj));
+			cards.push(superlativCard(adj));
+		}
 
 		for (const p of paradigms) {
 			const c = CASES[Math.floor(Math.random() * CASES.length)]!;

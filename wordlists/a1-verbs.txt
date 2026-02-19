@@ -1,0 +1,159 @@
+abfahren:Wir fahren um zwölf Uhr ab.
+abgeben:Ich muss meine Schlüssel abgeben.
+abholen:Wann kann ich den Schrank bei dir abholen?
+anbieten:Was darf ich dir anbieten?
+anderanfangen:WiIlst du diese Jacke?
+anklicken:Da musst du dieses Wort anklicken.
+ankommen:Wann kommt dieser Zug in Hamburg an?
+ankreuzen:Auf dem Formular müssen Sie an mehreren Stellen etwas ankreuzen.
+anmachen:Mach bitte das Licht an!
+(sich) anmelden:Wo kann ich mich anmelden?
+anrufen:Kann man Sie anrufen?
+antworten:Er antwortet nicht.
+(sich) anziehen:Ich muss mich noch anziehen.
+arbeiten:Wo arbeiten Sie?
+aufhören:Der Kurs hört in einer Woche auf.
+aufstehen:Ich muss immer um vier Uhr aufstehen.
+ausfüllen:Füllen Sie bitte dieses Formular aus.
+ausmachen:Mach bitte das Licht aus!
+aussehen:Das sieht schön aus.
+aussteigen:Wo muss ich aussteigen?
+(sich) ausziehen:Zieh die Schuhe aus, bitte!
+baden:Ich bade nicht so gern, ich dusche lieber.
+bedeuten:Was bedeutet das Wort?
+beginnen:Das Spiel beginnt um 15.30 Uhr.
+bekommen:Haben Sie meinen Brief bekommen?
+benutzen:Die Aufzüge bitte nicht benutzen!
+besichtigen:Ich möchte gern den Dom besichtigen.
+bestbestellen:Am besten treffen wir uns morgen.
+besuchen:Darf ich dich besuchen?
+bezahlen:Wo muss ich bezahlen?
+bisschen:Ich spreche Englisch, Französisch und ein bisschen Deutsch.
+bitten:Darf ich Sie um etwas bitten?
+bleiben:Ich bleibe heute zu Hause.
+brauchen:Brauchst du die Zeitung noch?
+bringen:Bringen Sie mir bitte noch einen Kaffee!
+buchstabieren:Bitte buchstabieren Sie Ihren Namen.
+daneben:Du kennst doch die Post. Daneben ist die Bank.
+danken:Ich danke Ihnen für die Einladung.
+dauern:Wie lange dauert der Film?
+draußen:Wollen wir draußen sitzen?
+drucken:Bitte drucke das Formular für mich.
+drücken:Drück hier, dann geht der Computer an.
+dürfen:Sie dürfen hier nicht rauchen.
+(sich) duschen:Ich bade nicht so gern, ich dusche lieber.
+einkaufen:Ich muss noch für morgen einkaufen.
+einladen:Darf ich Sie zu einem Kaffee einladen?
+einsteigen:Schnell, steig ein, der Zug fährt gleich.
+empfehlen:Welchen Wein können Sie mir empfehlen?
+enden:Die Straße endet hier.
+entschuldigen:Entschuldigen Sie bitte!
+erklären:Kannst du mir das erklären?
+erlauben:Rauchen ist hier nicht erlaubt.
+erzählen:Wir müssen euch etwas erzählen!
+essen:Was gibt es zu essen?
+fahren:Ich fahre mit dem Auto zur Arbeit.
+fehlen:Herr Müller ist nicht da, er fehlt schon seit drei Tagen.
+fernsehen:Wollen wir heute Abend mal fernsehen?
+finden:Wir müssen den Schlüssel finden.
+fliegen:Ich fliege nicht gern. Deshalb fahre ich mit dem Zug.
+abfliegen:Wann fliegst du ab?
+fragen:Er möchte Sie etwas fragen. Wann kommen Sie?
+(sich) freuen:Ich freue mich auf den Urlaub.
+frühstücken:Am Sonntag frühstücke ich gern im Bett.
+geben:Kannst du mir bitte deinen Kugelschreiber geben?
+geboren:Ich bin in Zagreb geboren.
+gefallen:Das gefällt mir.
+gehen:Ich weiß nicht, wie das geht.
+gehören:Wem gehört das?
+gestorben:Meine Frau ist gestern gestorben.
+gewinnen:Wer gewinnt das Spiel?
+glauben:Sie können mir glauben, es ist so.
+gratulieren:Ich gratuliere dir!
+grillen:Heute grillen wir im Garten.
+haben:Ich habe ein neues Auto.
+halten:Dieser Zug hält nicht in Rüdesheim.
+heiraten:Meine Schwester heiratet einen Japaner.
+heißen:Ich heiße Charlotte Meier.
+helfen:Können Sie mir helfen, bitte?
+hinten:Die Tür zum Aussteigen ist hinten.
+holen:Ich hole zwei Flaschen Wasser aus der Küche.
+hören:Hör mal! Was ist das?
+kaufen:Tim kauft sich ein neues Auto.
+kennen:Kennen Sie diese Frau? – Nein, leider nicht.
+kennenlernen:Wir sind neu hier. Wir möchten Sie kennenlernen.
+kochen:Herr Georgi kann gut kochen.
+kommen:Woher kommen Sie? – Aus Frankreich.
+können:Ich kann Deutsch und Russisch.
+kosten:Wie viel kostet das? – 10 Euro.
+kriegen:Ich kriege 15 Euro in der Stunde für meine Arbeit.
+lachen:Die Kinder lachen viel.
+laufen:Ich möchte nicht Auto fahren, ich möchte laufen.
+leben:Sie lebt bei ihrer Schwester.
+legen:Legen Sie das Buch auf den Tisch.
+lernen:Wie lange lernen Sie schon Deutsch?
+lesen:Ich lese ein Buch von García Márquez.
+lieblieben:Liebe Susanne, lieber Hans,
+liegen:Um neun Uhr liegt Judith noch im Bett.
+machen:Was machst du heute Abend?
+mieten:Ich möchte ein Auto mieten.
+mitbringen:Ich gehe einkaufen. Soll ich dir was mitbringen?
+mitkommen:Ich gehe ins Kino. Kommst du mit?
+mitmachen:Warum macht ihr nicht mit?
+mitnehmen:Nehmen wir meine Schwester ins Kino mit?
+möchten:Was möchten Sie trinken?
+mögen:Magst du Kaffee oder Tee?
+müssen:Ich muss jeden Tag von 8 Uhr bis 18 Uhr arbeiten.
+nehmen:Heute gibt es Hähnchen. Das nehme ich.
+oben:Ich wohne oben.
+öffnen:Ich öffne die Tür.
+rauchen:Ich rauche nicht.
+regnen:Heute regnet es.
+reisen:Ich reise gern.
+reparieren:Er hat das Fahrrad repariert.
+riechen:Dieser Wein riecht gut.
+sagen:Sag mal, wie geht es dir denn?
+scheinen:Die Sonne scheint.
+schicken:Bitte schicken Sie mir eine E-Mail.
+schlafen:Ich schlafe meistens acht Stunden.
+schließen:Bitte, schließen Sie die Tür.
+geschlossen:Die Bank hat am Samstag geschlossen.
+schmecken:Schmeckt das gut?
+schreiben:Er schreibt jeden Tag fünfzig E-Mails.
+schwimmen:Ich schwimme jeden Tag einen Kilometer.
+sehen:Ich kann dich nicht sehen.
+sitzen:Wo sitzen Sie?
+sollen:Soll ich kommen?
+spielen:Die Kinder spielen draußen.
+sprechen:Kann ich (mit) Herrn Klein sprechen?
+stehen:Ich glaube es nicht, aber es steht in der Zeitung.
+stellen:Stell die Tasche rechts in die Ecke!
+studieren:Ich studiere in Mainz.
+suchen:Suchst du etwas?
+tanzen:Tanzen Sie gern?
+telefonieren:Darf ich mal telefonieren?
+(sich) treffen:Ich treffe in der Stadt einen Kollegen.
+trinken:Möchtest du etwas trinken?
+übernachten:Du kannst bei mir übernachten.
+überweisen:Sie können das Geld auch überweisen.
+umziehen:Nächsten Monat ziehen wir um.
+unserunten:Das ist unsere Lehrerin.
+unterschreiben:Wo muss ich unterschreiben?
+verboten:Hier ist Rauchen verboten.
+verdienen:Ich verdiene 1.500 Euro im Monat.
+verkaufen:Er verkauft sein altes Auto.
+vermieten:Die Wohnung ist schon vermietet.
+verstehen:Können Sie mich verstehen?
+(sich) vorstellen:Wir wollen uns kennenlernen. Können Sie sich bitte vorstellen?
+wandern:Wir wandern um den Chiemsee.
+warten:Können Sie ein paar Minuten warten?
+(sich) waschen:Wo kann ich mir die Hände waschen?
+werden:Mein Sohn will Arzt werden.
+wiederholen:Können Sie das bitte wiederholen?
+willkommen:Herzlich willkommen!
+wissen:Weißt du, wie er heißt?
+wohnen:Ich wohne in München.
+wollen:Wollen Sie einen Kaffee trinken?
+zahlen:Zahlen, bitte!
+zufrieden:Ich bin mit der Wohnung zufrieden.
+sich kümmern:Jede Mutter kümmert sich um ihre kleinen Kinder.

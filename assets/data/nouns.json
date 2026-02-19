@@ -1,19 +1,588 @@
 [
   {
-    "word": "Tisch",
-    "gender": "m",
-    "plural_suffix": "-e",
+    "word": "Abfahrt",
+    "gender": "f",
+    "plural_suffix": "-en",
     "is_n_dekl": false,
     "level": "A1",
-    "meaning": "table"
+    "meaning": "departure",
+    "example": "Vor der Abfahrt rufe ich an."
   },
   {
-    "word": "Lampe",
+    "word": "Absender",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sender",
+    "example": "Da ist ein Brief für dich ohne Absender."
+  },
+  {
+    "word": "Achtung",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "attention / caution",
+    "example": "Achtung! Das dürfen Sie nicht tun."
+  },
+  {
+    "word": "Adresse",
     "gender": "f",
     "plural_suffix": "-n",
     "is_n_dekl": false,
     "level": "A1",
-    "meaning": "lamp"
+    "meaning": "address",
+    "example": "Können Sie mir seine Adresse sagen?"
+  },
+  {
+    "word": "Alter",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "age",
+    "example": "Alter: 26 Jahre."
+  },
+  {
+    "word": "Angebot",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "offer / deal",
+    "example": "Heute sind Sportschuhe im Angebot."
+  },
+  {
+    "word": "Anfang",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "beginning / start",
+    "example": "Sie wohnt am Anfang der Straße."
+  },
+  {
+    "word": "Ankunft",
+    "gender": "f",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "arrival",
+    "example": "Auf diesem Plan steht nur die Ankunft der Züge."
+  },
+  {
+    "word": "Anmeldung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "registration",
+    "example": "Eine Anmeldung für diesen Kurs ist nicht mehr möglich."
+  },
+  {
+    "word": "Anrede",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "form of address / salutation",
+    "example": "Schreiben Sie auch eine Anrede und einen Gruß."
+  },
+  {
+    "word": "Anruf",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "phone call",
+    "example": "Sie bekommt viele Anrufe auf ihrem Handy."
+  },
+  {
+    "word": "Anrufbeantworter",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "answering machine",
+    "example": "Wir sind im Moment nicht da. Sprechen Sie bitte auf den Anrufbeantworter."
+  },
+  {
+    "word": "Ansage",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "announcement",
+    "example": "Hören Sie die Ansagen."
+  },
+  {
+    "word": "Anschluss",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "connection (transport)",
+    "example": "In Mannheim haben Sie Anschluss nach Saarbrücken."
+  },
+  {
+    "word": "Antwort",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "answer / reply",
+    "example": "Er gibt leider keine Antwort."
+  },
+  {
+    "word": "Anzeige",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "advertisement / notice",
+    "example": "Ich habe Ihre Anzeige in der Zeitung gelesen."
+  },
+  {
+    "word": "Apartment",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "apartment",
+    "example": "Wir haben ein Apartment gemietet."
+  },
+  {
+    "word": "Apfel",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "apple",
+    "example": "Ein Pfund Äpfel bitte."
+  },
+  {
+    "word": "Appetit",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "appetite",
+    "example": "Guten Appetit!"
+  },
+  {
+    "word": "Arbeit",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "work / job",
+    "example": "Mein Bruder sucht Arbeit."
+  },
+  {
+    "word": "Arbeitsplatz",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "workplace",
+    "example": "An meinem Arbeitsplatz fehlt ein Drucker."
+  },
+  {
+    "word": "Arm",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "arm",
+    "example": "Mein Arm tut weh."
+  },
+  {
+    "word": "Arzt",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "doctor",
+    "example": "Morgen habe ich einen Termin bei meiner Ärztin."
+  },
+  {
+    "word": "Aufgabe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "task / assignment",
+    "example": "Das ist eine schwere Aufgabe."
+  },
+  {
+    "word": "Aufzug",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "elevator / lift",
+    "example": "In diesem Haus gibt es keinen Aufzug."
+  },
+  {
+    "word": "Auge",
+    "gender": "n",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "eye",
+    "example": "Er hat blaue Augen."
+  },
+  {
+    "word": "Ausflug",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "excursion / trip",
+    "example": "Morgen machen wir einen Ausflug nach Heidelberg."
+  },
+  {
+    "word": "Ausgang",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "exit",
+    "example": "Wo ist der Ausgang?"
+  },
+  {
+    "word": "Auskunft",
+    "gender": "f",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "information",
+    "example": "Können Sie mir eine Auskunft geben?"
+  },
+  {
+    "word": "Ausland",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "abroad / foreign country",
+    "example": "Fahren Sie ins Ausland?"
+  },
+  {
+    "word": "Ausländer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "foreigner",
+    "example": "Sind Sie Ausländerin?"
+  },
+  {
+    "word": "Aussage",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "statement",
+    "example": "Ist die Aussage richtig oder falsch?"
+  },
+  {
+    "word": "Ausweis",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "ID card",
+    "example": "Hier ist mein Ausweis."
+  },
+  {
+    "word": "Auto",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "car",
+    "example": "Er kommt mit dem Auto."
+  },
+  {
+    "word": "Autobahn",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "motorway / highway",
+    "example": "Wo geht's hier bitte zur Autobahn?"
+  },
+  {
+    "word": "Automat",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "vending machine",
+    "example": "Die Fahrkarten gibt es nur am Automaten."
+  },
+  {
+    "word": "Baby",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "baby",
+    "example": "Mein Kind ist noch ein Baby."
+  },
+  {
+    "word": "Bäckerei",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bakery",
+    "example": "Ich geh mal schnell zur Bäckerei."
+  },
+  {
+    "word": "Bad",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bathroom / bath",
+    "example": "Wir haben kein großes Bad."
+  },
+  {
+    "word": "Bahn",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "train / railway",
+    "example": "Wir fahren lieber mit der Bahn."
+  },
+  {
+    "word": "Bahnhof",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "train station",
+    "example": "Komme ich hier zum Bahnhof?"
+  },
+  {
+    "word": "Bahnsteig",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "platform",
+    "example": "Auf welchem Bahnsteig fährt der Zug?"
+  },
+  {
+    "word": "Balkon",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "balcony",
+    "example": "Die Wohnung hat auch einen kleinen Balkon."
+  },
+  {
+    "word": "Banane",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "banana",
+    "example": "Drei Bananen, bitte!"
+  },
+  {
+    "word": "Bank",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bank",
+    "example": "Die Bank schließt schon um vier Uhr."
+  },
+  {
+    "word": "Bauch",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "belly / stomach",
+    "example": "Seit gestern tut mir der Bauch weh."
+  },
+  {
+    "word": "Baum",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "tree",
+    "example": "Vorsicht, fahr nicht an den Baum!"
+  },
+  {
+    "word": "Beamte",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "official / civil servant",
+    "example": "Fragen Sie die Beamtin an Schalter acht!"
+  },
+  {
+    "word": "Bein",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "leg",
+    "example": "Mein rechtes Bein tut weh."
+  },
+  {
+    "word": "Beispiel",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "example",
+    "example": "Kannst du mir ein Beispiel sagen?"
+  },
+  {
+    "word": "Beruf",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "profession / job",
+    "example": "Was sind Sie von Beruf?"
+  },
+  {
+    "word": "Bett",
+    "gender": "n",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bed",
+    "example": "Wir brauchen noch ein Kinderbett."
+  },
+  {
+    "word": "Bier",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "beer",
+    "example": "Noch ein Bier bitte."
+  },
+  {
+    "word": "Bild",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "picture / image",
+    "example": "Hast du ein Bild von deinem Sohn?"
+  },
+  {
+    "word": "Birne",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "pear",
+    "example": "Ein Kilo Birnen, bitte!"
+  },
+  {
+    "word": "Bitte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "request",
+    "example": "Ich habe noch eine Bitte."
+  },
+  {
+    "word": "Bleistift",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "pencil",
+    "example": "Hast du einen Bleistift?"
+  },
+  {
+    "word": "Blick",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "view / glance",
+    "example": "Von diesem Hotel hat man einen guten Blick auf den Rhein."
+  },
+  {
+    "word": "Blume",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "flower",
+    "example": "Gefallen dir die Blumen?"
+  },
+  {
+    "word": "Bogen",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sheet (of paper) / form",
+    "example": "Schreiben Sie Ihre Lösungen bitte auf den Antwortbogen."
+  },
+  {
+    "word": "Brief",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "letter",
+    "example": "Haben Sie einen Brief für mich?"
+  },
+  {
+    "word": "Briefmarke",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "stamp",
+    "example": "Kaufst du bitte Briefmarken bei der Post."
+  },
+  {
+    "word": "Brot",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bread",
+    "example": "Haben Sie auch Weißbrot?"
+  },
+  {
+    "word": "Brötchen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bread roll",
+    "example": "Möchtest du Brötchen zum Frühstück?"
+  },
+  {
+    "word": "Bruder",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "brother",
+    "example": "Sein Bruder arbeitet auch hier."
   },
   {
     "word": "Buch",
@@ -21,15 +590,881 @@
     "plural_suffix": "¨er",
     "is_n_dekl": false,
     "level": "A1",
-    "meaning": "book"
+    "meaning": "book",
+    "example": "Gute Bücher sind oft sehr teuer."
   },
   {
-    "word": "Student",
+    "word": "Buchstabe",
     "gender": "m",
-    "plural_suffix": "-en",
+    "plural_suffix": "-n",
     "is_n_dekl": true,
     "level": "A1",
-    "meaning": "student (male)"
+    "meaning": "letter (of alphabet)",
+    "example": "Diesen Buchstaben gibt es in meiner Sprache nicht."
+  },
+  {
+    "word": "Bus",
+    "gender": "m",
+    "plural_suffix": "-se",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bus",
+    "example": "Wann kommt der nächste Bus?"
+  },
+  {
+    "word": "Butter",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "butter",
+    "example": "Für mich bitte ein Brötchen mit Butter und Käse."
+  },
+  {
+    "word": "Café",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "café",
+    "example": "Sollen wir uns im Café treffen?"
+  },
+  {
+    "word": "CD",
+    "gender": "f",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "CD",
+    "example": "Bring bitte deine Lieblings-CD mit."
+  },
+  {
+    "word": "Chef",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "boss",
+    "example": "Wir haben eine neue Chefin."
+  },
+  {
+    "word": "Computer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "computer",
+    "example": "Wann bekommst du deinen neuen Computer?"
+  },
+  {
+    "word": "Dame",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "lady",
+    "example": "Meine Damen und Herren!"
+  },
+  {
+    "word": "Dank",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "thanks",
+    "example": "Vielen Dank!"
+  },
+  {
+    "word": "Datum",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "date",
+    "example": "Bitte schreiben Sie noch das Datum auf das Formular."
+  },
+  {
+    "word": "Disco",
+    "gender": "f",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "disco / club",
+    "example": "Heute abend gehen wir in die Disco tanzen."
+  },
+  {
+    "word": "Doktor",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "doctor",
+    "example": "Meine Tochter ist krank. Wir gehen zum Doktor."
+  },
+  {
+    "word": "Doppelzimmer",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "double room",
+    "example": "Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?"
+  },
+  {
+    "word": "Dorf",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "village",
+    "example": "Meine Familie lebt in einem Dorf."
+  },
+  {
+    "word": "Drucker",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "printer",
+    "example": "Mein Drucker ist kaputt."
+  },
+  {
+    "word": "Durchsage",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "announcement (over speaker)",
+    "example": "Ich habe die Durchsage nicht verstanden."
+  },
+  {
+    "word": "Durst",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "thirst",
+    "example": "Hast du etwas zu trinken? Ich habe großen Durst."
+  },
+  {
+    "word": "Dusche",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "shower",
+    "example": "Unsere Wohnung hat nur eine Dusche."
+  },
+  {
+    "word": "Ecke",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "corner",
+    "example": "An der nächsten Ecke links."
+  },
+  {
+    "word": "Ehefrau",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "wife",
+    "example": "Das ist meine Ehefrau."
+  },
+  {
+    "word": "Ehemann",
+    "gender": "m",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "husband",
+    "example": "Das ist mein Ehemann."
+  },
+  {
+    "word": "Ei",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "egg",
+    "example": "Möchtest du ein Ei zum Frühstück?"
+  },
+  {
+    "word": "Eingang",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "entrance",
+    "example": "Der Eingang ist um die Ecke."
+  },
+  {
+    "word": "Einladung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "invitation",
+    "example": "Danke für die Einladung!"
+  },
+  {
+    "word": "Eintritt",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "admission / entry fee",
+    "example": "Der Preis für den Eintritt ist 5 Euro."
+  },
+  {
+    "word": "Einzelzimmer",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "single room",
+    "example": "Haben Sie noch ein Einzelzimmer?"
+  },
+  {
+    "word": "Eltern",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "parents",
+    "example": "Meine Eltern leben in Spanien."
+  },
+  {
+    "word": "E-Mail",
+    "gender": "f",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "email",
+    "example": "Ich habe Ihre E-Mail nicht bekommen."
+  },
+  {
+    "word": "Empfänger",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "recipient",
+    "example": "Auf dem Brief steht dein Name, also bist du der Empfänger."
+  },
+  {
+    "word": "Ende",
+    "gender": "n",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "end",
+    "example": "Sie wohnt am Ende der Straße."
+  },
+  {
+    "word": "Entschuldigung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "excuse / apology",
+    "example": "Entschuldigung! – Bitte."
+  },
+  {
+    "word": "Ergebnis",
+    "gender": "n",
+    "plural_suffix": "-se",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "result",
+    "example": "Das Ergebnis des Tests bekommen Sie in zwei Wochen."
+  },
+  {
+    "word": "Erwachsene",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "adult",
+    "example": "Dieser Film ist nur für Erwachsene."
+  },
+  {
+    "word": "Essen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "food / meal",
+    "example": "Das Essen ist heute sehr gut."
+  },
+  {
+    "word": "Fahrer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "driver",
+    "example": "Bitte nicht mit dem Fahrer sprechen!"
+  },
+  {
+    "word": "Fahrkarte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "ticket (transport)",
+    "example": "Hast du schon eine Fahrkarte?"
+  },
+  {
+    "word": "Fahrrad",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bicycle",
+    "example": "Fährst du mit dem Fahrrad oder mit dem Auto?"
+  },
+  {
+    "word": "Familie",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "family",
+    "example": "Meine Familie lebt in Spanien."
+  },
+  {
+    "word": "Familienname",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "surname / family name",
+    "example": "Meine Familiennamen sind García González."
+  },
+  {
+    "word": "Familienstand",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "marital status",
+    "example": "Bei 'Familienstand' musst du 'ledig' ankreuzen."
+  },
+  {
+    "word": "Farbe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "color",
+    "example": "Die Farbe gefällt mir gut."
+  },
+  {
+    "word": "Fax",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "fax",
+    "example": "Schicken Sie uns einfach ein Fax!"
+  },
+  {
+    "word": "Feiertag",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "holiday / public holiday",
+    "example": "Am Montag ist Feiertag."
+  },
+  {
+    "word": "Feierabend",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "end of work / closing time",
+    "example": "Um sechs Uhr habe ich Feierabend."
+  },
+  {
+    "word": "Fehler",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "mistake / error",
+    "example": "Diesen Fehler mache ich immer."
+  },
+  {
+    "word": "Feuer",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "fire / light (for cigarette)",
+    "example": "Haben Sie Feuer?"
+  },
+  {
+    "word": "Fieber",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "fever",
+    "example": "Mein Mann hat noch immer Fieber."
+  },
+  {
+    "word": "Film",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "film / movie",
+    "example": "Ich möchte gern diesen Film sehen."
+  },
+  {
+    "word": "Firma",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "company / firm",
+    "example": "Er arbeitet jetzt bei einer anderen Firma."
+  },
+  {
+    "word": "Fisch",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "fish",
+    "example": "Ich esse gern Fisch."
+  },
+  {
+    "word": "Flasche",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bottle",
+    "example": "Eine Flasche Bier, bitte."
+  },
+  {
+    "word": "Fleisch",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "meat",
+    "example": "Fleisch mag ich nicht."
+  },
+  {
+    "word": "Abflug",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "departure (flight)",
+    "example": "Der Abflug ist um 11.20 Uhr."
+  },
+  {
+    "word": "Flughafen",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "airport",
+    "example": "Kannst du mich zum Flughafen bringen?"
+  },
+  {
+    "word": "Flugzeug",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "airplane",
+    "example": "Das Flugzeug aus Berlin kommt heute später an."
+  },
+  {
+    "word": "Formular",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "form (document)",
+    "example": "Sie müssen dieses Formular ausfüllen."
+  },
+  {
+    "word": "Foto",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "photo",
+    "example": "Darf ich ein Foto machen?"
+  },
+  {
+    "word": "Frage",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "question",
+    "example": "Ich habe eine Frage."
+  },
+  {
+    "word": "Frau",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "woman / Mrs.",
+    "example": "Das ist Frau Becker."
+  },
+  {
+    "word": "Freizeit",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "free time / leisure",
+    "example": "In meiner Freizeit spiele ich oft Fußball."
+  },
+  {
+    "word": "Freund",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "friend / boyfriend",
+    "example": "Das ist ein Freund von mir."
+  },
+  {
+    "word": "Frühstück",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "breakfast",
+    "example": "Möchtest du ein Ei zum Frühstück?"
+  },
+  {
+    "word": "Führung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "guided tour",
+    "example": "Die Führung durch das Haus beginnt in 3 Minuten."
+  },
+  {
+    "word": "Fuß",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "foot",
+    "example": "Der linke Fuß tut mir weh."
+  },
+  {
+    "word": "Fußball",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "football / soccer",
+    "example": "Spielt ihr gerne Fußball?"
+  },
+  {
+    "word": "Garten",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "garden",
+    "example": "Wir haben leider keinen Garten."
+  },
+  {
+    "word": "Gast",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "guest",
+    "example": "Am Wochenende haben wir mehrere Gäste."
+  },
+  {
+    "word": "Geburtsjahr",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "year of birth",
+    "example": "Das Geburtsjahr Ihres Sohnes, bitte?"
+  },
+  {
+    "word": "Geburtsort",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "place of birth",
+    "example": "Bitte schreiben Sie Ihren Geburtsort auf das Formular."
+  },
+  {
+    "word": "Geburtstag",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "birthday",
+    "example": "Herzlichen Glückwunsch zum Geburtstag!"
+  },
+  {
+    "word": "Geld",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "money",
+    "example": "Hast du noch Geld?"
+  },
+  {
+    "word": "Gemüse",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "vegetables",
+    "example": "Gemüse brauchen wir auch noch."
+  },
+  {
+    "word": "Gepäck",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "luggage / baggage",
+    "example": "Wollen Sie Ihr Gepäck mitnehmen?"
+  },
+  {
+    "word": "Geschäft",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "shop / store",
+    "example": "Die Geschäfte schließen um 18.30 Uhr."
+  },
+  {
+    "word": "Geschenk",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "gift / present",
+    "example": "Danke für das schöne Geschenk."
+  },
+  {
+    "word": "Geschwister",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "siblings",
+    "example": "Ich habe leider keine Geschwister."
+  },
+  {
+    "word": "Gespräch",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "conversation / talk",
+    "example": "Das Gespräch mit Frau Kunz ist um 14 Uhr."
+  },
+  {
+    "word": "Getränk",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "drink / beverage",
+    "example": "Mein Lieblingsgetränk ist Tomatensaft."
+  },
+  {
+    "word": "Gewicht",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "weight",
+    "example": "Bei 'Gewicht' schreibst du: 62 Kilo."
+  },
+  {
+    "word": "Glas",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "glass",
+    "example": "Bitte noch ein Glas Wein!"
+  },
+  {
+    "word": "Gleis",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "track / platform",
+    "example": "Der ICE nach Berlin hält heute an Gleis 12."
+  },
+  {
+    "word": "Glück",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "luck / happiness",
+    "example": "Viel Glück!"
+  },
+  {
+    "word": "Glückwunsch",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "congratulations",
+    "example": "Herzlichen Glückwunsch zum Geburtstag."
+  },
+  {
+    "word": "Grad",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "degree (temperature)",
+    "example": "Heute haben wir dreißig Grad."
+  },
+  {
+    "word": "Größe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "size",
+    "example": "Haben Sie das auch in Größe 40?"
+  },
+  {
+    "word": "Großeltern",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "grandparents",
+    "example": "Meine Großeltern leben in Japan."
+  },
+  {
+    "word": "Großmutter",
+    "gender": "f",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "grandmother",
+    "example": "Meine Großmutter heißt Eva."
+  },
+  {
+    "word": "Großvater",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "grandfather",
+    "example": "Mein Großvater ist schon 80."
+  },
+  {
+    "word": "Gruppe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "group",
+    "example": "Die erste Gruppe beginnt um 16 Uhr."
+  },
+  {
+    "word": "Gruß",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "greeting",
+    "example": "Viele Grüße an Ihre Frau."
+  },
+  {
+    "word": "Haar",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "hair",
+    "example": "Sie hat lange Haare."
+  },
+  {
+    "word": "Hähnchen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "chicken (cooked)",
+    "example": "Ein Hähnchen mit Pommes bitte!"
+  },
+  {
+    "word": "Halbpension",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "half board",
+    "example": "Möchten Sie Vollpension oder Halbpension?"
+  },
+  {
+    "word": "Halle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "hall",
+    "example": "Wir treffen uns in Halle B."
+  },
+  {
+    "word": "Haltestelle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "stop (bus/tram)",
+    "example": "An der nächsten Haltestelle müssen Sie aussteigen."
+  },
+  {
+    "word": "Hand",
+    "gender": "f",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "hand",
+    "example": "Er gibt mir die Hand."
+  },
+  {
+    "word": "Handy",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "mobile phone",
+    "example": "In der Schule bitte die Handys ausmachen!"
   },
   {
     "word": "Haus",
@@ -37,6 +1472,1573 @@
     "plural_suffix": "¨er",
     "is_n_dekl": false,
     "level": "A1",
-    "meaning": "house"
+    "meaning": "house",
+    "example": "In welchem Haus wohnst du?"
+  },
+  {
+    "word": "Hausaufgabe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "homework",
+    "example": "Kannst du mir bei den Hausaufgaben helfen?"
+  },
+  {
+    "word": "Hausfrau",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "housewife",
+    "example": "Die Hausfrau wäscht, kocht und kauft ein."
+  },
+  {
+    "word": "Hausmann",
+    "gender": "m",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "house husband",
+    "example": "Der Hausmann wäscht, kocht und kauft ein."
+  },
+  {
+    "word": "Heimat",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "home / homeland",
+    "example": "Ich komme aus der Schweiz. Das ist meine Heimat."
+  },
+  {
+    "word": "Herd",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "stove / cooker",
+    "example": "In der neuen Küche fehlt noch der Herd."
+  },
+  {
+    "word": "Herr",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "Mr. / gentleman",
+    "example": "Guten Tag, Herr Sommer!"
+  },
+  {
+    "word": "Hilfe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "help",
+    "example": "Hilfe! Bitte helfen Sie mir!"
+  },
+  {
+    "word": "Hobby",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "hobby",
+    "example": "Meine Hobbys sind Wandern und Schwimmen."
+  },
+  {
+    "word": "Hochzeit",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "wedding",
+    "example": "Zur dieser Hochzeit kommen mehr als fünfzig Gäste."
+  },
+  {
+    "word": "Hotel",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "hotel",
+    "example": "Im Urlaub sind wir in einem Hotel am Meer."
+  },
+  {
+    "word": "Hund",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "dog",
+    "example": "Der Hund ist noch jung."
+  },
+  {
+    "word": "Hunger",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "hunger",
+    "example": "Ich habe Hunger! Wann ist das Essen fertig?"
+  },
+  {
+    "word": "Information",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "information / info desk",
+    "example": "Wenn Sie Fragen haben, gehen Sie zur Information."
+  },
+  {
+    "word": "Internet",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "internet",
+    "example": "Das findest du im Internet."
+  },
+  {
+    "word": "Jacke",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "jacket",
+    "example": "Zieh dir eine Jacke an. Es ist kalt."
+  },
+  {
+    "word": "Job",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "job",
+    "example": "Jenny hat einen neuen Job bei der Post."
+  },
+  {
+    "word": "Jugendliche",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "young person / teenager",
+    "example": "Viele Jugendliche kaufen gern ein."
+  },
+  {
+    "word": "Junge",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "boy",
+    "example": "Ich habe zwei Kinder. Einen Jungen und ein Mädchen."
+  },
+  {
+    "word": "Kaffee",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "coffee",
+    "example": "Zum Frühstück trinke ich immer Kaffee."
+  },
+  {
+    "word": "Karte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "card / ticket / map",
+    "example": "Ich schreibe meinen Bekannten eine Karte aus dem Urlaub."
+  },
+  {
+    "word": "Kartoffel",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "potato",
+    "example": "Für Pommes frites braucht man Kartoffeln."
+  },
+  {
+    "word": "Kasse",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "checkout / cash register",
+    "example": "Zahlen Sie bitte an der Kasse."
+  },
+  {
+    "word": "Kind",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "child",
+    "example": "Wie viele Kinder haben Sie?"
+  },
+  {
+    "word": "Kindergarten",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "kindergarten",
+    "example": "Die kleine Laura geht schon in den Kindergarten."
+  },
+  {
+    "word": "Kino",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "cinema",
+    "example": "Wir sehen heute Abend im Kino einen schönen Film."
+  },
+  {
+    "word": "Kiosk",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "kiosk / newsstand",
+    "example": "Am Kiosk bekommen Sie Getränke, Zigaretten und Zeitungen."
+  },
+  {
+    "word": "Klasse",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "class",
+    "example": "In unserer Klasse sind fünfundzwanzig Schüler."
+  },
+  {
+    "word": "Kleidung",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "clothing",
+    "example": "Wo finde ich Kleidung?"
+  },
+  {
+    "word": "Koffer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "suitcase",
+    "example": "Ist das Ihr Koffer?"
+  },
+  {
+    "word": "Kollege",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "colleague",
+    "example": "Wie heißt die neue Kollegin?"
+  },
+  {
+    "word": "Konto",
+    "gender": "n",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "account (bank)",
+    "example": "Das Geld überweisen wir am ersten März auf Ihr Konto."
+  },
+  {
+    "word": "Kopf",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "head",
+    "example": "Mein Kopf tut weh!"
+  },
+  {
+    "word": "Küche",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "kitchen",
+    "example": "Der neue Herd kommt in die Küche."
+  },
+  {
+    "word": "Kuchen",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "cake",
+    "example": "Ich nehme ein Stück Kuchen."
+  },
+  {
+    "word": "Kugelschreiber",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "ballpoint pen",
+    "example": "Hast du einen Kugelschreiber für mich?"
+  },
+  {
+    "word": "Kühlschrank",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "refrigerator",
+    "example": "Haben wir noch Milch? – Ja, im Kühlschrank."
+  },
+  {
+    "word": "Kunde",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "customer",
+    "example": "Einen Moment, bitte. Ich habe eine Kundin."
+  },
+  {
+    "word": "Kurs",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "course",
+    "example": "Der Deutschkurs geht bis zum Sommer."
+  },
+  {
+    "word": "Laden",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "shop / store",
+    "example": "Im Buchladen können Sie Bücher kaufen."
+  },
+  {
+    "word": "Land",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "country / land",
+    "example": "Italien ist ein schönes Land."
+  },
+  {
+    "word": "Leben",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "life",
+    "example": "Das Leben in diesem Land ist teuer."
+  },
+  {
+    "word": "Lebensmittel",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "groceries / food",
+    "example": "Wir müssen noch Lebensmittel einkaufen."
+  },
+  {
+    "word": "Lehrer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "teacher",
+    "example": "Unsere Deutschlehrerin heißt Frau Müller."
+  },
+  {
+    "word": "Licht",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "light",
+    "example": "Wo macht man hier das Licht an?"
+  },
+  {
+    "word": "Lied",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "song",
+    "example": "Dieses Lied gefällt mir sehr."
+  },
+  {
+    "word": "Lkw",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "truck / lorry",
+    "example": "Dieser Lastkraftwagen ist sehr groß."
+  },
+  {
+    "word": "Lokal",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "restaurant / pub",
+    "example": "In unserer Straße gibt es ein neues Lokal."
+  },
+  {
+    "word": "Lösung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "solution",
+    "example": "Die Lösung ist ganz einfach."
+  },
+  {
+    "word": "Mädchen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "girl",
+    "example": "Familie Kurz bekommt ein Baby. – Junge oder Mädchen?"
+  },
+  {
+    "word": "Mann",
+    "gender": "m",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "man / husband",
+    "example": "Mein Mann arbeitet bei der Polizei."
+  },
+  {
+    "word": "Maschine",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "machine",
+    "example": "Die Waschmaschine ist günstig."
+  },
+  {
+    "word": "Meer",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sea / ocean",
+    "example": "Wir machen Urlaub am Meer."
+  },
+  {
+    "word": "Miete",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "rent",
+    "example": "Die Miete für diese Wohnung ist 600 Euro."
+  },
+  {
+    "word": "Milch",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "milk",
+    "example": "Die Milch steht im Kühlschrank."
+  },
+  {
+    "word": "Mitte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "middle / center",
+    "example": "Der Lehrer steht in der Mitte des Klassenzimmers."
+  },
+  {
+    "word": "Möbel",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "furniture",
+    "example": "Sind die Möbel neu?"
+  },
+  {
+    "word": "Moment",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "moment",
+    "example": "Moment mal bitte!"
+  },
+  {
+    "word": "Mund",
+    "gender": "m",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "mouth",
+    "example": "Öffnen Sie den Mund."
+  },
+  {
+    "word": "Mutter",
+    "gender": "f",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "mother",
+    "example": "Frau Berghäuser ist die Mutter von Michaela."
+  },
+  {
+    "word": "Nummer",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "number",
+    "example": "Sie haben Zimmer Nummer zwölf."
+  },
+  {
+    "word": "Obst",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "fruit",
+    "example": "Im Sommer ist das Obst billig."
+  },
+  {
+    "word": "Öl",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "oil",
+    "example": "Den Salat machen wir ohne Öl."
+  },
+  {
+    "word": "Oma",
+    "gender": "f",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "grandma",
+    "example": "Meine Oma ist schon tot."
+  },
+  {
+    "word": "Opa",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "grandpa",
+    "example": "Mein Opa heißt Hans."
+  },
+  {
+    "word": "Ordnung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "order",
+    "example": "Das ist in Ordnung."
+  },
+  {
+    "word": "Ort",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "place / town",
+    "example": "Der Ort liegt am Meer."
+  },
+  {
+    "word": "Papier",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "paper",
+    "example": "Hier sind Papier und Bleistift."
+  },
+  {
+    "word": "Partner",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "partner (male)",
+    "example": "Arbeiten Sie mit Ihrem Partner."
+  },
+  {
+    "word": "Partnerin",
+    "gender": "f",
+    "plural_suffix": "-nen",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "partner (female)",
+    "example": "Sie ist meine Partnerin."
+  },
+  {
+    "word": "Party",
+    "gender": "f",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "party",
+    "example": "Heute Abend machen wir eine Party."
+  },
+  {
+    "word": "Pass",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "passport",
+    "example": "Im Hotel brauchst du deinen Pass."
+  },
+  {
+    "word": "Pause",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "break / pause",
+    "example": "Von 12.00 bis 12.30 Uhr haben wir Mittagspause."
+  },
+  {
+    "word": "Plan",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "plan / map",
+    "example": "Ich kaufe mir einen Stadtplan."
+  },
+  {
+    "word": "Platz",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "place / seat / square",
+    "example": "Tut mir leid, der Platz ist besetzt."
+  },
+  {
+    "word": "Polizei",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "police",
+    "example": "Holen Sie die Polizei!"
+  },
+  {
+    "word": "Pommes frites",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "French fries",
+    "example": "Die Kinder essen Hähnchen mit Pommes frites."
+  },
+  {
+    "word": "Post",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "post office / mail",
+    "example": "Wo ist die Post, bitte?"
+  },
+  {
+    "word": "Postleitzahl",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "postal code / zip code",
+    "example": "Wie ist Ihre Postleitzahl?"
+  },
+  {
+    "word": "Praktikum",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "internship",
+    "example": "Ich mache ein Praktikum bei Siemens."
+  },
+  {
+    "word": "Praxis",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "practice / doctor's office",
+    "example": "Die Praxis ist ab acht Uhr geöffnet."
+  },
+  {
+    "word": "Preis",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "price / prize",
+    "example": "Die Preise sind hoch."
+  },
+  {
+    "word": "Problem",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "problem",
+    "example": "Mein Problem ist die Sprache."
+  },
+  {
+    "word": "Prospekt",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "brochure",
+    "example": "Bitte schicken Sie mir einen Prospekt von Ihrem Hotel."
+  },
+  {
+    "word": "Prüfung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "exam / test",
+    "example": "Die Prüfung ist am Montag um 8.00 Uhr."
+  },
+  {
+    "word": "Rad",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "wheel / bicycle",
+    "example": "Das Kind kann schon Rad fahren."
+  },
+  {
+    "word": "Raum",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "room / space",
+    "example": "Der Unterricht ist in Raum 332."
+  },
+  {
+    "word": "Rechnung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bill / invoice",
+    "example": "Die Rechnung, bitte."
+  },
+  {
+    "word": "Regen",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "rain",
+    "example": "Bei diesem Regen gehe ich nicht raus."
+  },
+  {
+    "word": "Reis",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "rice",
+    "example": "Ich esse gern Reis."
+  },
+  {
+    "word": "Reise",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "trip / journey",
+    "example": "Wir machen eine Reise nach Österreich."
+  },
+  {
+    "word": "Reisebüro",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "travel agency",
+    "example": "Mein Mann arbeitet im Reisebüro."
+  },
+  {
+    "word": "Reiseführer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "travel guide",
+    "example": "Ich kaufe mir einen Reiseführer von Berlin."
+  },
+  {
+    "word": "Reparatur",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "repair",
+    "example": "Die Reparatur ist sehr teuer."
+  },
+  {
+    "word": "Restaurant",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "restaurant",
+    "example": "Wir essen heute in einem Restaurant."
+  },
+  {
+    "word": "Rezeption",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "reception (hotel)",
+    "example": "Fragen Sie bitte im Hotel an der Rezeption."
+  },
+  {
+    "word": "Saft",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "juice",
+    "example": "Möchtest du einen Apfelsaft?"
+  },
+  {
+    "word": "Salat",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "salad",
+    "example": "Wie schmeckt dir der Salat?"
+  },
+  {
+    "word": "Salz",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "salt",
+    "example": "Herr Ober, kann ich bitte Salz haben?"
+  },
+  {
+    "word": "Satz",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sentence",
+    "example": "Dieser Satz ist sehr einfach."
+  },
+  {
+    "word": "S-Bahn",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "suburban train",
+    "example": "Ich nehme lieber die S-Bahn."
+  },
+  {
+    "word": "Schalter",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "counter / window",
+    "example": "Gehen Sie bitte zum Schalter drei!"
+  },
+  {
+    "word": "Schild",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sign",
+    "example": "Haben Sie nicht das Schild gesehen?"
+  },
+  {
+    "word": "Schinken",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "ham",
+    "example": "Ich möchte gern ein Schinkenbrot."
+  },
+  {
+    "word": "Schluss",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "end / conclusion",
+    "example": "Ich muss jetzt Schluss machen."
+  },
+  {
+    "word": "Schlüssel",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "key",
+    "example": "Ich gebe Ihnen noch den Zimmerschlüssel."
+  },
+  {
+    "word": "Schrank",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "cupboard / wardrobe",
+    "example": "Die Gläser stehen im Schrank."
+  },
+  {
+    "word": "Schuh",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "shoe",
+    "example": "Zieh die Schuhe aus!"
+  },
+  {
+    "word": "Schule",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "school",
+    "example": "Meine Tochter geht schon in die Schule."
+  },
+  {
+    "word": "Schüler",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "pupil / student",
+    "example": "In meinem Kurs sind acht Schülerinnen und fünf Schüler."
+  },
+  {
+    "word": "Schwester",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sister",
+    "example": "Meine Schwester kommt am Dienstag."
+  },
+  {
+    "word": "Schwimmbad",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "swimming pool",
+    "example": "Kommst du mit ins Schwimmbad?"
+  },
+  {
+    "word": "See",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "lake",
+    "example": "Komm, wir fahren zum Starnberger See."
+  },
+  {
+    "word": "Sehenswürdigkeit",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sight / attraction",
+    "example": "Welche Sehenswürdigkeiten gibt es in Frankfurt?"
+  },
+  {
+    "word": "Sofa",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sofa",
+    "example": "Das Sofa ist neu."
+  },
+  {
+    "word": "Sohn",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "son",
+    "example": "Das ist Hans, mein Sohn."
+  },
+  {
+    "word": "Sonne",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sun",
+    "example": "Die Sonne scheint."
+  },
+  {
+    "word": "Speisekarte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "menu",
+    "example": "Bringen Sie mir die Speisekarte, bitte."
+  },
+  {
+    "word": "Sport",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "sport",
+    "example": "Ich mache viel Sport."
+  },
+  {
+    "word": "Sprache",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "language",
+    "example": "Welche Sprachen sprichst du?"
+  },
+  {
+    "word": "Stadt",
+    "gender": "f",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "city / town",
+    "example": "Heidelberg ist eine alte Stadt."
+  },
+  {
+    "word": "Stelle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "position / job / spot",
+    "example": "Ich habe eine neue Stelle."
+  },
+  {
+    "word": "Stock",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "floor / story",
+    "example": "Unsere Wohnung liegt im ersten Stock."
+  },
+  {
+    "word": "Straße",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "street / road",
+    "example": "In welcher Straße wohnen Sie?"
+  },
+  {
+    "word": "Straßenbahn",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "tram / streetcar",
+    "example": "Wo fährt die Straßenbahn ab?"
+  },
+  {
+    "word": "Studium",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "studies (university)",
+    "example": "Das Studium beginnt im Oktober."
+  },
+  {
+    "word": "Student",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "student (university)",
+    "example": "Ich bin Studentin."
+  },
+  {
+    "word": "Stunde",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "hour",
+    "example": "Ich bin in einer Stunde zurück."
+  },
+  {
+    "word": "Tasche",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "bag / pocket",
+    "example": "Ich habe die Schlüssel in der Tasche."
+  },
+  {
+    "word": "Taxi",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "taxi",
+    "example": "Es gibt heute keinen Bus mehr. Er fährt mit dem Taxi."
+  },
+  {
+    "word": "Tee",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "tea",
+    "example": "Ich trinke morgens immer Tee."
+  },
+  {
+    "word": "Teil",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "part",
+    "example": "Lies bitte auch den zweiten Teil."
+  },
+  {
+    "word": "Telefon",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "telephone",
+    "example": "Haben Sie Telefon?"
+  },
+  {
+    "word": "Termin",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "appointment",
+    "example": "Am besten machen wir sofort einen Termin."
+  },
+  {
+    "word": "Test",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "test",
+    "example": "Der Test war einfach."
+  },
+  {
+    "word": "Text",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "text",
+    "example": "Lesen Sie bitte diesen Text."
+  },
+  {
+    "word": "Thema",
+    "gender": "n",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "topic / subject",
+    "example": "Wir sprechen heute über das Thema 'Essen und Trinken'."
+  },
+  {
+    "word": "Ticket",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "ticket",
+    "example": "Wie viel kostet das Ticket?"
+  },
+  {
+    "word": "Tisch",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "table",
+    "example": "Die Fotos liegen auf dem Tisch."
+  },
+  {
+    "word": "Tochter",
+    "gender": "f",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "daughter",
+    "example": "Das ist meine Tochter Katharina."
+  },
+  {
+    "word": "Toilette",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "toilet / restroom",
+    "example": "Wo ist die Toilette, bitte?"
+  },
+  {
+    "word": "Tomate",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "tomato",
+    "example": "Die Tomate ist noch grün."
+  },
+  {
+    "word": "Treppe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "stairs / staircase",
+    "example": "Die Toilette? Die Treppe hoch und dann links."
+  },
+  {
+    "word": "Uhr",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "clock / watch / o'clock",
+    "example": "Es ist vier Uhr."
+  },
+  {
+    "word": "Unterricht",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "lesson / class",
+    "example": "Wir haben Unterricht von 8.00 bis 12.00 Uhr."
+  },
+  {
+    "word": "Unterschrift",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "signature",
+    "example": "Hier fehlt noch Ihre Unterschrift."
+  },
+  {
+    "word": "Urlaub",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "vacation / holiday",
+    "example": "Ich nehme im September Urlaub."
+  },
+  {
+    "word": "Vater",
+    "gender": "m",
+    "plural_suffix": "¨",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "father",
+    "example": "Mein Vater ist Arbeiter."
+  },
+  {
+    "word": "Verein",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "club / association",
+    "example": "Es gibt einen neuen Sportverein in der Stadt."
+  },
+  {
+    "word": "Verkäufer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "salesperson",
+    "example": "Meine Mutter ist Verkäuferin im Kaufhaus."
+  },
+  {
+    "word": "Vermieter",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "landlord",
+    "example": "Unser Vermieter heißt Huber. Er wohnt auch hier."
+  },
+  {
+    "word": "Verwandte",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "relative",
+    "example": "Peter besucht seine Verwandten in Polen."
+  },
+  {
+    "word": "Vorname",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "first name",
+    "example": "Ich heiße Müller, mein Vorname ist Eva."
+  },
+  {
+    "word": "Vorsicht",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "caution / care",
+    "example": "Vorsicht! Da kommt ein Auto."
+  },
+  {
+    "word": "Vorwahl",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "area code",
+    "example": "Wie ist die Vorwahl von München?"
+  },
+  {
+    "word": "Wasser",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "water",
+    "example": "Ein Glas Wasser, bitte."
+  },
+  {
+    "word": "Wein",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "wine",
+    "example": "Nein danke, ich möchte keinen Wein."
+  },
+  {
+    "word": "Wetter",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "weather",
+    "example": "Wir hatten schlechtes Wetter."
+  },
+  {
+    "word": "Wiederhören",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "goodbye (on phone)",
+    "example": "Auf Wiederhören!"
+  },
+  {
+    "word": "Wiedersehen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "goodbye (in person)",
+    "example": "Auf Wiedersehen!"
+  },
+  {
+    "word": "Wind",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "wind",
+    "example": "Der Wind kommt aus Osten."
+  },
+  {
+    "word": "Wohnung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "apartment / flat",
+    "example": "Seit wann haben Sie diese Wohnung?"
+  },
+  {
+    "word": "Wort",
+    "gender": "n",
+    "plural_suffix": "¨er",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "word",
+    "example": "Ich kenne das Wort nicht."
+  },
+  {
+    "word": "Zeit",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "time",
+    "example": "Ich habe heute keine Zeit."
+  },
+  {
+    "word": "Zeitung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "newspaper",
+    "example": "Ich lese gern Zeitung."
+  },
+  {
+    "word": "Zigarette",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "cigarette",
+    "example": "Wie teuer sind die Zigaretten?"
+  },
+  {
+    "word": "Zimmer",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "room",
+    "example": "Das Zimmer ist groß."
+  },
+  {
+    "word": "Zoll",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "customs",
+    "example": "Wir müssen noch durch den Zoll."
+  },
+  {
+    "word": "Zug",
+    "gender": "m",
+    "plural_suffix": "¨e",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "train",
+    "example": "Ich fahre gern mit dem Zug."
+  },
+  {
+    "word": "Bekannte",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "acquaintance",
+    "example": "Ein Bekannter von mir heißt Klaus."
+  },
+  {
+    "word": "Leute",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "people",
+    "example": "Hier sind viele Leute."
+  },
+  {
+    "word": "Mensch",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "person / human",
+    "example": "Die meisten Menschen sind freundlich."
+  },
+  {
+    "word": "Name",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "A1",
+    "meaning": "name",
+    "example": "Wie war Ihr Name?"
+  },
+  {
+    "word": "Welt",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "world",
+    "example": "Die ganze Welt spricht über dieses Thema."
+  },
+  {
+    "word": "Lampe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "A1",
+    "meaning": "lamp",
+    "example": "Die Lampe ist kaputt."
   }
 ]

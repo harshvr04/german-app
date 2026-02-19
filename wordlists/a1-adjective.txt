@@ -1,0 +1,26 @@
+arbeitslos:Es gibt bei uns viele Leute, die schon lange arbeitslos sind.
+ausländisch:Leider habe ich nur ausländisches Geld.
+automatisch:Du musst nichts machen. Das geht automatisch.
+bar:Muss ich bar zahlen oder geht‘s auch mit Karte?
+billig:Die Jacke kostet nur 10 Euro! Die ist aber billig!
+eilig:Hast du es eilig?
+fertig:Bist du fertig?
+glücklich:Meine Kinder sind glücklich verheiratet.
+gültig:Der Pass ist nicht mehr gültig.
+günstig:Dort gibt es günstige Angebote.
+herzlich:Herzlichen Glückwunsch!
+langsam:Könnten Sie bitte etwas langsamer sprechen?
+ledig:Sind Sie verheiratet? – Nein. Ledig.
+lustig:Frau Mertens ist lustig. Sie lacht immer.
+männlich:Kreuzen Sie bitte an: „weiblich“ oder „männlich“.
+möglich:Mit dieser Fahrkarte ist die Fahrt ab 9 Uhr möglich.
+pünktlich:Der Bus fährt pünktlich um acht Uhr.
+richtig:Habe ich das richtig verstanden?
+ruhig:Ich möchte ein ruhiges Zimmer.
+selbstständig:Er ist selbstständig.
+weiblich:Kreuzen Sie bitte an: „weiblich“ oder „männlich“.
+wenig:Ich habe leider nur wenig verstanden.
+wichtig:Dieses Formular ist sehr wichtig.
+wunderbar:Das Essen schmeckt wunderbar.
+Lieblings:Mein Lieblingsfilm ist „Schwarze Augen"
+zufrieden:Ich bin mit dem Ergebnis zufrieden.

@@ -10,7 +10,7 @@
     "start": "node dist/index.js",
     "lint": "biome check src/",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

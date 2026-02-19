@@ -1,8 +1,8 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { z } from "zod";
-import { AdjectiveSchema, NounSchema, VerbSchema } from "../schemas/index.js";
-import type { Adjective, Noun, Verb } from "../schemas/index.js";
+import { AdjectiveSchema, NounSchema, OtherSchema, VerbSchema } from "../schemas/index.js";
+import type { Adjective, Noun, Other, Verb } from "../schemas/index.js";
 import type { Level } from "../types/german.js";
 
 function loadAndParse<T>(filePath: string, schema: z.ZodType<T>): T[] {
@@ -29,4 +29,9 @@ export function loadVerbs(dataDir: string, level: Level): Verb[] {
 export function loadAdjectives(dataDir: string, level: Level): Adjective[] {
 	const filePath = resolve(dataDir, "adjectives.json");
 	return filterByLevel(loadAndParse(filePath, AdjectiveSchema), level);
+}
+
+export function loadOthers(dataDir: string, level: Level): Other[] {
+	const filePath = resolve(dataDir, "others.json");
+	return filterByLevel(loadAndParse(filePath, OtherSchema), level);
 }

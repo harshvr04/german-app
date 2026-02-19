@@ -35,4 +35,8 @@ export interface Card {
 	question: string;
 	answer: string;
 	hint?: string;
+	/** Example sentence shown alongside the German word. */
+	example?: string;
+	/** Optional extended details the user can reveal on demand (e.g. full conjugation table). */
+	details?: string;
 }

@@ -1,42 +1,302 @@
 [
   {
+    "word": "arbeitslos",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "unemployed",
+    "example": "Es gibt bei uns viele Leute, die schon lange arbeitslos sind."
+  },
+  {
+    "word": "ausländisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "foreign",
+    "example": "Leider habe ich nur ausländisches Geld."
+  },
+  {
+    "word": "automatisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "automatic",
+    "example": "Du musst nichts machen. Das geht automatisch."
+  },
+  {
+    "word": "bar",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "cash (in cash)",
+    "example": "Muss ich bar zahlen oder geht's auch mit Karte?"
+  },
+  {
+    "word": "billig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "cheap",
+    "example": "Die Jacke kostet nur 10 Euro! Die ist aber billig!"
+  },
+  {
+    "word": "eilig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "urgent / in a hurry",
+    "example": "Hast du es eilig?"
+  },
+  {
+    "word": "fertig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "finished / ready",
+    "example": "Bist du fertig?"
+  },
+  {
+    "word": "glücklich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "happy",
+    "example": "Meine Kinder sind glücklich verheiratet."
+  },
+  {
+    "word": "gültig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "valid",
+    "example": "Der Pass ist nicht mehr gültig."
+  },
+  {
+    "word": "günstig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "affordable / favourable",
+    "example": "Dort gibt es günstige Angebote."
+  },
+  {
+    "word": "herzlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "warm / hearty / cordial",
+    "example": "Herzlichen Glückwunsch!"
+  },
+  {
+    "word": "langsam",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "slow",
+    "example": "Könnten Sie bitte etwas langsamer sprechen?"
+  },
+  {
+    "word": "ledig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "single / unmarried",
+    "example": "Sind Sie verheiratet? – Nein. Ledig."
+  },
+  {
+    "word": "lustig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "funny",
+    "example": "Frau Mertens ist lustig. Sie lacht immer."
+  },
+  {
+    "word": "männlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "male / masculine",
+    "example": "Kreuzen Sie bitte an: 'weiblich' oder 'männlich'."
+  },
+  {
+    "word": "möglich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "possible",
+    "example": "Mit dieser Fahrkarte ist die Fahrt ab 9 Uhr möglich."
+  },
+  {
+    "word": "pünktlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "punctual / on time",
+    "example": "Der Bus fährt pünktlich um acht Uhr."
+  },
+  {
+    "word": "richtig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "correct / right",
+    "example": "Habe ich das richtig verstanden?"
+  },
+  {
+    "word": "ruhig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "quiet / calm",
+    "example": "Ich möchte ein ruhiges Zimmer."
+  },
+  {
+    "word": "selbstständig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "self-employed / independent",
+    "example": "Er ist selbstständig."
+  },
+  {
+    "word": "weiblich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "female / feminine",
+    "example": "Kreuzen Sie bitte an: 'weiblich' oder 'männlich'."
+  },
+  {
+    "word": "wenig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "little / few",
+    "example": "Ich habe leider nur wenig verstanden."
+  },
+  {
+    "word": "wichtig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "important",
+    "example": "Dieses Formular ist sehr wichtig."
+  },
+  {
+    "word": "wunderbar",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A1",
+    "meaning": "wonderful",
+    "example": "Das Essen schmeckt wunderbar."
+  },
+  {
     "word": "gut",
     "is_declinable": true,
+    "is_comparable": true,
     "komparativ": "besser",
     "superlativ": "besten",
     "level": "A1",
-    "meaning": "good"
+    "meaning": "good",
+    "example": "Das Essen ist sehr gut."
   },
   {
     "word": "groß",
     "is_declinable": true,
+    "is_comparable": true,
     "komparativ": "größer",
     "superlativ": "größten",
     "level": "A1",
-    "meaning": "big / tall"
+    "meaning": "big / tall",
+    "example": "Berlin ist eine große Stadt."
   },
   {
     "word": "klein",
     "is_declinable": true,
+    "is_comparable": true,
     "komparativ": null,
     "superlativ": null,
     "level": "A1",
-    "meaning": "small / short"
+    "meaning": "small / short",
+    "example": "Das Kind ist noch klein."
   },
   {
     "word": "alt",
     "is_declinable": true,
+    "is_comparable": true,
     "komparativ": "älter",
     "superlativ": "ältesten",
     "level": "A1",
-    "meaning": "old"
+    "meaning": "old",
+    "example": "Wie alt bist du?"
   },
   {
     "word": "prima",
     "is_declinable": false,
+    "is_comparable": false,
     "komparativ": null,
     "superlativ": null,
     "level": "A1",
-    "meaning": "great / excellent"
+    "meaning": "great / excellent",
+    "example": "Das ist eine prima Idee!"
+  },
+  {
+    "word": "zufrieden",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "zufriedener",
+    "superlativ": "zufriedensten",
+    "level": "A1",
+    "meaning": "satisfied / content",
+    "example": "Ich bin mit dem Ergebnis zufrieden."
   }
 ]

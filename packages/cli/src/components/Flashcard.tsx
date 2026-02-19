@@ -13,6 +13,7 @@ interface Props {
 
 export function Flashcard({ card, index, total, revisionRound, onRight, onWrong }: Props) {
 	const [revealed, setRevealed] = useState(false);
+	const [showDetails, setShowDetails] = useState(false);
 
 	useInput((input, key) => {
 		if (!revealed) {
@@ -22,10 +23,14 @@ export function Flashcard({ card, index, total, revisionRound, onRight, onWrong 
 		} else {
 			if (input === "r" || input === "R") {
 				setRevealed(false);
+				setShowDetails(false);
 				onRight();
 			} else if (input === "w" || input === "W") {
 				setRevealed(false);
+				setShowDetails(false);
 				onWrong();
+			} else if ((input === "d" || input === "D") && card.details) {
+				setShowDetails((prev) => !prev);
 			}
 		}
 	});
@@ -47,8 +52,15 @@ export function Flashcard({ card, index, total, revisionRound, onRight, onWrong 
 			{revealed ? (
 				<>
 					<Text color="green">{card.answer}</Text>
+					{card.example && <Text color="cyan">e.g. {card.example}</Text>}
+					{showDetails && card.details && (
+						<>
+							<Text> </Text>
+							<Text color="magenta">{card.details}</Text>
+						</>
+					)}
 					<Text> </Text>
-					<Text dimColor>[R] Right [W] Wrong</Text>
+					<Text dimColor>[R] Right [W] Wrong{card.details ? " [D] Full conjugation" : ""}</Text>
 				</>
 			) : (
 				<Text dimColor>Press Enter to reveal answer</Text>

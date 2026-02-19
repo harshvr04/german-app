@@ -1,33 +1,37 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { AdjectiveSchema, NounSchema, VerbSchema } from "@german/core/schemas";
+import { AdjectiveSchema, NounSchema, OtherSchema, VerbSchema } from "@german/core/schemas";
 import type { Level } from "@german/core/types";
 import { LEVELS } from "@german/core/types";
 import type { z } from "zod";
 import { processBatches } from "./batch.js";
 import { buildAdjectivePrompt } from "./prompts/adjective-prompt.js";
 import { buildNounPrompt } from "./prompts/noun-prompt.js";
+import { buildOtherPrompt } from "./prompts/other-prompt.js";
 import { buildVerbPrompt } from "./prompts/verb-prompt.js";
 import { mergeWithExisting, validateBatchResults } from "./validate.js";
 
-type WordType = "nouns" | "verbs" | "adjectives";
+type WordType = "nouns" | "verbs" | "adjectives" | "others";
 
 const SCHEMA_MAP = {
 	nouns: NounSchema,
 	verbs: VerbSchema,
 	adjectives: AdjectiveSchema,
+	others: OtherSchema,
 } as const;
 
 const PROMPT_MAP = {
 	nouns: buildNounPrompt,
 	verbs: buildVerbPrompt,
 	adjectives: buildAdjectivePrompt,
+	others: buildOtherPrompt,
 } as const;
 
 const KEY_FIELD_MAP = {
 	nouns: "word",
 	verbs: "infinitiv",
 	adjectives: "word",
+	others: "word",
 } as const;
 
 function parseArgs(): {
@@ -96,10 +100,21 @@ async function fill() {
 		process.exit(1);
 	}
 
-	const words = readFileSync(resolve(process.cwd(), input), "utf-8")
+	const lines = readFileSync(resolve(process.cwd(), input), "utf-8")
 		.split("\n")
 		.map((l) => l.trim())
 		.filter((l) => l.length > 0);
+
+	const entries = lines.map((line) => {
+		const colonIdx = line.indexOf(":");
+		if (colonIdx === -1) {
+			return { word: line, example: "" };
+		}
+		return { word: line.slice(0, colonIdx).trim(), example: line.slice(colonIdx + 1).trim() };
+	});
+
+	const words = entries.map((e) => e.word);
+	const exampleMap = new Map(entries.map((e) => [e.word, e.example]));
 
 	console.log(`\nTool B: Filling ${type} metadata for ${words.length} words (${level})`);
 	console.log(`Output: ${output}\n`);
@@ -117,9 +132,34 @@ async function fill() {
 		return;
 	}
 
+	// Inject user-provided example sentences into LLM results before validation
+	const injectedResults = rawResults.map((raw) => {
+		try {
+			const cleaned = raw
+				.replace(/^```json?\n?/, "")
+				.replace(/\n?```$/, "")
+				.trim();
+			const parsed = JSON.parse(cleaned) as Record<string, unknown>[];
+			const arr = Array.isArray(parsed) ? parsed : [parsed];
+			for (const item of arr) {
+				const key = (item[keyField] as string) ?? "";
+				const example =
+					exampleMap.get(key) ??
+					exampleMap.get(`der ${key}`) ??
+					exampleMap.get(`die ${key}`) ??
+					exampleMap.get(`das ${key}`) ??
+					"";
+				item.example = example;
+			}
+			return JSON.stringify(arr);
+		} catch {
+			return raw;
+		}
+	});
+
 	const schema = SCHEMA_MAP[type];
 	const { valid, errors } = validateBatchResults(
-		rawResults,
+		injectedResults,
 		schema as z.ZodType<z.infer<typeof schema>>,
 	);
 

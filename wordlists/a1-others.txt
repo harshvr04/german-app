@@ -1,0 +1,163 @@
+ab:Ab morgen muss ich arbeiten.
+aber:Ich bin oft im Büro, aber nur für wenige Stunden.
+all:Alles Gute!
+allein:Ich bin allein zu Hause.
+also:Also, es ist so: ...
+alt:Wie alt sind Sie?
+an:Fahren Sie an der nächsten Straße nach rechts.
+an sein:Heute Nacht war das Licht an.
+auch:Ich bin auch Spanier.
+auf:Die Kinder spielen auf der Straße.
+auf sein:Du brauchst den Schlüssel nicht. Die Wohnung ist auf.
+aus:Er kommt aus Brasilien.
+aus sein:Das Licht ist aus.
+bald:Ich komme bald.
+bei:Offenbach liegt bei Frankfurt.
+beide:Beide Eltern arbeiten.
+zum Beispiel / z.B.:Viele meiner Verwandten, z. B. meine beiden Brüder, arbeiten auch hier.
+bekannt:Picasso ist sehr bekannt.
+besetzt:Die Nummer ist immer besetzt.
+besser:Es geht mir schon besser.
+bis:Ich fahre nur bis Stuttgart.
+bitte:Eine Tasse Kaffee, bitte!
+bitter:Der Kaffee schmeckt bitter.
+böse:Sie ist böse auf mich.
+breit:Wie breit ist der Schrank?
+circa / ca.:Von Mainz nach Frankfurt sind es circa fünfzig Kilometer.
+da:Da hinten ist er ja.
+danke:Soll ich Ihnen helfen? - Nein, danke!
+dann:Ich muss noch schnell zur Post, dann komme ich.
+dein:Ist das dein Auto?
+denn:Kommst du denn nicht mit?
+der, die, das:Ich nehme das da.
+dich:Die Blumen sind für dich.
+dies:Ich nehme lieber diesen Kuchen.
+dir:Ich gebe dir das Buch.
+dort, -her, -hin:Deine Tasche kannst du dorthin stellen.
+durch:Am besten gehen Sie durch die Breite Straße.
+ein:Ich nehme ein Bier. Willst du auch eins?
+einfach:Das ist ganz einfach.
+einmal:Diese Prüfung mache ich nicht noch einmal.
+er:Er heißt Ali.
+es:Es regnet.
+euer:Euer Kurs beginnt heute.
+falsch:Das ist falsch.
+frei:Ist der Platz noch frei?
+fremd:Das weiß ich nicht; ich bin fremd hier.
+früher:Früher waren wir oft zusammen im Kino.
+für:Das ist für Sie.
+gegen:Fahr nicht gegen den Baum!
+gerade:Da kommt er ja gerade.
+geradeaus:Gehen Sie immer geradeaus!
+gern(e):Ich gehe gerne einkaufen.
+gestern:Gestern war ich krank.
+gleich:Das ist mir gleich.
+groß:Mein Bruder und ich sind gleich groß.
+gut:Das finde ich gut.
+hallo:Hallo Inge! Wie geht's?
+hell:Im Sommer ist es bis 21 Uhr hell.
+heute:Heute ist ein schöner Tag.
+hier:Hier ist 06131-553221, Pamela Linke.
+hoch:Der Mount Everest ist 8.880 Meter hoch.
+ich:Ich heiße Veronika.
+ihr/ihm/ihn:Gib ihr/ihm bitte das Buch.
+immer:Frau Bast kommt immer zu spät.
+in:Ich wohne in Wiesbaden.
+international:Unser Deutschkurs ist international.
+ja:Sind Sie Herr Watanabe? – Ja.
+jed:Blumen kannst du in jedem Bahnhof kaufen.
+jetzt:Ich muss jetzt gehen.
+jung:Claudia ist 21. – Was? Noch so jung?
+kaputt:Das Glas war teuer. Es geht sehr leicht kaputt.
+kein:Es gibt keine Eintrittskarten mehr.
+klar:Kommst du mit? – Klar!
+klein:Eltville ist eine kleine Stadt am Rhein.
+krank:Ich kann heute nicht zur Arbeit kommen, ich bin krank und liege im Bett.
+kulturell:Ich bin kulturell interessiert. Ich gehe oft ins Museum.
+kurz:Ricardo hat kurzes Haar.
+lang:Die Jeans ist zu lang.
+lange:Wie lange fährt der Zug von Hamburg nach Berlin?
+laut:Nicht so laut! Das Baby schläft.
+leicht:Der Koffer ist leicht.
+leider:Leider kann ich nicht kommen. Ich muss zum Arzt.
+leise:Seid leise. Die anderen schlafen schon.
+letzt:Morgen ist der letzte Kurstag.
+lieber:Sie fährt lieber mit der Bahn.
+links:Gehen Sie die nächste Straße links.
+man:Hier darf man nicht rauchen.
+mehr:Dieses Auto kostet 1.000 Euro mehr als das andere.
+mein:Mein Vater ist Arzt.
+meist:Die meisten Norddeutschen sind sehr groß.
+mit:Trinken Sie den Kaffee mit Milch?
+morgen:Morgen beginnt die Schule um 10 Uhr.
+müde:Ich bin müde. Ich gehe schlafen.
+nach:Ich gehe jetzt nach Hause.
+nächst:Sehen wir uns nächste Woche?
+nein:Fährst du auch nach München? – Nein, ich habe keine Zeit.
+neu:Ich bin der neue Kollege.
+nicht:Das stimmt nicht.
+nichts:Das macht nichts.
+nie:Er kommt nie pünktlich.
+noch:Vielleicht kommt er noch.
+normal:75 kg. Sein Gewicht ist normal.
+nur:Ich möchte nur ein Glas Wasser.
+oder:Wann können Sie kommen – heute oder morgen?
+geöffnet:Der Laden ist samstags bis 16.00 Uhr geöffnet.
+oft:Petra treffe ich oft.
+ohne:Ohne Geld kann er nichts kaufen.
+rechts:Die Schillerstraße ist hier rechts.
+schlecht:Mir ist schlecht!
+schnell:Er fährt schnell.
+schon:Ist das Essen schon fertig?
+schön:Schönen Urlaub!
+schwer:Ist Ihr Gepäck sehr schwer?
+sehr:Danke sehr!
+sein:Herr Müller ist in seinem Zimmer.
+an sein:Das Licht ist noch an.
+auf sein:Das Fenster ist noch auf.
+weg sein:Herr Meier ist schon weg.
+zu sein:Die Tür ist zu.
+seit:Ich wohne seit drei Jahren in Köln.
+sich:Sie müssen sich erst anmelden.
+sie:Wie heißt sie?
+Sie:Wie heißen Sie, bitte?
+so:Sie müssen das so machen!
+sofort:Bitte antworten Sie sofort.
+spät:Es ist schon spät, ich muss gehen.
+später:Das können wir später machen.
+teuer:Das ist mir zu teuer.
+tot:Sein Vater ist schon lange tot.
+tschüss:Junge Leute sagen meistens „tschüss!" und nicht „auf Wiedersehen".
+tun:Ich habe noch etwas zu tun.
+über:Gehen Sie hier über die Straße.
+um:Er kommt um sieben Uhr.
+und:Peter und Helmut sind meine Söhne.
+unter:Unter uns wohnt eine Familie mit drei Kindern.
+verheiratet:Ich bin verheiratet und habe drei Kinder.
+viel:Hier regnet es viel.
+vielleicht:Ich komme vielleicht mit dem Bus.
+von:Das Auto von Felix ist kaputt.
+vor:Der Termin war vor einer Stunde.
+wann:Wann bist du fertig?
+warum:Warum kommt er nicht?
+was:Was ist das?
+was für ein:Was für eine Farbe möchten Sie?
+weh tun:Ich muss zum Arzt. Mein Bein tut weh.
+weit:Zum Bahnhof ist es nicht weit.
+weiter:Der Bus fährt nicht weiter.
+welch:Welches Buch möchtest du?
+wer:Wer ist das?
+wie:Wie heißt du?
+wie viel:Wie viel Milch nehmen Sie?
+wir:Wir lernen Deutsch.
+wo:Wo waren Sie im Urlaub?
+woher:Woher kommen Sie?
+wohin:Wohin fährt dieser Bus?
+zurzeit:Zurzeit habe ich sehr viel zu tun.
+zu:Der Bus fährt zum Bahnhof.
+zurück:Einmal Frankfurt und zurück.
+zusammen:Sollen wir zusammen essen gehen?
+zwischen:Heidelberg liegt zwischen Frankfurt und Stuttgart.
+bisschen:Ich spreche ein bisschen Deutsch.
+hinten:Das Buch liegt hinten auf dem Tisch.
+draußen:Die Kinder spielen draußen.
