@@ -11,15 +11,30 @@
     "meaning": "but / however",
     "example": "Ich bin oft im Büro, aber nur für wenige Stunden."
   },
-  { "word": "all", "level": "A1", "meaning": "all / every", "example": "Alles Gute!" },
-  { "word": "allein", "level": "A1", "meaning": "alone", "example": "Ich bin allein zu Hause." },
+  {
+    "word": "all",
+    "level": "A1",
+    "meaning": "all / every",
+    "example": "Alles Gute!"
+  },
+  {
+    "word": "allein",
+    "level": "A1",
+    "meaning": "alone",
+    "example": "Ich bin allein zu Hause."
+  },
   {
     "word": "also",
     "level": "A1",
     "meaning": "so / well / therefore",
     "example": "Also, es ist so: ..."
   },
-  { "word": "alt", "level": "A1", "meaning": "old", "example": "Wie alt sind Sie?" },
+  {
+    "word": "alt",
+    "level": "A1",
+    "meaning": "old",
+    "example": "Wie alt sind Sie?"
+  },
   {
     "word": "an",
     "level": "A1",
@@ -29,10 +44,15 @@
   {
     "word": "an sein",
     "level": "A1",
-    "meaning": "to be on / switched on",
-    "example": "Heute Nacht war das Licht an."
+    "meaning": "to be on",
+    "example": "Das Licht ist noch an."
   },
-  { "word": "auch", "level": "A1", "meaning": "also / too", "example": "Ich bin auch Spanier." },
+  {
+    "word": "auch",
+    "level": "A1",
+    "meaning": "also / too",
+    "example": "Ich bin auch Spanier."
+  },
   {
     "word": "auf",
     "level": "A1",
@@ -43,7 +63,7 @@
     "word": "auf sein",
     "level": "A1",
     "meaning": "to be open",
-    "example": "Du brauchst den Schlüssel nicht. Die Wohnung ist auf."
+    "example": "Das Fenster ist noch auf."
   },
   {
     "word": "aus",
@@ -57,14 +77,24 @@
     "meaning": "to be off / switched off",
     "example": "Das Licht ist aus."
   },
-  { "word": "bald", "level": "A1", "meaning": "soon", "example": "Ich komme bald." },
+  {
+    "word": "bald",
+    "level": "A1",
+    "meaning": "soon",
+    "example": "Ich komme bald."
+  },
   {
     "word": "bei",
     "level": "A1",
     "meaning": "at / near / with",
     "example": "Offenbach liegt bei Frankfurt."
   },
-  { "word": "beide", "level": "A1", "meaning": "both", "example": "Beide Eltern arbeiten." },
+  {
+    "word": "beide",
+    "level": "A1",
+    "meaning": "both",
+    "example": "Beide Eltern arbeiten."
+  },
   {
     "word": "zum Beispiel / z.B.",
     "level": "A1",
@@ -83,7 +113,12 @@
     "meaning": "occupied / busy",
     "example": "Die Nummer ist immer besetzt."
   },
-  { "word": "besser", "level": "A1", "meaning": "better", "example": "Es geht mir schon besser." },
+  {
+    "word": "besser",
+    "level": "A1",
+    "meaning": "better",
+    "example": "Es geht mir schon besser."
+  },
   {
     "word": "bis",
     "level": "A1",
@@ -102,7 +137,12 @@
     "meaning": "bitter",
     "example": "Der Kaffee schmeckt bitter."
   },
-  { "word": "böse", "level": "A1", "meaning": "angry / evil", "example": "Sie ist böse auf mich." },
+  {
+    "word": "böse",
+    "level": "A1",
+    "meaning": "angry / evil",
+    "example": "Sie ist böse auf mich."
+  },
   {
     "word": "breit",
     "level": "A1",
@@ -199,15 +239,30 @@
     "meaning": "once / one time",
     "example": "Diese Prüfung mache ich nicht noch einmal."
   },
-  { "word": "er", "level": "A1", "meaning": "he", "example": "Er heißt Ali." },
-  { "word": "es", "level": "A1", "meaning": "it", "example": "Es regnet." },
+  {
+    "word": "er",
+    "level": "A1",
+    "meaning": "he",
+    "example": "Er heißt Ali."
+  },
+  {
+    "word": "es",
+    "level": "A1",
+    "meaning": "it",
+    "example": "Es regnet."
+  },
   {
     "word": "euer",
     "level": "A1",
     "meaning": "your (informal plural)",
     "example": "Euer Kurs beginnt heute."
   },
-  { "word": "falsch", "level": "A1", "meaning": "wrong / false", "example": "Das ist falsch." },
+  {
+    "word": "falsch",
+    "level": "A1",
+    "meaning": "wrong / false",
+    "example": "Das ist falsch."
+  },
   {
     "word": "frei",
     "level": "A1",
@@ -226,7 +281,12 @@
     "meaning": "earlier / in the past / formerly",
     "example": "Früher waren wir oft zusammen im Kino."
   },
-  { "word": "für", "level": "A1", "meaning": "for", "example": "Das ist für Sie." },
+  {
+    "word": "für",
+    "level": "A1",
+    "meaning": "for",
+    "example": "Das ist für Sie."
+  },
   {
     "word": "gegen",
     "level": "A1",
@@ -251,7 +311,12 @@
     "meaning": "gladly / with pleasure",
     "example": "Ich gehe gerne einkaufen."
   },
-  { "word": "gestern", "level": "A1", "meaning": "yesterday", "example": "Gestern war ich krank." },
+  {
+    "word": "gestern",
+    "level": "A1",
+    "meaning": "yesterday",
+    "example": "Gestern war ich krank."
+  },
   {
     "word": "gleich",
     "level": "A1",
@@ -264,15 +329,30 @@
     "meaning": "big / tall",
     "example": "Mein Bruder und ich sind gleich groß."
   },
-  { "word": "gut", "level": "A1", "meaning": "good / well", "example": "Das finde ich gut." },
-  { "word": "hallo", "level": "A1", "meaning": "hello", "example": "Hallo Inge! Wie geht's?" },
+  {
+    "word": "gut",
+    "level": "A1",
+    "meaning": "good / well",
+    "example": "Das finde ich gut."
+  },
+  {
+    "word": "hallo",
+    "level": "A1",
+    "meaning": "hello",
+    "example": "Hallo Inge! Wie geht's?"
+  },
   {
     "word": "hell",
     "level": "A1",
     "meaning": "bright / light",
     "example": "Im Sommer ist es bis 21 Uhr hell."
   },
-  { "word": "heute", "level": "A1", "meaning": "today", "example": "Heute ist ein schöner Tag." },
+  {
+    "word": "heute",
+    "level": "A1",
+    "meaning": "today",
+    "example": "Heute ist ein schöner Tag."
+  },
   {
     "word": "hier",
     "level": "A1",
@@ -285,7 +365,12 @@
     "meaning": "high / tall",
     "example": "Der Mount Everest ist 8.880 Meter hoch."
   },
-  { "word": "ich", "level": "A1", "meaning": "I", "example": "Ich heiße Veronika." },
+  {
+    "word": "ich",
+    "level": "A1",
+    "meaning": "I",
+    "example": "Ich heiße Veronika."
+  },
   {
     "word": "ihr/ihm/ihn",
     "level": "A1",
@@ -298,21 +383,36 @@
     "meaning": "always",
     "example": "Frau Bast kommt immer zu spät."
   },
-  { "word": "in", "level": "A1", "meaning": "in / into", "example": "Ich wohne in Wiesbaden." },
+  {
+    "word": "in",
+    "level": "A1",
+    "meaning": "in / into",
+    "example": "Ich wohne in Wiesbaden."
+  },
   {
     "word": "international",
     "level": "A1",
     "meaning": "international",
     "example": "Unser Deutschkurs ist international."
   },
-  { "word": "ja", "level": "A1", "meaning": "yes", "example": "Sind Sie Herr Watanabe? – Ja." },
+  {
+    "word": "ja",
+    "level": "A1",
+    "meaning": "yes",
+    "example": "Sind Sie Herr Watanabe? – Ja."
+  },
   {
     "word": "jed",
     "level": "A1",
     "meaning": "each / every",
     "example": "Blumen kannst du in jedem Bahnhof kaufen."
   },
-  { "word": "jetzt", "level": "A1", "meaning": "now", "example": "Ich muss jetzt gehen." },
+  {
+    "word": "jetzt",
+    "level": "A1",
+    "meaning": "now",
+    "example": "Ich muss jetzt gehen."
+  },
   {
     "word": "jung",
     "level": "A1",
@@ -361,7 +461,12 @@
     "meaning": "short / brief",
     "example": "Ricardo hat kurzes Haar."
   },
-  { "word": "lang", "level": "A1", "meaning": "long", "example": "Die Jeans ist zu lang." },
+  {
+    "word": "lang",
+    "level": "A1",
+    "meaning": "long",
+    "example": "Die Jeans ist zu lang."
+  },
   {
     "word": "lange",
     "level": "A1",
@@ -422,7 +527,12 @@
     "meaning": "more",
     "example": "Dieses Auto kostet 1.000 Euro mehr als das andere."
   },
-  { "word": "mein", "level": "A1", "meaning": "my", "example": "Mein Vater ist Arzt." },
+  {
+    "word": "mein",
+    "level": "A1",
+    "meaning": "my",
+    "example": "Mein Vater ist Arzt."
+  },
   {
     "word": "meist",
     "level": "A1",
@@ -453,17 +563,42 @@
     "meaning": "after / to (direction)",
     "example": "Ich gehe jetzt nach Hause."
   },
-  { "word": "nächst", "level": "A1", "meaning": "next", "example": "Sehen wir uns nächste Woche?" },
+  {
+    "word": "nächst",
+    "level": "A1",
+    "meaning": "next",
+    "example": "Sehen wir uns nächste Woche?"
+  },
   {
     "word": "nein",
     "level": "A1",
     "meaning": "no",
     "example": "Fährst du auch nach München? – Nein, ich habe keine Zeit."
   },
-  { "word": "neu", "level": "A1", "meaning": "new", "example": "Ich bin der neue Kollege." },
-  { "word": "nicht", "level": "A1", "meaning": "not", "example": "Das stimmt nicht." },
-  { "word": "nichts", "level": "A1", "meaning": "nothing", "example": "Das macht nichts." },
-  { "word": "nie", "level": "A1", "meaning": "never", "example": "Er kommt nie pünktlich." },
+  {
+    "word": "neu",
+    "level": "A1",
+    "meaning": "new",
+    "example": "Ich bin der neue Kollege."
+  },
+  {
+    "word": "nicht",
+    "level": "A1",
+    "meaning": "not",
+    "example": "Das stimmt nicht."
+  },
+  {
+    "word": "nichts",
+    "level": "A1",
+    "meaning": "nothing",
+    "example": "Das macht nichts."
+  },
+  {
+    "word": "nie",
+    "level": "A1",
+    "meaning": "never",
+    "example": "Er kommt nie pünktlich."
+  },
   {
     "word": "noch",
     "level": "A1",
@@ -494,7 +629,12 @@
     "meaning": "open (adjective)",
     "example": "Der Laden ist samstags bis 16.00 Uhr geöffnet."
   },
-  { "word": "oft", "level": "A1", "meaning": "often", "example": "Petra treffe ich oft." },
+  {
+    "word": "oft",
+    "level": "A1",
+    "meaning": "often",
+    "example": "Petra treffe ich oft."
+  },
   {
     "word": "ohne",
     "level": "A1",
@@ -507,34 +647,47 @@
     "meaning": "right (direction)",
     "example": "Die Schillerstraße ist hier rechts."
   },
-  { "word": "schlecht", "level": "A1", "meaning": "bad", "example": "Mir ist schlecht!" },
-  { "word": "schnell", "level": "A1", "meaning": "fast / quick", "example": "Er fährt schnell." },
+  {
+    "word": "schlecht",
+    "level": "A1",
+    "meaning": "bad",
+    "example": "Mir ist schlecht!"
+  },
+  {
+    "word": "schnell",
+    "level": "A1",
+    "meaning": "fast / quick",
+    "example": "Er fährt schnell."
+  },
   {
     "word": "schon",
     "level": "A1",
     "meaning": "already",
     "example": "Ist das Essen schon fertig?"
   },
-  { "word": "schön", "level": "A1", "meaning": "beautiful / nice", "example": "Schönen Urlaub!" },
+  {
+    "word": "schön",
+    "level": "A1",
+    "meaning": "beautiful / nice",
+    "example": "Schönen Urlaub!"
+  },
   {
     "word": "schwer",
     "level": "A1",
     "meaning": "heavy / difficult",
     "example": "Ist Ihr Gepäck sehr schwer?"
   },
-  { "word": "sehr", "level": "A1", "meaning": "very / much", "example": "Danke sehr!" },
+  {
+    "word": "sehr",
+    "level": "A1",
+    "meaning": "very / much",
+    "example": "Danke sehr!"
+  },
   {
     "word": "sein",
     "level": "A1",
     "meaning": "his / its",
     "example": "Herr Müller ist in seinem Zimmer."
-  },
-  { "word": "an sein", "level": "A1", "meaning": "to be on", "example": "Das Licht ist noch an." },
-  {
-    "word": "auf sein",
-    "level": "A1",
-    "meaning": "to be open",
-    "example": "Das Fenster ist noch auf."
   },
   {
     "word": "weg sein",
@@ -542,7 +695,12 @@
     "meaning": "to be gone / away",
     "example": "Herr Meier ist schon weg."
   },
-  { "word": "zu sein", "level": "A1", "meaning": "to be closed", "example": "Die Tür ist zu." },
+  {
+    "word": "zu sein",
+    "level": "A1",
+    "meaning": "to be closed",
+    "example": "Die Tür ist zu."
+  },
   {
     "word": "seit",
     "level": "A1",
@@ -555,8 +713,18 @@
     "meaning": "oneself (reflexive pronoun)",
     "example": "Sie müssen sich erst anmelden."
   },
-  { "word": "sie", "level": "A1", "meaning": "she / they", "example": "Wie heißt sie?" },
-  { "word": "Sie", "level": "A1", "meaning": "you (formal)", "example": "Wie heißen Sie, bitte?" },
+  {
+    "word": "sie",
+    "level": "A1",
+    "meaning": "she / they",
+    "example": "Wie heißt sie?"
+  },
+  {
+    "word": "Sie",
+    "level": "A1",
+    "meaning": "you (formal)",
+    "example": "Wie heißen Sie, bitte?"
+  },
   {
     "word": "so",
     "level": "A1",
@@ -581,15 +749,30 @@
     "meaning": "later",
     "example": "Das können wir später machen."
   },
-  { "word": "teuer", "level": "A1", "meaning": "expensive", "example": "Das ist mir zu teuer." },
-  { "word": "tot", "level": "A1", "meaning": "dead", "example": "Sein Vater ist schon lange tot." },
+  {
+    "word": "teuer",
+    "level": "A1",
+    "meaning": "expensive",
+    "example": "Das ist mir zu teuer."
+  },
+  {
+    "word": "tot",
+    "level": "A1",
+    "meaning": "dead",
+    "example": "Sein Vater ist schon lange tot."
+  },
   {
     "word": "tschüss",
     "level": "A1",
     "meaning": "bye / goodbye (informal)",
     "example": "Junge Leute sagen meistens 'tschüss!' und nicht 'auf Wiedersehen'."
   },
-  { "word": "tun", "level": "A1", "meaning": "to do", "example": "Ich habe noch etwas zu tun." },
+  {
+    "word": "tun",
+    "level": "A1",
+    "meaning": "to do",
+    "example": "Ich habe noch etwas zu tun."
+  },
   {
     "word": "über",
     "level": "A1",
@@ -620,7 +803,12 @@
     "meaning": "married",
     "example": "Ich bin verheiratet und habe drei Kinder."
   },
-  { "word": "viel", "level": "A1", "meaning": "much / a lot", "example": "Hier regnet es viel." },
+  {
+    "word": "viel",
+    "level": "A1",
+    "meaning": "much / a lot",
+    "example": "Hier regnet es viel."
+  },
   {
     "word": "vielleicht",
     "level": "A1",
@@ -639,9 +827,24 @@
     "meaning": "before / in front of / ago",
     "example": "Der Termin war vor einer Stunde."
   },
-  { "word": "wann", "level": "A1", "meaning": "when", "example": "Wann bist du fertig?" },
-  { "word": "warum", "level": "A1", "meaning": "why", "example": "Warum kommt er nicht?" },
-  { "word": "was", "level": "A1", "meaning": "what", "example": "Was ist das?" },
+  {
+    "word": "wann",
+    "level": "A1",
+    "meaning": "when",
+    "example": "Wann bist du fertig?"
+  },
+  {
+    "word": "warum",
+    "level": "A1",
+    "meaning": "why",
+    "example": "Warum kommt er nicht?"
+  },
+  {
+    "word": "was",
+    "level": "A1",
+    "meaning": "what",
+    "example": "Was ist das?"
+  },
   {
     "word": "was für ein",
     "level": "A1",
@@ -654,26 +857,66 @@
     "meaning": "to hurt / to ache",
     "example": "Ich muss zum Arzt. Mein Bein tut weh."
   },
-  { "word": "weit", "level": "A1", "meaning": "far", "example": "Zum Bahnhof ist es nicht weit." },
+  {
+    "word": "weit",
+    "level": "A1",
+    "meaning": "far",
+    "example": "Zum Bahnhof ist es nicht weit."
+  },
   {
     "word": "weiter",
     "level": "A1",
     "meaning": "further / onward",
     "example": "Der Bus fährt nicht weiter."
   },
-  { "word": "welch", "level": "A1", "meaning": "which", "example": "Welches Buch möchtest du?" },
-  { "word": "wer", "level": "A1", "meaning": "who", "example": "Wer ist das?" },
-  { "word": "wie", "level": "A1", "meaning": "how / like", "example": "Wie heißt du?" },
+  {
+    "word": "welch",
+    "level": "A1",
+    "meaning": "which",
+    "example": "Welches Buch möchtest du?"
+  },
+  {
+    "word": "wer",
+    "level": "A1",
+    "meaning": "who",
+    "example": "Wer ist das?"
+  },
+  {
+    "word": "wie",
+    "level": "A1",
+    "meaning": "how / like",
+    "example": "Wie heißt du?"
+  },
   {
     "word": "wie viel",
     "level": "A1",
     "meaning": "how much / how many",
     "example": "Wie viel Milch nehmen Sie?"
   },
-  { "word": "wir", "level": "A1", "meaning": "we", "example": "Wir lernen Deutsch." },
-  { "word": "wo", "level": "A1", "meaning": "where", "example": "Wo waren Sie im Urlaub?" },
-  { "word": "woher", "level": "A1", "meaning": "where from", "example": "Woher kommen Sie?" },
-  { "word": "wohin", "level": "A1", "meaning": "where to", "example": "Wohin fährt dieser Bus?" },
+  {
+    "word": "wir",
+    "level": "A1",
+    "meaning": "we",
+    "example": "Wir lernen Deutsch."
+  },
+  {
+    "word": "wo",
+    "level": "A1",
+    "meaning": "where",
+    "example": "Wo waren Sie im Urlaub?"
+  },
+  {
+    "word": "woher",
+    "level": "A1",
+    "meaning": "where from",
+    "example": "Woher kommen Sie?"
+  },
+  {
+    "word": "wohin",
+    "level": "A1",
+    "meaning": "where to",
+    "example": "Wohin fährt dieser Bus?"
+  },
   {
     "word": "zurzeit",
     "level": "A1",
@@ -721,5 +964,365 @@
     "level": "A1",
     "meaning": "outside",
     "example": "Die Kinder spielen draußen."
+  },
+  {
+    "word": "auf jeden/keinen Fall",
+    "level": "A2",
+    "meaning": "definitely / no way, by all/no means",
+    "example": "Ich möchte auf jeden Fall den neuen James-Bond-Film sehen."
+  },
+  {
+    "word": "außer",
+    "level": "A2",
+    "meaning": "except, apart from",
+    "example": "Außer Lisa möchte niemand den Film sehen."
+  },
+  {
+    "word": "außerdem",
+    "level": "A2",
+    "meaning": "besides, in addition",
+    "example": "Vier Brötchen, möchten Sie außerdem noch etwas?"
+  },
+  {
+    "word": "außerhalb",
+    "level": "A2",
+    "meaning": "outside of",
+    "example": "Die Wohnung ist nicht in der Stadt, sie liegt etwas außerhalb."
+  },
+  {
+    "word": "bar",
+    "level": "A2",
+    "meaning": "in cash",
+    "example": "Muss ich bar zahlen oder geht's auch mit Karte?"
+  },
+  {
+    "word": "besonders",
+    "level": "A2",
+    "meaning": "especially, particularly",
+    "example": "Dieses Angebot ist besonders günstig."
+  },
+  {
+    "word": "dabei",
+    "level": "A2",
+    "meaning": "with (one), on (one)",
+    "example": "Hast du einen Stift dabei?"
+  },
+  {
+    "word": "damals",
+    "level": "A2",
+    "meaning": "back then, at that time",
+    "example": "Damals hatte ich kein Geld."
+  },
+  {
+    "word": "daneben",
+    "level": "A2",
+    "meaning": "next to it, beside it",
+    "example": "Du weißt doch, wo die Post ist."
+  },
+  {
+    "word": "dass",
+    "level": "A2",
+    "meaning": "that (conjunction)",
+    "example": "Rico hat gesagt, dass er auch zur Party kommt."
+  },
+  {
+    "word": "deshalb",
+    "level": "A2",
+    "meaning": "therefore, that's why",
+    "example": "Ich bin krank."
+  },
+  {
+    "word": "doch",
+    "level": "A2",
+    "meaning": "yes (contradicting a negative), yet, after all",
+    "example": "Hast du keinen Hunger?"
+  },
+  {
+    "word": "dort/dorther/dorthin",
+    "level": "A2",
+    "meaning": "there / from there / to there",
+    "example": "Wir treffen uns vor dem Kino."
+  },
+  {
+    "word": "drinnen",
+    "level": "A2",
+    "meaning": "inside, indoors",
+    "example": "Wollen Sie drinnen oder draußen sitzen?"
+  },
+  {
+    "word": "endlich",
+    "level": "A2",
+    "meaning": "finally, at last",
+    "example": "Wann kommst du endlich?"
+  },
+  {
+    "word": "erst",
+    "level": "A2",
+    "meaning": "only, not until",
+    "example": "Wir können erst morgen kommen."
+  },
+  {
+    "word": "etwas",
+    "level": "A2",
+    "meaning": "something, some",
+    "example": "Haben Sie etwas zum Schreiben?"
+  },
+  {
+    "word": "fast",
+    "level": "A2",
+    "meaning": "almost, nearly",
+    "example": "Der Film ist fast zu Ende."
+  },
+  {
+    "word": "gegenüber",
+    "level": "A2",
+    "meaning": "opposite, across from",
+    "example": "Die Post ist gegenüber vom Bahnhof."
+  },
+  {
+    "word": "genug",
+    "level": "A2",
+    "meaning": "enough",
+    "example": "Es ist noch genug Pizza da."
+  },
+  {
+    "word": "gern",
+    "level": "A2",
+    "meaning": "gladly, with pleasure",
+    "example": "Ich helfe Ihnen gern."
+  },
+  {
+    "word": "her/hin",
+    "level": "A2",
+    "meaning": "here (toward speaker) / there (away from speaker)",
+    "example": "Komm bitte mal her! / Wo gehst du hin?"
+  },
+  {
+    "word": "heraus/raus",
+    "level": "A2",
+    "meaning": "out, outside",
+    "example": "Möchtet ihr nicht rauskommen?"
+  },
+  {
+    "word": "herein/rein",
+    "level": "A2",
+    "meaning": "in, come in",
+    "example": "Herein!"
+  },
+  {
+    "word": "hinter",
+    "level": "A2",
+    "meaning": "behind",
+    "example": "Hinter dem Haus haben wir einen Garten."
+  },
+  {
+    "word": "jeder",
+    "level": "A2",
+    "meaning": "every, each",
+    "example": "Das Restaurant hat jeden Tag geöffnet."
+  },
+  {
+    "word": "jemand",
+    "level": "A2",
+    "meaning": "someone, somebody",
+    "example": "Hat jemand meinen Stift?"
+  },
+  {
+    "word": "mal",
+    "level": "A2",
+    "meaning": "just, once (softening particle)",
+    "example": "Sag mal, wie gefällt dir mein neues Kleid?"
+  },
+  {
+    "word": "manchmal",
+    "level": "A2",
+    "meaning": "sometimes",
+    "example": "Manchmal essen wir im Restaurant."
+  },
+  {
+    "word": "meistens",
+    "level": "A2",
+    "meaning": "mostly, usually",
+    "example": "Meistens trinke ich zum Frühstück nur einen Kaffee."
+  },
+  {
+    "word": "mindestens",
+    "level": "A2",
+    "meaning": "at least",
+    "example": "Bitte kommen Sie mindestens zwei Stunden vor Ihrem Flug zum Flughafen."
+  },
+  {
+    "word": "natürlich",
+    "level": "A2",
+    "meaning": "of course, naturally",
+    "example": "Natürlich helfen wir dir."
+  },
+  {
+    "word": "neben",
+    "level": "A2",
+    "meaning": "next to, beside",
+    "example": "Neben mir ist noch ein Platz frei."
+  },
+  {
+    "word": "nebenan",
+    "level": "A2",
+    "meaning": "next door",
+    "example": "Das ist José."
+  },
+  {
+    "word": "niemand",
+    "level": "A2",
+    "meaning": "nobody, no one",
+    "example": "Hier ist niemand."
+  },
+  {
+    "word": "nirgends",
+    "level": "A2",
+    "meaning": "nowhere",
+    "example": "Hier kann man nirgends parken."
+  },
+  {
+    "word": "oben",
+    "level": "A2",
+    "meaning": "up, above, upstairs",
+    "example": "Ich wohne oben im 4. Stock."
+  },
+  {
+    "word": "plötzlich",
+    "level": "A2",
+    "meaning": "suddenly",
+    "example": "Plötzlich war das Licht aus."
+  },
+  {
+    "word": "pro",
+    "level": "A2",
+    "meaning": "per",
+    "example": "Das Zimmer kostet 100 Euro pro Nacht."
+  },
+  {
+    "word": "selbst",
+    "level": "A2",
+    "meaning": "oneself, myself/yourself",
+    "example": "Du musst mir nicht helfen, ich mache das selbst."
+  },
+  {
+    "word": "sogar",
+    "level": "A2",
+    "meaning": "even",
+    "example": "Heute ist es sehr kalt."
+  },
+  {
+    "word": "sonst",
+    "level": "A2",
+    "meaning": "otherwise, else",
+    "example": "Haben Sie sonst noch einen Wunsch?"
+  },
+  {
+    "word": "tschüs",
+    "level": "A2",
+    "meaning": "bye, goodbye (informal)",
+    "example": "Tschüs, bis morgen!"
+  },
+  {
+    "word": "überall",
+    "level": "A2",
+    "meaning": "everywhere",
+    "example": "Ich habe überall gesucht."
+  },
+  {
+    "word": "unbedingt",
+    "level": "A2",
+    "meaning": "absolutely, urgently",
+    "example": "Ich muss unbedingt mit dir sprechen."
+  },
+  {
+    "word": "unten",
+    "level": "A2",
+    "meaning": "below, downstairs",
+    "example": "Er wohnt ganz unten im Haus."
+  },
+  {
+    "word": "vorbei",
+    "level": "A2",
+    "meaning": "past, by, over",
+    "example": "Die Linie 8 fährt am Krankenhaus vorbei."
+  },
+  {
+    "word": "vorher",
+    "level": "A2",
+    "meaning": "before, beforehand",
+    "example": "Vorher muss ich aber noch zur Bank."
+  },
+  {
+    "word": "vorn(e)",
+    "level": "A2",
+    "meaning": "in front, at the front",
+    "example": "Bitte vorn(e) einsteigen!"
+  },
+  {
+    "word": "wahrscheinlich",
+    "level": "A2",
+    "meaning": "probably",
+    "example": "Wahrscheinlich mache ich im Herbst einen Deutschkurs."
+  },
+  {
+    "word": "wegen",
+    "level": "A2",
+    "meaning": "because of, due to",
+    "example": "Wegen seiner Arbeit kann er leider nicht kommen."
+  },
+  {
+    "word": "weil",
+    "level": "A2",
+    "meaning": "because",
+    "example": "Ich kann nicht kommen, weil ich arbeiten muss."
+  },
+  {
+    "word": "welcher",
+    "level": "A2",
+    "meaning": "which, what",
+    "example": "Welcher Tag ist heute?"
+  },
+  {
+    "word": "wenigstens",
+    "level": "A2",
+    "meaning": "at least",
+    "example": "Essen Sie wenigstens ein Stück Kuchen."
+  },
+  {
+    "word": "wenn",
+    "level": "A2",
+    "meaning": "if, when, whenever",
+    "example": "Wenn ich nicht arbeiten muss, komme ich."
+  },
+  {
+    "word": "wieder",
+    "level": "A2",
+    "meaning": "again",
+    "example": "Stefan kann wieder zum Fußballtraining kommen."
+  },
+  {
+    "word": "wirklich",
+    "level": "A2",
+    "meaning": "really, truly",
+    "example": "Es ist aber wirklich so."
+  },
+  {
+    "word": "zuerst",
+    "level": "A2",
+    "meaning": "first, at first",
+    "example": "Zuerst müsst ihr die Hausaufgaben machen."
+  },
+  {
+    "word": "zuletzt",
+    "level": "A2",
+    "meaning": "last, lastly, most recently",
+    "example": "Wir haben uns vor drei Jahren zuletzt gesehen."
+  },
+  {
+    "word": "zum Beispiel",
+    "level": "A2",
+    "meaning": "for example",
+    "example": "Mein Freund hat viele Hobbys, zum Beispiel Kochen."
   }
 ]

@@ -10,9 +10,9 @@
     "konjunktiv_ii_root": "abführ",
     "prepositions": [],
     "connections": ["fahren"],
-    "level": "A1",
-    "meaning": "to depart / to leave",
-    "example": "Wir fahren um zwölf Uhr ab."
+    "level": "A2",
+    "meaning": "to depart / to leave (by vehicle)",
+    "example": "Ich fahre mit dem Auto zur Arbeit."
   },
   {
     "infinitiv": "abfliegen",
@@ -25,9 +25,9 @@
     "konjunktiv_ii_root": "abflög",
     "prepositions": [],
     "connections": ["fliegen"],
-    "level": "A1",
+    "level": "A2",
     "meaning": "to take off / to depart (by plane)",
-    "example": "Wann fliegst du ab?"
+    "example": "Ich fliege nicht gern, ich fahre lieber mit dem Zug."
   },
   {
     "infinitiv": "abgeben",
@@ -188,7 +188,13 @@
     "praeteritum_root": "antworte",
     "partizip_ii": "geantwortet",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "auf", "case": "acc", "meaning": "to answer (something)" }],
+    "prepositions": [
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to answer (something)"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to answer / to reply",
@@ -205,9 +211,9 @@
     "konjunktiv_ii_root": "anzög",
     "prepositions": [],
     "connections": ["ausziehen"],
-    "level": "A1",
-    "meaning": "to put on (clothes) / to get dressed (reflexive: sich anziehen)",
-    "example": "Ich muss mich noch anziehen."
+    "level": "A2",
+    "meaning": "to put on (clothes) / to get dressed",
+    "example": "Ich ziehe mir eine Jacke an."
   },
   {
     "infinitiv": "arbeiten",
@@ -430,9 +436,9 @@
     "konjunktiv_ii_root": null,
     "prepositions": [],
     "connections": [],
-    "level": "A1",
+    "level": "A2",
     "meaning": "to order",
-    "example": "Ich möchte einen Kaffee bestellen."
+    "example": "Wir möchten bitte bestellen."
   },
   {
     "infinitiv": "besuchen",
@@ -473,7 +479,13 @@
     "praeteritum_root": "bat",
     "partizip_ii": "gebeten",
     "konjunktiv_ii_root": "bät",
-    "prepositions": [{ "preposition": "um", "case": "acc", "meaning": "to ask for" }],
+    "prepositions": [
+      {
+        "preposition": "um",
+        "case": "acc",
+        "meaning": "to ask for"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to ask / to request",
@@ -548,7 +560,13 @@
     "praeteritum_root": "dank",
     "partizip_ii": "gedankt",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "für", "case": "acc", "meaning": "to thank for" }],
+    "prepositions": [
+      {
+        "preposition": "für",
+        "case": "acc",
+        "meaning": "to thank for"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to thank",
@@ -632,8 +650,8 @@
     "konjunktiv_ii_root": null,
     "prepositions": [],
     "connections": [],
-    "level": "A1",
-    "meaning": "to shower (reflexive: sich duschen)",
+    "level": "A2",
+    "meaning": "to shower",
     "example": "Ich bade nicht so gern, ich dusche lieber."
   },
   {
@@ -660,7 +678,13 @@
     "praeteritum_root": "einlud",
     "partizip_ii": "eingeladen",
     "konjunktiv_ii_root": "einlüd",
-    "prepositions": [{ "preposition": "zu", "case": "dat", "meaning": "to invite to" }],
+    "prepositions": [
+      {
+        "preposition": "zu",
+        "case": "dat",
+        "meaning": "to invite to"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to invite",
@@ -870,7 +894,13 @@
     "praeteritum_root": "frag",
     "partizip_ii": "gefragt",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "nach", "case": "dat", "meaning": "to ask about" }],
+    "prepositions": [
+      {
+        "preposition": "nach",
+        "case": "dat",
+        "meaning": "to ask about"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to ask",
@@ -886,8 +916,16 @@
     "partizip_ii": "gefreut",
     "konjunktiv_ii_root": null,
     "prepositions": [
-      { "preposition": "auf", "case": "acc", "meaning": "to look forward to" },
-      { "preposition": "über", "case": "acc", "meaning": "to be happy about" }
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to look forward to"
+      },
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to be happy about"
+      }
     ],
     "connections": [],
     "level": "A1",
@@ -963,7 +1001,13 @@
     "praeteritum_root": "gehör",
     "partizip_ii": "gehört",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "zu", "case": "dat", "meaning": "to belong to" }],
+    "prepositions": [
+      {
+        "preposition": "zu",
+        "case": "dat",
+        "meaning": "to belong to"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to belong to",
@@ -993,7 +1037,13 @@
     "praeteritum_root": "glaub",
     "partizip_ii": "geglaubt",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "an", "case": "acc", "meaning": "to believe in" }],
+    "prepositions": [
+      {
+        "preposition": "an",
+        "case": "acc",
+        "meaning": "to believe in"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to believe / to think",
@@ -1008,7 +1058,13 @@
     "praeteritum_root": "gratulier",
     "partizip_ii": "gratuliert",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "zu", "case": "dat", "meaning": "to congratulate on" }],
+    "prepositions": [
+      {
+        "preposition": "zu",
+        "case": "dat",
+        "meaning": "to congratulate on"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to congratulate",
@@ -1277,7 +1333,13 @@
     "praeteritum_root": "kümmer",
     "partizip_ii": "gekümmert",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "um", "case": "acc", "meaning": "to take care of" }],
+    "prepositions": [
+      {
+        "preposition": "um",
+        "case": "acc",
+        "meaning": "to take care of"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to take care of / to look after (reflexive: sich kümmern)",
@@ -1383,10 +1445,10 @@
     "partizip_ii": "geliebt",
     "konjunktiv_ii_root": null,
     "prepositions": [],
-    "connections": [],
-    "level": "A1",
+    "connections": ["verlieben"],
+    "level": "A2",
     "meaning": "to love",
-    "example": "Ich liebe meine Familie."
+    "example": "Ich liebe dich!"
   },
   {
     "infinitiv": "liegen",
@@ -1650,7 +1712,13 @@
     "praeteritum_root": "roch",
     "partizip_ii": "gerochen",
     "konjunktiv_ii_root": "röch",
-    "prepositions": [{ "preposition": "nach", "case": "dat", "meaning": "to smell of" }],
+    "prepositions": [
+      {
+        "preposition": "nach",
+        "case": "dat",
+        "meaning": "to smell of"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to smell",
@@ -1874,7 +1942,13 @@
     "praeteritum_root": "sprach",
     "partizip_ii": "gesprochen",
     "konjunktiv_ii_root": "spräch",
-    "prepositions": [{ "preposition": "mit", "case": "dat", "meaning": "to speak with" }],
+    "prepositions": [
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to speak with"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to speak / to talk",
@@ -1921,9 +1995,9 @@
     "konjunktiv_ii_root": "stürb",
     "prepositions": [],
     "connections": [],
-    "level": "A1",
+    "level": "A2",
     "meaning": "to die",
-    "example": "Meine Frau ist gestern gestorben."
+    "example": "Sein Vater ist gestern gestorben."
   },
   {
     "infinitiv": "studieren",
@@ -1979,7 +2053,13 @@
     "praeteritum_root": "telefonier",
     "partizip_ii": "telefoniert",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "mit", "case": "dat", "meaning": "to phone with" }],
+    "prepositions": [
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to phone with"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to make a phone call",
@@ -1994,12 +2074,10 @@
     "praeteritum_root": "traf",
     "partizip_ii": "getroffen",
     "konjunktiv_ii_root": "träf",
-    "prepositions": [
-      { "preposition": "mit", "case": "dat", "meaning": "to meet with (reflexive)" }
-    ],
+    "prepositions": [],
     "connections": [],
-    "level": "A1",
-    "meaning": "to meet / to hit (reflexive: sich treffen)",
+    "level": "A2",
+    "meaning": "to meet / to hit",
     "example": "Ich treffe in der Stadt einen Kollegen."
   },
   {
@@ -2087,8 +2165,8 @@
     "partizip_ii": "verboten",
     "konjunktiv_ii_root": "verböt",
     "prepositions": [],
-    "connections": ["erlauben"],
-    "level": "A1",
+    "connections": ["bieten"],
+    "level": "A2",
     "meaning": "to forbid / to prohibit",
     "example": "Hier ist Rauchen verboten."
   },
@@ -2191,7 +2269,13 @@
     "praeteritum_root": "warte",
     "partizip_ii": "gewartet",
     "konjunktiv_ii_root": null,
-    "prepositions": [{ "preposition": "auf", "case": "acc", "meaning": "to wait for" }],
+    "prepositions": [
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to wait for"
+      }
+    ],
     "connections": [],
     "level": "A1",
     "meaning": "to wait",
@@ -2208,8 +2292,8 @@
     "konjunktiv_ii_root": "wüsch",
     "prepositions": [],
     "connections": [],
-    "level": "A1",
-    "meaning": "to wash (reflexive: sich waschen)",
+    "level": "A2",
+    "meaning": "to wash",
     "example": "Wo kann ich mir die Hände waschen?"
   },
   {
@@ -2344,5 +2428,2165 @@
     "level": "A1",
     "meaning": "would like (polite form of wollen)",
     "example": "Was möchten Sie trinken?"
+  },
+  {
+    "infinitiv": "aufmachen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "aufmach",
+    "partizip_ii": "aufgemacht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["zumachen"],
+    "level": "A2",
+    "meaning": "to open",
+    "example": "Kannst du bitte die Tür aufmachen?"
+  },
+  {
+    "infinitiv": "aufpassen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "aufpass",
+    "partizip_ii": "aufgepasst",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to look after / to watch out for"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to pay attention / to watch out",
+    "example": "Pass auf, der Teller fällt gleich auf den Boden!"
+  },
+  {
+    "infinitiv": "aufräumen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "aufräum",
+    "partizip_ii": "aufgeräumt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to tidy up / to clean up",
+    "example": "Die Kinder müssen ihr Zimmer aufräumen."
+  },
+  {
+    "infinitiv": "ausgeben",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "e→i",
+    "present_forms": null,
+    "praeteritum_root": "ausgab",
+    "partizip_ii": "ausgegeben",
+    "konjunktiv_ii_root": "ausgäb",
+    "prepositions": [
+      {
+        "preposition": "für",
+        "case": "acc",
+        "meaning": "to spend on"
+      }
+    ],
+    "connections": ["geben"],
+    "level": "A2",
+    "meaning": "to spend (money)",
+    "example": "Agata gibt viel Geld für Bücher aus."
+  },
+  {
+    "infinitiv": "ausgehen",
+    "type": "irregular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "ausging",
+    "partizip_ii": "ausgegangen",
+    "konjunktiv_ii_root": "ausging",
+    "prepositions": [],
+    "connections": ["gehen"],
+    "level": "A2",
+    "meaning": "to go out",
+    "example": "Gehen wir am Freitag zusammen aus?"
+  },
+  {
+    "infinitiv": "auspacken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "auspack",
+    "partizip_ii": "ausgepackt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["einpacken"],
+    "level": "A2",
+    "meaning": "to unpack",
+    "example": "Packst du bitte den Koffer aus?"
+  },
+  {
+    "infinitiv": "sich ausruhen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "ausruh",
+    "partizip_ii": "ausgeruht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to rest / to relax",
+    "example": "Ruh dich erst mal aus!"
+  },
+  {
+    "infinitiv": "aussprechen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "e→i",
+    "present_forms": null,
+    "praeteritum_root": "aussprach",
+    "partizip_ii": "ausgesprochen",
+    "konjunktiv_ii_root": "ausspräch",
+    "prepositions": [],
+    "connections": ["sprechen"],
+    "level": "A2",
+    "meaning": "to pronounce",
+    "example": "Wie spricht man das Wort aus?"
+  },
+  {
+    "infinitiv": "austragen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "austrug",
+    "partizip_ii": "ausgetragen",
+    "konjunktiv_ii_root": "austrüg",
+    "prepositions": [],
+    "connections": ["tragen"],
+    "level": "A2",
+    "meaning": "to deliver / to carry out",
+    "example": "Er trägt jeden Morgen die Zeitung aus."
+  },
+  {
+    "infinitiv": "backen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "backte",
+    "partizip_ii": "gebacken",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to bake",
+    "example": "Wenn du kommst, backe ich einen Kuchen."
+  },
+  {
+    "infinitiv": "basteln",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "bastel",
+    "partizip_ii": "gebastelt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to do crafts / to tinker",
+    "example": "Die Kinder haben etwas gebastelt."
+  },
+  {
+    "infinitiv": "bauen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "bau",
+    "partizip_ii": "gebaut",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to build / to construct",
+    "example": "Unsere Nachbarn bauen ein neues Haus."
+  },
+  {
+    "infinitiv": "beantworten",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beantworte",
+    "partizip_ii": "beantwortet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["antworten"],
+    "level": "A2",
+    "meaning": "to answer / to reply to",
+    "example": "Können Sie meine Frage bitte beantworten?"
+  },
+  {
+    "infinitiv": "sich bedanken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "bedank",
+    "partizip_ii": "bedankt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "bei",
+        "case": "dat",
+        "meaning": "to thank (someone)"
+      },
+      {
+        "preposition": "für",
+        "case": "acc",
+        "meaning": "to thank for (something)"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to thank / to express thanks",
+    "example": "Ich möchte mich noch einmal sehr herzlich für Ihre Hilfe bedanken."
+  },
+  {
+    "infinitiv": "sich beeilen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beeil",
+    "partizip_ii": "beeilt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to hurry",
+    "example": "Kannst du dich bitte beeilen?"
+  },
+  {
+    "infinitiv": "beenden",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beende",
+    "partizip_ii": "beendet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to finish / to end",
+    "example": "Du musst deine Ausbildung auf jeden Fall beenden."
+  },
+  {
+    "infinitiv": "begründen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "begründe",
+    "partizip_ii": "begründet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to justify / to give reasons for",
+    "example": "Bitte begründen Sie Ihre Meinung."
+  },
+  {
+    "infinitiv": "beraten",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "beriet",
+    "partizip_ii": "beraten",
+    "konjunktiv_ii_root": "beriet",
+    "prepositions": [],
+    "connections": ["raten"],
+    "level": "A2",
+    "meaning": "to advise / to counsel",
+    "example": "Unsere Sekretärin berät Sie gern, wenn Sie Fragen haben."
+  },
+  {
+    "infinitiv": "berichten",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "berichte",
+    "partizip_ii": "berichtet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "von",
+        "case": "dat",
+        "meaning": "to report on / about"
+      },
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to report on / about"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to report / to tell",
+    "example": "Alle Zeitungen berichten von dem Unfall."
+  },
+  {
+    "infinitiv": "beschreiben",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beschrieb",
+    "partizip_ii": "beschrieben",
+    "konjunktiv_ii_root": "beschrieb",
+    "prepositions": [],
+    "connections": ["schreiben"],
+    "level": "A2",
+    "meaning": "to describe",
+    "example": "Kannst du mir den Weg zum Bahnhof beschreiben?"
+  },
+  {
+    "infinitiv": "sich beschweren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beschwer",
+    "partizip_ii": "beschwert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to complain about"
+      },
+      {
+        "preposition": "bei",
+        "case": "dat",
+        "meaning": "to complain to"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to complain",
+    "example": "Hier ist es zu laut. Wo können wir uns beschweren?"
+  },
+  {
+    "infinitiv": "bestätigen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "bestätig",
+    "partizip_ii": "bestätigt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to confirm",
+    "example": "Ich kann bestätigen, dass er hier war."
+  },
+  {
+    "infinitiv": "bestehen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "bestand",
+    "partizip_ii": "bestanden",
+    "konjunktiv_ii_root": "beständ",
+    "prepositions": [],
+    "connections": ["stehen"],
+    "level": "A2",
+    "meaning": "to pass (an exam) / to exist",
+    "example": "Ich habe die Prüfung bestanden!"
+  },
+  {
+    "infinitiv": "sich bewerben",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "e→i",
+    "present_forms": null,
+    "praeteritum_root": "bewarb",
+    "partizip_ii": "beworben",
+    "konjunktiv_ii_root": "bewürb",
+    "prepositions": [
+      {
+        "preposition": "um",
+        "case": "acc",
+        "meaning": "to apply for"
+      }
+    ],
+    "connections": ["werben"],
+    "level": "A2",
+    "meaning": "to apply (for a job)",
+    "example": "Ich möchte mich um diese Stelle bewerben."
+  },
+  {
+    "infinitiv": "braten",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "briet",
+    "partizip_ii": "gebraten",
+    "konjunktiv_ii_root": "briet",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to fry / to roast",
+    "example": "Braten Sie das Fleisch in etwas Öl!"
+  },
+  {
+    "infinitiv": "buchen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "buch",
+    "partizip_ii": "gebucht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to book / to reserve",
+    "example": "Morgen buche ich unsere Urlaubsreise."
+  },
+  {
+    "infinitiv": "chatten",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "chatte",
+    "partizip_ii": "gechattet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to chat with"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to chat (online)",
+    "example": "Luis chattet gern mit seinen Freunden im Internet."
+  },
+  {
+    "infinitiv": "denken",
+    "type": "mixed",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "dach",
+    "partizip_ii": "gedacht",
+    "konjunktiv_ii_root": "däch",
+    "prepositions": [
+      {
+        "preposition": "an",
+        "case": "acc",
+        "meaning": "to think of / about"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to think",
+    "example": "Ich denke, du hast recht."
+  },
+  {
+    "infinitiv": "diskutieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "diskutier",
+    "partizip_ii": "diskutiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to discuss about"
+      },
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to discuss with"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to discuss / to debate",
+    "example": "Ich möchte das mit meinen Kollegen diskutieren."
+  },
+  {
+    "infinitiv": "einpacken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "einpack",
+    "partizip_ii": "eingepackt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["auspacken"],
+    "level": "A2",
+    "meaning": "to pack",
+    "example": "Pack bitte die Handtücher ein!"
+  },
+  {
+    "infinitiv": "eintragen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "eintrug",
+    "partizip_ii": "eingetragen",
+    "konjunktiv_ii_root": "eintrüg",
+    "prepositions": [
+      {
+        "preposition": "in",
+        "case": "acc",
+        "meaning": "to enter into (a list)"
+      }
+    ],
+    "connections": ["tragen", "austragen"],
+    "level": "A2",
+    "meaning": "to enter / to register (in a list)",
+    "example": "Tragen Sie sich bitte in diese Liste ein!"
+  },
+  {
+    "infinitiv": "einziehen",
+    "type": "irregular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "einzog",
+    "partizip_ii": "eingezogen",
+    "konjunktiv_ii_root": "einzög",
+    "prepositions": [
+      {
+        "preposition": "in",
+        "case": "acc",
+        "meaning": "to move into"
+      }
+    ],
+    "connections": ["ausziehen", "umziehen"],
+    "level": "A2",
+    "meaning": "to move in",
+    "example": "Im Juni ziehen unsere neuen Nachbarn ein."
+  },
+  {
+    "infinitiv": "sich erinnern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "erinner",
+    "partizip_ii": "erinnert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "an",
+        "case": "acc",
+        "meaning": "to remember"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to remember",
+    "example": "Erinnerst du dich an Jose?"
+  },
+  {
+    "infinitiv": "erreichen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "erreich",
+    "partizip_ii": "erreicht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to reach / to catch (a train)",
+    "example": "Wenn wir uns beeilen, erreichen wir noch den Zug um acht Uhr."
+  },
+  {
+    "infinitiv": "fallen",
+    "type": "irregular",
+    "auxiliary": "sein",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "fiel",
+    "partizip_ii": "gefallen",
+    "konjunktiv_ii_root": "fiel",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to fall",
+    "example": "Pass auf, das Glas fällt gleich vom Tisch."
+  },
+  {
+    "infinitiv": "feiern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "feier",
+    "partizip_ii": "gefeiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to celebrate",
+    "example": "Wir feiern heute meinen Geburtstag."
+  },
+  {
+    "infinitiv": "fotografieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "fotografier",
+    "partizip_ii": "fotografiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to photograph / to take photos",
+    "example": "Ich fotografiere gern."
+  },
+  {
+    "infinitiv": "sich freuen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "freu",
+    "partizip_ii": "gefreut",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to be happy about"
+      },
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to look forward to"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to be happy / to be pleased",
+    "example": "Ich freue mich sehr über das Geschenk."
+  },
+  {
+    "infinitiv": "sich fühlen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "fühl",
+    "partizip_ii": "gefühlt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to feel",
+    "example": "Wie fühlen Sie sich?"
+  },
+  {
+    "infinitiv": "hängen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "hing",
+    "partizip_ii": "gehangen",
+    "konjunktiv_ii_root": "hing",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to hang (intransitive)",
+    "example": "Im Museum hängen moderne Bilder."
+  },
+  {
+    "infinitiv": "herstellen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "herstell",
+    "partizip_ii": "hergestellt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["stellen"],
+    "level": "A2",
+    "meaning": "to produce / to manufacture",
+    "example": "In unserer Firma stellen wir Möbel her."
+  },
+  {
+    "infinitiv": "herunterladen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "herunterlud",
+    "partizip_ii": "heruntergeladen",
+    "konjunktiv_ii_root": "herunterlüd",
+    "prepositions": [],
+    "connections": ["laden"],
+    "level": "A2",
+    "meaning": "to download",
+    "example": "Er lädt die Musik aus dem Internet herunter."
+  },
+  {
+    "infinitiv": "hoffen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "hoff",
+    "partizip_ii": "gehofft",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to hope for"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to hope",
+    "example": "Ich hoffe, dass es dir gut geht."
+  },
+  {
+    "infinitiv": "husten",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "huste",
+    "partizip_ii": "gehustet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to cough",
+    "example": "Sie hustet seit zwei Tagen."
+  },
+  {
+    "infinitiv": "sich informieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "informier",
+    "partizip_ii": "informiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to find out about / to inform oneself about"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to inform oneself / to find out",
+    "example": "Ich möchte mich vor der Reise über das Land informieren."
+  },
+  {
+    "infinitiv": "sich interessieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "interessier",
+    "partizip_ii": "interessiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "für",
+        "case": "acc",
+        "meaning": "to be interested in"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to be interested in",
+    "example": "Ich interessiere mich für Fußball."
+  },
+  {
+    "infinitiv": "joggen",
+    "type": "regular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "jogg",
+    "partizip_ii": "gejoggt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to jog",
+    "example": "Ich jogge gern im Park."
+  },
+  {
+    "infinitiv": "klappen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "klapp",
+    "partizip_ii": "geklappt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to work out / to go well",
+    "example": "Können wir uns heute Mittag treffen?"
+  },
+  {
+    "infinitiv": "kontrollieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "kontrollier",
+    "partizip_ii": "kontrolliert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to check / to inspect",
+    "example": "Können Sie bei meinem Auto bitte das Öl kontrollieren?"
+  },
+  {
+    "infinitiv": "sich kümmern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "kümmer",
+    "partizip_ii": "gekümmert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "um",
+        "case": "acc",
+        "meaning": "to take care of / to look after"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to take care of / to look after",
+    "example": "Sonja kann nicht arbeiten."
+  },
+  {
+    "infinitiv": "kündigen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "kündig",
+    "partizip_ii": "gekündigt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to quit / to resign / to terminate",
+    "example": "Meine Arbeit gefällt mir nicht mehr."
+  },
+  {
+    "infinitiv": "lassen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": {
+      "ich": "lasse",
+      "du": "lässt",
+      "er/sie/es": "lässt",
+      "wir": "lassen",
+      "ihr": "lasst",
+      "sie/Sie": "lassen"
+    },
+    "praeteritum_root": "ließ",
+    "partizip_ii": "gelassen",
+    "konjunktiv_ii_root": "ließ",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to let / to leave / to allow",
+    "example": "Lass mich in Ruhe!"
+  },
+  {
+    "infinitiv": "leidtun",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "leidtat",
+    "partizip_ii": "leidgetan",
+    "konjunktiv_ii_root": "leidtät",
+    "prepositions": [],
+    "connections": ["tun"],
+    "level": "A2",
+    "meaning": "to be sorry",
+    "example": "Es tut mir leid."
+  },
+  {
+    "infinitiv": "leihen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "lieh",
+    "partizip_ii": "geliehen",
+    "konjunktiv_ii_root": "lieh",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to lend / to borrow",
+    "example": "Kannst du mir fünf Euro leihen?"
+  },
+  {
+    "infinitiv": "liefern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "liefer",
+    "partizip_ii": "geliefert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to deliver",
+    "example": "Wir liefern Ihnen den Schrank nach Hause."
+  },
+  {
+    "infinitiv": "lügen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "log",
+    "partizip_ii": "gelogen",
+    "konjunktiv_ii_root": "lög",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to lie / to tell a lie",
+    "example": "Du sollst nicht lügen."
+  },
+  {
+    "infinitiv": "malen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "mal",
+    "partizip_ii": "gemalt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to paint / to draw",
+    "example": "Mein Sohn kann gut malen."
+  },
+  {
+    "infinitiv": "meinen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "mein",
+    "partizip_ii": "gemeint",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to mean / to think (opinion)",
+    "example": "Wie meinst du das?"
+  },
+  {
+    "infinitiv": "merken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "merk",
+    "partizip_ii": "gemerkt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to notice / to remember",
+    "example": "Ich kann mir keine Zahlen merken."
+  },
+  {
+    "infinitiv": "nennen",
+    "type": "mixed",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "nann",
+    "partizip_ii": "genannt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to call / to name",
+    "example": "Mein Freund heißt Alexander, aber alle nennen ihn Alex."
+  },
+  {
+    "infinitiv": "notieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "notier",
+    "partizip_ii": "notiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to note down / to jot down",
+    "example": "Notieren Sie bitte alle wichtigen Informationen."
+  },
+  {
+    "infinitiv": "organisieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "organisier",
+    "partizip_ii": "organisiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to organize",
+    "example": "Frau Gomez organisiert unseren Ausflug."
+  },
+  {
+    "infinitiv": "packen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "pack",
+    "partizip_ii": "gepackt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["einpacken", "auspacken"],
+    "level": "A2",
+    "meaning": "to pack",
+    "example": "Ich muss noch meinen Koffer packen."
+  },
+  {
+    "infinitiv": "parken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "park",
+    "partizip_ii": "geparkt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to park",
+    "example": "Darf ich hier parken?"
+  },
+  {
+    "infinitiv": "passen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "pass",
+    "partizip_ii": "gepasst",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["aufpassen", "verpassen"],
+    "level": "A2",
+    "meaning": "to fit / to suit",
+    "example": "Die Bluse passt mir nicht."
+  },
+  {
+    "infinitiv": "passieren",
+    "type": "regular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "passier",
+    "partizip_ii": "passiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to happen",
+    "example": "Wie ist der Unfall passiert?"
+  },
+  {
+    "infinitiv": "planen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "plan",
+    "partizip_ii": "geplant",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to plan",
+    "example": "Wir sollen zusammen eine Klassenparty planen."
+  },
+  {
+    "infinitiv": "probieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "probier",
+    "partizip_ii": "probiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to try / to taste",
+    "example": "Möchten Sie den Käse probieren?"
+  },
+  {
+    "infinitiv": "prüfen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "prüf",
+    "partizip_ii": "geprüft",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to check / to examine / to test",
+    "example": "Bitte prüfen Sie die Rechnung sofort."
+  },
+  {
+    "infinitiv": "putzen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "putz",
+    "partizip_ii": "geputzt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to clean",
+    "example": "Ich muss heute noch das Bad putzen."
+  },
+  {
+    "infinitiv": "raten",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "riet",
+    "partizip_ii": "geraten",
+    "konjunktiv_ii_root": "riet",
+    "prepositions": [],
+    "connections": ["beraten"],
+    "level": "A2",
+    "meaning": "to advise / to guess",
+    "example": "Ich weiß nicht, welches Handy ich kaufen soll."
+  },
+  {
+    "infinitiv": "rechnen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "rechne",
+    "partizip_ii": "gerechnet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to count on / to expect"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to calculate / to do arithmetic",
+    "example": "Sarah kann gut rechnen."
+  },
+  {
+    "infinitiv": "reden",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "rede",
+    "partizip_ii": "geredet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to talk about"
+      },
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to talk with"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to talk / to speak",
+    "example": "Mit meiner Freundin kann ich über alles reden."
+  },
+  {
+    "infinitiv": "reiten",
+    "type": "irregular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "ritt",
+    "partizip_ii": "geritten",
+    "konjunktiv_ii_root": "ritt",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to ride (a horse)",
+    "example": "Möchtest du reiten lernen?"
+  },
+  {
+    "infinitiv": "renovieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "renovier",
+    "partizip_ii": "renoviert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to renovate",
+    "example": "Wir renovieren das ganze Haus."
+  },
+  {
+    "infinitiv": "reservieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "reservier",
+    "partizip_ii": "reserviert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to reserve",
+    "example": "Reservieren Sie bitte ein Doppelzimmer."
+  },
+  {
+    "infinitiv": "rufen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "rief",
+    "partizip_ii": "gerufen",
+    "konjunktiv_ii_root": "rief",
+    "prepositions": [],
+    "connections": ["anrufen"],
+    "level": "A2",
+    "meaning": "to call / to shout",
+    "example": "Rufst du bitte die Kinder."
+  },
+  {
+    "infinitiv": "sammeln",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "sammel",
+    "partizip_ii": "gesammelt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to collect / to gather",
+    "example": "Peter sammelt Briefmarken."
+  },
+  {
+    "infinitiv": "schaffen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "schaff",
+    "partizip_ii": "geschafft",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to manage / to accomplish",
+    "example": "Ich schaffe das nicht alleine."
+  },
+  {
+    "infinitiv": "schenken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "schenk",
+    "partizip_ii": "geschenkt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to give (as a gift)",
+    "example": "Was schenken wir Michael zum Geburtstag?"
+  },
+  {
+    "infinitiv": "schimpfen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "schimpf",
+    "partizip_ii": "geschimpft",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to complain about / to scold about"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to scold / to complain loudly",
+    "example": "Warum schimpfst du denn so laut?"
+  },
+  {
+    "infinitiv": "schneiden",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "schnitt",
+    "partizip_ii": "geschnitten",
+    "konjunktiv_ii_root": "schnitt",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to cut",
+    "example": "Das Messer schneidet nicht gut."
+  },
+  {
+    "infinitiv": "schneien",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "schnei",
+    "partizip_ii": "geschneit",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to snow",
+    "example": "Morgen schneit es."
+  },
+  {
+    "infinitiv": "sich setzen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "setz",
+    "partizip_ii": "gesetzt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to sit down",
+    "example": "Setz dich doch!"
+  },
+  {
+    "infinitiv": "singen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "sang",
+    "partizip_ii": "gesungen",
+    "konjunktiv_ii_root": "säng",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to sing",
+    "example": "Er singt gern."
+  },
+  {
+    "infinitiv": "sparen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "spar",
+    "partizip_ii": "gespart",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "für",
+        "case": "acc",
+        "meaning": "to save for"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to save (money)",
+    "example": "Ein neues Auto ist sehr teuer."
+  },
+  {
+    "infinitiv": "spazieren gehen",
+    "type": "irregular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "spazieren ging",
+    "partizip_ii": "spazieren gegangen",
+    "konjunktiv_ii_root": "spazieren ging",
+    "prepositions": [],
+    "connections": ["gehen"],
+    "level": "A2",
+    "meaning": "to go for a walk",
+    "example": "Wir gehen sonntags immer spazieren."
+  },
+  {
+    "infinitiv": "speichern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "speicher",
+    "partizip_ii": "gespeichert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to save / to store (data)",
+    "example": "Sie müssen die Datei speichern."
+  },
+  {
+    "infinitiv": "stattfinden",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "stattfand",
+    "partizip_ii": "stattgefunden",
+    "konjunktiv_ii_root": "stattfänd",
+    "prepositions": [],
+    "connections": ["finden"],
+    "level": "A2",
+    "meaning": "to take place",
+    "example": "Das Spiel findet auch bei Regen statt."
+  },
+  {
+    "infinitiv": "stören",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "stör",
+    "partizip_ii": "gestört",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to disturb / to bother",
+    "example": "Störe ich?"
+  },
+  {
+    "infinitiv": "sich streiten",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "stritt",
+    "partizip_ii": "gestritten",
+    "konjunktiv_ii_root": "stritt",
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to argue about"
+      },
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to argue with"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to argue / to quarrel",
+    "example": "Die Kinder streiten sich oft."
+  },
+  {
+    "infinitiv": "surfen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "surf",
+    "partizip_ii": "gesurft",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to surf",
+    "example": "Ich möchte gern surfen lernen."
+  },
+  {
+    "infinitiv": "austauschen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "austausch",
+    "partizip_ii": "ausgetauscht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["tauschen"],
+    "level": "A2",
+    "meaning": "to exchange / to swap",
+    "example": "Können wir bitte die Plätze tauschen?"
+  },
+  {
+    "infinitiv": "teilen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "teil",
+    "partizip_ii": "geteilt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to share with"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to share / to divide",
+    "example": "Wollen wir die Pizza teilen?"
+  },
+  {
+    "infinitiv": "teilnehmen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "teilnahm",
+    "partizip_ii": "teilgenommen",
+    "konjunktiv_ii_root": "teilnähm",
+    "prepositions": [
+      {
+        "preposition": "an",
+        "case": "dat",
+        "meaning": "to participate in"
+      }
+    ],
+    "connections": ["nehmen"],
+    "level": "A2",
+    "meaning": "to participate / to take part",
+    "example": "Ich möchte an dem Tanzkurs teilnehmen."
+  },
+  {
+    "infinitiv": "tragen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "trug",
+    "partizip_ii": "getragen",
+    "konjunktiv_ii_root": "trüg",
+    "prepositions": [],
+    "connections": ["austragen", "eintragen"],
+    "level": "A2",
+    "meaning": "to carry / to wear",
+    "example": "Ich kann den Koffer nicht tragen."
+  },
+  {
+    "infinitiv": "trainieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "trainier",
+    "partizip_ii": "trainiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to train / to practice",
+    "example": "Wir trainieren einmal pro Woche im Sportverein."
+  },
+  {
+    "infinitiv": "träumen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "träum",
+    "partizip_ii": "geträumt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "von",
+        "case": "dat",
+        "meaning": "to dream of / about"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to dream",
+    "example": "Ich habe schlecht geträumt."
+  },
+  {
+    "infinitiv": "tun",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": {
+      "ich": "tue",
+      "du": "tust",
+      "er/sie/es": "tut",
+      "wir": "tun",
+      "ihr": "tut",
+      "sie/Sie": "tun"
+    },
+    "praeteritum_root": "tat",
+    "partizip_ii": "getan",
+    "konjunktiv_ii_root": "tät",
+    "prepositions": [],
+    "connections": ["leidtun", "wehtun"],
+    "level": "A2",
+    "meaning": "to do",
+    "example": "Mein Rücken tut weh."
+  },
+  {
+    "infinitiv": "üben",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "üb",
+    "partizip_ii": "geübt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to practice",
+    "example": "Ich übe jeden Tag zwei Stunden."
+  },
+  {
+    "infinitiv": "übersetzen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "übersetz",
+    "partizip_ii": "übersetzt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to translate",
+    "example": "Können Sie mir den Brief bitte übersetzen?"
+  },
+  {
+    "infinitiv": "umsteigen",
+    "type": "irregular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "umstieg",
+    "partizip_ii": "umgestiegen",
+    "konjunktiv_ii_root": "umstieg",
+    "prepositions": [
+      {
+        "preposition": "in",
+        "case": "acc",
+        "meaning": "to transfer to"
+      }
+    ],
+    "connections": ["steigen", "aussteigen", "einsteigen"],
+    "level": "A2",
+    "meaning": "to change / to transfer (trains, etc.)",
+    "example": "Sie müssen in Mannheim umsteigen."
+  },
+  {
+    "infinitiv": "sich unterhalten",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "a→ä",
+    "present_forms": null,
+    "praeteritum_root": "unterhielt",
+    "partizip_ii": "unterhalten",
+    "konjunktiv_ii_root": "unterhielt",
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to talk about"
+      },
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to talk with"
+      }
+    ],
+    "connections": ["halten"],
+    "level": "A2",
+    "meaning": "to converse / to chat",
+    "example": "Andreas und Nessrin unterhalten sich."
+  },
+  {
+    "infinitiv": "unternehmen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "unternahm",
+    "partizip_ii": "unternommen",
+    "konjunktiv_ii_root": "unternähm",
+    "prepositions": [],
+    "connections": ["nehmen"],
+    "level": "A2",
+    "meaning": "to undertake / to do (an activity)",
+    "example": "Wollen wir heute Abend etwas unternehmen?"
+  },
+  {
+    "infinitiv": "untersuchen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "untersuch",
+    "partizip_ii": "untersucht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["suchen"],
+    "level": "A2",
+    "meaning": "to examine / to investigate",
+    "example": "Der Arzt hat mich untersucht."
+  },
+  {
+    "infinitiv": "vereinbaren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "vereinbar",
+    "partizip_ii": "vereinbart",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to agree on / to arrange",
+    "example": "Können wir einen Termin vereinbaren?"
+  },
+  {
+    "infinitiv": "vergessen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "e→i",
+    "present_forms": null,
+    "praeteritum_root": "vergaß",
+    "partizip_ii": "vergessen",
+    "konjunktiv_ii_root": "vergäß",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to forget",
+    "example": "Ich habe meine Hausaufgaben vergessen."
+  },
+  {
+    "infinitiv": "vergleichen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verglich",
+    "partizip_ii": "verglichen",
+    "konjunktiv_ii_root": "verglich",
+    "prepositions": [
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to compare with"
+      }
+    ],
+    "connections": ["gleichen"],
+    "level": "A2",
+    "meaning": "to compare",
+    "example": "Vergleichen Sie die Angebote!"
+  },
+  {
+    "infinitiv": "sich verletzen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verletz",
+    "partizip_ii": "verletzt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to injure oneself / to get hurt",
+    "example": "Sind Sie verletzt?"
+  },
+  {
+    "infinitiv": "sich verlieben",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verlieb",
+    "partizip_ii": "verliebt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "in",
+        "case": "acc",
+        "meaning": "to fall in love with"
+      }
+    ],
+    "connections": ["lieben"],
+    "level": "A2",
+    "meaning": "to fall in love",
+    "example": "Ich bin total verliebt."
+  },
+  {
+    "infinitiv": "verlieren",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verlor",
+    "partizip_ii": "verloren",
+    "konjunktiv_ii_root": "verlör",
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to lose",
+    "example": "Ich habe meinen Schlüssel verloren."
+  },
+  {
+    "infinitiv": "verpassen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verpass",
+    "partizip_ii": "verpasst",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["passen"],
+    "level": "A2",
+    "meaning": "to miss (a bus, train, etc.)",
+    "example": "Ich habe den Zug verpasst."
+  },
+  {
+    "infinitiv": "verreisen",
+    "type": "regular",
+    "auxiliary": "sein",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verreis",
+    "partizip_ii": "verreist",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["reisen"],
+    "level": "A2",
+    "meaning": "to go on a trip / to travel",
+    "example": "Verreist ihr in den Ferien?"
+  },
+  {
+    "infinitiv": "verschieben",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verschob",
+    "partizip_ii": "verschoben",
+    "konjunktiv_ii_root": "verschöb",
+    "prepositions": [
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to postpone to"
+      }
+    ],
+    "connections": ["schieben"],
+    "level": "A2",
+    "meaning": "to postpone / to move (a date)",
+    "example": "Leider muss ich den Termin verschieben."
+  },
+  {
+    "infinitiv": "versuchen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "versuch",
+    "partizip_ii": "versucht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["suchen"],
+    "level": "A2",
+    "meaning": "to try / to attempt",
+    "example": "Kann ich es auch einmal versuchen?"
+  },
+  {
+    "infinitiv": "vorbereiten",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "vorbereite",
+    "partizip_ii": "vorbereitet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to prepare for"
+      }
+    ],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to prepare",
+    "example": "Ich muss noch viel dafür vorbereiten."
+  },
+  {
+    "infinitiv": "sich vorstellen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "vorstell",
+    "partizip_ii": "vorgestellt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["stellen"],
+    "level": "A2",
+    "meaning": "to introduce oneself / to imagine",
+    "example": "Können Sie sich bitte vorstellen?"
+  },
+  {
+    "infinitiv": "wählen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "wähl",
+    "partizip_ii": "gewählt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to choose / to dial / to vote",
+    "example": "Sie müssen erst eine Null wählen."
+  },
+  {
+    "infinitiv": "wechseln",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "wechsel",
+    "partizip_ii": "gewechselt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to change / to exchange",
+    "example": "Wir müssen den Reifen wechseln."
+  },
+  {
+    "infinitiv": "wecken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "weck",
+    "partizip_ii": "geweckt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to wake (someone) up",
+    "example": "Bitte wecken Sie mich morgen früh um fünf."
+  },
+  {
+    "infinitiv": "wehtun",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "wehtat",
+    "partizip_ii": "wehgetan",
+    "konjunktiv_ii_root": "wehtät",
+    "prepositions": [],
+    "connections": ["tun"],
+    "level": "A2",
+    "meaning": "to hurt / to be painful",
+    "example": "Wo tut es weh?"
+  },
+  {
+    "infinitiv": "weinen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "wein",
+    "partizip_ii": "geweint",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to cry / to weep",
+    "example": "Warum weint das Baby?"
+  },
+  {
+    "infinitiv": "weiterhelfen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "e→i",
+    "present_forms": null,
+    "praeteritum_root": "weiterhalf",
+    "partizip_ii": "weitergeholfen",
+    "konjunktiv_ii_root": "weiterhülf",
+    "prepositions": [],
+    "connections": ["helfen"],
+    "level": "A2",
+    "meaning": "to help further / to assist",
+    "example": "Können Sie mir bitte weiterhelfen?"
+  },
+  {
+    "infinitiv": "wünschen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "wünsch",
+    "partizip_ii": "gewünscht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to wish",
+    "example": "Ich wünsche mir eine Kamera zum Geburtstag."
+  },
+  {
+    "infinitiv": "zeichnen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "zeichne",
+    "partizip_ii": "gezeichnet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to draw",
+    "example": "Caterina kann gut zeichnen."
+  },
+  {
+    "infinitiv": "zeigen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "zeig",
+    "partizip_ii": "gezeigt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "A2",
+    "meaning": "to show / to point",
+    "example": "Können Sie mir bitte den Weg zum Bahnhof zeigen?"
+  },
+  {
+    "infinitiv": "zuhören",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "zuhör",
+    "partizip_ii": "zugehört",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["hören"],
+    "level": "A2",
+    "meaning": "to listen (to)",
+    "example": "Hör mir doch mal zu!"
+  },
+  {
+    "infinitiv": "zumachen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "zumach",
+    "partizip_ii": "zugemacht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": ["aufmachen"],
+    "level": "A2",
+    "meaning": "to close / to shut",
+    "example": "Machst du bitte das Fenster zu?"
   }
 ]

@@ -1,0 +1,404 @@
+der Aufzug:In diesem Haus gibt es keinen Aufzug.
+das Auge:Er hat blaue Augen.
+die Ausbildung:Ich möchte eine Ausbildung zum Krankenpfleger machen.
+die Auskunft:Wo ist die Auskunft?
+die Ausstellung:Gehen wir morgen zusammen in die Ausstellung?
+das Auto:Er fährt mit dem Auto.
+die Autobahn:Darf ich mit dem Motorroller auf der Autobahn fahren?
+das Baby:Wir haben ein Baby.
+der Babysitter:Meine Tochter arbeitet als Babysitter.
+der Ball:Meine Kinder spielen gern Ball.
+die Banane:Drei Bananen, bitte!
+die Band:Was ist deine Lieblingsband?
+der Basketball:Yannick spielt lieber Basketball als Fußball.
+der Baum:Der Baum ist über hundert Jahre alt.
+die Baustelle:Vor unserem Haus ist eine große Baustelle.
+das Bein:Mein rechtes Bein tut weh.
+der/die Bekannte:Ein Bekannter von mir heißt Klaus.
+der Berg:Die Zugspitze ist der höchste Berg in Deutschland.
+der Beruf:Was bist du von Beruf?
+der Bescheid:Sie bekommt erst nächste Woche Bescheid.
+der Besuch:Wir bekommen am Wochenende Besuch.
+das Bett:Sie ist krank und muss heute im Bett bleiben.
+die Bewerbung:Kannst du mir bei meiner Bewerbung helfen?
+die Bibliothek:Sie lernt jeden Tag in der Bibliothek.
+das Bild:Hast du ein Bild von deinem Sohn?
+die Birne:Ein Kilo Birnen, bitte!
+ein bisschen:Können Sie bitte ein bisschen lauter sprechen?
+die Bitte:Ich habe noch eine Bitte.
+das Blatt:Haben Sie ein Blatt Papier für mich?
+der Bleistift:Hast du einen Bleistift?
+der/das Blog:Ich schreibe einen Blog über Mode.
+die Blume:Gefallen dir die Blumen?
+die Bluse:Ich suche eine weiße Bluse.
+die Bohne:Hans isst nicht gern Bohnen.
+der Brief:Haben Sie einen Brief für mich?
+die Briefmarke:Bitte die Briefmarke nicht vergessen!
+die Brille:Wo ist meine Brille?
+das Brot:Nimm doch noch ein Brot für das Abendessen.
+das Brötchen:Möchtest du Brot oder Brötchen zum Frühstück?
+die Brücke:Fahren Sie über die nächste Brücke und dann nach links.
+das Buch:Was kostet das Buch, bitte?
+der Buchstabe:Diesen Buchstaben gibt es in meiner Sprache nicht.
+das Büro:Ich arbeite in einem Büro.
+der Bus:Wann kommt der nächste Bus?
+das Café:Kommst du mit ins Café?
+die Cafeteria:Ich gehe jetzt in die Cafeteria.
+der Club/Klub:Gibt es hier einen Tennis-Club/Klub?
+der Comic:Mein Sohn liest immer nur Comics.
+der Computer:Wann bekommst du deinen neuen Computer?
+die Creme:Ich suche eine Creme für die Hände.
+die Dame:Sehr geehrte Damen und Herren,
+die Datei:Wo hast du die Datei gespeichert?
+das Ding:Gib mir bitte mal das Ding da drüben!
+die Disco/Disko:Wir gehen heute Abend in die Disco/Disko.
+das Dorf:Unser Dorf liegt direkt an der Autobahn.
+der Drucker:Mein Drucker ist kaputt.
+das E-Book:Liest du lieber E-Books oder Bücher aus Papier?
+die Ecke:Gehen Sie an der nächsten Ecke links.
+die Ehefrau/der Ehemann:Das ist mein Ehemann/meine Ehefrau.
+das Ei:Möchtest du ein Ei zum Frühstück?
+das Einkaufszentrum:Kommst du morgen mit ins Einkaufszentrum?
+das Eis:Möchtest du auch ein Eis?
+die (E-)Mail:Ich schreibe Ihnen/dir eine E-Mail.
+der Empfänger:Auf dem Brief steht dein Name, also bist du der Empfänger.
+das Erdgeschoss:Ich wohne im Erdgeschoss.
+die Erfahrung:Ich habe zehn Jahre Erfahrung in diesem Beruf.
+die Erlaubnis:Haben Sie eine Arbeitserlaubnis?
+die Ermäßigung:Für Schüler, Studenten und Rentner gibt es eine Ermäßigung.
+der Erwachsene:Erwachsene zahlen zehn Euro, für Kinder ist der Eintritt frei.
+das Fach:Welches Fach magst du in der Schule am liebsten?
+die Fahrkarte:Hast du schon eine Fahrkarte?
+der Fahrplan:Ist das der neue Fahrplan?
+das (Fahr)Rad:Wenn es nicht regnet, fahre ich mit dem Fahrrad.
+die Familie:Meine Familie lebt in Spanien.
+der Fan:Er ist ein großer Fußballfan.
+die Farbe:Die Farbe gefällt mir gut.
+der Fehler:Diesen Fehler mache ich immer wieder.
+die Feier:Wann hast du Feierabend?
+das Fenster:Kannst du bitte das Fenster öffnen?
+die Ferien:Bald haben wir Ferien.
+der Fernseher:Der Fernseher ist kaputt.
+das Fest:Frohes Fest!
+das Festival:Am Wochenende ist in der Stadt ein Musik-Festival.
+der Film:Ich möchte gern diesen Film sehen.
+der Fisch:Fisch mag ich lieber als Fleisch.
+die Flasche:Eine Flasche Mineralwasser, bitte!
+der Flohmarkt:Ich gehe gern auf den Flohmarkt.
+der Flug:Ich möchte einen Flug nach Kanada buchen.
+der Fluss:Der Rhein ist ein großer Fluss.
+das Formular:Sie müssen dieses Formular ausfüllen.
+das Foto:Darf ich ein Foto machen?
+die Frage:Ich habe eine Frage.
+die Frau:Das ist Frau Becker.
+der Freund/die Freundin:Das ist ein Freund von mir.
+der Führerschein:Hast du den Führerschein?
+die Fundsachen:Haben Sie meinen Schirm gefunden?
+der Fuß:Der linke Fuß tut mir weh.
+die Gabel:Kann ich bitte eine Gabel haben?
+die Garage:Hier ist eine Garage für dein Auto.
+der Gast:Heute Abend haben wir Gäste.
+Geburts-:Wann und wo sind Sie geboren?
+das Gegenteil:Das Gegenteil von "klein" ist "groß".
+das Gehalt:Sie ist mit ihrem Gehalt zufrieden.
+die Geldbörse:Sie hat ihre Geldbörse verloren.
+das Gerät:Elektrogeräte finden Sie im dritten Stock.
+das Gericht:Mein Lieblingsgericht ist Pizza.
+das Geschäft:Die Geschäfte schließen um 18.30 Uhr.
+das Geschenk:Danke für das schöne Geschenk.
+die Geschichte:Erzählst du mir eine Geschichte?
+das Geschirr:Stellst du bitte das Geschirr in den Schrank?
+das Gesicht:Wasch dir bitte das Gesicht.
+das Gespräch:Sie hören ein Gespräch.
+die Gesundheit:Gesundheit!
+das Getränk:Mein Lieblingsgetränk ist Tomatensaft.
+das Gewitter:Ich glaube, es gibt heute ein Gewitter.
+die Gitarre:Er kann gut Gitarre spielen.
+das Glas:Bitte noch ein Glas Apfelsaft!
+das Gleis:Der ICE nach Berlin hält heute an Gleis 12.
+die Grippe:Ich habe eine Grippe und kann leider nicht kommen.
+die Gruppe:Die erste Gruppe beginnt um 16 Uhr.
+der Gruß:Viele Grüße an Ihre Frau.
+das Haar:Sie hat lange Haare.
+das Hähnchen:Ein Hähnchen mit Pommes, bitte!
+der Hals:Mir tut der Hals weh.
+der Hamburger:Einen Hamburger ohne Salat, bitte.
+die Hand:Wasch dir bitte die Hände vor dem Essen.
+das Handtuch:Gibst du mir bitte ein frisches Handtuch?
+das Handy:In der Schule bitte die Handys ausmachen!
+das Haus:In welchem Haus wohnst du?
+die Hauptstadt:Berlin ist die Hauptstadt von Deutschland.
+der Haushalt:Wer macht bei euch den Haushalt?
+das Heft:Hast du dein Heft dabei?
+die Heizung:Es ist kalt.
+das Hemd:Nick trägt heute ein neues Hemd.
+der Herr:Guten Tag, Herr Sommer!
+der Himmel:Heute ist so tolles Wetter.
+das Hobby:Meine Hobbys sind Joggen und Schwimmen.
+die Homepage:Auf der Homepage von Freiburg gibt es alle wichtigen Informationen über die Stadt.
+die Hose:Kann ich die Hose waschen?
+das Hotel:Im Urlaub sind wir in einem Hotel am Meer.
+der Hund:Magst du Hunde?
+die Idee:Was machen wir heute Abend?
+die Information:Wir haben hier einige wichtige Informationen für Sie.
+die Insel:Ich möchte im Sommer auf einer Insel Urlaub machen.
+das Instrument:Ich spiele Klavier.
+das Interesse:Ich habe viele Interessen.
+das Interview:Komm schnell!
+die Jacke:Zieh dir eine Jacke an.
+die Jeans:Ich mag Jeans lieber als Röcke.
+der Job:Jenny hat einen neuen Job bei der Post.
+die Jugendherberge:Wir übernachten in einer Jugendherberge.
+der/die Jugendliche:Viele Jugendliche hören den ganzen Tag Musik.
+der Junge:In der Klasse von meiner Tochter sind 13 Jungen und 15 Mädchen.
+der Kalender:Haben Sie am Montag Zeit?
+die Kamera:Hannes hat eine neue Kamera.
+die Karte:Ich schreibe meinen Bekannten eine Karte aus dem Urlaub.
+die Kartoffel:Für Pommes frites braucht man Kartoffeln.
+der Käse:Isst du lieber Käse oder Wurst?
+die Katze:Meine Tochter wünscht sich eine Katze.
+das Kaufhaus:Meine Pullover kaufe ich immer im Kaufhaus Hertie.
+der Keller:Bitte bring die Kartoffeln in den Keller!
+die Kenntnisse:Deine Deutschkenntnisse sind sehr gut!
+die Kette:Meine Mutter bekommt eine schöne Kette zum Geburtstag.
+das Kind:Wie viele Kinder haben Sie?
+das Kino:Gehen wir heute Abend zusammen ins Kino?
+die Kirche:Diese Kirche ist fast 800 Jahre alt.
+das Klavier:Jakob kann sehr gut Klavier spielen.
+das Kleid:Julia möchte ein rotes Kleid kaufen.
+der Koffer:Hast du den Koffer schon gepackt?
+der Kollege/die Kollegin:Wie heißt die neue Kollegin?
+der Kontakt:Ich habe wenig Kontakt zu meinen Kollegen.
+das Konzert:Für das Konzert am Sonntag gibt es noch Karten.
+der Körper:Der Arzt sagt, ich muss etwas für meinen Körper tun.
+die Kosmetik:Kosmetik können Sie im Erdgeschoss kaufen.
+das Krankenhaus:Meine Tante ist im Krankenhaus.
+die Krankenkasse:Bei welcher Krankenkasse sind Sie?
+die Krankheit:Welche Krankheit hat Herr Brandner?
+der Kredit:Ich brauche einen Kredit von der Bank.
+die Kreuzung:Fahren Sie an der nächsten Kreuzung rechts.
+der Krimi:Miriam liest gern spannende Krimis.
+die Kultur:Ich finde fremde Länder und Kulturen sehr interessant.
+der Kunde/die Kundin:Einen Moment, bitte.
+die Kunst:Ich verstehe nichts von moderner Kunst.
+der Kurs:Der Deutschkurs dauert zwei Monate.
+der Laden:Ich kaufe meine Kleider immer in einem kleinen Laden im Zentrum.
+die Lampe:Mach bitte die Lampe an.
+das Land:Deutschland ist ein schönes Land.
+die Landschaft:Die Landschaft ist sehr schön.
+der/das Laptop:Ich brauche einen neuen Laptop.
+die Lebensmittel:Lebensmittel bekommen Sie im Supermarkt.
+die Leute:Auf der Party sind viele Leute.
+Lieblings-:Meine Lieblingsfarbe ist Blau.
+das Lied:Zum Geburtstag singen wir dir ein Lied.
+der Link:Ich schicke dir einen Link zu Deutschübungen.
+der Löffel:Bitte bringen Sie mir einen Löffel.
+die Lüge:Das stimmt nicht!
+die Lust:Gehen wir heute Abend ins Kino?
+das Mädchen:Familie Kurz bekommt ein Baby.
+der Magen:Mein Magen tut weh.
+die Mailbox:Hier ist die Mailbox von Susanne König.
+der Mann:Mein Mann ist Polizist.
+die Mannschaft:Meine Lieblingsmannschaft hat 1:0 verloren.
+der Mantel:Es ist kalt.
+der Markt:Ich gehe heute auf den Markt.
+die Maschine:Die Waschmaschine funktioniert sehr gut.
+das Medikament:Nehmen Sie dieses Medikament dreimal pro Tag!
+die Meinung:Meine Meinung zu dem Thema ist...
+die Menge:Wir haben noch eine Menge Zeit.
+der Mensch:Die Menschen sind hier ein bisschen anders als im Süden.
+die Messe:Kommst du mit zur Buchmesse nach Frankfurt?
+das Messer:Das Messer schneidet nicht gut.
+das Mineralwasser:Ein Glas Mineralwasser, bitte.
+der Mitarbeiter:Unsere Firma hat sieben Mitarbeiter.
+das Mittagessen:Um zwölf Uhr gibt es Mittagessen.
+das Mittel:Haben Sie ein Mittel gegen Magenschmerzen?
+die Möbel:Eure Möbel sind sehr schön.
+das Mobiltelefon:Wie kann ich Sie erreichen?
+die Mode:Wie findest du die neue Mode?
+der Motor:Der Motor ist kaputt.
+der Motorroller:Oskar fährt mit dem Motorroller zur Arbeit.
+der Müll:Bringst du bitte den Müll raus?
+das Museum:Im Kunstmuseum gibt es eine neue Ausstellung.
+die Musik:Wie findest du die Musik?
+die Mütze:Haben Sie rote Mützen?
+der Nachbar/die Nachbarin:Mein Nachbar kommt aus Brasilien.
+die Nachricht:Ich sehe abends immer die Nachrichten im Fernsehen.
+die Nähe:Die Post ist in der Nähe vom Bahnhof.
+der Name:Wie ist Ihr Name?
+die Natur:Ich bin gern draußen in der Natur.
+die Note:Eva hat immer sehr gute Noten in Deutsch.
+die Notiz:Schreib mir bitte eine Notiz.
+die Nudel:Möchten Sie lieber Reis oder Nudeln?
+die Nummer:Sie haben Zimmer Nummer zwölf.
+das Ohr:Ich habe Ohrenschmerzen.
+die Orange:Ich esse gern Orangen.
+der Ort:Vergessen Sie Ort und Datum nicht.
+das Paar:Romeo und Julia sind ein Paar.
+ein paar:Wir fahren ein paar Tage ans Meer.
+das Paket:Bringst du bitte das Paket zur Post?
+das Parfum:Ich suche ein Parfum als Geschenk für meine Frau.
+der Park:Ich gehe gern im Park spazieren.
+der Partner/die Partnerin:Veronika ist meine Partnerin.
+der Pass:Am Flughafen brauchst du deinen Pass.
+das Passwort:Bitte schreiben Sie Ihr Passwort.
+die Pause:Von 12.00 bis 12.30 Uhr haben wir Mittagspause.
+die Person:Eintritt pro Person: 5 Euro.
+das Pferd:Amira liebt Pferde.
+die Pflanze:Können Sie sich bitte um unsere Pflanzen kümmern?
+die Pizza:Mein Lieblingsessen ist Pizza.
+das Plakat:Wir machen im Unterricht ein Plakat.
+der Plan:Ich kaufe mir einen Stadtplan.
+der Platz:Hier ist noch ein Platz frei.
+die Pommes frites:Die Kinder essen Bratwurst mit Pommes frites.
+die Portion:Ich nehme eine kleine Portion Eis.
+das Poster:Das Poster hängt über dem Bett.
+die Postkarte:Schreibst du mir eine Postkarte aus Kanada?
+der Preis:Die Preise sind hier viel höher als bei uns.
+das Problem:Ich habe ein Problem.
+das Produkt:Unsere Produkte haben eine sehr hohe Qualität.
+das Programm:Dieses Programm im Radio interessiert mich nicht.
+das Projekt:Wir machen ein Projekt über Sehenswürdigkeiten.
+der Prospekt:Bitte schicken Sie mir einen Prospekt von Ihrem Hotel.
+der Pullover:Ich muss mir einen Pullover kaufen.
+die Qualität:Dieser Fernseher hat eine gute Qualität.
+das Quiz:Er schaut gern Quizsendungen an.
+das Radio:Ich höre im Auto gern Radio.
+das Rathaus:Das Formular bekommen Sie im Rathaus.
+das Rätsel:Das Rätsel ist schwierig!
+der Raum:Der Unterricht findet heute in Raum 332 statt.
+die Rechnung:Schicken Sie die Rechnung an mich.
+der Reifen:Ich brauche neue Reifen für mein Auto.
+die Reihe:Wir sitzen in der dritten Reihe.
+die Reinigung:Bringst du bitte die Bluse in die Reinigung?
+das Reisebüro:Wir buchen die Reise im Reisebüro.
+der Rentner/die Rentnerin:Mein Onkel arbeitet nicht mehr.
+der Rest:Den Rest gebe ich dir später.
+das Restaurant:Wir essen heute in einem Restaurant.
+das Rezept:Dieser Kuchen schmeckt super!
+das Rind:Ich esse nur Fleisch vom Rind.
+der Ring:Ich habe meinen Ring verloren.
+der Rock:Der Rock ist zu eng.
+die Rose:Er schenkt seiner Freundin rote Rosen.
+der Rücken:Mein Rücken tut mir weh.
+der Rucksack:Ich nehme lieber einen Rucksack als einen Koffer mit.
+die Ruhe:Ruhe, bitte!
+der Rundgang:Der Rundgang durch das Schloss beginnt in wenigen Minuten.
+die Sache:Ihr könnt eure Sachen im Hotel lassen.
+der Satz:Den letzten Satz verstehe ich nicht.
+die Schere:Die Schere schneidet nicht gut.
+das Schiff:Wir fahren mit dem Schiff von Basel nach Köln.
+das Schild:Haben Sie das Schild nicht gesehen?
+der Schirm:Nimm den Schirm mit.
+das Schlafzimmer:Hier ist das Schlafzimmer.
+das Schloss:Am Wochenende besichtigen wir Schloss Neuschwanstein.
+der Schlüssel:Ich gebe Ihnen noch den Zimmerschlüssel.
+der Schmerz:Haben Sie Schmerzen?
+der Schnee:In den Bergen liegt viel Schnee.
+die Schokolade:Julia liebt Schokolade.
+der Schrank:Die Gläser stehen im Schrank.
+der Schuh:Zieh die Schuhe aus!
+der Schüler/die Schülerin:In meinem Kurs sind acht Schülerinnen und fünf Schüler.
+das Schwein:Ich esse kein Schweinefleisch.
+die Sehenswürdigkeit:Welche Sehenswürdigkeiten gibt es in Frankfurt?
+die Seife:Hier gibt es keine Seife.
+die Seite:Öffnen Sie das Kursbuch auf Seite 20.
+die Sendung:Welche Sendungen schaust du gern an?
+der Service:Ich bin mit dem Service in der Werkstatt sehr zufrieden.
+die Situation:Ich bin in einer schwierigen Situation.
+der Ski:Gehen wir am Wochenende Ski fahren?
+der Spaß:Meine Arbeit macht mir Spaß.
+der Spaziergang:Abends mache ich immer einen Spaziergang.
+das Spiel:Welche Kartenspiele kennen Sie?
+der Sportplatz:Das Fußballtraining ist um 17 Uhr auf dem Sportplatz.
+die Sprache:Welche Sprachen sprichst du?
+die Sprechstunde:Frau Doktor Weiß hat von 9:00 bis 12:30 Uhr Sprechstunde.
+die Stadt:Heidelberg ist eine alte Stadt.
+der Stadtplan:Haben Sie einen Stadtplan von Salzburg?
+der Star:Diese Sängerin ist ein Star in Deutschland.
+die Stelle:Ich habe eine neue Stelle.
+der Stiefel:Wie viel kosten die roten Stiefel?
+der Stift:Kannst du mir bitte einen Stift geben?
+das Stipendium:Wenn ich ein gutes Zeugnis habe, bekomme ich ein Stipendium.
+der Strand:Im Urlaub bin ich am liebsten am Strand.
+die Straße:In welcher Straße wohnen Sie?
+der Stress:Ich habe bei der Arbeit viel Stress.
+das Stück:Möchten Sie noch ein Stück Kuchen?
+der Student/die Studentin:Ich bin Studentin.
+der Stuhl:Ist der Stuhl frei?
+der Supermarkt:Ich kaufe oft im Supermarkt ein.
+die Suppe:Schmeckt dir die Suppe?
+die Süßigkeiten:Welche Süßigkeiten isst du am liebsten?
+das Tablet:Hast du ein Tablet?
+die Tablette:Du sollst am Abend zwei Tabletten nehmen.
+die Tafel:Der Lehrer schreibt das neue Wort an die Tafel.
+die Tasche:Ich habe die Schlüssel in der Tasche.
+das Taschengeld:Wie viel Taschengeld bekommen deine Kinder?
+die Tasse:Möchten Sie eine Tasse Kaffee?
+das Taxi:Bitte rufen Sie mir ein Taxi.
+das Team:Ich arbeite gern in einem Team.
+der Teller:Stell die Teller bitte auf den Tisch!
+das Tennis:Steffi spielt sehr gut Tennis.
+der Termin:Am besten machen wir sofort einen Termin.
+der Text:Lesen Sie bitte den Text.
+das Theater:Ich gehe nicht gern ins Theater.
+das Ticket:Wie viel kostet das Ticket?
+das Tier:Wir dürfen keine Tiere in der Wohnung haben.
+der Tipp:Kannst du mir einen guten Tipp geben?
+der Tisch:Das Essen steht schon auf dem Tisch.
+der Titel:Wie heißt der Film?
+die Toilette:Wo ist die Toilette, bitte?
+die Tomate:Die Tomate ist noch grün.
+der Topf:Hast du keinen größeren Topf?
+die Torte:Zum Geburtstag backe ich dir eine Torte.
+die Tour:Wo kann ich eine Stadttour buchen?
+der Tourist/die Touristin:Im Sommer kommen viele Touristen in diese Stadt.
+das Training:Das Training ist immer dienstags.
+der Traum:Ich möchte eine eigene Firma.
+die Treppe:Ich nehme die Treppe, nicht den Aufzug.
+das T-Shirt:Haben Sie dieses T-Shirt auch in M?
+die Tür:Mach bitte die Tür zu!
+die Übersetzung:Ich brauche eine Übersetzung von meinem Zeugnis.
+der Umzug:Der Umzug ist nächste Woche.
+der Unfall:Ich hatte gestern einen Unfall.
+die Universität:Er studiert an der Universität Freiburg.
+die Unterkunft:Ich suche noch eine Unterkunft in Basel.
+der Unterschied:Was ist der Unterschied zwischen den beiden Kursen?
+die Veranstaltung:Am Samstag ist unser Restaurant geschlossen.
+der Verkehr:Morgens gibt es hier immer viel Verkehr.
+das Verkehrsmittel:Welche Verkehrsmittel benutzen Sie oft?
+der Vermieter/die Vermieterin:Unser Vermieter ist nett.
+die Verspätung:Unser Zug hat leider 15 Minuten Verspätung.
+der Vertrag:Ich muss den Vertrag noch unterschreiben.
+der Vogel:Nadine mag Vögel.
+der Vorname:Müller ist mein Familienname, mein Vorname ist Eva.
+der Vorschlag:Hast du einen guten Vorschlag?
+der Wagen:Wo steht Ihr Wagen?
+der Wald:Im Wald ist es ruhig.
+die Wäsche:Ich muss noch Wäsche waschen.
+die Webseite:Es gibt viele Webseiten mit Grammatikübungen.
+der Weg:Das ist der kürzeste Weg.
+die Werkstatt:Mein Auto ist in der Werkstatt.
+der Wettbewerb:Mein Sohn hat bei einem Wettbewerb gewonnen.
+der Witz:Wir haben Witze erzählt und viel gelacht.
+die Wohnung:Haben Sie schon eine neue Wohnung gefunden?
+das Wohnzimmer:Die Kinder sitzen im Wohnzimmer und sehen fern.
+die Wolke:Heute gibt es viele Wolken.
+der Workshop:Das war ein toller Workshop.
+das Wort:Ich kenne das Wort nicht.
+der Wunsch:Ich wünsche Ihnen alles Gute!
+die Wurst:Eine Wurst mit Pommes, bitte.
+die Zahl:Können Sie die Zahl bitte wiederholen?
+der Zahn:Der Zahn tut mir schon seit einer Woche weh.
+die Zeitschrift:Diese Zeitschrift kauft Andrea jede Woche.
+die Zeitung:Ich lese manchmal Zeitung.
+das Zelt:Im Sommer schlafen wir manchmal im Zelt.
+das Zentrum:Der Bahnhof ist im Stadtzentrum.
+der Zettel:Hast du einen Zettel für mich?
+das Zeugnis:Morgen bekommen die Kinder ihr Zeugnis.
+das Ziel:John war als erster am Ziel.
+das Zimmer:Die Wohnung hat drei Zimmer.
+der Zirkus:Heute gehen wir mit den Kindern in den Zirkus.
+die Zitrone:Ich trinke den Tee mit Zitrone.
+der Zoo:Am Sonntag gehen wir in den Zoo.
+der Zucker:Trinken Sie den Tee mit oder ohne Zucker?

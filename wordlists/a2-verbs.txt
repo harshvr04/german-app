@@ -1,0 +1,157 @@
+aufmachen:Kannst du bitte die Tür aufmachen?
+aufpassen:Pass auf, der Teller fällt gleich auf den Boden!
+aufräumen:Die Kinder müssen ihr Zimmer aufräumen.
+ausgeben:Agata gibt viel Geld für Bücher aus.
+ausgehen:Gehen wir am Freitag zusammen aus?
+auspacken:Packst du bitte den Koffer aus?
+ausruhen (sich):Ruh dich erst mal aus!
+aussprechen:Wie spricht man das Wort aus?
+austragen:Er trägt jeden Morgen die Zeitung aus.
+backen:Wenn du kommst, backe ich einen Kuchen.
+basteln:Die Kinder haben etwas gebastelt.
+bauen:Unsere Nachbarn bauen ein neues Haus.
+beantworten:Können Sie meine Frage bitte beantworten?
+bedanken (sich):Ich möchte mich noch einmal sehr herzlich für Ihre Hilfe bedanken.
+beeilen (sich):Kannst du dich bitte beeilen?
+beenden:Du musst deine Ausbildung auf jeden Fall beenden.
+begründen:Bitte begründen Sie Ihre Meinung.
+beraten:Unsere Sekretärin berät Sie gern, wenn Sie Fragen haben.
+berichten:Alle Zeitungen berichten von dem Unfall.
+beschreiben:Kannst du mir den Weg zum Bahnhof beschreiben?
+beschweren (sich):Hier ist es zu laut. Wo können wir uns beschweren?
+bestätigen:Ich kann bestätigen, dass er hier war.
+bestehen:Ich habe die Prüfung bestanden!
+bestellen:Wir möchten bitte bestellen.
+bewerben (sich):Ich möchte mich um diese Stelle bewerben.
+braten:Braten Sie das Fleisch in etwas Öl!
+buchen:Morgen buche ich unsere Urlaubsreise.
+chatten:Luis chattet gern mit seinen Freunden im Internet.
+dafür/dagegen:Ich bin dafür/dagegen.
+denken:Ich denke, du hast recht.
+diskutieren:Ich möchte das mit meinen Kollegen diskutieren.
+drüben:Da drüben ist die Haltestelle.
+duschen (sich):Ich bade nicht so gern, ich dusche lieber.
+eigen-:Nicht alle Kinder haben ein eigenes Zimmer.
+einig-:In diesem Text sind einige Fehler.
+einpacken:Pack bitte die Handtücher ein!
+eintragen (sich):Tragen Sie sich bitte in diese Liste ein!
+einverstanden:Als Termin schlage ich den 11. Juni vor.
+einzel-:Nicht alle zusammen.
+einziehen:Im Juni ziehen unsere neuen Nachbarn ein.
+erinnern (sich):Erinnerst du dich an Jose?
+erreichen:Wenn wir uns beeilen, erreichen wir noch den Zug um acht Uhr.
+(ab)fahren:Ich fahre mit dem Auto zur Arbeit.
+fallen:Pass auf, das Glas fällt gleich vom Tisch.
+feiern:Wir feiern heute meinen Geburtstag.
+fertig sein:Das Essen ist gleich fertig.
+(ab)fliegen:Ich fliege nicht gern ich fahre lieber mit dem Zug.
+fotografieren:Ich fotografiere gern.
+freuen (sich):Ich freue mich sehr über das Geschenk.
+fühlen (sich):Wie fühlen Sie sich?
+geehrt-:Sehr geehrte Damen und Herren,
+gültig sein:Der Pass ist nicht mehr gültig.
+hängen:Im Museum hängen moderne Bilder.
+herstellen:In unserer Firma stellen wir Möbel her.
+herunterladen:Er lädt die Musik aus dem Internet herunter.
+hoffen:Ich hoffe, dass es dir gut geht.
+husten:Sie hustet seit zwei Tagen.
+informieren (sich):Ich möchte mich vor der Reise über das Land informieren.
+interessieren (sich):Ich interessiere mich für Fußball.
+joggen:Ich jogge gern im Park.
+klappen:Können wir uns heute Mittag treffen?
+kontrollieren:Können Sie bei meinem Auto bitte das Öl kontrollieren?
+kümmern (sich):Sonja kann nicht arbeiten.
+kündigen:Meine Arbeit gefällt mir nicht mehr.
+lassen:Lass mich in Ruhe!
+leidtun:Es tut mir leid.
+leihen:Kannst du mir fünf Euro leihen?
+letzt-:Morgen ist der letzte Kurstag.
+lieb-:Liebe Susanne, lieber Hans,
+lieben:Ich liebe dich!
+liefern:Wir liefern Ihnen den Schrank nach Hause.
+lügen:Du sollst nicht lügen.
+malen:Mein Sohn kann gut malen.
+manch-:Manche Nachbarn sind unfreundlich.
+meinen:Wie meinst du das?
+meist-:Ich bin neu hier im Haus.
+merken:Ich kann mir keine Zahlen merken.
+modern:Das Stadtzentrum von Frankfurt ist sehr modern.
+nennen:Mein Freund heißt Alexander, aber alle nennen ihn Alex.
+notieren:Notieren Sie bitte alle wichtigen Informationen.
+organisieren:Frau Gomez organisiert unseren Ausflug.
+packen:Ich muss noch meinen Koffer packen.
+parken:Darf ich hier parken?
+passen:Die Bluse passt mir nicht.
+passieren:Wie ist der Unfall passiert?
+planen:Wir sollen zusammen eine Klassenparty planen.
+probieren:Möchten Sie den Käse probieren?
+prüfen:Bitte prüfen Sie die Rechnung sofort.
+putzen:Ich muss heute noch das Bad putzen.
+raten:Ich weiß nicht, welches Handy ich kaufen soll.
+rechnen:Sarah kann gut rechnen.
+reden:Mit meiner Freundin kann ich über alles reden.
+reiten:Möchtest du reiten lernen?
+renovieren:Wir renovieren das ganze Haus.
+reservieren:Reservieren Sie bitte ein Doppelzimmer.
+rufen:Rufst du bitte die Kinder.
+sammeln:Peter sammelt Briefmarken.
+schaffen:Ich schaffe das nicht alleine.
+schenken:Was schenken wir Michael zum Geburtstag?
+schimpfen:Warum schimpfst du denn so laut?
+schneiden (sich):Das Messer schneidet nicht gut.
+schneien:Morgen schneit es.
+sein:Das sind meine Kollegen.
+setzen (sich):Setz dich doch!
+singen:Er singt gern.
+sparen:Ein neues Auto ist sehr teuer.
+spazieren gehen:Wir gehen sonntags immer spazieren.
+speichern:Sie müssen die Datei speichern.
+stattfinden:Das Spiel findet auch bei Regen statt.
+sterben:Sein Vater ist gestern gestorben.
+stören:Störe ich?
+streiten (sich):Die Kinder streiten (sich) oft.
+surfen:Ich möchte gern surfen lernen.
+tauschen (aus):Können wir bitte die Plätze tauschen?
+teilen:Wollen wir die Pizza teilen?
+teilnehmen:Ich möchte an dem Tanzkurs teilnehmen.
+tragen:Ich kann den Koffer nicht tragen.
+trainieren:Wir trainieren einmal pro Woche im Sportverein.
+träumen:Ich habe schlecht geträumt.
+treffen (sich):Ich treffe in der Stadt einen Kollegen.
+tun:Mein Rücken tut weh.
+üben:Ich übe jeden Tag zwei Stunden.
+übermorgen:Ich komme übermorgen wieder ins Büro.
+übersetzen:Können Sie mir den Brief bitte übersetzen?
+umsteigen:Sie müssen in Mannheim umsteigen.
+unterhalten (sich):Andreas und Nessrin unterhalten sich.
+unternehmen:Wollen wir heute Abend etwas unternehmen?
+untersuchen:Der Arzt hat mich untersucht.
+verbieten/verboten sein:Hier ist Rauchen verboten.
+vereinbaren:Können wir einen Termin vereinbaren?
+vergessen:Ich habe meine Hausaufgaben vergessen.
+vergleichen:Vergleichen Sie die Angebote!
+verletzen (sich):Sind Sie verletzt?
+verlieben (sich):Ich bin total verliebt.
+verlieren:Ich habe meinen Schlüssel verloren.
+verpassen:Ich habe den Zug verpasst.
+verreisen:Verreist ihr in den Ferien?
+verschieben:Leider muss ich den Termin verschieben.
+verschieden:Unsere beiden Kindern sind sehr verschieden.
+versuchen:Kann ich es auch einmal versuchen?
+vorbereiten:Ich muss noch viel dafür vorbereiten.
+vorgestern:Er hat mich vorgestern angerufen.
+vorstellen (sich):Können Sie sich bitte vorstellen?
+wählen:Sie müssen erst eine Null wählen.
+waschen (sich):Wo kann ich mir die Hände waschen?
+wechseln:Wir müssen den Reifen wechseln.
+wecken:Bitte wecken Sie mich morgen früh um fünf.
+weg/weg-:Meine Brille ist weg.
+wehtun:Wo tut es weh?
+weinen:Warum weint das Baby?
+weiterhelfen:Können Sie mir bitte weiterhelfen?
+wünschen:Ich wünsche mir eine Kamera zum Geburtstag.
+zeichnen:Caterina kann gut zeichnen.
+zeigen:Können Sie mir bitte den Weg zum Bahnhof zeigen?
+(an/aus)ziehen:Ich ziehe (mir) eine Jacke an.
+zuhören:Hör mir doch mal zu!
+zumachen:Machst du bitte das Fenster zu?

@@ -14,7 +14,6 @@ aus sein:Das Licht ist aus.
 bald:Ich komme bald.
 bei:Offenbach liegt bei Frankfurt.
 beide:Beide Eltern arbeiten.
-zum Beispiel / z.B.:Viele meiner Verwandten, z. B. meine beiden Brüder, arbeiten auch hier.
 bekannt:Picasso ist sehr bekannt.
 besetzt:Die Nummer ist immer besetzt.
 besser:Es geht mir schon besser.
@@ -158,6 +157,7 @@ zu:Der Bus fährt zum Bahnhof.
 zurück:Einmal Frankfurt und zurück.
 zusammen:Sollen wir zusammen essen gehen?
 zwischen:Heidelberg liegt zwischen Frankfurt und Stuttgart.
+zum Beispiel / z.B.:Viele meiner Verwandten, z. B. meine beiden Brüder, arbeiten auch hier.
 bisschen:Ich spreche ein bisschen Deutsch.
 hinten:Das Buch liegt hinten auf dem Tisch.
 draußen:Die Kinder spielen draußen.

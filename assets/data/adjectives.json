@@ -245,9 +245,9 @@
     "is_comparable": true,
     "komparativ": "besser",
     "superlativ": "besten",
-    "level": "A1",
+    "level": "A2",
     "meaning": "good",
-    "example": "Das Essen ist sehr gut."
+    "example": "Das finde ich gut."
   },
   {
     "word": "groß",
@@ -255,9 +255,9 @@
     "is_comparable": true,
     "komparativ": "größer",
     "superlativ": "größten",
-    "level": "A1",
+    "level": "A2",
     "meaning": "big / tall",
-    "example": "Berlin ist eine große Stadt."
+    "example": "Mein Bruder und ich sind gleich groß."
   },
   {
     "word": "klein",
@@ -265,9 +265,9 @@
     "is_comparable": true,
     "komparativ": null,
     "superlativ": null,
-    "level": "A1",
-    "meaning": "small / short",
-    "example": "Das Kind ist noch klein."
+    "level": "A2",
+    "meaning": "small / little",
+    "example": "Unsere Wohnung ist sehr klein."
   },
   {
     "word": "alt",
@@ -298,5 +298,1345 @@
     "level": "A1",
     "meaning": "satisfied / content",
     "example": "Ich bin mit dem Ergebnis zufrieden."
+  },
+  {
+    "word": "aufregend",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "aufregendsten",
+    "level": "A2",
+    "meaning": "exciting",
+    "example": "Die letzte Woche war sehr aufregend."
+  },
+  {
+    "word": "bekannt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "bekanntesten",
+    "level": "A2",
+    "meaning": "well-known / famous",
+    "example": "Picasso ist sehr bekannt."
+  },
+  {
+    "word": "beliebt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "beliebtesten",
+    "level": "A2",
+    "meaning": "popular",
+    "example": "Fußball ist bei vielen Menschen beliebt."
+  },
+  {
+    "word": "bequem",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "comfortable",
+    "example": "Das Sofa ist sehr bequem."
+  },
+  {
+    "word": "berühmt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "berühmtesten",
+    "level": "A2",
+    "meaning": "famous",
+    "example": "Thomas Müller ist ein berühmter Fußballspieler."
+  },
+  {
+    "word": "besetzt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "occupied / taken",
+    "example": "Ist dieser Platz frei?"
+  },
+  {
+    "word": "bewölkt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "cloudy / overcast",
+    "example": "Heute ist es bewölkt."
+  },
+  {
+    "word": "bitter",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "bitterer",
+    "superlativ": "bittersten",
+    "level": "A2",
+    "meaning": "bitter",
+    "example": "Kaffee ohne Zucker schmeckt bitter."
+  },
+  {
+    "word": "blöd",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "blödesten",
+    "level": "A2",
+    "meaning": "stupid / annoying",
+    "example": "Ich finde es blöd, dass du morgen gehen musst."
+  },
+  {
+    "word": "blond",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "blondesten",
+    "level": "A2",
+    "meaning": "blond",
+    "example": "Lisa hat blonde Haare."
+  },
+  {
+    "word": "böse",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "böser",
+    "superlativ": "bösesten",
+    "level": "A2",
+    "meaning": "angry / evil",
+    "example": "Sie ist richtig böse auf mich."
+  },
+  {
+    "word": "bunt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "buntesten",
+    "level": "A2",
+    "meaning": "colourful",
+    "example": "Anna trägt gern bunte Kleider."
+  },
+  {
+    "word": "deutlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "clear / distinct",
+    "example": "Sprechen Sie bitte deutlich!"
+  },
+  {
+    "word": "dick",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "fat / thick",
+    "example": "Ich bin zu dick."
+  },
+  {
+    "word": "direkt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "direktesten",
+    "level": "A2",
+    "meaning": "direct",
+    "example": "Wir wohnen direkt über dem Café."
+  },
+  {
+    "word": "dringend",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "dringendsten",
+    "level": "A2",
+    "meaning": "urgent",
+    "example": "Bitte kommen Sie schnell."
+  },
+  {
+    "word": "dumm",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "dümmer",
+    "superlativ": "dümmsten",
+    "level": "A2",
+    "meaning": "stupid / dumb",
+    "example": "Ich finde den Film dumm."
+  },
+  {
+    "word": "dunkel",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "dunkler",
+    "superlativ": "dunkelsten",
+    "level": "A2",
+    "meaning": "dark",
+    "example": "Um sechs Uhr ist es schon dunkel."
+  },
+  {
+    "word": "dünn",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "thin",
+    "example": "Das Buch ist sehr dünn."
+  },
+  {
+    "word": "echt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "echtesten",
+    "level": "A2",
+    "meaning": "real / genuine",
+    "example": "Ist das Bild ein echter Picasso?"
+  },
+  {
+    "word": "egal",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "no matter / indifferent",
+    "example": "Das ist mir egal."
+  },
+  {
+    "word": "eigentlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "actually / really",
+    "example": "Wir wollten eigentlich Freunde besuchen, aber dann sind wir doch zu Hause geblieben."
+  },
+  {
+    "word": "einfach",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "easy / simple",
+    "example": "Die Prüfung ist ganz einfach."
+  },
+  {
+    "word": "eng",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "engsten",
+    "level": "A2",
+    "meaning": "tight / narrow",
+    "example": "Diese Hose ist zu eng."
+  },
+  {
+    "word": "erkältet",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "having a cold",
+    "example": "Lisa ist erkältet."
+  },
+  {
+    "word": "falsch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "falschesten",
+    "level": "A2",
+    "meaning": "wrong / false",
+    "example": "Die Lösung ist falsch."
+  },
+  {
+    "word": "fantastisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "fantastic",
+    "example": "Dein neues Kleid sieht fantastisch aus!"
+  },
+  {
+    "word": "faul",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "lazy",
+    "example": "Heute sind wir faul."
+  },
+  {
+    "word": "fett",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "fettesten",
+    "level": "A2",
+    "meaning": "fatty / greasy",
+    "example": "Die Wurst ist mir zu fett."
+  },
+  {
+    "word": "fit",
+    "is_declinable": false,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "fittesten",
+    "level": "A2",
+    "meaning": "fit",
+    "example": "Tom will fit sein."
+  },
+  {
+    "word": "fleißig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "hard-working / diligent",
+    "example": "Ibrahim ist sehr fleißig."
+  },
+  {
+    "word": "frei",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "free / available",
+    "example": "Entschuldigung, ist dieser Platz noch frei?"
+  },
+  {
+    "word": "freiwillig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "voluntary",
+    "example": "Manchmal bleibe ich freiwillig länger im Büro."
+  },
+  {
+    "word": "fremd",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "fremdesten",
+    "level": "A2",
+    "meaning": "foreign / strange / unfamiliar",
+    "example": "Das weiß ich nicht; ich bin fremd hier."
+  },
+  {
+    "word": "freundlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "friendly",
+    "example": "Er ist immer sehr freundlich zu mir."
+  },
+  {
+    "word": "frisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "frischesten",
+    "level": "A2",
+    "meaning": "fresh",
+    "example": "Das Brot ist noch ganz frisch."
+  },
+  {
+    "word": "froh",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "glad / happy",
+    "example": "Ich bin froh, dass du kommen kannst."
+  },
+  {
+    "word": "früh",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "frühesten",
+    "level": "A2",
+    "meaning": "early",
+    "example": "Geht es auch später?"
+  },
+  {
+    "word": "furchtbar",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "terrible / dreadful",
+    "example": "Er hat furchtbare Schmerzen."
+  },
+  {
+    "word": "ganz",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "whole / entire / quite",
+    "example": "Oh nein! Was ist passiert? Ist deine Brille jetzt kaputt?"
+  },
+  {
+    "word": "gefährlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "dangerous",
+    "example": "Du darfst nicht bei Rot über die Straße gehen."
+  },
+  {
+    "word": "genau",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "genauesten",
+    "level": "A2",
+    "meaning": "exact / precise",
+    "example": "Sind Sie sicher, dass die Prüfung am 15. Juni ist?"
+  },
+  {
+    "word": "gesund",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "gesünder",
+    "superlativ": "gesündesten",
+    "level": "A2",
+    "meaning": "healthy",
+    "example": "Ich hatte Grippe."
+  },
+  {
+    "word": "hart",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "härter",
+    "superlativ": "härtesten",
+    "level": "A2",
+    "meaning": "hard / tough",
+    "example": "Ich finde das Bett zu hart."
+  },
+  {
+    "word": "hässlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "ugly",
+    "example": "Ich finde das Kleid hässlich."
+  },
+  {
+    "word": "heiß",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "heißesten",
+    "level": "A2",
+    "meaning": "hot",
+    "example": "Vorsicht, der Tee ist heiß!"
+  },
+  {
+    "word": "hell",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "bright / light",
+    "example": "Im Sommer ist es bis 21 Uhr hell."
+  },
+  {
+    "word": "hoch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "höher",
+    "superlativ": "höchsten",
+    "level": "A2",
+    "meaning": "high / tall",
+    "example": "Der Mount Everest ist circa 8.880 Meter hoch."
+  },
+  {
+    "word": "hoffentlich",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "hopefully",
+    "example": "Hoffentlich hat unser Zug keine Verspätung."
+  },
+  {
+    "word": "intelligent",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "intelligentesten",
+    "level": "A2",
+    "meaning": "intelligent",
+    "example": "Einstein war sehr intelligent."
+  },
+  {
+    "word": "interessant",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "interessantesten",
+    "level": "A2",
+    "meaning": "interesting",
+    "example": "Den Artikel über Brasilien finde ich sehr interessant."
+  },
+  {
+    "word": "international",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "international",
+    "example": "Unser Deutschkurs ist international."
+  },
+  {
+    "word": "jung",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "jünger",
+    "superlativ": "jüngsten",
+    "level": "A2",
+    "meaning": "young",
+    "example": "Claudia ist 21."
+  },
+  {
+    "word": "kalt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "kälter",
+    "superlativ": "kältesten",
+    "level": "A2",
+    "meaning": "cold",
+    "example": "Heute ist es sehr kalt."
+  },
+  {
+    "word": "kaputt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "broken",
+    "example": "Unsere Waschmaschine ist kaputt."
+  },
+  {
+    "word": "klar",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "clear / sure",
+    "example": "Kommst du mit?"
+  },
+  {
+    "word": "klug",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "klüger",
+    "superlativ": "klügsten",
+    "level": "A2",
+    "meaning": "clever / smart",
+    "example": "Molly ist ein kluges Mädchen."
+  },
+  {
+    "word": "komisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "strange / funny",
+    "example": "Der Film war sehr komisch."
+  },
+  {
+    "word": "kostenlos",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "free (of charge)",
+    "example": "Diese Zeitschrift kostet nichts."
+  },
+  {
+    "word": "krank",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "kränker",
+    "superlativ": "kränksten",
+    "level": "A2",
+    "meaning": "sick / ill",
+    "example": "Ich kann heute nicht zur Arbeit kommen."
+  },
+  {
+    "word": "kühl",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "cool / chilly",
+    "example": "Es ist kühl draußen."
+  },
+  {
+    "word": "kurz",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "kürzer",
+    "superlativ": "kürzesten",
+    "level": "A2",
+    "meaning": "short / brief",
+    "example": "Ricardo hat kurze Haare."
+  },
+  {
+    "word": "lang",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "länger",
+    "superlativ": "längsten",
+    "level": "A2",
+    "meaning": "long",
+    "example": "Die Hose ist zu lang."
+  },
+  {
+    "word": "langweilig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "boring",
+    "example": "Mir ist langweilig."
+  },
+  {
+    "word": "laut",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "lautesten",
+    "level": "A2",
+    "meaning": "loud",
+    "example": "Nicht so laut!"
+  },
+  {
+    "word": "leer",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "empty",
+    "example": "Die Kanne ist fast leer."
+  },
+  {
+    "word": "leicht",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "leichtesten",
+    "level": "A2",
+    "meaning": "light / easy",
+    "example": "Das Paket ist leicht."
+  },
+  {
+    "word": "leise",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "leiser",
+    "superlativ": "leisesten",
+    "level": "A2",
+    "meaning": "quiet / soft",
+    "example": "Seid leise."
+  },
+  {
+    "word": "müde",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "müder",
+    "superlativ": "müdesten",
+    "level": "A2",
+    "meaning": "tired",
+    "example": "Ich bin müde."
+  },
+  {
+    "word": "nächst",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "next",
+    "example": "Sehen wir uns nächste Woche?"
+  },
+  {
+    "word": "nass",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "nässer",
+    "superlativ": "nässesten",
+    "level": "A2",
+    "meaning": "wet",
+    "example": "Geh nicht mit den nassen Schuhen ins Wohnzimmer!"
+  },
+  {
+    "word": "neblig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "foggy",
+    "example": "Fahr vorsichtig!"
+  },
+  {
+    "word": "nervös",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "nervösesten",
+    "level": "A2",
+    "meaning": "nervous",
+    "example": "Bei Prüfungen bin ich immer sehr nervös."
+  },
+  {
+    "word": "nett",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "nettesten",
+    "level": "A2",
+    "meaning": "nice / kind",
+    "example": "Ich habe viele nette Kollegen."
+  },
+  {
+    "word": "neu",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "neuesten",
+    "level": "A2",
+    "meaning": "new",
+    "example": "Ich bin der neue Mitarbeiter."
+  },
+  {
+    "word": "normal",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "normal",
+    "example": "Das ist doch ganz normal."
+  },
+  {
+    "word": "notwendig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "necessary",
+    "example": "Muss ich noch einmal kommen?"
+  },
+  {
+    "word": "nützlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "useful",
+    "example": "Danke für den Tipp."
+  },
+  {
+    "word": "offen",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "offener",
+    "superlativ": "offensten",
+    "level": "A2",
+    "meaning": "open",
+    "example": "Ist das Fenster im Bad noch offen?"
+  },
+  {
+    "word": "online",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "online",
+    "example": "Wann bist du wieder online?"
+  },
+  {
+    "word": "praktisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "practical / convenient",
+    "example": "Das finde ich sehr praktisch."
+  },
+  {
+    "word": "preiswert",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "preiswertesten",
+    "level": "A2",
+    "meaning": "affordable / good value",
+    "example": "Die Jacke ist sehr preiswert."
+  },
+  {
+    "word": "privat",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "privatesten",
+    "level": "A2",
+    "meaning": "private / personal",
+    "example": "Hey, du darfst die Mail nicht lesen!"
+  },
+  {
+    "word": "recht",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "right / correct",
+    "example": "Du hast recht."
+  },
+  {
+    "word": "reich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "rich / wealthy",
+    "example": "Lotte ist reich."
+  },
+  {
+    "word": "romantisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "romantic",
+    "example": "Dieser Film ist sehr romantisch."
+  },
+  {
+    "word": "rund",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "round",
+    "example": "Unser Wohnzimmertisch ist rund."
+  },
+  {
+    "word": "sauber",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "sauberer",
+    "superlativ": "saubersten",
+    "level": "A2",
+    "meaning": "clean",
+    "example": "Bringen Sie mir bitte ein sauberes Glas!"
+  },
+  {
+    "word": "sauer",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "saurer",
+    "superlativ": "sauersten",
+    "level": "A2",
+    "meaning": "sour / angry",
+    "example": "Zitronen sind mir zu sauer."
+  },
+  {
+    "word": "schade",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "a pity / too bad",
+    "example": "Schade, dass du nicht kommen kannst."
+  },
+  {
+    "word": "schädlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "harmful / damaging",
+    "example": "Rauchen ist schädlich für die Gesundheit."
+  },
+  {
+    "word": "scharf",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "schärfer",
+    "superlativ": "schärfsten",
+    "level": "A2",
+    "meaning": "spicy / sharp",
+    "example": "Die Suppe ist mir zu scharf."
+  },
+  {
+    "word": "schlecht",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "schlechtesten",
+    "level": "A2",
+    "meaning": "bad",
+    "example": "Das Wetter ist schlecht."
+  },
+  {
+    "word": "schlimm",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "bad / serious",
+    "example": "Kein Problem, das ist nicht so schlimm."
+  },
+  {
+    "word": "schmutzig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "dirty",
+    "example": "Das Handtuch ist schmutzig."
+  },
+  {
+    "word": "schnell",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "fast / quick",
+    "example": "Warum fährst du so schnell?"
+  },
+  {
+    "word": "schön",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "schönsten",
+    "level": "A2",
+    "meaning": "beautiful / nice",
+    "example": "Schöne Ferien!"
+  },
+  {
+    "word": "schrecklich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "terrible / awful",
+    "example": "Ich finde ihren Rock schrecklich."
+  },
+  {
+    "word": "schriftlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "written / in writing",
+    "example": "Sie müssen sich schriftlich anmelden."
+  },
+  {
+    "word": "schwach",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "schwächer",
+    "superlativ": "schwächsten",
+    "level": "A2",
+    "meaning": "weak",
+    "example": "Er ist krank und schwach."
+  },
+  {
+    "word": "schwanger",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "pregnant",
+    "example": "Lena ist schwanger."
+  },
+  {
+    "word": "schwer",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "heavy / difficult",
+    "example": "Wie schwer ist das Paket?"
+  },
+  {
+    "word": "schwierig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "difficult",
+    "example": "Die Prüfung war nicht schwierig."
+  },
+  {
+    "word": "sicher",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "sicherer",
+    "superlativ": "sichersten",
+    "level": "A2",
+    "meaning": "safe / sure",
+    "example": "Dieses Auto ist besonders sicher."
+  },
+  {
+    "word": "sonnig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "sunny",
+    "example": "Morgen ist das Wetter wieder warm und sonnig."
+  },
+  {
+    "word": "spannend",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "spannendsten",
+    "level": "A2",
+    "meaning": "exciting / thrilling",
+    "example": "Ich finde den Film sehr spannend."
+  },
+  {
+    "word": "spät",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "spätesten",
+    "level": "A2",
+    "meaning": "late",
+    "example": "Es ist schon spät."
+  },
+  {
+    "word": "sportlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "sporty / athletic",
+    "example": "Tom ist sehr sportlich."
+  },
+  {
+    "word": "stark",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "stärker",
+    "superlativ": "stärksten",
+    "level": "A2",
+    "meaning": "strong",
+    "example": "Ich habe starke Kopfschmerzen."
+  },
+  {
+    "word": "streng",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "strengsten",
+    "level": "A2",
+    "meaning": "strict",
+    "example": "Der Lehrer von meiner Tochter ist sehr streng."
+  },
+  {
+    "word": "stressig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "stressful",
+    "example": "Meine Arbeit ist stressig."
+  },
+  {
+    "word": "super",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "super / great",
+    "example": "Der Film ist super."
+  },
+  {
+    "word": "süß",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "süßesten",
+    "level": "A2",
+    "meaning": "sweet",
+    "example": "Ich finde die Torte zu süß."
+  },
+  {
+    "word": "sympathisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "likeable / nice",
+    "example": "Der neue Chef ist sehr sympathisch."
+  },
+  {
+    "word": "teuer",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "teurer",
+    "superlativ": "teuersten",
+    "level": "A2",
+    "meaning": "expensive",
+    "example": "Das ist mir zu teuer."
+  },
+  {
+    "word": "tief",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "deep",
+    "example": "Vorsicht, das Wasser ist tief!"
+  },
+  {
+    "word": "toll",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "great / awesome",
+    "example": "Der Urlaub war toll."
+  },
+  {
+    "word": "tot",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "dead",
+    "example": "Meine Großeltern sind schon lange tot."
+  },
+  {
+    "word": "total",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "total / completely",
+    "example": "Der Film ist total langweilig."
+  },
+  {
+    "word": "traurig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "sad",
+    "example": "Ich bin sehr traurig."
+  },
+  {
+    "word": "trocken",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "trockener",
+    "superlativ": "trockensten",
+    "level": "A2",
+    "meaning": "dry",
+    "example": "Die Wäsche ist bald trocken."
+  },
+  {
+    "word": "typisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "typical",
+    "example": "Diese Musik ist typisch für dieses Land."
+  },
+  {
+    "word": "unterwegs",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "on the way / out and about",
+    "example": "Warte bitte auf mich."
+  },
+  {
+    "word": "verabredet",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "having an appointment / having a date",
+    "example": "Ich bin mit meiner Freundin verabredet."
+  },
+  {
+    "word": "voll",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "full",
+    "example": "Morgens und abends sind die Züge immer sehr voll."
+  },
+  {
+    "word": "vorsichtig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "careful / cautious",
+    "example": "Sei vorsichtig!"
+  },
+  {
+    "word": "vorwärts",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "forward",
+    "example": "Fahren Sie bitte noch ein Stück vorwärts."
+  },
+  {
+    "word": "wach",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "awake",
+    "example": "Bist du schon lange wach?"
+  },
+  {
+    "word": "wahr",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "true",
+    "example": "Das ist wahr!"
+  },
+  {
+    "word": "warm",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "wärmer",
+    "superlativ": "wärmsten",
+    "level": "A2",
+    "meaning": "warm",
+    "example": "Hier ist es sehr warm."
+  },
+  {
+    "word": "weich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "soft",
+    "example": "Ich möchte zum Frühstück ein weiches Ei."
+  },
+  {
+    "word": "weit",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "weitesten",
+    "level": "A2",
+    "meaning": "far / wide",
+    "example": "Zum Bahnhof ist es nicht weit."
+  },
+  {
+    "word": "windig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "windy",
+    "example": "Heute ist es sehr windig."
+  },
+  {
+    "word": "witzig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "A2",
+    "meaning": "funny / witty",
+    "example": "Ich finde das nicht witzig."
   }
 ]

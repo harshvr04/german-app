@@ -1,0 +1,137 @@
+aufregend:Die letzte Woche war sehr aufregend.
+bekannt:Picasso ist sehr bekannt.
+beliebt:Fußball ist bei vielen Menschen beliebt.
+bequem:Das Sofa ist sehr bequem.
+berühmt:Thomas Müller ist ein berühmter Fußballspieler.
+besetzt:Ist dieser Platz frei?
+bewölkt:Heute ist es bewölkt.
+bitter:Kaffee ohne Zucker schmeckt bitter.
+blöd:Ich finde es blöd, dass du morgen gehen musst.
+blond:Lisa hat blonde Haare.
+böse:Sie ist richtig böse auf mich.
+bunt:Anna trägt gern bunte Kleider.
+deutlich:Sprechen Sie bitte deutlich!
+dick:Ich bin zu dick.
+direkt:Wir wohnen direkt über dem Café.
+dringend:Bitte kommen Sie schnell.
+dumm:Ich finde den Film dumm.
+dunkel:Um sechs Uhr ist es schon dunkel.
+dünn:Das Buch ist sehr dünn.
+echt:Ist das Bild ein echter Picasso?
+egal:Das ist mir egal.
+eigentlich:Wir wollten eigentlich Freunde besuchen, aber dann sind wir doch zu Hause geblieben.
+einfach:Die Prüfung ist ganz einfach.
+eng:Diese Hose ist zu eng.
+erkältet sein:Lisa ist erkältet.
+falsch:Die Lösung ist falsch.
+fantastisch:Dein neues Kleid sieht fantastisch aus!
+faul:Heute sind wir faul.
+fett:Die Wurst ist mir zu fett.
+fit sein:Tom will fit sein.
+fleißig:Ibrahim ist sehr fleißig.
+frei:Entschuldigung, ist dieser Platz noch frei?
+freiwillig:Manchmal bleibe ich freiwillig länger im Büro.
+fremd:Das weiß ich nicht; ich bin fremd hier.
+freundlich:Er ist immer sehr freundlich zu mir.
+frisch:Das Brot ist noch ganz frisch.
+froh:Ich bin froh, dass du kommen kannst.
+früh:Geht es auch später?
+furchtbar:Er hat furchtbare Schmerzen.
+ganz:Oh nein! Was ist passiert? Ist deine Brille jetzt kaputt?
+gefährlich:Du darfst nicht bei Rot über die Straße gehen.
+genau:Sind Sie sicher, dass die Prüfung am 15. Juni ist?
+gesund:Ich hatte Grippe.
+groß:Mein Bruder und ich sind gleich groß.
+gut:Das finde ich gut.
+hart:Ich finde das Bett zu hart.
+hässlich:Ich finde das Kleid hässlich.
+heiß:Vorsicht, der Tee ist heiß!
+hell:Im Sommer ist es bis 21 Uhr hell.
+hoch:Der Mount Everest ist circa 8.880 Meter hoch.
+hoffentlich:Hoffentlich hat unser Zug keine Verspätung.
+intelligent:Einstein war sehr intelligent.
+interessant:Den Artikel über Brasilien finde ich sehr interessant.
+international:Unser Deutschkurs ist international.
+jung:Claudia ist 21.
+kalt:Heute ist es sehr kalt.
+kaputt:Unsere Waschmaschine ist kaputt.
+klar:Kommst du mit?
+klein:Unsere Wohnung ist sehr klein.
+klug:Molly ist ein kluges Mädchen.
+komisch:Der Film war sehr komisch.
+kostenlos:Diese Zeitschrift kostet nichts.
+krank:Ich kann heute nicht zur Arbeit kommen.
+kühl:Es ist kühl draußen.
+kurz:Ricardo hat kurze Haare.
+lang:Die Hose ist zu lang.
+langweilig:Mir ist langweilig.
+laut:Nicht so laut!
+leer:Die Kanne ist fast leer.
+leicht:Das Paket ist leicht.
+leise:Seid leise.
+müde:Ich bin müde.
+nächste, -er, -es:Sehen wir uns nächste Woche?
+nass:Geh nicht mit den nassen Schuhen ins Wohnzimmer!
+neblig:Fahr vorsichtig!
+nervös:Bei Prüfungen bin ich immer sehr nervös.
+nett:Ich habe viele nette Kollegen.
+neu:Ich bin der neue Mitarbeiter.
+normal:Das ist doch ganz normal.
+notwendig:Muss ich noch einmal kommen?
+nützlich:Danke für den Tipp.
+offen:Ist das Fenster im Bad noch offen?
+online:Wann bist du wieder online?
+praktisch:Das finde ich sehr praktisch.
+preiswert:Die Jacke ist sehr preiswert.
+privat:Hey, du darfst die Mail nicht lesen!
+recht haben:Du hast recht.
+reich:Lotte ist reich.
+romantisch:Dieser Film ist sehr romantisch.
+rund:Unser Wohnzimmertisch ist rund.
+sauber:Bringen Sie mir bitte ein sauberes Glas!
+sauer:Zitronen sind mir zu sauer.
+schade:Schade, dass du nicht kommen kannst.
+schädlich:Rauchen ist schädlich für die Gesundheit.
+scharf:Die Suppe ist mir zu scharf.
+schlecht:Das Wetter ist schlecht.
+schlimm:Kein Problem, das ist nicht so schlimm.
+schmutzig:Das Handtuch ist schmutzig.
+schnell:Warum fährst du so schnell?
+schön:Schöne Ferien!
+schrecklich:Ich finde ihren Rock schrecklich.
+schriftlich:Sie müssen sich schriftlich anmelden.
+schwach:Er ist krank und schwach.
+schwanger:Lena ist schwanger.
+schwer:Wie schwer ist das Paket?
+schwierig:Die Prüfung war nicht schwierig.
+sicher:Dieses Auto ist besonders sicher.
+sonnig:Morgen ist das Wetter wieder warm und sonnig.
+spannend:Ich finde den Film sehr spannend.
+spät:Es ist schon spät.
+sportlich:Tom ist sehr sportlich.
+stark:Ich habe starke Kopfschmerzen.
+streng:Der Lehrer von meiner Tochter ist sehr streng.
+stressig:Meine Arbeit ist stressig.
+super:Der Film ist super.
+süß:Ich finde die Torte zu süß.
+sympathisch:Der neue Chef ist sehr sympathisch.
+teuer:Das ist mir zu teuer.
+tief:Vorsicht, das Wasser ist tief!
+toll:Der Urlaub war toll.
+tot:Meine Großeltern sind schon lange tot.
+total:Der Film ist total langweilig.
+traurig:Ich bin sehr traurig.
+trocken:Die Wäsche ist bald trocken.
+typisch:Diese Musik ist typisch für dieses Land.
+unterwegs sein:Warte bitte auf mich.
+verabredet sein:Ich bin mit meiner Freundin verabredet.
+voll:Morgens und abends sind die Züge immer sehr voll.
+vorsichtig:Sei vorsichtig!
+vorwärts:Fahren Sie bitte noch ein Stück vorwärts.
+wach:Bist du schon lange wach?
+wahr:Das ist wahr!
+warm:Hier ist es sehr warm.
+weich:Ich möchte zum Frühstück ein weiches Ei.
+weit:Zum Bahnhof ist es nicht weit.
+windig:Heute ist es sehr windig.
+witzig:Ich finde das nicht witzig.
