@@ -847,9 +847,9 @@
   },
   {
     "word": "was für ein",
-    "level": "A1",
+    "level": "B1",
     "meaning": "what kind of",
-    "example": "Was für eine Farbe möchten Sie?"
+    "example": "Ich will mir ein Auto kaufen. – Was denn für eins?"
   },
   {
     "word": "weh tun",
@@ -889,9 +889,9 @@
   },
   {
     "word": "wie viel",
-    "level": "A1",
-    "meaning": "how much / how many",
-    "example": "Wie viel Milch nehmen Sie?"
+    "level": "B1",
+    "meaning": "how much",
+    "example": "Wie viel Geld hast du dabei?"
   },
   {
     "word": "wir",
@@ -1087,8 +1087,8 @@
   },
   {
     "word": "gern",
-    "level": "A2",
-    "meaning": "gladly, with pleasure",
+    "level": "B1",
+    "meaning": "gladly",
     "example": "Ich helfe Ihnen gern."
   },
   {
@@ -1117,8 +1117,8 @@
   },
   {
     "word": "jeder",
-    "level": "A2",
-    "meaning": "every, each",
+    "level": "B1",
+    "meaning": "every",
     "example": "Das Restaurant hat jeden Tag geöffnet."
   },
   {
@@ -1141,8 +1141,8 @@
   },
   {
     "word": "meistens",
-    "level": "A2",
-    "meaning": "mostly, usually",
+    "level": "B1",
+    "meaning": "mostly",
     "example": "Meistens trinke ich zum Frühstück nur einen Kaffee."
   },
   {
@@ -1279,8 +1279,8 @@
   },
   {
     "word": "welcher",
-    "level": "A2",
-    "meaning": "which, what",
+    "level": "B1",
+    "meaning": "which",
     "example": "Welcher Tag ist heute?"
   },
   {
@@ -1324,5 +1324,1091 @@
     "level": "A2",
     "meaning": "for example",
     "example": "Mein Freund hat viele Hobbys, zum Beispiel Kochen."
+  },
+  {
+    "word": "absolut",
+    "level": "B1",
+    "meaning": "absolutely",
+    "example": "Was Sie da sagen, ist absolut falsch."
+  },
+  {
+    "word": "als",
+    "level": "B1",
+    "meaning": "when (past)",
+    "example": "Als mein Mann kam, war die Party schon zu Ende."
+  },
+  {
+    "word": "als ob",
+    "level": "B1",
+    "meaning": "as if",
+    "example": "Er tut so, als ob wir nie darüber gesprochen hätten."
+  },
+  {
+    "word": "andererseits",
+    "level": "B1",
+    "meaning": "on the other hand",
+    "example": "Tarek möchte zwar studieren, aber andererseits möchte er auch gleich Geld verdienen."
+  },
+  {
+    "word": "anders",
+    "level": "B1",
+    "meaning": "differently",
+    "example": "Anders geht das leider nicht."
+  },
+  {
+    "word": "anfangs",
+    "level": "B1",
+    "meaning": "initially",
+    "example": "Anfangs ging alles gut."
+  },
+  {
+    "word": "angenehm",
+    "level": "B1",
+    "meaning": "pleasant",
+    "example": "Wir wünschen Ihnen eine angenehme Reise."
+  },
+  {
+    "word": "ausgebildet",
+    "level": "B1",
+    "meaning": "trained",
+    "example": "Für diesen Beruf müssen Sie gut ausgebildet sein."
+  },
+  {
+    "word": "auseinander",
+    "level": "B1",
+    "meaning": "apart",
+    "example": "Wir wohnen nicht weit auseinander."
+  },
+  {
+    "word": "befreit",
+    "level": "B1",
+    "meaning": "exempt",
+    "example": "Studenten und Studentinnen sind von den Rundfunk-Gebühren befreit."
+  },
+  {
+    "word": "begrenzt",
+    "level": "B1",
+    "meaning": "limited",
+    "example": "Die Teilnehmerzahl ist auf 12 begrenzt."
+  },
+  {
+    "word": "behindert",
+    "level": "B1",
+    "meaning": "disabled",
+    "example": "Seit dem Unfall ist das Kind unserer Freunde behindert."
+  },
+  {
+    "word": "beinahe",
+    "level": "B1",
+    "meaning": "almost",
+    "example": "Ich habe heute beinahe den Bus verpasst."
+  },
+  {
+    "word": "bereits",
+    "level": "B1",
+    "meaning": "already",
+    "example": "Bitte melde dich bei Frau Kaiser. Sie hat bereits dreimal angerufen."
+  },
+  {
+    "word": "bevor",
+    "level": "B1",
+    "meaning": "before",
+    "example": "Bevor wir gehen, möchte ich noch etwas essen."
+  },
+  {
+    "word": "bestimmt",
+    "level": "B1",
+    "meaning": "certainly",
+    "example": "Das hat Nancy bestimmt nicht so gemeint."
+  },
+  {
+    "word": "blass",
+    "level": "B1",
+    "meaning": "pale",
+    "example": "Du siehst ganz blass aus. Bist du krank?"
+  },
+  {
+    "word": "blind",
+    "level": "B1",
+    "meaning": "blind",
+    "example": "Er ist von Geburt an blind."
+  },
+  {
+    "word": "bloß",
+    "level": "B1",
+    "meaning": "merely",
+    "example": "Ich möchte nichts kaufen. Ich möchte mich bloß umsehen."
+  },
+  {
+    "word": "biologisch",
+    "level": "B1",
+    "meaning": "organic",
+    "example": "Biologische Lebensmittel gibt es jetzt auch im Supermarkt."
+  },
+  {
+    "word": "bisher",
+    "level": "B1",
+    "meaning": "so far",
+    "example": "Bisher ist alles in Ordnung."
+  },
+  {
+    "word": "schick",
+    "level": "B1",
+    "meaning": "chic",
+    "example": "Ich finde dein Kleid sehr chick."
+  },
+  {
+    "word": "dafür",
+    "level": "B1",
+    "meaning": "for it",
+    "example": "Meine Schwester interessiert sich für Politik. Ich interessiere mich nicht dafür."
+  },
+  {
+    "word": "dagegen",
+    "level": "B1",
+    "meaning": "against it",
+    "example": "Vorsicht, da ist ein Baum! Fahr nicht dagegen!"
+  },
+  {
+    "word": "daher",
+    "level": "B1",
+    "meaning": "therefore",
+    "example": "Ich bin erkältet, daher kann ich heute nicht kommen."
+  },
+  {
+    "word": "dahin",
+    "level": "B1",
+    "meaning": "there (to that place)",
+    "example": "Der Zug kommt in 30 Minuten. Bis dahin können wir einen Kaffee trinken."
+  },
+  {
+    "word": "damit",
+    "level": "B1",
+    "meaning": "so that",
+    "example": "Mach schnell, damit wir nicht zu spät kommen."
+  },
+  {
+    "word": "danach",
+    "level": "B1",
+    "meaning": "afterwards",
+    "example": "Zuerst gehen wir einkaufen, danach grillen wir auf unserem Balkon."
+  },
+  {
+    "word": "dauernd",
+    "level": "B1",
+    "meaning": "constantly",
+    "example": "Das dauernde Klingeln des Telefons stört mich."
+  },
+  {
+    "word": "derselbe",
+    "level": "B1",
+    "meaning": "the same",
+    "example": "Mein Freund und ich gehen in dieselbe Schule."
+  },
+  {
+    "word": "deswegen",
+    "level": "B1",
+    "meaning": "therefore",
+    "example": "Ich habe falsch geparkt. Deswegen habe ich einen Strafzettel bekommen."
+  },
+  {
+    "word": "dicht",
+    "level": "B1",
+    "meaning": "tight, sealed",
+    "example": "Unsere Fenster sind nicht dicht. Es zieht immer."
+  },
+  {
+    "word": "doppelt",
+    "level": "B1",
+    "meaning": "double",
+    "example": "Das Buch habe ich doppelt."
+  },
+  {
+    "word": "dort",
+    "level": "B1",
+    "meaning": "there",
+    "example": "Dort drüben ist der Bahnhof."
+  },
+  {
+    "word": "dorthin",
+    "level": "B1",
+    "meaning": "to there",
+    "example": "Deine Tasche kannst du dorthin stellen."
+  },
+  {
+    "word": "durcheinander",
+    "level": "B1",
+    "meaning": "mixed up",
+    "example": "Alle meine Sachen sind durcheinander."
+  },
+  {
+    "word": "ebenfalls",
+    "level": "B1",
+    "meaning": "likewise",
+    "example": "Ich wünsche Ihnen ein schönes Wochenende. – Danke, ebenfalls."
+  },
+  {
+    "word": "ebenso",
+    "level": "B1",
+    "meaning": "likewise",
+    "example": "Schöne Feiertage. – Danke, ebenso."
+  },
+  {
+    "word": "einerseits",
+    "level": "B1",
+    "meaning": "on one hand",
+    "example": "Einerseits möchte ich die Reise gern machen, andererseits ist sie zu teuer."
+  },
+  {
+    "word": "eher",
+    "level": "B1",
+    "meaning": "rather",
+    "example": "Ich stehe meist eher auf als mein Mann."
+  },
+  {
+    "word": "eigentlich",
+    "level": "B1",
+    "meaning": "actually",
+    "example": "Wir wollten eigentlich Freunde besuchen, aber dann sind wir doch zu Hause geblieben."
+  },
+  {
+    "word": "entlang",
+    "level": "B1",
+    "meaning": "along",
+    "example": "Gehen Sie diese Straße entlang. Dann kommen Sie direkt zum Bahnhof."
+  },
+  {
+    "word": "entweder … oder",
+    "level": "B1",
+    "meaning": "either … or",
+    "example": "Nur einer kann gewinnen, entweder du oder ich."
+  },
+  {
+    "word": "erfolgreich",
+    "level": "B1",
+    "meaning": "successful",
+    "example": "Mein Großvater war ein erfolgreicher Geschäftsmann."
+  },
+  {
+    "word": "etwa",
+    "level": "B1",
+    "meaning": "approximately",
+    "example": "Von hier sind es etwa zwanzig Kilometer."
+  },
+  {
+    "word": "extra",
+    "level": "B1",
+    "meaning": "extra",
+    "example": "Die Getränke kosten extra."
+  },
+  {
+    "word": "extrem",
+    "level": "B1",
+    "meaning": "extremely",
+    "example": "Die Prüfung war extrem schwer."
+  },
+  {
+    "word": "fair",
+    "level": "B1",
+    "meaning": "fair",
+    "example": "Ich finde, unsere Mannschaft hat sehr fair gespielt."
+  },
+  {
+    "word": "falls",
+    "level": "B1",
+    "meaning": "in case",
+    "example": "Falls es regnet, machen wir kein Picknick."
+  },
+  {
+    "word": "feucht",
+    "level": "B1",
+    "meaning": "damp",
+    "example": "Die Wäsche ist noch feucht."
+  },
+  {
+    "word": "flexibel",
+    "level": "B1",
+    "meaning": "flexible",
+    "example": "Meine Arbeitszeit ist flexibel."
+  },
+  {
+    "word": "frech",
+    "level": "B1",
+    "meaning": "cheeky",
+    "example": "Du darfst in der Schule nicht so frech sein."
+  },
+  {
+    "word": "im Freien",
+    "level": "B1",
+    "meaning": "outdoors",
+    "example": "Wir wollen heute im Freien übernachten."
+  },
+  {
+    "word": "gar",
+    "level": "B1",
+    "meaning": "cooked, done",
+    "example": "Die Kartoffeln sind noch nicht gar."
+  },
+  {
+    "word": "geehrt",
+    "level": "B1",
+    "meaning": "honored",
+    "example": "Sehr geehrte Damen und Herren, …"
+  },
+  {
+    "word": "geeignet",
+    "level": "B1",
+    "meaning": "suitable",
+    "example": "Dieses Spiel ist nicht für Kinder unter drei Jahren geeignet."
+  },
+  {
+    "word": "geheim",
+    "level": "B1",
+    "meaning": "secret",
+    "example": "Das ist geheim. Du darfst es niemandem sagen."
+  },
+  {
+    "word": "gerecht",
+    "level": "B1",
+    "meaning": "fair, just",
+    "example": "Lass uns den Kuchen gerecht verteilen."
+  },
+  {
+    "word": "gering",
+    "level": "B1",
+    "meaning": "slight, small",
+    "example": "Unsere Mannschaft hatte nur eine geringe Chance."
+  },
+  {
+    "word": "gespannt",
+    "level": "B1",
+    "meaning": "curious, eager",
+    "example": "Ich bin gespannt, wer bei diesem Spiel gewinnt."
+  },
+  {
+    "word": "gleichfalls",
+    "level": "B1",
+    "meaning": "likewise",
+    "example": "Schöne Feiertage! – Danke, gleichfalls."
+  },
+  {
+    "word": "gleichberechtigt",
+    "level": "B1",
+    "meaning": "equal (in rights)",
+    "example": "Mann und Frau sind gleichberechtigt."
+  },
+  {
+    "word": "gleichzeitig",
+    "level": "B1",
+    "meaning": "simultaneously",
+    "example": "Ich kann nicht alles gleichzeitig machen."
+  },
+  {
+    "word": "gratis",
+    "level": "B1",
+    "meaning": "free of charge",
+    "example": "Diese Reparatur kostet Sie gar nichts, wir machen das gratis für Sie."
+  },
+  {
+    "word": "heim",
+    "level": "B1",
+    "meaning": "home (direction)",
+    "example": "Ich will jetzt heim."
+  },
+  {
+    "word": "hierher",
+    "level": "B1",
+    "meaning": "here (to this place)",
+    "example": "Ich komme oft hierher. In diesem Café gibt es guten Kuchen."
+  },
+  {
+    "word": "hinunter",
+    "level": "B1",
+    "meaning": "down",
+    "example": "Kannst du mir bitte den Schlüssel runterwerfen? Ich habe meinen vergessen."
+  },
+  {
+    "word": "hinterher",
+    "level": "B1",
+    "meaning": "afterwards",
+    "example": "Vor der Prüfung habe ich so viel gelernt. Hinterher habe ich vieles wieder vergessen."
+  },
+  {
+    "word": "höchstens",
+    "level": "B1",
+    "meaning": "at most",
+    "example": "Ich habe wenig Zeit. Ich kann höchstens eine Viertelstunde bleiben."
+  },
+  {
+    "word": "hübsch",
+    "level": "B1",
+    "meaning": "pretty",
+    "example": "Wir haben eine hübsche Wohnung gefunden."
+  },
+  {
+    "word": "indem",
+    "level": "B1",
+    "meaning": "by (doing)",
+    "example": "Du kannst die Datei öffnen, indem du hier klickst."
+  },
+  {
+    "word": "inklusive",
+    "level": "B1",
+    "meaning": "inclusive of",
+    "example": "Der Zimmerpreis ist inklusive Frühstück."
+  },
+  {
+    "word": "innerhalb",
+    "level": "B1",
+    "meaning": "within",
+    "example": "Diese Fahrkarte gilt nur innerhalb der Stadt."
+  },
+  {
+    "word": "insgesamt",
+    "level": "B1",
+    "meaning": "in total",
+    "example": "Insgesamt haben sich 20 Teilnehmer für die Prüfung angemeldet."
+  },
+  {
+    "word": "interessiert",
+    "level": "B1",
+    "meaning": "interested",
+    "example": "Mein Nachbar zieht nächsten Monat aus. Sind Sie noch an der Wohnung interessiert?"
+  },
+  {
+    "word": "inzwischen",
+    "level": "B1",
+    "meaning": "in the meantime",
+    "example": "Herr Müller kommt gleich zurück. Sie können inzwischen in seinem Büro warten."
+  },
+  {
+    "word": "irgendwann",
+    "level": "B1",
+    "meaning": "sometime",
+    "example": "Ich habe Sie irgendwann schon mal gesehen."
+  },
+  {
+    "word": "je",
+    "level": "B1",
+    "meaning": "each, per",
+    "example": "Die Pullover kosten je nach Qualität zwischen 40 und 60 Euro."
+  },
+  {
+    "word": "je … desto …",
+    "level": "B1",
+    "meaning": "the … the …",
+    "example": "Je länger ich Deutsch lerne, desto besser kann ich es verstehen."
+  },
+  {
+    "word": "jederzeit",
+    "level": "B1",
+    "meaning": "at any time",
+    "example": "Sie können mich jederzeit anrufen."
+  },
+  {
+    "word": "jedes Mal",
+    "level": "B1",
+    "meaning": "every time",
+    "example": "Inge erzählt die Geschichte jedes Mal anders."
+  },
+  {
+    "word": "jedoch",
+    "level": "B1",
+    "meaning": "however",
+    "example": "Sie ruft immer wieder an, jedoch ohne Erfolg."
+  },
+  {
+    "word": "jemals",
+    "level": "B1",
+    "meaning": "ever",
+    "example": "Hast du jemals von dem Problem gehört? – Nein, nie."
+  },
+  {
+    "word": "jeweils",
+    "level": "B1",
+    "meaning": "respectively",
+    "example": "Der Kurs findet jeweils montags und donnerstags um 18 Uhr statt."
+  },
+  {
+    "word": "kaum",
+    "level": "B1",
+    "meaning": "hardly",
+    "example": "Ich kann Sie kaum verstehen. Bitte sprechen Sie lauter."
+  },
+  {
+    "word": "knapp",
+    "level": "B1",
+    "meaning": "tight, scarce",
+    "example": "Mach schnell. Die Zeit ist knapp."
+  },
+  {
+    "word": "klasse",
+    "level": "B1",
+    "meaning": "great",
+    "example": "Ich finde unseren Lehrer klasse."
+  },
+  {
+    "word": "komplett",
+    "level": "B1",
+    "meaning": "completely",
+    "example": "Ich habe den Termin komplett vergessen."
+  },
+  {
+    "word": "kompliziert",
+    "level": "B1",
+    "meaning": "complicated",
+    "example": "Er schreibt viel zu kompliziert."
+  },
+  {
+    "word": "korrekt",
+    "level": "B1",
+    "meaning": "correct",
+    "example": "Ich habe die Rechnung geprüft. Alles ist korrekt."
+  },
+  {
+    "word": "längst",
+    "level": "B1",
+    "meaning": "long ago",
+    "example": "Wann reparierst du die Heizung? – Die habe ich schon längst repariert."
+  },
+  {
+    "word": "lecker",
+    "level": "B1",
+    "meaning": "delicious",
+    "example": "Das Essen war sehr lecker."
+  },
+  {
+    "word": "leid tun",
+    "level": "B1",
+    "meaning": "to be sorry",
+    "example": "Die Frau tut mir leid."
+  },
+  {
+    "word": "mager",
+    "level": "B1",
+    "meaning": "lean",
+    "example": "Bitte 1 kg mageres Fleisch."
+  },
+  {
+    "word": "mild",
+    "level": "B1",
+    "meaning": "mild",
+    "example": "Möchten Sie die Soße scharf? – Nein, bitte ganz mild."
+  },
+  {
+    "word": "miteinander",
+    "level": "B1",
+    "meaning": "with each other",
+    "example": "Sprechen Sie bitte miteinander."
+  },
+  {
+    "word": "mittlerweile",
+    "level": "B1",
+    "meaning": "meanwhile",
+    "example": "Am Anfang war die Arbeit schwer. Mittlerweile habe ich mich daran gewöhnt."
+  },
+  {
+    "word": "möbliert",
+    "level": "B1",
+    "meaning": "furnished",
+    "example": "Ich suche ein möbliertes Zimmer."
+  },
+  {
+    "word": "mobil",
+    "level": "B1",
+    "meaning": "mobile",
+    "example": "Mit dem Fahrrad bin ich in der Stadt sehr mobil."
+  },
+  {
+    "word": "möglichst",
+    "level": "B1",
+    "meaning": "as … as possible",
+    "example": "Sagen Sie mir bitte möglichst bald, ob Ihnen der Termin passt."
+  },
+  {
+    "word": "nachdem",
+    "level": "B1",
+    "meaning": "after",
+    "example": "Nachdem wir gegessen hatten, sind wir spazieren gegangen."
+  },
+  {
+    "word": "nachher",
+    "level": "B1",
+    "meaning": "later",
+    "example": "Ich rufe nachher nochmal an."
+  },
+  {
+    "word": "nämlich",
+    "level": "B1",
+    "meaning": "namely",
+    "example": "Ich muss leider gehen. Ich habe nämlich noch einen Termin beim Zahnarzt."
+  },
+  {
+    "word": "nebenbei",
+    "level": "B1",
+    "meaning": "on the side",
+    "example": "Mein Freund studiert Geschichte. Und nebenbei arbeitet er in einer Kneipe."
+  },
+  {
+    "word": "neulich",
+    "level": "B1",
+    "meaning": "recently",
+    "example": "Ich war neulich bei der Bank und habe einen alten Freund getroffen."
+  },
+  {
+    "word": "Nichte",
+    "level": "B1",
+    "meaning": "niece",
+    "example": "Die Tasche ist ein Geschenk von meiner Nichte."
+  },
+  {
+    "word": "Nichtraucher",
+    "level": "B1",
+    "meaning": "non-smoker",
+    "example": "In unserer Familie sind alle Nichtraucher."
+  },
+  {
+    "word": "nirgendwo",
+    "level": "B1",
+    "meaning": "nowhere",
+    "example": "Den Schlüssel kann ich nirgendwo finden."
+  },
+  {
+    "word": "noch mal",
+    "level": "B1",
+    "meaning": "once more",
+    "example": "Vielen Dank nochmal."
+  },
+  {
+    "word": "nochmals",
+    "level": "B1",
+    "meaning": "once again",
+    "example": "Nochmals vielen Dank!"
+  },
+  {
+    "word": "normalerweise",
+    "level": "B1",
+    "meaning": "normally",
+    "example": "Wann haben Sie normalerweise Pause?"
+  },
+  {
+    "word": "nun",
+    "level": "B1",
+    "meaning": "now, well",
+    "example": "Schade, dass du arbeiten musst. – Das ist nun mal so."
+  },
+  {
+    "word": "ob",
+    "level": "B1",
+    "meaning": "whether",
+    "example": "Ich weiß noch nicht, ob ich kommen kann."
+  },
+  {
+    "word": "Obers",
+    "level": "B1",
+    "meaning": "cream (Austrian)",
+    "example": "Ich hätte gern ein Stück Torte mit Obers."
+  },
+  {
+    "word": "obwohl",
+    "level": "B1",
+    "meaning": "although",
+    "example": "Obwohl meine Kollegin krank ist, geht sie arbeiten."
+  },
+  {
+    "word": "offenbar",
+    "level": "B1",
+    "meaning": "apparently",
+    "example": "Das Restaurant ist heute offenbar geschlossen."
+  },
+  {
+    "word": "öfter",
+    "level": "B1",
+    "meaning": "more often",
+    "example": "Ich treffe mich oft mit meiner Freundin."
+  },
+  {
+    "word": "ein paar",
+    "level": "B1",
+    "meaning": "a few",
+    "example": "Ich komme gleich. Es dauert nur ein paar Minuten."
+  },
+  {
+    "word": "parallel",
+    "level": "B1",
+    "meaning": "parallel",
+    "example": "Die Goethestraße ist parallel zur Hauptstraße."
+  },
+  {
+    "word": "pensioniert",
+    "level": "B1",
+    "meaning": "retired",
+    "example": "Ich werde Ende des Jahres pensioniert."
+  },
+  {
+    "word": "per",
+    "level": "B1",
+    "meaning": "by, via",
+    "example": "Wie kann ich mich für den Kurs anmelden? – Per Fax oder E-Mail."
+  },
+  {
+    "word": "perfekt",
+    "level": "B1",
+    "meaning": "perfect",
+    "example": "Die Reiseorganisation war perfekt."
+  },
+  {
+    "word": "populär",
+    "level": "B1",
+    "meaning": "popular",
+    "example": "Diese Musik ist bei Jugendlichen populär."
+  },
+  {
+    "word": "prima",
+    "level": "B1",
+    "meaning": "great",
+    "example": "Mit diesen Leuten verstehe ich mich prima."
+  },
+  {
+    "word": "quer",
+    "level": "B1",
+    "meaning": "across",
+    "example": "Ich muss zu meiner Arbeit quer durch die ganze Stadt fahren."
+  },
+  {
+    "word": "in Rente gehen",
+    "level": "B1",
+    "meaning": "to retire",
+    "example": "Ich gehe Ende des Jahres in Rente."
+  },
+  {
+    "word": "sämtliche",
+    "level": "B1",
+    "meaning": "all, entire",
+    "example": "Sämtliche Fenster müssen geschlossen bleiben."
+  },
+  {
+    "word": "schief",
+    "level": "B1",
+    "meaning": "crooked",
+    "example": "Der Spiegel hängt ganz schief."
+  },
+  {
+    "word": "schuld",
+    "level": "B1",
+    "meaning": "at fault",
+    "example": "Ich hatte einen Unfall. Aber ich war nicht schuld."
+  },
+  {
+    "word": "seitdem",
+    "level": "B1",
+    "meaning": "since then",
+    "example": "Ich bin vor zwei Jahren nach Deutschland gekommen. Seitdem lerne ich Deutsch."
+  },
+  {
+    "word": "selber",
+    "level": "B1",
+    "meaning": "oneself",
+    "example": "Sie will das selber machen."
+  },
+  {
+    "word": "sobald",
+    "level": "B1",
+    "meaning": "as soon as",
+    "example": "Sobald ich den Termin weiß, gebe ich Ihnen Bescheid."
+  },
+  {
+    "word": "senkrecht",
+    "level": "B1",
+    "meaning": "vertical",
+    "example": "Ziehen Sie bitte eine senkrechte Linie."
+  },
+  {
+    "word": "sodass",
+    "level": "B1",
+    "meaning": "so that",
+    "example": "Der Zug hatte zwei Stunden Verspätung, sodass ich erst um 23 Uhr nach Hause kam."
+  },
+  {
+    "word": "solange",
+    "level": "B1",
+    "meaning": "as long as",
+    "example": "Solange Sie Fieber haben, dürfen Sie auf keinen Fall arbeiten gehen."
+  },
+  {
+    "word": "sondern",
+    "level": "B1",
+    "meaning": "but rather",
+    "example": "Unser Besuch kommt nicht heute, sondern morgen."
+  },
+  {
+    "word": "soviel",
+    "level": "B1",
+    "meaning": "as far as",
+    "example": "Soviel ich weiß, hat dieses Restaurant heute Ruhetag."
+  },
+  {
+    "word": "so viel",
+    "level": "B1",
+    "meaning": "so much",
+    "example": "Ich habe so viel gegessen. Jetzt ist mir schlecht."
+  },
+  {
+    "word": "sowieso",
+    "level": "B1",
+    "meaning": "anyway",
+    "example": "Willst du mir den Brief mitgeben? Ich gehe sowieso zur Post."
+  },
+  {
+    "word": "sowohl … als auch",
+    "level": "B1",
+    "meaning": "both … and",
+    "example": "Sowohl Sie als auch Ihre Frau müssen unterschreiben."
+  },
+  {
+    "word": "spätestens",
+    "level": "B1",
+    "meaning": "at the latest",
+    "example": "Ich muss spätestens um 9 Uhr bei der Arbeit sein."
+  },
+  {
+    "word": "spitz",
+    "level": "B1",
+    "meaning": "pointed",
+    "example": "Der Bleistift ist nicht spitz."
+  },
+  {
+    "word": "statt",
+    "level": "B1",
+    "meaning": "instead of",
+    "example": "Kann ich diese Woche statt Donnerstag am Freitag kommen?"
+  },
+  {
+    "word": "taub",
+    "level": "B1",
+    "meaning": "deaf",
+    "example": "Sie hört schlecht, sie ist schon fast taub."
+  },
+  {
+    "word": "überhaupt",
+    "level": "B1",
+    "meaning": "at all",
+    "example": "Die Suppe schmeckt mir überhaupt nicht."
+  },
+  {
+    "word": "übrigens",
+    "level": "B1",
+    "meaning": "by the way",
+    "example": "Übrigens, kennst du schon die neuen Nachbarn?"
+  },
+  {
+    "word": "um … zu",
+    "level": "B1",
+    "meaning": "in order to",
+    "example": "Um gesund zu bleiben, musst du Sport machen und Gemüse essen."
+  },
+  {
+    "word": "umgekehrt",
+    "level": "B1",
+    "meaning": "the other way around",
+    "example": "Nein, umgekehrt: erst der Vorname, dann der Nachname."
+  },
+  {
+    "word": "umso",
+    "level": "B1",
+    "meaning": "all the more",
+    "example": "Je früher wir dort sind, umso besser sind unsere Chancen auf einen guten Sitzplatz."
+  },
+  {
+    "word": "umsonst",
+    "level": "B1",
+    "meaning": "for free / in vain",
+    "example": "Ich musste nichts bezahlen. Die Reparatur war umsonst."
+  },
+  {
+    "word": "ungefähr",
+    "level": "B1",
+    "meaning": "approximately",
+    "example": "Wie weit ist es bis zum Bahnhof? – Nicht weit, ungefähr zehn Minuten zu Fuß."
+  },
+  {
+    "word": "untersagt",
+    "level": "B1",
+    "meaning": "prohibited",
+    "example": "Es ist untersagt, hier zu rauchen."
+  },
+  {
+    "word": "unterwegs",
+    "level": "B1",
+    "meaning": "on the way",
+    "example": "Warte auf mich. Ich bin unterwegs und komme gleich."
+  },
+  {
+    "word": "vergnügt",
+    "level": "B1",
+    "meaning": "cheerful",
+    "example": "Er kam mit einem vergnügten Grinsen herein."
+  },
+  {
+    "word": "verpflichtet",
+    "level": "B1",
+    "meaning": "obligated",
+    "example": "Sie sind verpflichtet, den Unfall zu melden."
+  },
+  {
+    "word": "verrückt",
+    "level": "B1",
+    "meaning": "crazy",
+    "example": "Bist du verrückt geworden?!"
+  },
+  {
+    "word": "verwandt",
+    "level": "B1",
+    "meaning": "related",
+    "example": "Sind Sie mit Frau Meyer verwandt?"
+  },
+  {
+    "word": "viele",
+    "level": "B1",
+    "meaning": "many",
+    "example": "Ich habe schon viel gelernt."
+  },
+  {
+    "word": "voneinander",
+    "level": "B1",
+    "meaning": "from each other",
+    "example": "Wir haben lange nichts voneinander gehört."
+  },
+  {
+    "word": "vor allem",
+    "level": "B1",
+    "meaning": "above all",
+    "example": "Grüßen Sie alle von mir, vor allem Frau Meier."
+  },
+  {
+    "word": "voraus",
+    "level": "B1",
+    "meaning": "ahead",
+    "example": "Gehen Sie schon voraus."
+  },
+  {
+    "word": "vorhin",
+    "level": "B1",
+    "meaning": "earlier",
+    "example": "Vorhin hat Heidrun angerufen. Du sollst sie zurückrufen."
+  },
+  {
+    "word": "vorn",
+    "level": "B1",
+    "meaning": "in front",
+    "example": "Bitte vorn beim Fahrer einsteigen!"
+  },
+  {
+    "word": "waagerecht",
+    "level": "B1",
+    "meaning": "horizontal",
+    "example": "Ziehen Sie bitte einen waagerechten Strich."
+  },
+  {
+    "word": "während",
+    "level": "B1",
+    "meaning": "while, during",
+    "example": "Während ich arbeite, höre ich oft Musik."
+  },
+  {
+    "word": "weder … noch",
+    "level": "B1",
+    "meaning": "neither … nor",
+    "example": "Für Urlaub haben wir weder Zeit noch Geld."
+  },
+  {
+    "word": "-weise",
+    "level": "B1",
+    "meaning": "-wise, partially",
+    "example": "War der Test schwierig? – Teilweise."
+  },
+  {
+    "word": "weltweit",
+    "level": "B1",
+    "meaning": "worldwide",
+    "example": "Unsere Firma produziert für den weltweiten Markt."
+  },
+  {
+    "word": "wenig",
+    "level": "B1",
+    "meaning": "little, few",
+    "example": "Essen Sie immer so wenig?"
+  },
+  {
+    "word": "wert",
+    "level": "B1",
+    "meaning": "worth",
+    "example": "Das Auto ist vielleicht noch 1000 Euro wert."
+  },
+  {
+    "word": "weshalb",
+    "level": "B1",
+    "meaning": "why",
+    "example": "Weshalb rufst du an?"
+  },
+  {
+    "word": "wieso",
+    "level": "B1",
+    "meaning": "why",
+    "example": "Wie lange sind Sie hier? – Wieso fragen Sie?"
+  },
+  {
+    "word": "wohl",
+    "level": "B1",
+    "meaning": "well, probably",
+    "example": "Kann ich nach Hause gehen? Ich fühle mich nicht wohl."
+  },
+  {
+    "word": "worüber",
+    "level": "B1",
+    "meaning": "about what",
+    "example": "Worüber lachen Sie?"
+  },
+  {
+    "word": "worum",
+    "level": "B1",
+    "meaning": "about what",
+    "example": "Kann ich Herrn Meier sprechen? – Worum geht es denn?"
+  },
+  {
+    "word": "zahlreich",
+    "level": "B1",
+    "meaning": "numerous",
+    "example": "Die Gäste sind zahlreich gekommen."
+  },
+  {
+    "word": "ziemlich",
+    "level": "B1",
+    "meaning": "quite",
+    "example": "Ich bin schon ziemlich müde. Ich gehe ins Bett."
+  },
+  {
+    "word": "zumindest",
+    "level": "B1",
+    "meaning": "at least",
+    "example": "Ich möchte nicht in der Stadt wohnen, zumindest jetzt nicht, wenn die Kinder noch so klein sind."
+  },
+  {
+    "word": "zunächst",
+    "level": "B1",
+    "meaning": "first of all",
+    "example": "Zunächst möchte ich alle begrüßen!"
+  },
+  {
+    "word": "Zvieri",
+    "level": "B1",
+    "meaning": "afternoon snack (Swiss)",
+    "example": "Es ist Zeit für ein kleines Zvieri."
+  },
+  {
+    "word": "zwar",
+    "level": "B1",
+    "meaning": "indeed, admittedly",
+    "example": "Diese Schuhe sind zwar teuer, aber gut."
   }
 ]

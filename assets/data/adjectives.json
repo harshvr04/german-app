@@ -1638,5 +1638,1825 @@
     "level": "A2",
     "meaning": "funny / witty",
     "example": "Ich finde das nicht witzig."
+  },
+  {
+    "word": "abhängig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "dependent",
+    "example": "Gregor ist finanziell von seinen Eltern abhängig."
+  },
+  {
+    "word": "abwärts",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "downward",
+    "example": "Von dort führt der Weg abwärts ins Tal."
+  },
+  {
+    "word": "abwesend",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "absent",
+    "example": "Herr Huber ist bis zum 25. April abwesend."
+  },
+  {
+    "word": "alltäglich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "everyday",
+    "example": "Das alltägliche Leben ist manchmal langweilig."
+  },
+  {
+    "word": "alternativ",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "alternative",
+    "example": "Wir brauchen alternative Energien."
+  },
+  {
+    "word": "ängstlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "anxious",
+    "example": "Meine Mutter ist etwas ängstlich. Sie geht nicht gern allein auf die Straße."
+  },
+  {
+    "word": "anstrengend",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "strenuous",
+    "example": "Ich finde diese Arbeit sehr anstrengend."
+  },
+  {
+    "word": "anwesend",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "present",
+    "example": "Bei dem Treffen waren alle Mitglieder anwesend."
+  },
+  {
+    "word": "ärgerlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "annoying",
+    "example": "Der Zug hat schon wieder Verspätung. Das ist wirklich ärgerlich."
+  },
+  {
+    "word": "arm",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "ärmer",
+    "superlativ": "ärmsten",
+    "level": "B1",
+    "meaning": "poor",
+    "example": "Die Regierung hilft armen Nachbarländern."
+  },
+  {
+    "word": "aufmerksam",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "attentive",
+    "example": "Die Schülerin hörte aufmerksam zu."
+  },
+  {
+    "word": "ausgezeichnet",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "excellent",
+    "example": "Essen und Unterkunft waren ausgezeichnet."
+  },
+  {
+    "word": "aufwärts",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "upward",
+    "example": "Sie müssen gute Schuhe anziehen. Der Weg geht immer aufwärts."
+  },
+  {
+    "word": "ausreichend",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "sufficient",
+    "example": "Das Geld ist für die Reise ausreichend."
+  },
+  {
+    "word": "ausschließlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "exclusively",
+    "example": "Tut mir leid. Wir haben ausschließlich Nichtraucherzimmer."
+  },
+  {
+    "word": "äußerlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "external",
+    "example": "Das Medikament dürfen Sie nur äußerlich anwenden."
+  },
+  {
+    "word": "befriedigend",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "satisfactory",
+    "example": "Das Ergebnis ist befriedigend."
+  },
+  {
+    "word": "begeistert",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "enthusiastic",
+    "example": "Es war ein tolles Konzert. Ich bin begeistert."
+  },
+  {
+    "word": "beruflich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "professional",
+    "example": "Was machen Sie beruflich?"
+  },
+  {
+    "word": "berufstätig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "employed",
+    "example": "Sind Sie berufstätig?"
+  },
+  {
+    "word": "bereit",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "ready",
+    "example": "Ich bin jederzeit bereit, dir zu helfen."
+  },
+  {
+    "word": "dankbar",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "grateful",
+    "example": "Ich bin Ihnen sehr dankbar für Ihre Hilfe."
+  },
+  {
+    "word": "diesmal",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "this time",
+    "example": "Die letzten Spiele haben wir verloren. Diesmal haben wir zum Glück gewonnen."
+  },
+  {
+    "word": "digital",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "digital",
+    "example": "Ich habe eine Digitaluhr gekauft. Die geht genauer als meine alte Uhr."
+  },
+  {
+    "word": "durchschnittlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "average",
+    "example": "Die Preise sind im letzten Jahr um durchschnittlich 6% gestiegen."
+  },
+  {
+    "word": "durstig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "thirsty",
+    "example": "Du bist sicher durstig. Was möchtest du trinken?"
+  },
+  {
+    "word": "eindeutig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "clear, unambiguous",
+    "example": "Das Ergebnis ist eindeutig. Du hast gewonnen."
+  },
+  {
+    "word": "einsam",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "lonely",
+    "example": "Ohne meine Familie fühle ich mich ein bisschen einsam."
+  },
+  {
+    "word": "einschließlich",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "including",
+    "example": "Alles zusammen kostet 200 Euro einschließlich Fahrtkosten."
+  },
+  {
+    "word": "eckig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "angular",
+    "example": "Ich möchte einen eckigen Tisch, keinen runden."
+  },
+  {
+    "word": "ehrlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "honest",
+    "example": "Sie ist ein ehrlicher Mensch."
+  },
+  {
+    "word": "elegant",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "elegant",
+    "example": "Ich finde dein Kleid sehr elegant."
+  },
+  {
+    "word": "elektrisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "electric",
+    "example": "Wir kochen nicht mit Gas, sondern elektrisch."
+  },
+  {
+    "word": "elektronisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "electronic",
+    "example": "Wir sollten die Daten elektronisch bearbeiten, sonst dauert es zu lange."
+  },
+  {
+    "word": "endgültig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "final",
+    "example": "Damit ist das Problem endgültig gelöst."
+  },
+  {
+    "word": "entspannend",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "relaxing",
+    "example": "Der Urlaub war sehr entspannend."
+  },
+  {
+    "word": "erforderlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "required",
+    "example": "Hier ist die Liste der erforderlichen Zutaten für den Kuchen."
+  },
+  {
+    "word": "ernst",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": "ernstesten",
+    "level": "B1",
+    "meaning": "serious",
+    "example": "Der starke Verkehr ist ein ernstes Problem."
+  },
+  {
+    "word": "ernsthaft",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "seriously",
+    "example": "Ich überlege ernsthaft, ob ich in eine andere Stadt ziehen soll."
+  },
+  {
+    "word": "erschöpft",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "exhausted",
+    "example": "Nach dem Sport bin ich immer sehr erschöpft."
+  },
+  {
+    "word": "eventuell",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "possibly",
+    "example": "Ich komme eventuell etwas später."
+  },
+  {
+    "word": "ewig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "eternal",
+    "example": "Ich warte schon ewig auf mein neues Auto!"
+  },
+  {
+    "word": "fällig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "due",
+    "example": "Die Rechnung ist Ende des Monats fällig."
+  },
+  {
+    "word": "farbig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "colorful",
+    "example": "Ich brauche kein weißes, sondern farbiges Papier."
+  },
+  {
+    "word": "finanziell",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "financial",
+    "example": "Finanziell geht es meinem Neffen jetzt besser."
+  },
+  {
+    "word": "flach",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "flat",
+    "example": "Für die Arbeit brauche ich flache Schuhe."
+  },
+  {
+    "word": "fließend",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "fluent",
+    "example": "Mein Kollege spricht fließend Deutsch."
+  },
+  {
+    "word": "folgend",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "following",
+    "example": "Mehr Informationen auf den folgenden Seiten."
+  },
+  {
+    "word": "fröhlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "cheerful",
+    "example": "Die Musik klingt fröhlich."
+  },
+  {
+    "word": "gemeinsam",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "together, joint",
+    "example": "Du musst die Wohnung renovieren? Ich helfe dir. Wir können das gemeinsam machen."
+  },
+  {
+    "word": "gemütlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "cozy",
+    "example": "Wir haben eine sehr gemütliche Wohnung."
+  },
+  {
+    "word": "genauso",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "just as",
+    "example": "Katarina sieht genauso aus wie ihre Schwester."
+  },
+  {
+    "word": "geschieden",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "divorced",
+    "example": "Ich bin seit drei Jahren geschieden."
+  },
+  {
+    "word": "gewohnt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "accustomed",
+    "example": "Ich bin gewohnt, früh ins Bett zu gehen."
+  },
+  {
+    "word": "gewöhnlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "usual",
+    "example": "Um die Zeit ist er gewöhnlich zu Hause."
+  },
+  {
+    "word": "giftig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "poisonous",
+    "example": "Vorsicht, das ist giftig!"
+  },
+  {
+    "word": "glatt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "slippery, smooth",
+    "example": "Fahr vorsichtig! Es ist glatt."
+  },
+  {
+    "word": "gleich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "same, right away",
+    "example": "Ich komme gleich."
+  },
+  {
+    "word": "gründlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "thorough",
+    "example": "Ich möchte die Wohnung gründlich reinigen, bevor der Besuch kommt."
+  },
+  {
+    "word": "häufig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "frequent",
+    "example": "Haben Sie häufig Kopfschmerzen?"
+  },
+  {
+    "word": "heimlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "secret",
+    "example": "Gestern habe ich gehört, dass mein Sohn heimlich raucht."
+  },
+  {
+    "word": "historisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "historical",
+    "example": "Wir waren mit unserer Klasse im Historischen Museum."
+  },
+  {
+    "word": "höflich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "polite",
+    "example": "Unser Nachbar ist sehr höflich. Er sagt immer als Erster Guten Tag."
+  },
+  {
+    "word": "hungrig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "hungry",
+    "example": "Ich bin sehr hungrig."
+  },
+  {
+    "word": "ideal",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "ideal",
+    "example": "Eine Wohnung mit Garten wäre für uns ideal."
+  },
+  {
+    "word": "illegal",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "illegal",
+    "example": "Ohne Steuerkarte zu arbeiten ist illegal. Wenn es herauskommt, musst du Strafe zahlen."
+  },
+  {
+    "word": "individuell",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "individual",
+    "example": "Die Lehrerin versucht, jedes Kind individuell zu fördern."
+  },
+  {
+    "word": "intensiv",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "intensive",
+    "example": "Ich möchte intensiv Deutsch lernen."
+  },
+  {
+    "word": "interkulturell",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "intercultural",
+    "example": "Wir haben in der Sprachschule ein interkulturelles Fest gefeiert."
+  },
+  {
+    "word": "körperlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "physical",
+    "example": "Körperliche Arbeit macht mir nichts aus."
+  },
+  {
+    "word": "kräftig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "strong",
+    "example": "Der Mann ist kräftig. Er macht viel Sport und isst viel."
+  },
+  {
+    "word": "kreativ",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "creative",
+    "example": "Die Kinder sind beim Basteln sehr kreativ."
+  },
+  {
+    "word": "kritisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "critical",
+    "example": "Es gab eine Diskussion über die Lebensmittelpreise. Ein Journalist hat kritische Fragen gestellt."
+  },
+  {
+    "word": "kulturell",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "cultural",
+    "example": "Es gibt große kulturelle Unterschiede zwischen den Ländern."
+  },
+  {
+    "word": "künstlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "artificial",
+    "example": "Ich mag kein künstliches Licht."
+  },
+  {
+    "word": "kürzlich",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "recently",
+    "example": "Wir haben doch kürzlich darüber gesprochen, dass wir am Wochenende wegfahren wollen."
+  },
+  {
+    "word": "lieb",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "dear, sweet",
+    "example": "Die Kinder waren heute sehr lieb."
+  },
+  {
+    "word": "maximal",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "maximum",
+    "example": "Wie lange braucht ein Brief? – Maximal zwei Tage."
+  },
+  {
+    "word": "mehrere",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "several",
+    "example": "Ich habe mehrere Leute gefragt. Aber niemand konnte mir helfen."
+  },
+  {
+    "word": "menschlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "human",
+    "example": "Fehler zu machen ist menschlich."
+  },
+  {
+    "word": "merkwürdig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "strange",
+    "example": "Das ist eine merkwürdige Geschichte."
+  },
+  {
+    "word": "minimal",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "minimal",
+    "example": "Da ist nur ein minimaler Unterschied."
+  },
+  {
+    "word": "modern",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "modern",
+    "example": "Die Wohnung ist modern eingerichtet."
+  },
+  {
+    "word": "mündlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "oral",
+    "example": "Die mündliche Prüfung ist erst nächste Woche."
+  },
+  {
+    "word": "musikalisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "musical",
+    "example": "Sie ist sehr musikalisch. Sie spielt Klavier, Flöte und Geige."
+  },
+  {
+    "word": "mutig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "brave",
+    "example": "Es war sehr mutig von dir, deine Meinung laut zu sagen."
+  },
+  {
+    "word": "nah",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "näher",
+    "superlativ": "nächsten",
+    "level": "B1",
+    "meaning": "near",
+    "example": "Wie weit ist es zum Bahnhof? – Das ist ganz nah, nur zwei Minuten von hier."
+  },
+  {
+    "word": "national",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "national",
+    "example": "Das ist ein nationaler Wettbewerb."
+  },
+  {
+    "word": "natürlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "natural, of course",
+    "example": "Natürlich helfen wir dir."
+  },
+  {
+    "word": "negativ",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "negative",
+    "example": "Du solltest nicht alles negativ sehen."
+  },
+  {
+    "word": "neugierig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "curious",
+    "example": "Die Nachbarn sind ziemlich neugierig."
+  },
+  {
+    "word": "niedrig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "low",
+    "example": "Die Räume hier sind mir zu niedrig."
+  },
+  {
+    "word": "nötig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "necessary",
+    "example": "Wenn es nötig ist, nehmen Sie noch eine Tablette."
+  },
+  {
+    "word": "öffentlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "public",
+    "example": "In der Stadt fahre ich immer mit öffentlichen Verkehrsmitteln."
+  },
+  {
+    "word": "offiziell",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "official",
+    "example": "Sie bekommen von uns eine offizielle Einladung."
+  },
+  {
+    "word": "optimistisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "optimistic",
+    "example": "Glaubst du, dass du den Job bekommst? – Ja, ich bin ganz optimistisch."
+  },
+  {
+    "word": "ordentlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "tidy",
+    "example": "Mein Bruder ist ein sehr ordentlicher Mensch."
+  },
+  {
+    "word": "original",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "original",
+    "example": "Ich muss das originale Dokument abgeben."
+  },
+  {
+    "word": "passiv",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "passive",
+    "example": "Man sollte im Kurs nicht passiv sein, sondern mitdiskutieren."
+  },
+  {
+    "word": "pauschal",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "flat-rate",
+    "example": "Sie haben die Reise pauschal gebucht."
+  },
+  {
+    "word": "peinlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "embarrassing",
+    "example": "Das muss dir nicht peinlich sein."
+  },
+  {
+    "word": "persönlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "personal",
+    "example": "Hier gibt es zu viele Autos. Das ist meine persönliche Meinung."
+  },
+  {
+    "word": "politisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "political",
+    "example": "Ich diskutiere mit meinem Mann oft über politische Probleme."
+  },
+  {
+    "word": "positiv",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "positive",
+    "example": "Wir haben eine positive Nachricht für Sie. Sie bekommen die Stelle."
+  },
+  {
+    "word": "realistisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "realistic",
+    "example": "Ich glaube nicht, dass du für das Auto noch so viel Geld bekommst. Das ist nicht realistisch."
+  },
+  {
+    "word": "rechtlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "legal",
+    "example": "Wir beraten Sie in rechtlichen Fragen."
+  },
+  {
+    "word": "rechtzeitig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "on time",
+    "example": "Bitte weck mich rechtzeitig. Ich muss pünktlich sein."
+  },
+  {
+    "word": "regelmäßig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "regular",
+    "example": "Sie müssen die Tabletten regelmäßig nehmen."
+  },
+  {
+    "word": "regional",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "regional",
+    "example": "Du kannst mit einer Regionalbahn fahren. Das ist billiger."
+  },
+  {
+    "word": "reif",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "ripe, mature",
+    "example": "Die Banane kannst du nicht essen. Sie ist noch nicht reif."
+  },
+  {
+    "word": "rein",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "pure",
+    "example": "Der Pullover ist aus reiner Wolle."
+  },
+  {
+    "word": "relativ",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "relatively",
+    "example": "Die Wohnung ist relativ groß, aber sehr teuer."
+  },
+  {
+    "word": "riesig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "huge",
+    "example": "Die Stadt ist riesig."
+  },
+  {
+    "word": "roh",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "raw",
+    "example": "Du kannst das nicht essen. Das Fleisch ist noch roh."
+  },
+  {
+    "word": "rückwärts",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "backward",
+    "example": "Ich bin rückwärts aus der Garage gefahren."
+  },
+  {
+    "word": "salzig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "salty",
+    "example": "Dieses Essen ist zu salzig für mich."
+  },
+  {
+    "word": "satt",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "full (not hungry)",
+    "example": "Möchten Sie noch etwas? – Nein danke, ich bin satt."
+  },
+  {
+    "word": "schlank",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "slim",
+    "example": "In diesem Kleid siehst du sehr schlank aus."
+  },
+  {
+    "word": "schließlich",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "finally",
+    "example": "Ich musste lange warten. Aber schließlich habe ich den Job doch noch bekommen."
+  },
+  {
+    "word": "schmal",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "schmaler",
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "narrow",
+    "example": "Hier kannst du nicht parken. Die Straße ist zu schmal."
+  },
+  {
+    "word": "schuldig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "guilty, owing",
+    "example": "Was bin ich Ihnen schuldig? – 50 Euro, bitte."
+  },
+  {
+    "word": "selbstverständlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "of course",
+    "example": "Selbstverständlich sagen wir Ihnen sofort Bescheid."
+  },
+  {
+    "word": "sichtbar",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "visible",
+    "example": "Es gibt keine sichtbaren Verletzungen. Aber wir müssen das Bein trotzdem untersuchen."
+  },
+  {
+    "word": "sinnlos",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "pointless",
+    "example": "So ein sinnloses Buch habe ich schon lange nicht mehr gelesen."
+  },
+  {
+    "word": "sinnvoll",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "meaningful",
+    "example": "Es funktioniert einfach nicht. Es ist sinnvoll, es noch einmal zu versuchen."
+  },
+  {
+    "word": "selten",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "rare",
+    "example": "Ich gehe ganz selten ins Kino."
+  },
+  {
+    "word": "seltsam",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "strange",
+    "example": "Es ist seltsam, dass mein Bruder noch nicht hier ist."
+  },
+  {
+    "word": "sozial",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "social",
+    "example": "Das System ist nicht sozial."
+  },
+  {
+    "word": "sparsam",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "thrifty",
+    "example": "Wir haben fünf Kinder. Wir müssen sehr sparsam sein."
+  },
+  {
+    "word": "speziell",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "special",
+    "example": "Ich suche einen ganz speziellen Ring für meine Freundin."
+  },
+  {
+    "word": "städtisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "municipal",
+    "example": "Ich gehe gern in die städtische Bibliothek."
+  },
+  {
+    "word": "ständig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "constant",
+    "example": "Ich habe schon ein paar Mal bei meiner Freundin angerufen. Es ist ständig besetzt."
+  },
+  {
+    "word": "steil",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "steep",
+    "example": "Die Straße zu unserem Haus ist sehr steil."
+  },
+  {
+    "word": "stilistisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "stylistic",
+    "example": "Der Text ist stilistisch sehr schön."
+  },
+  {
+    "word": "still",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "quiet",
+    "example": "Sei doch mal einen Moment still!"
+  },
+  {
+    "word": "statistisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "statistical",
+    "example": "Die statistischen Ergebnisse zeigen eine gute Entwicklung."
+  },
+  {
+    "word": "stumm",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "mute, silent",
+    "example": "Stell bitte dein Handy leise oder auf stumm."
+  },
+  {
+    "word": "stolz",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "proud",
+    "example": "Ich bin stolz auf dich. Das hast du sehr gut gemacht."
+  },
+  {
+    "word": "strafbar",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "punishable",
+    "example": "Was du da machst, ist strafbar."
+  },
+  {
+    "word": "süchtig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "addicted",
+    "example": "Ich bin süchtig nach Schokolade."
+  },
+  {
+    "word": "theoretisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "theoretical",
+    "example": "Ich habe die theoretische Prüfung bestanden."
+  },
+  {
+    "word": "tatsächlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "actually",
+    "example": "Die Hose ist tatsächlich zu klein, obwohl sie so groß aussieht."
+  },
+  {
+    "word": "technisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "technical",
+    "example": "Es gab ein technisches Problem."
+  },
+  {
+    "word": "traditionell",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "traditional",
+    "example": "Ich mag die traditionelle Küche."
+  },
+  {
+    "word": "getrennt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "separated",
+    "example": "Ich lebe getrennt von meiner Frau."
+  },
+  {
+    "word": "tödlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "fatal",
+    "example": "Dieses Gift kann für den Menschen tödlich sein."
+  },
+  {
+    "word": "tolerant",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "tolerant",
+    "example": "Die Nachbarn hören oft laut Musik. Wir müssen sehr tolerant sein."
+  },
+  {
+    "word": "üblich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "usual",
+    "example": "In Deutschland ist es üblich, früh zu Abend zu essen."
+  },
+  {
+    "word": "übrig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "remaining",
+    "example": "Ist noch etwas zu essen übrig?"
+  },
+  {
+    "word": "ungewöhnlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "unusual",
+    "example": "Ich finde diese Speise ungewöhnlich, aber sie schmeckt gut."
+  },
+  {
+    "word": "unglaublich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "unbelievable",
+    "example": "Es ist unglaublich. Schon wieder so ein Unglück."
+  },
+  {
+    "word": "unheimlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "eerie",
+    "example": "Ich mag dieses Haus nicht. Es sieht unheimlich aus."
+  },
+  {
+    "word": "unterschiedlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "different",
+    "example": "Mein Bruder und ich sind sehr unterschiedlich."
+  },
+  {
+    "word": "ursprünglich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "originally",
+    "example": "Ursprünglich wollte ich in einem Restaurant arbeiten. Aber dann bin ich Busfahrerin geworden."
+  },
+  {
+    "word": "vegetarisch",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "vegetarian",
+    "example": "Ich mag kein Fleisch. Ich esse am liebsten vegetarisch."
+  },
+  {
+    "word": "verantwortlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "responsible",
+    "example": "Sie sind für Ihre Kinder verantwortlich."
+  },
+  {
+    "word": "verboten",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "forbidden",
+    "example": "In den meisten Restaurants ist Rauchen verboten."
+  },
+  {
+    "word": "verdächtig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "suspicious",
+    "example": "Die Tür war nicht abgeschlossen. Das ist verdächtig."
+  },
+  {
+    "word": "vergeblich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "in vain",
+    "example": "Ich habe vergeblich versucht dich anzurufen."
+  },
+  {
+    "word": "verheiratet",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "married",
+    "example": "Mit wem sind Sie verheiratet?"
+  },
+  {
+    "word": "verliebt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "in love",
+    "example": "Ich bin in Francesco verliebt."
+  },
+  {
+    "word": "vermutlich",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "presumably",
+    "example": "Vermutlich sagt er die Wahrheit."
+  },
+  {
+    "word": "vernünftig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "sensible",
+    "example": "Seien Sie doch vernünftig!"
+  },
+  {
+    "word": "verschieden",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "different",
+    "example": "Unsere beiden Kinder sind sehr verschieden."
+  },
+  {
+    "word": "verständlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "understandable",
+    "example": "Nach acht Stunden Schule haben die Kinder keine Lust mehr, die Hausaufgaben zu machen. Ich finde das verständlich."
+  },
+  {
+    "word": "virtuell",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "virtual",
+    "example": "Auf dieser Website kann man an einer virtuellen Stadtrundfahrt teilnehmen."
+  },
+  {
+    "word": "völlig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "completely",
+    "example": "Das halte ich für völlig ausgeschlossen."
+  },
+  {
+    "word": "voraussichtlich",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "presumably",
+    "example": "Der Zug hat voraussichtlich 20 Minuten Verspätung."
+  },
+  {
+    "word": "vorläufig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "temporary",
+    "example": "Ich habe noch keine Wohnung. Ich wohne vorläufig bei einem Freund."
+  },
+  {
+    "word": "wahnsinnig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "insane",
+    "example": "Du fährst viel zu schnell. Bist du wahnsinnig?!"
+  },
+  {
+    "word": "wertlos",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "worthless",
+    "example": "Diese alten Geldscheine sind heute völlig wertlos."
+  },
+  {
+    "word": "wertvoll",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "valuable",
+    "example": "Ich habe einen sehr wertvollen Ring von meiner Großmutter."
+  },
+  {
+    "word": "wild",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "wild",
+    "example": "Das ist ein wilder Fluss."
+  },
+  {
+    "word": "wunderschön",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "gorgeous",
+    "example": "Wir haben einen Ausflug gemacht. Es war wunderschön."
+  },
+  {
+    "word": "wütend",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "furious",
+    "example": "Warum bist du so wütend?"
+  },
+  {
+    "word": "zentral",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "central",
+    "example": "Wir suchen eine Zweizimmerwohnung in zentraler Lage."
+  },
+  {
+    "word": "zusätzlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "additional",
+    "example": "Sie müssen in Zukunft eine Stunde zusätzlich arbeiten."
+  },
+  {
+    "word": "zufällig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "accidental",
+    "example": "Wir haben uns zufällig am Bahnhof getroffen."
+  },
+  {
+    "word": "zugänglich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "accessible",
+    "example": "Der Park ist für alle zugänglich."
+  },
+  {
+    "word": "zukünftig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "future",
+    "example": "Ich bitte dich, zukünftig früher zu kommen."
+  },
+  {
+    "word": "zuständig",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "responsible",
+    "example": "Wir haben ein Problem mit der Heizung. Wer ist dafür zuständig?"
+  },
+  {
+    "word": "zuverlässig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B1",
+    "meaning": "reliable",
+    "example": "Der Kollege kommt bestimmt gleich. Er ist immer sehr zuverlässig."
   }
 ]

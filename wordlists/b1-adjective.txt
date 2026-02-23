@@ -1,0 +1,185 @@
+abhängig:Gregor ist finanziell von seinen Eltern abhängig.
+abwärts:Von dort führt der Weg abwärts ins Tal.
+abwesend:Herr Huber ist bis zum 25. April abwesend.
+alltäglich:Das alltägliche Leben ist manchmal langweilig.
+alternativ:Wir brauchen alternative Energien.
+ängstlich:Meine Mutter ist etwas ängstlich. Sie geht nicht gern allein auf die Straße.
+anstrengend:Ich finde diese Arbeit sehr anstrengend.
+anwesend:Bei dem Treffen waren alle Mitglieder anwesend.
+ärgerlich:Der Zug hat schon wieder Verspätung. Das ist wirklich ärgerlich.
+arm:Die Regierung hilft armen Nachbarländern.
+aufmerksam:Die Schülerin hörte aufmerksam zu.
+ausgezeichnet:Essen und Unterkunft waren ausgezeichnet.
+aufwärts:Sie müssen gute Schuhe anziehen. Der Weg geht immer aufwärts.
+ausreichend:Das Geld ist für die Reise ausreichend.
+ausschließlich:Tut mir leid. Wir haben ausschließlich Nichtraucherzimmer.
+äußerlich:Das Medikament dürfen Sie nur äußerlich anwenden.
+befriedigend:Das Ergebnis ist befriedigend.
+begeistert:Es war ein tolles Konzert. Ich bin begeistert.
+bekannt geben:Den Prüfungsort geben wir Ihnen noch rechtzeitig bekannt.
+beruflich:Was machen Sie beruflich?
+berufstätig:Sind Sie berufstätig?
+bereit:Ich bin jederzeit bereit, dir zu helfen.
+dankbar:Ich bin Ihnen sehr dankbar für Ihre Hilfe.
+diesmal:Die letzten Spiele haben wir verloren. Diesmal haben wir zum Glück gewonnen.
+digital:Ich habe eine Digitaluhr gekauft. Die geht genauer als meine alte Uhr.
+durchschnittlich:Die Preise sind im letzten Jahr um durchschnittlich 6% gestiegen.
+durstig:Du bist sicher durstig. Was möchtest du trinken?
+eindeutig:Das Ergebnis ist eindeutig. Du hast gewonnen.
+einsam:Ohne meine Familie fühle ich mich ein bisschen einsam.
+einschließlich:Alles zusammen kostet 200 Euro einschließlich Fahrtkosten.
+eckig:Ich möchte einen eckigen Tisch, keinen runden.
+ehrlich:Sie ist ein ehrlicher Mensch.
+elegant:Ich finde dein Kleid sehr elegant.
+elektrisch:Wir kochen nicht mit Gas, sondern elektrisch.
+elektronisch:Wir sollten die Daten elektronisch bearbeiten, sonst dauert es zu lange.
+endgültig:Damit ist das Problem endgültig gelöst.
+entspannend:Der Urlaub war sehr entspannend.
+erforderlich:Hier ist die Liste der erforderlichen Zutaten für den Kuchen.
+ernst:Der starke Verkehr ist ein ernstes Problem.
+ernsthaft:Ich überlege ernsthaft, ob ich in eine andere Stadt ziehen soll.
+erschöpft:Nach dem Sport bin ich immer sehr erschöpft.
+eventuell:Ich komme eventuell etwas später.
+ewig:Ich warte schon ewig auf mein neues Auto!
+fällig:Die Rechnung ist Ende des Monats fällig.
+farbig:Ich brauche kein weißes, sondern farbiges Papier.
+finanziell:Finanziell geht es meinem Neffen jetzt besser.
+flach:Für die Arbeit brauche ich flache Schuhe.
+fließend:Mein Kollege spricht fließend Deutsch.
+folgend:Mehr Informationen auf den folgenden Seiten.
+fröhlich:Die Musik klingt fröhlich.
+gemeinsam:Du musst die Wohnung renovieren? Ich helfe dir. Wir können das gemeinsam machen.
+gemütlich:Wir haben eine sehr gemütliche Wohnung.
+genauso:Katarina sieht genauso aus wie ihre Schwester.
+geschieden:Ich bin seit drei Jahren geschieden.
+gemeinsam:Wir benutzen die Garage gemeinsam mit dem Nachbarn.
+gewohnt:Ich bin gewohnt, früh ins Bett zu gehen.
+gewöhnlich:Um die Zeit ist er gewöhnlich zu Hause.
+giftig:Vorsicht, das ist giftig!
+glatt:Fahr vorsichtig! Es ist glatt.
+gleich:Ich komme gleich.
+gründlich:Ich möchte die Wohnung gründlich reinigen, bevor der Besuch kommt.
+häufig:Haben Sie häufig Kopfschmerzen?
+heimlich:Gestern habe ich gehört, dass mein Sohn heimlich raucht.
+historisch:Wir waren mit unserer Klasse im Historischen Museum.
+höflich:Unser Nachbar ist sehr höflich. Er sagt immer als Erster Guten Tag.
+hungrig:Ich bin sehr hungrig.
+ideal:Eine Wohnung mit Garten wäre für uns ideal.
+illegal:Ohne Steuerkarte zu arbeiten ist illegal. Wenn es herauskommt, musst du Strafe zahlen.
+individuell:Die Lehrerin versucht, jedes Kind individuell zu fördern.
+intensiv:Ich möchte intensiv Deutsch lernen.
+interkulturell:Wir haben in der Sprachschule ein interkulturelles Fest gefeiert.
+körperlich:Körperliche Arbeit macht mir nichts aus.
+kräftig:Der Mann ist kräftig. Er macht viel Sport und isst viel.
+kreativ:Die Kinder sind beim Basteln sehr kreativ.
+kritisch:Es gab eine Diskussion über die Lebensmittelpreise. Ein Journalist hat kritische Fragen gestellt.
+kulturell:Es gibt große kulturelle Unterschiede zwischen den Ländern.
+künstlich:Ich mag kein künstliches Licht.
+kürzlich:Wir haben doch kürzlich darüber gesprochen, dass wir am Wochenende wegfahren wollen.
+lieb:Die Kinder waren heute sehr lieb.
+maximal:Wie lange braucht ein Brief? – Maximal zwei Tage.
+mehrere:Ich habe mehrere Leute gefragt. Aber niemand konnte mir helfen.
+menschlich:Fehler zu machen ist menschlich.
+merkwürdig:Das ist eine merkwürdige Geschichte.
+minimal:Da ist nur ein minimaler Unterschied.
+modern:Die Wohnung ist modern eingerichtet.
+mündlich:Die mündliche Prüfung ist erst nächste Woche.
+musikalisch:Sie ist sehr musikalisch. Sie spielt Klavier, Flöte und Geige.
+mutig:Es war sehr mutig von dir, deine Meinung laut zu sagen.
+nah(e):Wie weit ist es zum Bahnhof? – Das ist ganz nah, nur zwei Minuten von hier.
+national:Das ist ein nationaler Wettbewerb.
+natürlich:Natürlich helfen wir dir.
+negativ:Du solltest nicht alles negativ sehen.
+neugierig:Die Nachbarn sind ziemlich neugierig.
+niedrig:Die Räume hier sind mir zu niedrig.
+nötig:Wenn es nötig ist, nehmen Sie noch eine Tablette.
+öffentlich:In der Stadt fahre ich immer mit öffentlichen Verkehrsmitteln.
+offiziell:Sie bekommen von uns eine offizielle Einladung.
+optimistisch:Glaubst du, dass du den Job bekommst? – Ja, ich bin ganz optimistisch.
+ordentlich:Mein Bruder ist ein sehr ordentlicher Mensch.
+original:Ich muss das originale Dokument abgeben.
+passiv:Man sollte im Kurs nicht passiv sein, sondern mitdiskutieren.
+pauschal:Sie haben die Reise pauschal gebucht.
+peinlich:Das muss dir nicht peinlich sein.
+persönlich:Hier gibt es zu viele Autos. Das ist meine persönliche Meinung.
+politisch:Ich diskutiere mit meinem Mann oft über politische Probleme.
+positiv:Wir haben eine positive Nachricht für Sie. Sie bekommen die Stelle.
+realistisch:Ich glaube nicht, dass du für das Auto noch so viel Geld bekommst. Das ist nicht realistisch.
+rechtlich:Wir beraten Sie in rechtlichen Fragen.
+rechtzeitig:Bitte weck mich rechtzeitig. Ich muss pünktlich sein.
+regelmäßig:Sie müssen die Tabletten regelmäßig nehmen.
+regional:Du kannst mit einer Regionalbahn fahren. Das ist billiger.
+reif:Die Banane kannst du nicht essen. Sie ist noch nicht reif.
+rein:Der Pullover ist aus reiner Wolle.
+relativ:Die Wohnung ist relativ groß, aber sehr teuer.
+riesig:Die Stadt ist riesig.
+roh:Du kannst das nicht essen. Das Fleisch ist noch roh.
+rückwärts:Ich bin rückwärts aus der Garage gefahren.
+salzig:Dieses Essen ist zu salzig für mich.
+satt:Möchten Sie noch etwas? – Nein danke, ich bin satt.
+geschieden:Meine Kollegin ist geschieden.
+schlank:In diesem Kleid siehst du sehr schlank aus.
+schließlich:Ich musste lange warten. Aber schließlich habe ich den Job doch noch bekommen.
+schmal:Hier kannst du nicht parken. Die Straße ist zu schmal.
+schuldig:Was bin ich Ihnen schuldig? – 50 Euro, bitte.
+selbstverständlich:Selbstverständlich sagen wir Ihnen sofort Bescheid.
+sichtbar:Es gibt keine sichtbaren Verletzungen. Aber wir müssen das Bein trotzdem untersuchen.
+sinnlos:So ein sinnloses Buch habe ich schon lange nicht mehr gelesen.
+sinnvoll:Es funktioniert einfach nicht. Es ist sinnvoll, es noch einmal zu versuchen.
+selten:Ich gehe ganz selten ins Kino.
+seltsam:Es ist seltsam, dass mein Bruder noch nicht hier ist.
+sozial:Das System ist nicht sozial.
+sparsam:Wir haben fünf Kinder. Wir müssen sehr sparsam sein.
+speziell:Ich suche einen ganz speziellen Ring für meine Freundin.
+städtisch:Ich gehe gern in die städtische Bibliothek.
+ständig:Ich habe schon ein paar Mal bei meiner Freundin angerufen. Es ist ständig besetzt.
+steil:Die Straße zu unserem Haus ist sehr steil.
+stilistisch:Der Text ist stilistisch sehr schön.
+still:Sei doch mal einen Moment still!
+statistisch:Die statistischen Ergebnisse zeigen eine gute Entwicklung.
+stumm:Stell bitte dein Handy leise oder auf stumm.
+stolz:Ich bin stolz auf dich. Das hast du sehr gut gemacht.
+strafbar:Was du da machst, ist strafbar.
+süchtig:Ich bin süchtig nach Schokolade.
+theoretisch:Ich habe die theoretische Prüfung bestanden.
+tatsächlich:Die Hose ist tatsächlich zu klein, obwohl sie so groß aussieht.
+technisch:Es gab ein technisches Problem.
+traditionell:Ich mag die traditionelle Küche.
+getrennt leben:Ich lebe getrennt von meiner Frau.
+tödlich:Dieses Gift kann für den Menschen tödlich sein.
+tolerant:Die Nachbarn hören oft laut Musik. Wir müssen sehr tolerant sein.
+üblich:In Deutschland ist es üblich, früh zu Abend zu essen.
+übrig:Ist noch etwas zu essen übrig?
+ungewöhnlich:Ich finde diese Speise ungewöhnlich, aber sie schmeckt gut.
+unglaublich:Es ist unglaublich. Schon wieder so ein Unglück.
+unheimlich:Ich mag dieses Haus nicht. Es sieht unheimlich aus.
+unterschiedlich:Mein Bruder und ich sind sehr unterschiedlich.
+ursprünglich:Ursprünglich wollte ich in einem Restaurant arbeiten. Aber dann bin ich Busfahrerin geworden.
+vegetarisch:Ich mag kein Fleisch. Ich esse am liebsten vegetarisch.
+verantwortlich:Sie sind für Ihre Kinder verantwortlich.
+verboten:In den meisten Restaurants ist Rauchen verboten.
+verdächtig:Die Tür war nicht abgeschlossen. Das ist verdächtig.
+vergeblich:Ich habe vergeblich versucht dich anzurufen.
+verheiratet:Mit wem sind Sie verheiratet?
+verliebt:Ich bin in Francesco verliebt.
+vermutlich:Vermutlich sagt er die Wahrheit.
+vernünftig:Seien Sie doch vernünftig!
+verschieden:Unsere beiden Kinder sind sehr verschieden.
+verständlich:Nach acht Stunden Schule haben die Kinder keine Lust mehr, die Hausaufgaben zu machen. Ich finde das verständlich.
+virtuell:Auf dieser Website kann man an einer virtuellen Stadtrundfahrt teilnehmen.
+völlig:Das halte ich für völlig ausgeschlossen.
+voraussichtlich:Der Zug hat voraussichtlich 20 Minuten Verspätung.
+vorläufig:Ich habe noch keine Wohnung. Ich wohne vorläufig bei einem Freund.
+wahnsinnig:Du fährst viel zu schnell. Bist du wahnsinnig?!
+wertlos:Diese alten Geldscheine sind heute völlig wertlos.
+wertvoll:Ich habe einen sehr wertvollen Ring von meiner Großmutter.
+wild:Das ist ein wilder Fluss.
+wunderschön:Wir haben einen Ausflug gemacht. Es war wunderschön.
+wütend:Warum bist du so wütend?
+zentral:Wir suchen eine Zweizimmerwohnung in zentraler Lage.
+zusätzlich:Sie müssen in Zukunft eine Stunde zusätzlich arbeiten.
+zufällig:Wir haben uns zufällig am Bahnhof getroffen.
+zugänglich:Der Park ist für alle zugänglich.
+zukünftig:Ich bitte dich, zukünftig früher zu kommen.
+zuständig:Wir haben ein Problem mit der Heizung. Wer ist dafür zuständig?
+zuverlässig:Der Kollege kommt bestimmt gleich. Er ist immer sehr zuverlässig.
