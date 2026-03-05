@@ -198,6 +198,34 @@ describe("sessionReducer — revision flow", () => {
 	});
 });
 
+describe("sessionReducer — RESET", () => {
+	it("returns to setup from active phase", () => {
+		const state = startSession();
+		const next = sessionReducer(state, { type: "RESET" });
+		expect(next.phase).toBe("setup");
+	});
+
+	it("returns to setup from complete phase", () => {
+		let state = startSession();
+		state = sessionReducer(state, { type: "ANSWER_RIGHT" });
+		state = sessionReducer(state, { type: "ANSWER_RIGHT" });
+		state = sessionReducer(state, { type: "ANSWER_RIGHT" });
+		expect(state.phase).toBe("complete");
+		const next = sessionReducer(state, { type: "RESET" });
+		expect(next.phase).toBe("setup");
+	});
+
+	it("returns to setup from revision phase", () => {
+		let state = startSession();
+		state = sessionReducer(state, { type: "ANSWER_WRONG" });
+		state = sessionReducer(state, { type: "ANSWER_RIGHT" });
+		state = sessionReducer(state, { type: "ANSWER_RIGHT" });
+		expect(state.phase).toBe("revision");
+		const next = sessionReducer(state, { type: "RESET" });
+		expect(next.phase).toBe("setup");
+	});
+});
+
 describe("sessionReducer — no-op in wrong phase", () => {
 	it("ANSWER_RIGHT in setup does nothing", () => {
 		const state = createInitialState();

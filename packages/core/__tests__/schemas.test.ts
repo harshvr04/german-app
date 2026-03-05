@@ -23,7 +23,7 @@ describe("NounSchema", () => {
 	});
 
 	it("accepts all levels", () => {
-		for (const level of ["A1", "A2", "B1"]) {
+		for (const level of ["A1", "A2", "B1", "B2", "C1", "C2"]) {
 			expect(NounSchema.parse({ ...valid, level })).toBeDefined();
 		}
 	});
@@ -33,7 +33,7 @@ describe("NounSchema", () => {
 	});
 
 	it("rejects invalid level", () => {
-		expect(() => NounSchema.parse({ ...valid, level: "C1" })).toThrow();
+		expect(() => NounSchema.parse({ ...valid, level: "D1" })).toThrow();
 	});
 
 	it("rejects missing fields", () => {
@@ -193,13 +193,13 @@ describe("OtherSchema", () => {
 	});
 
 	it("accepts all levels", () => {
-		for (const level of ["A1", "A2", "B1"]) {
+		for (const level of ["A1", "A2", "B1", "B2", "C1", "C2"]) {
 			expect(OtherSchema.parse({ ...valid, level })).toBeDefined();
 		}
 	});
 
 	it("rejects invalid level", () => {
-		expect(() => OtherSchema.parse({ ...valid, level: "C1" })).toThrow();
+		expect(() => OtherSchema.parse({ ...valid, level: "D1" })).toThrow();
 	});
 
 	it("rejects missing fields", () => {

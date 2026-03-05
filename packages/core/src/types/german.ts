@@ -1,5 +1,5 @@
-/** Supported levels. Extend this tuple to add B2/C1/C2 — all types and schemas derive from it. */
-export const LEVELS = ["A1", "A2", "B1"] as const;
+/** Supported CEFR levels. All types and schemas derive from this tuple. */
+export const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
 export type Level = (typeof LEVELS)[number];
 
 export type Gender = "m" | "f" | "n";
@@ -11,7 +11,7 @@ export type Auxiliary = "haben" | "sein";
 export type AdjectiveParadigm = "no_article" | "definite" | "indefinite_possessive_or_kein";
 export type GenderOrPlural = Gender | "pl";
 
-export type Category = "vocab" | "verbs" | "nouns" | "adjectives";
+export type Category = "vocab" | "verbs" | "nouns" | "adjectives" | "dictionary";
 export type VocabDirection = "de_to_en" | "en_to_de";
 
 export interface SessionConfig {
@@ -28,6 +28,13 @@ export interface SessionStats {
 	revisionRounds: number;
 	startTime: number;
 	endTime?: number;
+}
+
+export interface DictionaryEntry {
+	word: string;
+	meaning: string;
+	example: string;
+	level: Level;
 }
 
 export interface Card {

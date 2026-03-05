@@ -26,6 +26,10 @@
     "./data": {
       "import": "./dist/data/loader.js",
       "types": "./dist/data/loader.d.ts"
+    },
+    "./dictionary": {
+      "import": "./dist/dictionary/index.js",
+      "types": "./dist/dictionary/index.d.ts"
     }
   },
   "scripts": {

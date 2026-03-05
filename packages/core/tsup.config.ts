@@ -8,6 +8,7 @@ export default defineConfig({
 		"src/generators/index.ts",
 		"src/session/index.ts",
 		"src/data/loader.ts",
+		"src/dictionary/index.ts",
 	],
 	format: ["esm"],
 	dts: true,

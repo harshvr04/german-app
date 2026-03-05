@@ -37,7 +37,8 @@ export type SessionState = SetupState | ActiveState | RevisionState | CompleteSt
 export type SessionAction =
 	| { type: "START"; cards: Card[]; config: SessionConfig }
 	| { type: "ANSWER_RIGHT" }
-	| { type: "ANSWER_WRONG" };
+	| { type: "ANSWER_WRONG" }
+	| { type: "RESET" };
 
 // --- Reducer ---
 
@@ -111,6 +112,9 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
 		case "ANSWER_WRONG": {
 			if (state.phase !== "active" && state.phase !== "revision") return state;
 			return advanceOrTransition(state, true);
+		}
+		case "RESET": {
+			return createInitialState();
 		}
 	}
 }

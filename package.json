@@ -8,6 +8,7 @@
     "typecheck": "turbo run typecheck",
     "german": "pnpm --filter @german/cli run start",
     "tool-b": "pnpm --filter @german/tool-b run start",
+    "mobile": "pnpm --filter @german/mobile run start",
     "prepare": "husky"
   },
   "devDependencies": {

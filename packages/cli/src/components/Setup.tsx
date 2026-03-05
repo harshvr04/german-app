@@ -12,6 +12,9 @@ const VOCAB_DIRECTIONS: { value: VocabDirection; label: string }[] = [
 ];
 const BATCH_SIZES = [10, 20, 50, 100];
 
+// Level step: CEFR levels + "dictionary" at the bottom
+const LEVEL_ITEMS: readonly string[] = [...LEVELS, "dictionary"];
+
 interface Props {
 	onComplete: (
 		level: Level,
@@ -19,36 +22,75 @@ interface Props {
 		batchSize: number,
 		vocabDirection?: VocabDirection,
 	) => void;
+	onDictionary: (level: Level) => void;
+	onGlobalDictionary: () => void;
 }
 
-export function Setup({ onComplete }: Props) {
+export function Setup({ onComplete, onDictionary, onGlobalDictionary }: Props) {
 	const [step, setStep] = useState<Step>("level");
 	const [cursor, setCursor] = useState(0);
 	const [level, setLevel] = useState<Level | null>(null);
 	const [category, setCategory] = useState<Category | null>(null);
 	const [vocabDirection, setVocabDirection] = useState<VocabDirection | undefined>(undefined);
 
+	// Category step shows CATEGORIES + "dictionary" at the bottom
+	const categoryItems = [...CATEGORIES, "dictionary" as Category];
+
 	const items =
 		step === "level"
-			? (LEVELS as readonly string[])
+			? LEVEL_ITEMS
 			: step === "category"
-				? CATEGORIES
+				? categoryItems
 				: step === "vocabDirection"
 					? VOCAB_DIRECTIONS.map((d) => d.label)
 					: BATCH_SIZES.map(String);
+
+	const goBack = () => {
+		if (step === "category") {
+			setLevel(null);
+			setStep("level");
+			setCursor(0);
+		} else if (step === "vocabDirection") {
+			setCategory(null);
+			setStep("category");
+			setCursor(0);
+		} else if (step === "batchSize") {
+			if (category === "vocab" && vocabDirection) {
+				setVocabDirection(undefined);
+				setStep("vocabDirection");
+			} else {
+				setCategory(null);
+				setStep("category");
+			}
+			setCursor(0);
+		}
+	};
 
 	useInput((_input, key) => {
 		if (key.upArrow) {
 			setCursor((c) => (c > 0 ? c - 1 : items.length - 1));
 		} else if (key.downArrow) {
 			setCursor((c) => (c < items.length - 1 ? c + 1 : 0));
+		} else if (key.escape || key.leftArrow) {
+			if (step !== "level") {
+				goBack();
+			}
 		} else if (key.return) {
 			if (step === "level") {
-				setLevel(LEVELS[cursor]!);
+				const selected = LEVEL_ITEMS[cursor]!;
+				if (selected === "dictionary") {
+					onGlobalDictionary();
+					return;
+				}
+				setLevel(selected as Level);
 				setStep("category");
 				setCursor(0);
 			} else if (step === "category") {
-				const selected = CATEGORIES[cursor]!;
+				const selected = categoryItems[cursor]!;
+				if (selected === "dictionary") {
+					onDictionary(level!);
+					return;
+				}
 				setCategory(selected);
 				if (selected === "vocab") {
 					setStep("vocabDirection");
@@ -77,18 +119,33 @@ export function Setup({ onComplete }: Props) {
 
 	return (
 		<Box flexDirection="column" padding={1}>
-			<Text bold underline>
-				{title}
-			</Text>
-			<Text> </Text>
-			{items.map((item, i) => (
-				<Text key={item}>
-					{i === cursor ? "▸ " : "  "}
-					<Text bold={i === cursor}>{item}</Text>
+			<Box>
+				<Text bold underline>
+					{title}
 				</Text>
-			))}
+				{step !== "level" && <Text dimColor> ← back</Text>}
+			</Box>
 			<Text> </Text>
-			<Text dimColor>↑/↓ to navigate, Enter to select</Text>
+			{items.map((item, i) => {
+				const isDictionary = item === "dictionary";
+				return (
+					<Text key={item}>
+						{isDictionary && i > 0 ? "\n" : ""}
+						{i === cursor ? "▸ " : "  "}
+						{isDictionary ? (
+							<Text bold={i === cursor} color="magenta" dimColor={step === "level"}>
+								{item}
+							</Text>
+						) : (
+							<Text bold={i === cursor}>{item}</Text>
+						)}
+					</Text>
+				);
+			})}
+			<Text> </Text>
+			<Text dimColor>
+				↑/↓ to navigate, Enter to select{step !== "level" ? ", ←/Esc to go back" : ""}
+			</Text>
 		</Box>
 	);
 }

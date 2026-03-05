@@ -1,22 +1,17 @@
-import { resolve } from "node:path";
-import { fileURLToPath } from "node:url";
-import { loadAdjectives, loadNouns, loadOthers, loadVerbs } from "@german/core/data";
-import { generateVocabCards } from "@german/core/generators";
+import { generateAdjectiveCards } from "@german/core/generators";
 import { generateNounCards } from "@german/core/generators";
 import { generateVerbCards } from "@german/core/generators";
-import { generateAdjectiveCards } from "@german/core/generators";
+import { generateVocabCards } from "@german/core/generators";
 import { createInitialState, sessionReducer } from "@german/core/session";
 import type { Card, SessionConfig } from "@german/core/types";
 import { useCallback, useReducer } from "react";
-
-const __dirname = fileURLToPath(new URL(".", import.meta.url));
-const DATA_DIR = resolve(__dirname, "../../../assets/data");
+import { loadAdjectives, loadNouns, loadOthers, loadVerbs } from "../data/loader";
 
 function resolveCards(config: SessionConfig): Card[] {
-	const nouns = loadNouns(DATA_DIR, config.level);
-	const verbs = loadVerbs(DATA_DIR, config.level);
-	const adjectives = loadAdjectives(DATA_DIR, config.level);
-	const others = loadOthers(DATA_DIR, config.level);
+	const nouns = loadNouns(config.level);
+	const verbs = loadVerbs(config.level);
+	const adjectives = loadAdjectives(config.level);
+	const others = loadOthers(config.level);
 
 	switch (config.category) {
 		case "vocab":
@@ -55,5 +50,9 @@ export function useSession() {
 		dispatch({ type: "ANSWER_WRONG" });
 	}, []);
 
-	return { state, start, answerRight, answerWrong };
+	const reset = useCallback(() => {
+		dispatch({ type: "RESET" });
+	}, []);
+
+	return { state, start, answerRight, answerWrong, reset };
 }

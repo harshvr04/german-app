@@ -15,7 +15,7 @@ describe("loadNouns", () => {
 	});
 
 	it("returns empty for a level with no data", () => {
-		const nouns = loadNouns(dataDir, "B1");
+		const nouns = loadNouns(dataDir, "C2");
 		expect(nouns).toEqual([]);
 	});
 
