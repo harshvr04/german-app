@@ -1,7 +1,9 @@
 import type { Card } from "@german/core/types";
 import { useEffect, useState } from "react";
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
+import { REPORT_WEBHOOK_URL } from "../config";
 import { colors, spacing, typography } from "../theme";
+import { ReportModal } from "./ReportModal";
 
 interface Props {
 	card: Card;
@@ -13,6 +15,8 @@ interface Props {
 	onBack: () => void;
 	isStarred?: boolean | undefined;
 	onToggleStar?: (() => void) | undefined;
+	category?: string | undefined;
+	sessionLevel?: string | undefined;
 }
 
 export function FlashcardScreen({
@@ -25,9 +29,12 @@ export function FlashcardScreen({
 	onBack,
 	isStarred,
 	onToggleStar,
+	category,
+	sessionLevel,
 }: Props) {
 	const [revealed, setRevealed] = useState(false);
 	const [showDetails, setShowDetails] = useState(false);
+	const [reportModalVisible, setReportModalVisible] = useState(false);
 
 	// Reset when card changes
 	// biome-ignore lint/correctness/useExhaustiveDependencies: reset state when index prop changes
@@ -104,7 +111,22 @@ export function FlashcardScreen({
 						)}
 					</>
 				)}
+
+				{/* Report issue */}
+				{REPORT_WEBHOOK_URL.length > 0 && (
+					<Pressable style={styles.reportButton} onPress={() => setReportModalVisible(true)}>
+						<Text style={styles.reportText}>Report issue</Text>
+					</Pressable>
+				)}
 			</ScrollView>
+
+			<ReportModal
+				visible={reportModalVisible}
+				onClose={() => setReportModalVisible(false)}
+				word={card.question}
+				level={card.level ?? sessionLevel ?? ""}
+				category={category ?? ""}
+			/>
 
 			{/* Action buttons */}
 			{revealed && (
@@ -283,5 +305,13 @@ const styles = StyleSheet.create({
 		...typography.body,
 		color: colors.text,
 		fontWeight: "700",
+	},
+	reportButton: {
+		marginTop: spacing.md,
+		alignSelf: "center",
+	},
+	reportText: {
+		...typography.caption,
+		color: colors.textDisabled,
 	},
 });

@@ -141,6 +141,8 @@ export default function App() {
 					onBack={handleReset}
 					isStarred={isVocabSession ? starred.isStarred(baseWord, cardLevel) : undefined}
 					onToggleStar={isVocabSession ? () => starred.toggleStar(baseWord, cardLevel) : undefined}
+					category={state.config.category}
+					sessionLevel={state.config.level}
 				/>
 			</>
 		);

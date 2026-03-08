@@ -8,7 +8,7 @@ import {
 } from "@german/core/types";
 import type { Category, Level, SessionConfig, VocabDirection } from "@german/core/types";
 import { useState } from "react";
-import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Alert, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import { hasDataForLevel } from "../data/loader";
 import { colors, spacing, typography } from "../theme";
 import { InfoModal } from "./InfoModal";
@@ -154,6 +154,17 @@ export function SetupScreen({
 								<Text style={styles.globalStarredText}>★ Starred ({starredCount})</Text>
 							</Pressable>
 						)}
+						<View style={styles.creditSpacer} />
+						<Pressable
+							onPress={() =>
+								Alert.alert(
+									"Credits",
+									"This App was vibe-coded by Harshvardhan Rao.\n\nReachout to me on Linkedin: harshvardhan-rao-03549760",
+								)
+							}
+						>
+							<Text style={styles.creditText}>credits</Text>
+						</Pressable>
 					</>
 				)}
 
@@ -390,6 +401,14 @@ const styles = StyleSheet.create({
 	},
 	infoIcon: {
 		...typography.caption,
-		color: colors.accent,
+		color: colors.textSecondary,
+	},
+	creditSpacer: {
+		height: spacing.xl,
+	},
+	creditText: {
+		fontSize: 7,
+		color: colors.textDisabled,
+		textAlign: "center",
 	},
 });
