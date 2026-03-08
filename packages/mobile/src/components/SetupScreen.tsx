@@ -1,37 +1,61 @@
-import { LEVELS } from "@german/core/types";
+import {
+	BATCH_SIZES,
+	CATEGORIES,
+	LEVELS,
+	STEP_TITLES,
+	VOCAB_DIRECTIONS,
+	WORD_COUNTER_INFO,
+} from "@german/core/types";
 import type { Category, Level, SessionConfig, VocabDirection } from "@german/core/types";
 import { useState } from "react";
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import { hasDataForLevel } from "../data/loader";
 import { colors, spacing, typography } from "../theme";
+import { InfoModal } from "./InfoModal";
 
 type Step = "level" | "category" | "vocabDirection" | "batchSize";
 
-const CATEGORIES: { value: Category; label: string }[] = [
-	{ value: "vocab", label: "Vocabulary" },
-	{ value: "verbs", label: "Verbs" },
-	{ value: "nouns", label: "Nouns" },
-	{ value: "adjectives", label: "Adjectives" },
-];
-
-const VOCAB_DIRECTIONS: { value: VocabDirection; label: string }[] = [
-	{ value: "de_to_en", label: "German → English" },
-	{ value: "en_to_de", label: "English → German" },
-];
-
-const BATCH_SIZES = [10, 20, 50, 100];
+interface WordCount {
+	count: number;
+	total: number;
+}
 
 interface Props {
 	onComplete: (config: SessionConfig) => void;
 	onDictionary: (level: Level) => void;
 	onGlobalDictionary: () => void;
+	onStarredReview: (level: Level) => void;
+	onGlobalStarredReview: () => void;
+	starredCount: number;
+	starredCountByLevel: Record<Level, number>;
+	wordCounts: Record<Level, WordCount>;
+	onResetCounter: (level: Level) => void;
 }
 
-export function SetupScreen({ onComplete, onDictionary, onGlobalDictionary }: Props) {
+export function SetupScreen({
+	onComplete,
+	onDictionary,
+	onGlobalDictionary,
+	onStarredReview,
+	onGlobalStarredReview,
+	starredCount,
+	starredCountByLevel,
+	wordCounts,
+	onResetCounter,
+}: Props) {
 	const [step, setStep] = useState<Step>("level");
 	const [level, setLevel] = useState<Level | null>(null);
 	const [category, setCategory] = useState<Category | null>(null);
 	const [vocabDirection, setVocabDirection] = useState<VocabDirection | undefined>(undefined);
+	const [infoModalVisible, setInfoModalVisible] = useState(false);
+
+	const totalCount = LEVELS.reduce(
+		(acc, l) => {
+			const wc = wordCounts[l];
+			return { count: acc.count + wc.count, total: acc.total + wc.total };
+		},
+		{ count: 0, total: 0 },
+	);
 
 	const goBack = () => {
 		if (step === "category") {
@@ -51,14 +75,7 @@ export function SetupScreen({ onComplete, onDictionary, onGlobalDictionary }: Pr
 		}
 	};
 
-	const title =
-		step === "level"
-			? "Select Level"
-			: step === "category"
-				? "Select Category"
-				: step === "vocabDirection"
-					? "Select Direction"
-					: "Select Batch Size";
+	const title = STEP_TITLES[step];
 
 	const breadcrumbs = [
 		level,
@@ -78,7 +95,19 @@ export function SetupScreen({ onComplete, onDictionary, onGlobalDictionary }: Pr
 					)}
 				</View>
 				{breadcrumbs.length > 0 && (
-					<Text style={styles.breadcrumbs}>{breadcrumbs.join(" › ")}</Text>
+					<View style={styles.breadcrumbRow}>
+						<Text style={styles.breadcrumbs}>{breadcrumbs.join(" › ")}</Text>
+						{level && step !== "level" && wordCounts[level].total > 0 && (
+							<View style={styles.counterRow}>
+								<Text style={styles.counterText}>
+									{wordCounts[level].count}/{wordCounts[level].total}
+								</Text>
+								<Pressable onPress={() => setInfoModalVisible(true)} hitSlop={8}>
+									<Text style={styles.infoIcon}>(i)</Text>
+								</Pressable>
+							</View>
+						)}
+					</View>
 				)}
 			</View>
 
@@ -106,10 +135,25 @@ export function SetupScreen({ onComplete, onDictionary, onGlobalDictionary }: Pr
 								</Pressable>
 							);
 						})}
+						{totalCount.total > 0 && (
+							<View style={styles.globalCounterRow}>
+								<Text style={styles.counterText}>
+									{totalCount.count}/{totalCount.total}
+								</Text>
+								<Pressable onPress={() => setInfoModalVisible(true)} hitSlop={8}>
+									<Text style={styles.infoIcon}>(i)</Text>
+								</Pressable>
+							</View>
+						)}
 						<View style={styles.globalDictionarySpacer} />
 						<Pressable onPress={onGlobalDictionary}>
-							<Text style={styles.globalDictionaryText}>Dictionary</Text>
+							<Text style={styles.globalLinkText}>Dictionary</Text>
 						</Pressable>
+						{starredCount > 0 && (
+							<Pressable onPress={onGlobalStarredReview} style={styles.globalStarredRow}>
+								<Text style={styles.globalStarredText}>★ Starred ({starredCount})</Text>
+							</Pressable>
+						)}
 					</>
 				)}
 
@@ -140,6 +184,16 @@ export function SetupScreen({ onComplete, onDictionary, onGlobalDictionary }: Pr
 						>
 							<Text style={styles.dictionaryText}>Dictionary</Text>
 						</Pressable>
+						{level && starredCountByLevel[level] > 0 && (
+							<Pressable
+								style={styles.starredOption}
+								onPress={() => {
+									onStarredReview(level);
+								}}
+							>
+								<Text style={styles.starredText}>★ Starred ({starredCountByLevel[level]})</Text>
+							</Pressable>
+						)}
 					</>
 				)}
 
@@ -175,6 +229,21 @@ export function SetupScreen({ onComplete, onDictionary, onGlobalDictionary }: Pr
 						</Pressable>
 					))}
 			</ScrollView>
+			<InfoModal
+				visible={infoModalVisible}
+				onClose={() => setInfoModalVisible(false)}
+				message={step === "level" ? WORD_COUNTER_INFO.allLevels : WORD_COUNTER_INFO.level}
+				onReset={() => {
+					if (step === "level") {
+						for (const l of LEVELS) {
+							onResetCounter(l);
+						}
+					} else if (level) {
+						onResetCounter(level);
+					}
+					setInfoModalVisible(false);
+				}}
+			/>
 		</SafeAreaView>
 	);
 }
@@ -209,7 +278,6 @@ const styles = StyleSheet.create({
 	breadcrumbs: {
 		...typography.caption,
 		color: colors.textSecondary,
-		marginTop: spacing.xs,
 	},
 	title: {
 		...typography.body,
@@ -246,9 +314,17 @@ const styles = StyleSheet.create({
 	globalDictionarySpacer: {
 		height: spacing.xl,
 	},
-	globalDictionaryText: {
+	globalLinkText: {
 		fontSize: 12,
 		color: colors.accent,
+		textAlign: "center",
+	},
+	globalStarredRow: {
+		marginTop: spacing.sm,
+	},
+	globalStarredText: {
+		fontSize: 12,
+		color: colors.warning,
 		textAlign: "center",
 	},
 	dictionarySpacer: {
@@ -270,8 +346,50 @@ const styles = StyleSheet.create({
 		...typography.caption,
 		color: colors.accent,
 	},
+	starredOption: {
+		backgroundColor: colors.surface,
+		borderRadius: 12,
+		paddingVertical: spacing.sm,
+		paddingHorizontal: spacing.lg,
+		marginBottom: spacing.sm,
+		flexDirection: "row",
+		justifyContent: "space-between",
+		alignItems: "center",
+		borderWidth: 1,
+		borderColor: colors.warning,
+	},
+	starredText: {
+		...typography.caption,
+		color: colors.warning,
+	},
 	comingSoon: {
 		...typography.caption,
 		color: colors.textDisabled,
+	},
+	breadcrumbRow: {
+		flexDirection: "row",
+		justifyContent: "space-between",
+		alignItems: "center",
+		marginTop: spacing.xs,
+	},
+	globalCounterRow: {
+		flexDirection: "row",
+		justifyContent: "center",
+		alignItems: "center",
+		gap: spacing.xs,
+		marginTop: spacing.md,
+	},
+	counterRow: {
+		flexDirection: "row",
+		alignItems: "center",
+		gap: spacing.xs,
+	},
+	counterText: {
+		...typography.caption,
+		color: colors.textSecondary,
+	},
+	infoIcon: {
+		...typography.caption,
+		color: colors.accent,
 	},
 });

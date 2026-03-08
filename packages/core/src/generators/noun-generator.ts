@@ -36,10 +36,16 @@ function declensionCard(noun: Noun, grammaticalCase: Case, number: GrammaticalNu
 	};
 }
 
-export function generateNounCards(nouns: Noun[], batchSize: number): Card[] {
+export function generateNounCards(
+	nouns: Noun[],
+	batchSize: number,
+	excludeWords: string[] = [],
+): Card[] {
+	const excluded = new Set(excludeWords);
+	const filtered = excluded.size > 0 ? nouns.filter((n) => !excluded.has(n.word)) : nouns;
 	const cards: Card[] = [];
 
-	for (const noun of nouns) {
+	for (const noun of filtered) {
 		cards.push(genderCard(noun));
 		cards.push(pluralCard(noun));
 

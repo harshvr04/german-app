@@ -35,3 +35,12 @@ export function loadOthers(dataDir: string, level: Level): Other[] {
 	const filePath = resolve(dataDir, "others.json");
 	return filterByLevel(loadAndParse(filePath, OtherSchema), level);
 }
+
+export function getTotalWordCount(dataDir: string, level: Level): number {
+	return (
+		loadNouns(dataDir, level).length +
+		loadVerbs(dataDir, level).length +
+		loadAdjectives(dataDir, level).length +
+		loadOthers(dataDir, level).length
+	);
+}

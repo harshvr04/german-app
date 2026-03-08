@@ -61,7 +61,13 @@ function superlativCard(adj: Adjective): Card {
 	};
 }
 
-export function generateAdjectiveCards(adjectives: Adjective[], batchSize: number): Card[] {
+export function generateAdjectiveCards(
+	adjectives: Adjective[],
+	batchSize: number,
+	excludeWords: string[] = [],
+): Card[] {
+	const excluded = new Set(excludeWords);
+	const filtered = excluded.size > 0 ? adjectives.filter((a) => !excluded.has(a.word)) : adjectives;
 	const paradigms: AdjectiveParadigm[] = [
 		"definite",
 		"no_article",
@@ -69,7 +75,7 @@ export function generateAdjectiveCards(adjectives: Adjective[], batchSize: numbe
 	];
 	const cards: Card[] = [];
 
-	for (const adj of adjectives) {
+	for (const adj of filtered) {
 		if (!adj.is_declinable) continue;
 
 		if (adj.is_comparable) {

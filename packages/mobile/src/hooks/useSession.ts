@@ -2,12 +2,18 @@ import { generateAdjectiveCards } from "@german/core/generators";
 import { generateNounCards } from "@german/core/generators";
 import { generateVerbCards } from "@german/core/generators";
 import { generateVocabCards } from "@german/core/generators";
-import { createInitialState, sessionReducer } from "@german/core/session";
+import {
+	createInitialState,
+	extractBaseWords,
+	sessionHistoryKey,
+	sessionReducer,
+} from "@german/core/session";
+import type { SessionHistoryStorage } from "@german/core/session";
 import type { Card, SessionConfig } from "@german/core/types";
-import { useCallback, useReducer } from "react";
+import { useCallback, useEffect, useReducer, useRef } from "react";
 import { loadAdjectives, loadNouns, loadOthers, loadVerbs } from "../data/loader";
 
-function resolveCards(config: SessionConfig): Card[] {
+function resolveCards(config: SessionConfig, excludeWords: string[] = []): Card[] {
 	const nouns = loadNouns(config.level);
 	const verbs = loadVerbs(config.level);
 	const adjectives = loadAdjectives(config.level);
@@ -22,23 +28,57 @@ function resolveCards(config: SessionConfig): Card[] {
 				config.batchSize,
 				config.vocabDirection ?? "de_to_en",
 				others,
+				excludeWords,
 			);
 		case "nouns":
-			return generateNounCards(nouns, config.batchSize);
+			return generateNounCards(nouns, config.batchSize, excludeWords);
 		case "verbs":
-			return generateVerbCards(verbs, config.batchSize);
+			return generateVerbCards(verbs, config.batchSize, excludeWords);
 		case "adjectives":
-			return generateAdjectiveCards(adjectives, config.batchSize);
+			return generateAdjectiveCards(adjectives, config.batchSize, excludeWords);
 		case "dictionary":
+		case "starred":
 			return [];
 	}
 }
 
-export function useSession() {
+export function useSession(storage: SessionHistoryStorage) {
 	const [state, dispatch] = useReducer(sessionReducer, undefined, createInitialState);
+	const sessionInfoRef = useRef<{ key: string; level: string; words: string[] } | null>(null);
 
-	const start = useCallback((config: SessionConfig) => {
-		const cards = resolveCards(config);
+	const start = useCallback(
+		async (config: SessionConfig) => {
+			const key = sessionHistoryKey(config);
+			const excludeWords = key ? await storage.getExcludedWords(key) : [];
+			let cards = resolveCards(config, excludeWords);
+
+			// Fallback: if all words were excluded, ignore exclusion
+			if (cards.length === 0 && excludeWords.length > 0) {
+				cards = resolveCards(config);
+			}
+
+			if (key) {
+				sessionInfoRef.current = { key, level: config.level, words: extractBaseWords(cards) };
+			}
+			dispatch({ type: "START", cards, config });
+		},
+		[storage],
+	);
+
+	// Save session words and update encountered words on completion
+	useEffect(() => {
+		if (state.phase === "complete" && sessionInfoRef.current) {
+			const { key, level, words } = sessionInfoRef.current;
+			sessionInfoRef.current = null;
+			storage.saveSessionWords(key, words);
+			storage.getEncounteredWords(level).then((existing) => {
+				const merged = [...new Set([...existing, ...words])];
+				storage.saveEncounteredWords(level, merged);
+			});
+		}
+	}, [state.phase, storage]);
+
+	const startWithCards = useCallback((cards: Card[], config: SessionConfig) => {
 		dispatch({ type: "START", cards, config });
 	}, []);
 
@@ -54,5 +94,5 @@ export function useSession() {
 		dispatch({ type: "RESET" });
 	}, []);
 
-	return { state, start, answerRight, answerWrong, reset };
+	return { state, start, startWithCards, answerRight, answerWrong, reset };
 }

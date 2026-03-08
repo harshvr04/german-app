@@ -122,3 +122,7 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
 export function createInitialState(): SessionState {
 	return { phase: "setup" };
 }
+
+export { extractBaseWord, extractBaseWords, sessionHistoryKey } from "./history.js";
+export type { SessionHistoryStorage } from "./history.js";
+export type { StarredWord, StarredWordsStorage } from "./starred.js";

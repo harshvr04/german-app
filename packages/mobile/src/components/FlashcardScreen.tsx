@@ -7,10 +7,12 @@ interface Props {
 	card: Card;
 	index: number;
 	total: number;
-	revisionRound?: number;
+	revisionRound?: number | undefined;
 	onRight: () => void;
 	onWrong: () => void;
 	onBack: () => void;
+	isStarred?: boolean | undefined;
+	onToggleStar?: (() => void) | undefined;
 }
 
 export function FlashcardScreen({
@@ -21,6 +23,8 @@ export function FlashcardScreen({
 	onRight,
 	onWrong,
 	onBack,
+	isStarred,
+	onToggleStar,
 }: Props) {
 	const [revealed, setRevealed] = useState(false);
 	const [showDetails, setShowDetails] = useState(false);
@@ -44,12 +48,24 @@ export function FlashcardScreen({
 					</View>
 				)}
 				<View style={styles.headerRow}>
-					<Text style={styles.progress}>
-						Card {index + 1} / {total}
-					</Text>
-					<Pressable style={styles.backButton} onPress={onBack}>
-						<Text style={styles.backButtonText}>✕</Text>
-					</Pressable>
+					<View style={styles.headerLeft}>
+						<Text style={styles.progress}>
+							Card {index + 1} / {total}
+						</Text>
+						{card.level && <Text style={styles.levelBadge}>{card.level}</Text>}
+					</View>
+					<View style={styles.headerRight}>
+						{isStarred != null && onToggleStar && (
+							<Pressable style={styles.starButton} onPress={onToggleStar} hitSlop={8}>
+								<Text style={[styles.starText, isStarred && styles.starTextActive]}>
+									{isStarred ? "★" : "☆"}
+								</Text>
+							</Pressable>
+						)}
+						<Pressable style={styles.backButton} onPress={onBack}>
+							<Text style={styles.backButtonText}>✕</Text>
+						</Pressable>
+					</View>
 				</View>
 				<View style={styles.progressBarContainer}>
 					<View style={[styles.progressBar, { width: `${progress * 100}%` }]} />
@@ -119,6 +135,16 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		alignItems: "center",
 	},
+	headerLeft: {
+		flexDirection: "row",
+		alignItems: "center",
+		gap: spacing.sm,
+	},
+	headerRight: {
+		flexDirection: "row",
+		alignItems: "center",
+		gap: spacing.sm,
+	},
 	backButton: {
 		paddingHorizontal: spacing.sm,
 		paddingVertical: spacing.xs,
@@ -126,6 +152,22 @@ const styles = StyleSheet.create({
 	backButtonText: {
 		...typography.body,
 		color: colors.textSecondary,
+	},
+	starButton: {
+		paddingHorizontal: spacing.xs,
+		paddingVertical: spacing.xs,
+	},
+	starText: {
+		fontSize: 22,
+		color: colors.textSecondary,
+	},
+	starTextActive: {
+		color: colors.warning,
+	},
+	levelBadge: {
+		...typography.caption,
+		color: colors.warning,
+		fontWeight: "600",
 	},
 	revisionBanner: {
 		backgroundColor: colors.warning,

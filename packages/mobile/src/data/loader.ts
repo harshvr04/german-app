@@ -32,6 +32,15 @@ export function loadOthers(level: Level) {
 	return filterByLevel(parsedOthers, level);
 }
 
+export function getTotalWordCount(level: Level): number {
+	return (
+		loadNouns(level).length +
+		loadVerbs(level).length +
+		loadAdjectives(level).length +
+		loadOthers(level).length
+	);
+}
+
 /** Returns true if there is any data for this level across all categories. */
 export function hasDataForLevel(level: Level): boolean {
 	return (

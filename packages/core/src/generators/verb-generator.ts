@@ -60,10 +60,16 @@ function konjunktivIICard(verb: Verb): Card {
 	};
 }
 
-export function generateVerbCards(verbs: Verb[], batchSize: number): Card[] {
+export function generateVerbCards(
+	verbs: Verb[],
+	batchSize: number,
+	excludeWords: string[] = [],
+): Card[] {
+	const excluded = new Set(excludeWords);
+	const filtered = excluded.size > 0 ? verbs.filter((v) => !excluded.has(v.infinitiv)) : verbs;
 	const cards: Card[] = [];
 
-	for (const verb of verbs) {
+	for (const verb of filtered) {
 		cards.push(presentCard(verb));
 		cards.push(praeteritumCard(verb));
 		cards.push(perfektCard(verb));

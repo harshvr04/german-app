@@ -6,16 +6,31 @@ interface Props {
 	card: Card;
 	index: number;
 	total: number;
-	revisionRound?: number;
+	revisionRound?: number | undefined;
 	onRight: () => void;
 	onWrong: () => void;
+	isStarred?: boolean | undefined;
+	onToggleStar?: (() => void) | undefined;
 }
 
-export function Flashcard({ card, index, total, revisionRound, onRight, onWrong }: Props) {
+export function Flashcard({
+	card,
+	index,
+	total,
+	revisionRound,
+	onRight,
+	onWrong,
+	isStarred,
+	onToggleStar,
+}: Props) {
 	const [revealed, setRevealed] = useState(false);
 	const [showDetails, setShowDetails] = useState(false);
 
 	useInput((input, key) => {
+		if ((input === "s" || input === "S") && onToggleStar) {
+			onToggleStar();
+			return;
+		}
 		if (!revealed) {
 			if (key.return || input === " ") {
 				setRevealed(true);
@@ -42,9 +57,13 @@ export function Flashcard({ card, index, total, revisionRound, onRight, onWrong 
 					Revision Round {revisionRound}
 				</Text>
 			)}
-			<Text dimColor>
-				Card {index + 1}/{total}
-			</Text>
+			<Box>
+				<Text dimColor>
+					Card {index + 1}/{total}
+				</Text>
+				{isStarred != null && <Text color="yellow">{isStarred ? " ★" : " ☆"}</Text>}
+				{card.level && <Text color="blue"> [{card.level}]</Text>}
+			</Box>
 			<Text> </Text>
 			<Text bold>{card.question}</Text>
 			{card.hint && <Text dimColor>({card.hint})</Text>}
@@ -60,10 +79,16 @@ export function Flashcard({ card, index, total, revisionRound, onRight, onWrong 
 						</>
 					)}
 					<Text> </Text>
-					<Text dimColor>[R] Right [W] Wrong{card.details ? " [D] Full conjugation" : ""}</Text>
+					<Text dimColor>
+						[R] Right [W] Wrong{card.details ? " [D] Full conjugation" : ""}
+						{onToggleStar ? ` [S] ${isStarred ? "Unstar" : "Star"}` : ""}
+					</Text>
 				</>
 			) : (
-				<Text dimColor>Press Enter to reveal answer</Text>
+				<Text dimColor>
+					Press Enter to reveal answer
+					{onToggleStar ? ` | [S] ${isStarred ? "Unstar" : "Star"}` : ""}
+				</Text>
 			)}
 		</Box>
 	);
