@@ -1,0 +1,444 @@
+import {
+	conjugateFuturI,
+	conjugateKonjunktivI,
+	conjugateKonjunktivII,
+	conjugatePerfekt,
+	conjugatePlusquamperfekt,
+	conjugatePraeteritum,
+	conjugatePresent,
+} from "@german/core/engine";
+import type { Verb } from "@german/core/schemas";
+import type { Level, Person } from "@german/core/types";
+import { LEVELS } from "@german/core/types";
+import { useMemo, useRef, useState } from "react";
+import { FlatList, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { REPORT_WEBHOOK_URL } from "../config";
+import { hasDataForLevel, loadVerbs } from "../data/loader";
+import { colors, spacing, typography } from "../theme";
+import { ReportModal } from "./ReportModal";
+
+interface Props {
+	level: Level | null;
+	onBack: () => void;
+}
+
+type Tense = {
+	key: string;
+	label: string;
+	conjugate: (verb: Verb, person: Person) => string;
+};
+
+const ALL_TENSES: Tense[] = [
+	{ key: "present", label: "Präsens", conjugate: conjugatePresent },
+	{ key: "perfekt", label: "Perfekt", conjugate: conjugatePerfekt },
+	{ key: "futur1", label: "Futur I", conjugate: conjugateFuturI },
+	{ key: "praeteritum", label: "Präteritum", conjugate: conjugatePraeteritum },
+	{
+		key: "plusquamperfekt",
+		label: "Plusquamperfekt",
+		conjugate: conjugatePlusquamperfekt,
+	},
+	{ key: "konjunktiv2", label: "Konjunktiv II", conjugate: conjugateKonjunktivII },
+	{ key: "konjunktiv1", label: "Konjunktiv I", conjugate: conjugateKonjunktivI },
+];
+
+function tensesForLevel(level: Level): Tense[] {
+	const idx = LEVELS.indexOf(level);
+	// A1: Präsens, Perfekt
+	if (idx <= 0) return ALL_TENSES.slice(0, 2);
+	// A2: + Futur I, Präteritum
+	if (idx === 1) return ALL_TENSES.slice(0, 4);
+	// B1: + Plusquamperfekt, Konjunktiv II
+	if (idx === 2) return ALL_TENSES.slice(0, 6);
+	// B2+: all 7
+	return ALL_TENSES;
+}
+
+const PERSONS: Person[] = ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"];
+
+// Module-level cache
+const verbCache = new Map<string, Verb[]>();
+
+function loadVerbsForDict(level: Level | null): Verb[] {
+	const key = level ?? "all";
+	const cached = verbCache.get(key);
+	if (cached) return cached;
+
+	let verbs: Verb[];
+	if (level) {
+		verbs = loadVerbs(level);
+	} else {
+		const all: Verb[] = [];
+		const seen = new Set<string>();
+		for (const l of LEVELS) {
+			if (!hasDataForLevel(l)) continue;
+			for (const v of loadVerbs(l)) {
+				if (!seen.has(v.infinitiv)) {
+					seen.add(v.infinitiv);
+					all.push(v);
+				}
+			}
+		}
+		all.sort((a, b) => a.infinitiv.localeCompare(b.infinitiv, "de"));
+		verbs = all;
+	}
+	verbCache.set(key, verbs);
+	return verbs;
+}
+
+type Screen = "list" | "tenses" | "conjugation";
+
+export function VerbDictionaryScreen({ level, onBack }: Props) {
+	const [screen, setScreen] = useState<Screen>("list");
+	const [query, setQuery] = useState("");
+	const [selectedVerb, setSelectedVerb] = useState<Verb | null>(null);
+	const [selectedTense, setSelectedTense] = useState<Tense | null>(null);
+	const [reportVisible, setReportVisible] = useState(false);
+	const listRef = useRef<FlatList>(null);
+
+	const verbs = useMemo(() => loadVerbsForDict(level), [level]);
+
+	const filtered = useMemo(() => {
+		if (!query) return verbs;
+		const q = query.toLowerCase();
+		return verbs.filter(
+			(v) => v.infinitiv.toLowerCase().includes(q) || v.meaning.toLowerCase().includes(q),
+		);
+	}, [verbs, query]);
+
+	const availableTenses = useMemo(
+		() => (selectedVerb ? tensesForLevel(selectedVerb.level as Level) : []),
+		[selectedVerb],
+	);
+
+	const handleSelectVerb = (verb: Verb) => {
+		setSelectedVerb(verb);
+		setScreen("tenses");
+	};
+
+	const handleSelectTense = (tense: Tense) => {
+		setSelectedTense(tense);
+		setScreen("conjugation");
+	};
+
+	const handleBackFromTenses = () => {
+		setSelectedVerb(null);
+		setScreen("list");
+	};
+
+	const handleBackFromConjugation = () => {
+		setSelectedTense(null);
+		setScreen("tenses");
+	};
+
+	const title = level ? `Verb Dictionary — ${level}` : "Verb Dictionary — All Levels";
+
+	// --- Verb List Screen ---
+	if (screen === "list") {
+		return (
+			<SafeAreaView style={styles.container}>
+				<View style={styles.header}>
+					<View style={styles.headerRow}>
+						<Text style={styles.appTitle}>{title}</Text>
+						<Pressable style={styles.backButton} onPress={onBack}>
+							<Text style={styles.backButtonText}>←</Text>
+						</Pressable>
+					</View>
+					<Text style={styles.count}>
+						{filtered.length} {filtered.length === 1 ? "verb" : "verbs"}
+					</Text>
+				</View>
+
+				<View style={styles.searchContainer}>
+					<TextInput
+						style={styles.searchInput}
+						placeholder="Search verbs..."
+						placeholderTextColor={colors.textDisabled}
+						value={query}
+						onChangeText={setQuery}
+						autoCapitalize="none"
+						autoCorrect={false}
+					/>
+				</View>
+
+				<FlatList
+					ref={listRef}
+					data={filtered}
+					keyExtractor={(item) => item.infinitiv}
+					style={styles.list}
+					contentContainerStyle={styles.listContent}
+					maxToRenderPerBatch={20}
+					windowSize={5}
+					removeClippedSubviews
+					renderItem={({ item }) => (
+						<Pressable style={styles.entry} onPress={() => handleSelectVerb(item)}>
+							<View style={styles.wordRow}>
+								{!level && <Text style={styles.levelBadge}>{item.level}</Text>}
+								<Text style={styles.word}>{item.infinitiv}</Text>
+							</View>
+							<Text style={styles.meaning}>{item.meaning}</Text>
+						</Pressable>
+					)}
+				/>
+			</SafeAreaView>
+		);
+	}
+
+	// --- Tense Selection Screen ---
+	if (screen === "tenses" && selectedVerb) {
+		return (
+			<SafeAreaView style={styles.container}>
+				<View style={styles.header}>
+					<View style={styles.headerRow}>
+						<Text style={styles.appTitle}>{selectedVerb.infinitiv}</Text>
+						<Pressable style={styles.backButton} onPress={handleBackFromTenses}>
+							<Text style={styles.backButtonText}>←</Text>
+						</Pressable>
+					</View>
+					<Text style={styles.verbMeaning}>{selectedVerb.meaning}</Text>
+					{selectedVerb.example !== "" && (
+						<Text style={styles.verbExample}>{selectedVerb.example}</Text>
+					)}
+				</View>
+
+				<Text style={styles.sectionTitle}>Select Tense</Text>
+
+				<ScrollView style={styles.list} contentContainerStyle={styles.listContent}>
+					{availableTenses.map((tense) => (
+						<Pressable
+							key={tense.key}
+							style={styles.tenseOption}
+							onPress={() => handleSelectTense(tense)}
+						>
+							<Text style={styles.tenseText}>{tense.label}</Text>
+						</Pressable>
+					))}
+				</ScrollView>
+			</SafeAreaView>
+		);
+	}
+
+	// --- Conjugation Screen ---
+	if (screen === "conjugation" && selectedVerb && selectedTense) {
+		return (
+			<SafeAreaView style={styles.container}>
+				<View style={styles.header}>
+					<View style={styles.headerRow}>
+						<Text style={styles.appTitle}>
+							{selectedVerb.infinitiv} — {selectedTense.label}
+						</Text>
+						<Pressable style={styles.backButton} onPress={handleBackFromConjugation}>
+							<Text style={styles.backButtonText}>←</Text>
+						</Pressable>
+					</View>
+					<Text style={styles.verbMeaning}>{selectedVerb.meaning}</Text>
+				</View>
+
+				<ScrollView style={styles.list} contentContainerStyle={styles.conjugationContent}>
+					{PERSONS.map((person) => (
+						<View key={person} style={styles.conjugationRow}>
+							<Text style={styles.personText}>{person}</Text>
+							<Text style={styles.conjugatedText}>
+								{selectedTense.conjugate(selectedVerb, person)}
+							</Text>
+						</View>
+					))}
+
+					<View style={styles.verbInfoSection}>
+						<Text style={styles.infoLabel}>Type</Text>
+						<Text style={styles.infoValue}>{selectedVerb.type}</Text>
+						<Text style={styles.infoLabel}>Auxiliary</Text>
+						<Text style={styles.infoValue}>{selectedVerb.auxiliary}</Text>
+						<Text style={styles.infoLabel}>Partizip II</Text>
+						<Text style={styles.infoValue}>{selectedVerb.partizip_ii}</Text>
+						{selectedVerb.prepositions.length > 0 && (
+							<>
+								<Text style={styles.infoLabel}>Prepositions</Text>
+								<Text style={styles.infoValue}>
+									{selectedVerb.prepositions.map((p) => `${p.preposition} + ${p.case}`).join(", ")}
+								</Text>
+							</>
+						)}
+					</View>
+
+					{REPORT_WEBHOOK_URL.length > 0 && (
+						<Pressable style={styles.reportButton} onPress={() => setReportVisible(true)}>
+							<Text style={styles.reportText}>Report Issue</Text>
+						</Pressable>
+					)}
+				</ScrollView>
+				<ReportModal
+					visible={reportVisible}
+					onClose={() => setReportVisible(false)}
+					word={`${selectedVerb.infinitiv} — ${selectedTense.label}`}
+					level={selectedVerb.level}
+					category="verb-dictionary"
+				/>
+			</SafeAreaView>
+		);
+	}
+
+	return null;
+}
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		backgroundColor: colors.background,
+	},
+	header: {
+		paddingHorizontal: spacing.lg,
+		paddingTop: spacing.xl,
+		paddingBottom: spacing.sm,
+	},
+	headerRow: {
+		flexDirection: "row",
+		justifyContent: "space-between",
+		alignItems: "center",
+	},
+	appTitle: {
+		...typography.title,
+		color: colors.text,
+		flex: 1,
+	},
+	backButton: {
+		paddingHorizontal: spacing.sm,
+		paddingVertical: spacing.xs,
+	},
+	backButtonText: {
+		...typography.body,
+		color: colors.textSecondary,
+	},
+	count: {
+		...typography.caption,
+		color: colors.textSecondary,
+		marginTop: spacing.xs,
+	},
+	searchContainer: {
+		paddingHorizontal: spacing.lg,
+		paddingBottom: spacing.md,
+	},
+	searchInput: {
+		backgroundColor: colors.surface,
+		borderRadius: 12,
+		paddingVertical: spacing.sm,
+		paddingHorizontal: spacing.md,
+		...typography.body,
+		color: colors.text,
+		borderWidth: 1,
+		borderColor: colors.border,
+	},
+	list: {
+		flex: 1,
+	},
+	listContent: {
+		paddingHorizontal: spacing.lg,
+		paddingBottom: spacing.xl,
+	},
+	entry: {
+		backgroundColor: colors.surface,
+		borderRadius: 12,
+		padding: spacing.md,
+		marginBottom: spacing.sm,
+	},
+	wordRow: {
+		flexDirection: "row",
+		alignItems: "center",
+		gap: spacing.sm,
+	},
+	levelBadge: {
+		fontSize: 10,
+		color: colors.accent,
+		fontWeight: "700",
+	},
+	word: {
+		...typography.question,
+		color: colors.text,
+	},
+	meaning: {
+		...typography.caption,
+		color: colors.textSecondary,
+		marginTop: spacing.xs,
+	},
+	sectionTitle: {
+		...typography.body,
+		color: colors.textSecondary,
+		paddingHorizontal: spacing.lg,
+		marginBottom: spacing.md,
+	},
+	tenseOption: {
+		backgroundColor: colors.surface,
+		borderRadius: 12,
+		paddingVertical: spacing.md,
+		paddingHorizontal: spacing.lg,
+		marginBottom: spacing.sm,
+	},
+	tenseText: {
+		...typography.body,
+		color: colors.text,
+	},
+	verbMeaning: {
+		...typography.body,
+		color: colors.textSecondary,
+		marginTop: spacing.xs,
+	},
+	verbExample: {
+		...typography.caption,
+		color: colors.textSecondary,
+		fontStyle: "italic",
+		marginTop: spacing.xs,
+	},
+	conjugationContent: {
+		paddingHorizontal: spacing.lg,
+		paddingBottom: spacing.xl,
+	},
+	conjugationRow: {
+		backgroundColor: colors.surface,
+		borderRadius: 12,
+		padding: spacing.md,
+		marginBottom: spacing.sm,
+		flexDirection: "row",
+		justifyContent: "space-between",
+		alignItems: "center",
+	},
+	personText: {
+		...typography.body,
+		color: colors.textSecondary,
+		width: 90,
+	},
+	conjugatedText: {
+		...typography.body,
+		color: colors.text,
+		flex: 1,
+		textAlign: "right",
+	},
+	verbInfoSection: {
+		marginTop: spacing.lg,
+		backgroundColor: colors.surface,
+		borderRadius: 12,
+		padding: spacing.md,
+	},
+	infoLabel: {
+		...typography.caption,
+		color: colors.textSecondary,
+		marginTop: spacing.sm,
+	},
+	infoValue: {
+		...typography.body,
+		color: colors.text,
+	},
+	reportButton: {
+		marginTop: spacing.lg,
+		alignSelf: "center",
+		paddingVertical: spacing.sm,
+		paddingHorizontal: spacing.lg,
+		borderRadius: 8,
+		borderWidth: 1,
+		borderColor: colors.border,
+	},
+	reportText: {
+		...typography.caption,
+		color: colors.textSecondary,
+	},
+});

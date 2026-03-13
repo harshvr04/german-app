@@ -108,19 +108,22 @@ React Native app built with Expo SDK 54, React 19, and React Native 0.81.
 | Screen | Purpose |
 |--------|---------|
 | `SplashVideo` | Plays startup animation (`AppStartScreenAnimation.mp4`) using `expo-video` |
-| `SetupScreen` | Level → Category → Direction → Batch size selection. Also: dictionary, starred words, word counter, exit |
+| `SetupScreen` | Level → Category → Direction → Batch size selection. Also: dictionary, verb dictionary, starred words, word counter, exit |
 | `FlashcardScreen` | Card display with tap-to-reveal, right/wrong buttons, star toggle, report button, expandable details |
 | `CompleteScreen` | Session stats: cards, accuracy, revision rounds, time |
 | `DictionaryScreen` | Searchable word list per level or all levels. Module-level cache persists across opens |
+| `VerbDictionaryScreen` | Verb conjugation browser: searchable verb list → tense selection → full conjugation table with report button |
 | `ExitScreen` | Shows app logo, exits after 1.5s (Android) |
 | `ReportModal` | Issue reporting with type selection + optional comment, sent via webhook |
 | `InfoModal` | Word counter explanation + reset option |
 
 **Theme:** Dark theme with `#1a1a2e` background, `#e94560` accent, `#4ecca3` correct, `#f0a500` warning.
 
-**Storage:** AsyncStorage for session history, encountered words (per level), and starred words.
+**Storage:** AsyncStorage for session history, encountered words (per level), starred words, and anonymous analytics ID.
 
-**Config:** `src/config.ts` contains `REPORT_WEBHOOK_URL` for Google Apps Script webhook.
+**Config:** `src/config.ts` contains `REPORT_WEBHOOK_URL` for Google Apps Script webhook (used for both issue reports and analytics).
+
+**Analytics:** On each app open, a single ping is sent to the webhook with an anonymous UUID (generated on first launch), OS, and OS version. The Google Apps Script upserts a row per UUID in an "Analytics" sheet tab, incrementing the open count. No personal data is collected.
 
 ### @german/cli
 

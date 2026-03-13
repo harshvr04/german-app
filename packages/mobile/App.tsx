@@ -13,7 +13,9 @@ import { ExitScreen } from "./src/components/ExitScreen";
 import { FlashcardScreen } from "./src/components/FlashcardScreen";
 import { SetupScreen } from "./src/components/SetupScreen";
 import { SplashVideo } from "./src/components/SplashVideo";
+import { VerbDictionaryScreen } from "./src/components/VerbDictionaryScreen";
 import { loadAdjectives, loadNouns, loadOthers, loadVerbs } from "./src/data/loader";
+import { useAnalytics } from "./src/hooks/useAnalytics";
 import { useSession } from "./src/hooks/useSession";
 import { useStarredWords } from "./src/hooks/useStarredWords";
 import { useWordCounter } from "./src/hooks/useWordCounter";
@@ -21,6 +23,7 @@ import { mobileHistoryStorage } from "./src/storage/session-history";
 import { mobileStarredStorage } from "./src/storage/starred";
 
 export default function App() {
+	useAnalytics();
 	const { state, start, startWithCards, answerRight, answerWrong, reset } =
 		useSession(mobileHistoryStorage);
 	const {
@@ -32,6 +35,7 @@ export default function App() {
 	const [showSplash, setShowSplash] = useState(true);
 	const [showExit, setShowExit] = useState(false);
 	const [dictionaryMode, setDictionaryMode] = useState<Level | "all" | null>(null);
+	const [verbDictMode, setVerbDictMode] = useState<Level | "all" | null>(null);
 
 	const starredCountByLevel = useMemo(() => {
 		const counts = {} as Record<Level, number>;
@@ -51,6 +55,18 @@ export default function App() {
 
 	const handleDictionaryBack = useCallback(() => {
 		setDictionaryMode(null);
+	}, []);
+
+	const handleVerbDictionary = useCallback((level: Level) => {
+		setVerbDictMode(level);
+	}, []);
+
+	const handleGlobalVerbDictionary = useCallback(() => {
+		setVerbDictMode("all");
+	}, []);
+
+	const handleVerbDictionaryBack = useCallback(() => {
+		setVerbDictMode(null);
 	}, []);
 
 	const handleReset = useCallback(() => {
@@ -143,6 +159,18 @@ export default function App() {
 		);
 	}
 
+	if (verbDictMode) {
+		return (
+			<SafeAreaProvider>
+				<StatusBar style="light" />
+				<VerbDictionaryScreen
+					level={verbDictMode === "all" ? null : verbDictMode}
+					onBack={handleVerbDictionaryBack}
+				/>
+			</SafeAreaProvider>
+		);
+	}
+
 	if (state.phase === "setup") {
 		return (
 			<SafeAreaProvider>
@@ -151,6 +179,8 @@ export default function App() {
 					onComplete={start}
 					onDictionary={handleDictionary}
 					onGlobalDictionary={handleGlobalDictionary}
+					onVerbDictionary={handleVerbDictionary}
+					onGlobalVerbDictionary={handleGlobalVerbDictionary}
 					onStarredReview={handleStarredReview}
 					onGlobalStarredReview={handleGlobalStarredReview}
 					starredCount={starred.starredWords.length}

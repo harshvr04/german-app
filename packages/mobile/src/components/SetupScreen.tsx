@@ -25,6 +25,8 @@ interface Props {
 	onComplete: (config: SessionConfig) => void;
 	onDictionary: (level: Level) => void;
 	onGlobalDictionary: () => void;
+	onVerbDictionary: (level: Level) => void;
+	onGlobalVerbDictionary: () => void;
 	onStarredReview: (level: Level) => void;
 	onGlobalStarredReview: () => void;
 	starredCount: number;
@@ -38,6 +40,8 @@ export function SetupScreen({
 	onComplete,
 	onDictionary,
 	onGlobalDictionary,
+	onVerbDictionary,
+	onGlobalVerbDictionary,
 	onStarredReview,
 	onGlobalStarredReview,
 	starredCount,
@@ -152,6 +156,9 @@ export function SetupScreen({
 						<Pressable onPress={onGlobalDictionary}>
 							<Text style={styles.globalLinkText}>Dictionary</Text>
 						</Pressable>
+						<Pressable onPress={onGlobalVerbDictionary} style={styles.globalVerbDictRow}>
+							<Text style={styles.globalLinkText}>Verb Conjugations</Text>
+						</Pressable>
 						{starredCount > 0 && (
 							<Pressable onPress={onGlobalStarredReview} style={styles.globalStarredRow}>
 								<Text style={styles.globalStarredText}>★ Starred ({starredCount})</Text>
@@ -206,6 +213,14 @@ export function SetupScreen({
 							}}
 						>
 							<Text style={styles.dictionaryText}>Dictionary</Text>
+						</Pressable>
+						<Pressable
+							style={styles.dictionaryOption}
+							onPress={() => {
+								onVerbDictionary(level!);
+							}}
+						>
+							<Text style={styles.dictionaryText}>Verb Conjugations</Text>
 						</Pressable>
 						{level && starredCountByLevel[level] > 0 && (
 							<Pressable
@@ -341,6 +356,9 @@ const styles = StyleSheet.create({
 		fontSize: 12,
 		color: colors.accent,
 		textAlign: "center",
+	},
+	globalVerbDictRow: {
+		marginTop: spacing.xs,
 	},
 	globalStarredRow: {
 		marginTop: spacing.sm,
