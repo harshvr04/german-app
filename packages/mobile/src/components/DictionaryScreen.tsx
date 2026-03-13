@@ -6,12 +6,12 @@ import {
 	ActivityIndicator,
 	FlatList,
 	Pressable,
-	SafeAreaView,
 	StyleSheet,
 	Text,
 	TextInput,
 	View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { hasDataForLevel, loadAdjectives, loadNouns, loadOthers, loadVerbs } from "../data/loader";
 import { colors, spacing, typography } from "../theme";
 
@@ -29,21 +29,32 @@ function loadLevelEntries(level: Level): DictionaryEntry[] {
 	);
 }
 
+// Module-level cache: persists across mounts, cleared only on app kill
+const dictionaryCache = new Map<string, DictionaryEntry[]>();
+
 export function DictionaryScreen({ level, onBack }: Props) {
+	const cacheKey = level ?? "all";
+	const cached = dictionaryCache.get(cacheKey);
+
 	const [query, setQuery] = useState("");
-	const [allEntries, setAllEntries] = useState<DictionaryEntry[] | null>(null);
-	const [fullyLoaded, setFullyLoaded] = useState(false);
+	const [allEntries, setAllEntries] = useState<DictionaryEntry[] | null>(cached ?? null);
+	const [fullyLoaded, setFullyLoaded] = useState(cached != null);
 	const loadingRef = useRef(false);
 	const cancelledRef = useRef(false);
+	const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
 	useEffect(() => {
+		if (dictionaryCache.has(cacheKey)) return;
+
 		cancelledRef.current = false;
 
 		if (level) {
 			// Single level
-			setTimeout(() => {
+			timerRef.current = setTimeout(() => {
 				if (cancelledRef.current) return;
-				setAllEntries(loadLevelEntries(level));
+				const entries = loadLevelEntries(level);
+				dictionaryCache.set(cacheKey, entries);
+				setAllEntries(entries);
 				setFullyLoaded(true);
 			}, 0);
 		} else {
@@ -54,12 +65,13 @@ export function DictionaryScreen({ level, onBack }: Props) {
 			const levelsWithData = LEVELS.filter((l) => hasDataForLevel(l));
 			const firstLevel = levelsWithData[0];
 			if (!firstLevel) {
+				dictionaryCache.set(cacheKey, []);
 				setAllEntries([]);
 				setFullyLoaded(true);
 				return;
 			}
 
-			setTimeout(() => {
+			timerRef.current = setTimeout(() => {
 				if (cancelledRef.current) return;
 				setAllEntries(loadLevelEntries(firstLevel));
 
@@ -68,11 +80,15 @@ export function DictionaryScreen({ level, onBack }: Props) {
 					if (cancelledRef.current) return;
 					if (idx >= levelsWithData.length) {
 						setFullyLoaded(true);
+						setAllEntries((final) => {
+							if (final) dictionaryCache.set(cacheKey, final);
+							return final;
+						});
 						return;
 					}
 					const nextLevel = levelsWithData[idx]!;
 					idx++;
-					setTimeout(() => {
+					timerRef.current = setTimeout(() => {
 						if (cancelledRef.current) return;
 						const incoming = loadLevelEntries(nextLevel);
 						setAllEntries((prev) => mergeDictionary(prev ?? [], incoming));
@@ -86,8 +102,12 @@ export function DictionaryScreen({ level, onBack }: Props) {
 		return () => {
 			cancelledRef.current = true;
 			loadingRef.current = false;
+			if (timerRef.current) {
+				clearTimeout(timerRef.current);
+				timerRef.current = null;
+			}
 		};
-	}, [level]);
+	}, [level, cacheKey]);
 
 	const filtered = useMemo(
 		() => (allEntries ? filterDictionary(allEntries, query) : []),

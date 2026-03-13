@@ -8,7 +8,8 @@ import {
 } from "@german/core/types";
 import type { Category, Level, SessionConfig, VocabDirection } from "@german/core/types";
 import { useState } from "react";
-import { Alert, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { hasDataForLevel } from "../data/loader";
 import { colors, spacing, typography } from "../theme";
 import { InfoModal } from "./InfoModal";
@@ -30,6 +31,7 @@ interface Props {
 	starredCountByLevel: Record<Level, number>;
 	wordCounts: Record<Level, WordCount>;
 	onResetCounter: (level: Level) => void;
+	onExit: () => void;
 }
 
 export function SetupScreen({
@@ -42,6 +44,7 @@ export function SetupScreen({
 	starredCountByLevel,
 	wordCounts,
 	onResetCounter,
+	onExit,
 }: Props) {
 	const [step, setStep] = useState<Step>("level");
 	const [level, setLevel] = useState<Level | null>(null);
@@ -155,6 +158,10 @@ export function SetupScreen({
 							</Pressable>
 						)}
 						<View style={styles.creditSpacer} />
+						<Pressable style={styles.exitButton} onPress={onExit}>
+							<Text style={styles.exitText}>Exit</Text>
+						</Pressable>
+						<View style={styles.creditSpacer} />
 						<Pressable
 							onPress={() =>
 								Alert.alert(
@@ -186,6 +193,11 @@ export function SetupScreen({
 								<Text style={styles.optionText}>{c.label}</Text>
 							</Pressable>
 						))}
+						{level === "B2" && (
+							<Text style={styles.b2Note}>
+								B2 adds only distinctly new words. Verbs include all A1–B2 words.
+							</Text>
+						)}
 						<View style={styles.dictionarySpacer} />
 						<Pressable
 							style={styles.dictionaryOption}
@@ -338,6 +350,13 @@ const styles = StyleSheet.create({
 		color: colors.warning,
 		textAlign: "center",
 	},
+	b2Note: {
+		...typography.caption,
+		color: colors.textSecondary,
+		textAlign: "center",
+		marginBottom: spacing.sm,
+		fontStyle: "italic",
+	},
 	dictionarySpacer: {
 		height: spacing.md,
 	},
@@ -400,6 +419,19 @@ const styles = StyleSheet.create({
 		color: colors.textSecondary,
 	},
 	infoIcon: {
+		...typography.caption,
+		color: colors.textSecondary,
+	},
+	exitButton: {
+		backgroundColor: colors.surface,
+		borderRadius: 12,
+		paddingVertical: spacing.sm,
+		paddingHorizontal: spacing.lg,
+		alignSelf: "center",
+		borderWidth: 1,
+		borderColor: colors.border,
+	},
+	exitText: {
 		...typography.caption,
 		color: colors.textSecondary,
 	},

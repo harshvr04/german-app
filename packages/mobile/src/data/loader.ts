@@ -1,5 +1,6 @@
 import { AdjectiveSchema, NounSchema, OtherSchema, VerbSchema } from "@german/core/schemas";
 import type { Level } from "@german/core/types";
+import { LEVELS } from "@german/core/types";
 import { z } from "zod";
 
 import adjectivesData from "../../../../assets/data/adjectives.json";
@@ -20,8 +21,27 @@ export function loadNouns(level: Level) {
 	return filterByLevel(parsedNouns, level);
 }
 
+const CORE_VERBS = new Set([
+	"haben",
+	"sein",
+	"werden",
+	"können",
+	"müssen",
+	"sollen",
+	"wollen",
+	"dürfen",
+	"mögen",
+]);
+
 export function loadVerbs(level: Level) {
 	return filterByLevel(parsedVerbs, level);
+}
+
+/** Cumulative verb loading for exercises: A2 includes A1, B1 includes A1+A2, etc. Core verbs always included. */
+export function loadVerbsForExercise(level: Level) {
+	const levelIdx = LEVELS.indexOf(level);
+	const included = new Set(LEVELS.slice(0, levelIdx + 1));
+	return parsedVerbs.filter((v) => included.has(v.level as Level) || CORE_VERBS.has(v.infinitiv));
 }
 
 export function loadAdjectives(level: Level) {

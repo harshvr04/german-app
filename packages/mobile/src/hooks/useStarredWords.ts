@@ -5,13 +5,21 @@ import { useCallback, useEffect, useState } from "react";
 export function useStarredWords(storage: StarredWordsStorage) {
 	const [starredWords, setStarredWords] = useState<StarredWord[]>([]);
 
-	const refresh = useCallback(async () => {
-		const words = await storage.getStarredWords();
-		setStarredWords(words);
-	}, [storage]);
+	const refresh = useCallback(
+		async (signal?: { cancelled: boolean }) => {
+			const words = await storage.getStarredWords();
+			if (signal?.cancelled) return;
+			setStarredWords(words);
+		},
+		[storage],
+	);
 
 	useEffect(() => {
-		refresh();
+		const signal = { cancelled: false };
+		refresh(signal);
+		return () => {
+			signal.cancelled = true;
+		};
 	}, [refresh]);
 
 	const isStarred = useCallback(

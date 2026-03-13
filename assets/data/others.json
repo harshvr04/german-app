@@ -2410,5 +2410,23 @@
     "level": "B1",
     "meaning": "indeed, admittedly",
     "example": "Diese Schuhe sind zwar teuer, aber gut."
+  },
+  {
+    "word": "Znüni",
+    "level": "B2",
+    "meaning": "morning snack (Swiss)",
+    "example": "Um zehn Uhr machen wir Znüni."
+  },
+  {
+    "word": "bio",
+    "level": "B2",
+    "meaning": "organic",
+    "example": "Biologische Lebensmittel gibt es jetzt auch im Supermarkt."
+  },
+  {
+    "word": "vorne",
+    "level": "B2",
+    "meaning": "in front, at the front",
+    "example": "Bitte vorn beim Fahrer einsteigen!"
   }
 ]

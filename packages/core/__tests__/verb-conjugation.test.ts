@@ -1,7 +1,10 @@
 import { describe, expect, it } from "vitest";
 import {
+	conjugateFuturI,
+	conjugateKonjunktivI,
 	conjugateKonjunktivII,
 	conjugatePerfekt,
+	conjugatePlusquamperfekt,
 	conjugatePraeteritum,
 	conjugatePresent,
 } from "../src/engine/verb-conjugation.js";
@@ -111,6 +114,29 @@ const koennen: Verb = {
 	level: "A1",
 	meaning: "can",
 	example: "Kannst du Deutsch sprechen?",
+};
+
+const sein: Verb = {
+	infinitiv: "sein",
+	type: "irregular",
+	auxiliary: "sein",
+	stem_change_pres: null,
+	present_forms: {
+		ich: "bin",
+		du: "bist",
+		"er/sie/es": "ist",
+		wir: "sind",
+		ihr: "seid",
+		"sie/Sie": "sind",
+	},
+	praeteritum_root: "war",
+	partizip_ii: "gewesen",
+	konjunktiv_ii_root: "wär",
+	prepositions: [],
+	connections: [],
+	level: "A1",
+	meaning: "to be",
+	example: "Ich bin müde.",
 };
 
 // --- Tests ---
@@ -331,5 +357,133 @@ describe("conjugateKonjunktivII", () => {
 		it("wir → könnten", () => {
 			expect(conjugateKonjunktivII(koennen, "wir")).toBe("könnten");
 		});
+	});
+});
+
+describe("conjugateFuturI", () => {
+	describe("regular verb (machen)", () => {
+		const cases: [Person, string][] = [
+			["ich", "werde machen"],
+			["du", "wirst machen"],
+			["er/sie/es", "wird machen"],
+			["wir", "werden machen"],
+			["ihr", "werdet machen"],
+			["sie/Sie", "werden machen"],
+		];
+
+		for (const [person, expected] of cases) {
+			it(`${person} → ${expected}`, () => {
+				expect(conjugateFuturI(machen, person)).toBe(expected);
+			});
+		}
+	});
+
+	it("irregular verb (gehen): ich werde gehen", () => {
+		expect(conjugateFuturI(gehen, "ich")).toBe("werde gehen");
+	});
+
+	it("modal verb (können): du wirst können", () => {
+		expect(conjugateFuturI(koennen, "du")).toBe("wirst können");
+	});
+});
+
+describe("conjugatePlusquamperfekt", () => {
+	describe("haben auxiliary (machen)", () => {
+		const cases: [Person, string][] = [
+			["ich", "hatte gemacht"],
+			["du", "hattest gemacht"],
+			["er/sie/es", "hatte gemacht"],
+			["wir", "hatten gemacht"],
+			["ihr", "hattet gemacht"],
+			["sie/Sie", "hatten gemacht"],
+		];
+
+		for (const [person, expected] of cases) {
+			it(`${person} → ${expected}`, () => {
+				expect(conjugatePlusquamperfekt(machen, person)).toBe(expected);
+			});
+		}
+	});
+
+	describe("sein auxiliary (gehen)", () => {
+		const cases: [Person, string][] = [
+			["ich", "war gegangen"],
+			["du", "warst gegangen"],
+			["er/sie/es", "war gegangen"],
+			["wir", "waren gegangen"],
+			["ihr", "wart gegangen"],
+			["sie/Sie", "waren gegangen"],
+		];
+
+		for (const [person, expected] of cases) {
+			it(`${person} → ${expected}`, () => {
+				expect(conjugatePlusquamperfekt(gehen, person)).toBe(expected);
+			});
+		}
+	});
+
+	it("haben auxiliary (bringen): du hattest gebracht", () => {
+		expect(conjugatePlusquamperfekt(bringen, "du")).toBe("hattest gebracht");
+	});
+});
+
+describe("conjugateKonjunktivI", () => {
+	describe("regular verb (machen)", () => {
+		const cases: [Person, string][] = [
+			["ich", "mache"],
+			["du", "machest"],
+			["er/sie/es", "mache"],
+			["wir", "machen"],
+			["ihr", "machet"],
+			["sie/Sie", "machen"],
+		];
+
+		for (const [person, expected] of cases) {
+			it(`${person} → ${expected}`, () => {
+				expect(conjugateKonjunktivI(machen, person)).toBe(expected);
+			});
+		}
+	});
+
+	describe("irregular verb (geben)", () => {
+		const cases: [Person, string][] = [
+			["ich", "gebe"],
+			["du", "gebest"],
+			["er/sie/es", "gebe"],
+			["wir", "geben"],
+			["ihr", "gebet"],
+			["sie/Sie", "geben"],
+		];
+
+		for (const [person, expected] of cases) {
+			it(`${person} → ${expected}`, () => {
+				expect(conjugateKonjunktivI(geben, person)).toBe(expected);
+			});
+		}
+	});
+
+	describe("sein (special forms)", () => {
+		const cases: [Person, string][] = [
+			["ich", "sei"],
+			["du", "seist"],
+			["er/sie/es", "sei"],
+			["wir", "seien"],
+			["ihr", "seiet"],
+			["sie/Sie", "seien"],
+		];
+
+		for (const [person, expected] of cases) {
+			it(`${person} → ${expected}`, () => {
+				expect(conjugateKonjunktivI(sein, person)).toBe(expected);
+			});
+		}
+	});
+
+	it("modal verb (können): ich könne", () => {
+		expect(conjugateKonjunktivI(koennen, "ich")).toBe("könne");
+	});
+
+	it("modal verb (können): er/sie/es könne", () => {
+		expect(conjugateKonjunktivI(koennen, "er/sie/es")).toBe("könne");
 	});
 });

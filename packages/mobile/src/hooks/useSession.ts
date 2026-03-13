@@ -11,11 +11,21 @@ import {
 import type { SessionHistoryStorage } from "@german/core/session";
 import type { Card, SessionConfig } from "@german/core/types";
 import { useCallback, useEffect, useReducer, useRef } from "react";
-import { loadAdjectives, loadNouns, loadOthers, loadVerbs } from "../data/loader";
+import { Alert } from "react-native";
+import {
+	loadAdjectives,
+	loadNouns,
+	loadOthers,
+	loadVerbs,
+	loadVerbsForExercise,
+} from "../data/loader";
 
-function resolveCards(config: SessionConfig, excludeWords: string[] = []): Card[] {
+function resolveCards(
+	config: SessionConfig,
+	excludeWords: string[] = [],
+	encounteredWords: string[] = [],
+): Card[] {
 	const nouns = loadNouns(config.level);
-	const verbs = loadVerbs(config.level);
 	const adjectives = loadAdjectives(config.level);
 	const others = loadOthers(config.level);
 
@@ -23,17 +33,23 @@ function resolveCards(config: SessionConfig, excludeWords: string[] = []): Card[
 		case "vocab":
 			return generateVocabCards(
 				nouns,
-				verbs,
+				loadVerbs(config.level),
 				adjectives,
 				config.batchSize,
 				config.vocabDirection ?? "de_to_en",
 				others,
 				excludeWords,
+				encounteredWords,
 			);
 		case "nouns":
 			return generateNounCards(nouns, config.batchSize, excludeWords);
 		case "verbs":
-			return generateVerbCards(verbs, config.batchSize, excludeWords);
+			return generateVerbCards(
+				loadVerbsForExercise(config.level),
+				config.batchSize,
+				excludeWords,
+				config.level,
+			);
 		case "adjectives":
 			return generateAdjectiveCards(adjectives, config.batchSize, excludeWords);
 		case "dictionary":
@@ -44,21 +60,38 @@ function resolveCards(config: SessionConfig, excludeWords: string[] = []): Card[
 
 export function useSession(storage: SessionHistoryStorage) {
 	const [state, dispatch] = useReducer(sessionReducer, undefined, createInitialState);
-	const sessionInfoRef = useRef<{ key: string; level: string; words: string[] } | null>(null);
+	const sessionInfoRef = useRef<{
+		key: string;
+		level: string;
+		category: string;
+		words: string[];
+	} | null>(null);
 
 	const start = useCallback(
 		async (config: SessionConfig) => {
 			const key = sessionHistoryKey(config);
 			const excludeWords = key ? await storage.getExcludedWords(key) : [];
-			let cards = resolveCards(config, excludeWords);
+			const encounteredWords =
+				config.category === "vocab" ? await storage.getEncounteredWords(config.level) : [];
+			let cards = resolveCards(config, excludeWords, encounteredWords);
 
 			// Fallback: if all words were excluded, ignore exclusion
 			if (cards.length === 0 && excludeWords.length > 0) {
-				cards = resolveCards(config);
+				cards = resolveCards(config, [], encounteredWords);
+			}
+
+			if (cards.length === 0) {
+				Alert.alert("No words found", "There are no words available for this category and level.");
+				return;
 			}
 
 			if (key) {
-				sessionInfoRef.current = { key, level: config.level, words: extractBaseWords(cards) };
+				sessionInfoRef.current = {
+					key,
+					level: config.level,
+					category: config.category,
+					words: extractBaseWords(cards),
+				};
 			}
 			dispatch({ type: "START", cards, config });
 		},
@@ -68,13 +101,20 @@ export function useSession(storage: SessionHistoryStorage) {
 	// Save session words and update encountered words on completion
 	useEffect(() => {
 		if (state.phase === "complete" && sessionInfoRef.current) {
-			const { key, level, words } = sessionInfoRef.current;
+			const { key, level, category, words } = sessionInfoRef.current;
 			sessionInfoRef.current = null;
+			let cancelled = false;
 			storage.saveSessionWords(key, words);
-			storage.getEncounteredWords(level).then((existing) => {
-				const merged = [...new Set([...existing, ...words])];
-				storage.saveEncounteredWords(level, merged);
-			});
+			if (category === "vocab") {
+				storage.getEncounteredWords(level).then((existing) => {
+					if (cancelled) return;
+					const merged = [...new Set([...existing, ...words])];
+					storage.saveEncounteredWords(level, merged);
+				});
+			}
+			return () => {
+				cancelled = true;
+			};
 		}
 	}, [state.phase, storage]);
 

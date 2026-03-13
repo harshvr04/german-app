@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Modal, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { REPORT_WEBHOOK_URL } from "../config";
 import { colors, spacing, typography } from "../theme";
@@ -24,6 +24,24 @@ export function ReportModal({ visible, onClose, word, level, category }: Props) 
 	const [failed, setFailed] = useState(false);
 	const [selectedType, setSelectedType] = useState<string | null>(null);
 	const [comment, setComment] = useState("");
+	const abortRef = useRef<AbortController | null>(null);
+	const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+	// Cleanup fetch and timers on unmount or when modal closes
+	useEffect(() => {
+		if (!visible) {
+			abortRef.current?.abort();
+			abortRef.current = null;
+			if (timerRef.current) {
+				clearTimeout(timerRef.current);
+				timerRef.current = null;
+			}
+		}
+		return () => {
+			abortRef.current?.abort();
+			if (timerRef.current) clearTimeout(timerRef.current);
+		};
+	}, [visible]);
 
 	const handleSelect = (issueType: string) => {
 		setSelectedType(issueType);
@@ -34,6 +52,9 @@ export function ReportModal({ visible, onClose, word, level, category }: Props) 
 
 	const handleSubmit = async () => {
 		if (!selectedType || commentRequired) return;
+		abortRef.current?.abort();
+		const controller = new AbortController();
+		abortRef.current = controller;
 		setSent(true);
 		try {
 			await fetch(REPORT_WEBHOOK_URL, {
@@ -47,13 +68,16 @@ export function ReportModal({ visible, onClose, word, level, category }: Props) 
 					comment: comment.trim() || "",
 					timestamp: new Date().toISOString(),
 				}),
+				signal: controller.signal,
 			});
 		} catch {
+			if (controller.signal.aborted) return;
 			setSent(false);
 			setFailed(true);
 			return;
 		}
-		setTimeout(() => {
+		timerRef.current = setTimeout(() => {
+			timerRef.current = null;
 			setSent(false);
 			setSelectedType(null);
 			setComment("");
@@ -62,6 +86,12 @@ export function ReportModal({ visible, onClose, word, level, category }: Props) 
 	};
 
 	const handleClose = () => {
+		abortRef.current?.abort();
+		abortRef.current = null;
+		if (timerRef.current) {
+			clearTimeout(timerRef.current);
+			timerRef.current = null;
+		}
 		setSent(false);
 		setFailed(false);
 		setSelectedType(null);

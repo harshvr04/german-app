@@ -1,11 +1,14 @@
 import {
+	conjugateFuturI,
+	conjugateKonjunktivI,
 	conjugateKonjunktivII,
 	conjugatePerfekt,
+	conjugatePlusquamperfekt,
 	conjugatePraeteritum,
 	conjugatePresent,
 } from "../engine/verb-conjugation.js";
 import type { Verb } from "../schemas/index.js";
-import type { Card, Person } from "../types/german.js";
+import type { Card, Level, Person } from "../types/german.js";
 import { shuffle } from "./shuffle.js";
 
 const PERSONS: Person[] = ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"];
@@ -16,8 +19,10 @@ function randomPerson(): Person {
 
 type ConjugationFn = (verb: Verb, person: Person) => string;
 
-function buildConjugationTable(verb: Verb, conjugate: ConjugationFn): string {
-	return PERSONS.map((p) => `${p} ${conjugate(verb, p)}`).join("\n");
+function buildConjugationTable(verb: Verb, tense: string, conjugate: ConjugationFn): string {
+	const header = `${verb.infinitiv} (${tense})`;
+	const rows = PERSONS.map((p) => `${p} ${conjugate(verb, p)}`).join("\n");
+	return `${header}\n${rows}`;
 }
 
 function presentCard(verb: Verb): Card {
@@ -25,18 +30,9 @@ function presentCard(verb: Verb): Card {
 	return {
 		id: `verb-pres-${verb.infinitiv}-${person}`,
 		question: `${person} (${verb.infinitiv}, Präsens)?`,
+		hint: verb.meaning,
 		answer: `${person} ${conjugatePresent(verb, person)}`,
-		details: buildConjugationTable(verb, conjugatePresent),
-	};
-}
-
-function praeteritumCard(verb: Verb): Card {
-	const person = randomPerson();
-	return {
-		id: `verb-praet-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Präteritum)?`,
-		answer: `${person} ${conjugatePraeteritum(verb, person)}`,
-		details: buildConjugationTable(verb, conjugatePraeteritum),
+		details: buildConjugationTable(verb, "Präsens", conjugatePresent),
 	};
 }
 
@@ -45,8 +41,53 @@ function perfektCard(verb: Verb): Card {
 	return {
 		id: `verb-perfekt-${verb.infinitiv}-${person}`,
 		question: `${person} (${verb.infinitiv}, Perfekt)?`,
+		hint: verb.meaning,
 		answer: `${person} ${conjugatePerfekt(verb, person)}`,
-		details: buildConjugationTable(verb, conjugatePerfekt),
+		details: buildConjugationTable(verb, "Perfekt", conjugatePerfekt),
+	};
+}
+
+function praeteritumCard(verb: Verb): Card {
+	const person = randomPerson();
+	return {
+		id: `verb-praet-${verb.infinitiv}-${person}`,
+		question: `${person} (${verb.infinitiv}, Präteritum)?`,
+		hint: verb.meaning,
+		answer: `${person} ${conjugatePraeteritum(verb, person)}`,
+		details: buildConjugationTable(verb, "Präteritum", conjugatePraeteritum),
+	};
+}
+
+function futurICard(verb: Verb): Card {
+	const person = randomPerson();
+	return {
+		id: `verb-futur1-${verb.infinitiv}-${person}`,
+		question: `${person} (${verb.infinitiv}, Futur I)?`,
+		hint: verb.meaning,
+		answer: `${person} ${conjugateFuturI(verb, person)}`,
+		details: buildConjugationTable(verb, "Futur I", conjugateFuturI),
+	};
+}
+
+function plusquamperfektCard(verb: Verb): Card {
+	const person = randomPerson();
+	return {
+		id: `verb-plusq-${verb.infinitiv}-${person}`,
+		question: `${person} (${verb.infinitiv}, Plusquamperfekt)?`,
+		hint: verb.meaning,
+		answer: `${person} ${conjugatePlusquamperfekt(verb, person)}`,
+		details: buildConjugationTable(verb, "Plusquamperfekt", conjugatePlusquamperfekt),
+	};
+}
+
+function konjunktivICard(verb: Verb): Card {
+	const person = randomPerson();
+	return {
+		id: `verb-konj1-${verb.infinitiv}-${person}`,
+		question: `${person} (${verb.infinitiv}, Konjunktiv I)?`,
+		hint: verb.meaning,
+		answer: `${person} ${conjugateKonjunktivI(verb, person)}`,
+		details: buildConjugationTable(verb, "Konjunktiv I", conjugateKonjunktivI),
 	};
 }
 
@@ -55,25 +96,51 @@ function konjunktivIICard(verb: Verb): Card {
 	return {
 		id: `verb-konj2-${verb.infinitiv}-${person}`,
 		question: `${person} (${verb.infinitiv}, Konjunktiv II)?`,
+		hint: verb.meaning,
 		answer: `${person} ${conjugateKonjunktivII(verb, person)}`,
-		details: buildConjugationTable(verb, conjugateKonjunktivII),
+		details: buildConjugationTable(verb, "Konjunktiv II", conjugateKonjunktivII),
 	};
+}
+
+function cardsForVerb(verb: Verb, level: Level): Card[] {
+	const cards: Card[] = [];
+
+	// A1: Präsens, Perfekt
+	cards.push(presentCard(verb));
+	cards.push(perfektCard(verb));
+
+	if (level === "A1") return cards;
+
+	// A2: + Futur I, Präteritum
+	cards.push(futurICard(verb));
+	cards.push(praeteritumCard(verb));
+
+	if (level === "A2") return cards;
+
+	// B1: + Plusquamperfekt, Konjunktiv II
+	cards.push(plusquamperfektCard(verb));
+	cards.push(konjunktivIICard(verb));
+
+	if (level === "B1") return cards;
+
+	// B2+: + Konjunktiv I
+	cards.push(konjunktivICard(verb));
+
+	return cards;
 }
 
 export function generateVerbCards(
 	verbs: Verb[],
 	batchSize: number,
 	excludeWords: string[] = [],
+	level: Level = "B1",
 ): Card[] {
 	const excluded = new Set(excludeWords);
 	const filtered = excluded.size > 0 ? verbs.filter((v) => !excluded.has(v.infinitiv)) : verbs;
 	const cards: Card[] = [];
 
 	for (const verb of filtered) {
-		cards.push(presentCard(verb));
-		cards.push(praeteritumCard(verb));
-		cards.push(perfektCard(verb));
-		cards.push(konjunktivIICard(verb));
+		cards.push(...cardsForVerb(verb, level));
 	}
 
 	return shuffle(cards).slice(0, batchSize);

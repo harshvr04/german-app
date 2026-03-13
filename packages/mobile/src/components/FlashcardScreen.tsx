@@ -1,6 +1,7 @@
 import type { Card } from "@german/core/types";
 import { useEffect, useState } from "react";
-import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { REPORT_WEBHOOK_URL } from "../config";
 import { colors, spacing, typography } from "../theme";
 import { ReportModal } from "./ReportModal";
@@ -101,7 +102,7 @@ export function FlashcardScreen({
 					<>
 						<Pressable style={styles.detailsToggle} onPress={() => setShowDetails((prev) => !prev)}>
 							<Text style={styles.detailsToggleText}>
-								{showDetails ? "Hide details" : "Show full conjugation"}
+								{showDetails ? "Hide details" : "Additional details"}
 							</Text>
 						</Pressable>
 						{showDetails && (

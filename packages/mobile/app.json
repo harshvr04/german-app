@@ -13,7 +13,8 @@
       "backgroundColor": "#1a1a2e"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.germanpractice.app"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +27,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "45fb4c51-e040-4aa5-9520-6a9ca85ae235"
+      }
+    },
+    "plugins": ["expo-video"]
   }
 }

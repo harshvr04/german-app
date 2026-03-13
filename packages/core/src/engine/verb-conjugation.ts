@@ -28,6 +28,24 @@ const PRAETERITUM_IRREGULAR_ENDINGS: Record<Person, string> = {
 	"sie/Sie": "en",
 };
 
+const KONJUNKTIV_I_ENDINGS: Record<Person, string> = {
+	ich: "e",
+	du: "est",
+	"er/sie/es": "e",
+	wir: "en",
+	ihr: "et",
+	"sie/Sie": "en",
+};
+
+const SEIN_KONJUNKTIV_I: Record<Person, string> = {
+	ich: "sei",
+	du: "seist",
+	"er/sie/es": "sei",
+	wir: "seien",
+	ihr: "seiet",
+	"sie/Sie": "seien",
+};
+
 const KONJUNKTIV_II_ENDINGS: Record<Person, string> = {
 	ich: "e",
 	du: "est",
@@ -55,6 +73,15 @@ const SEIN_PRESENT: Record<Person, string> = {
 	"sie/Sie": "sind",
 };
 
+const WERDEN_PRESENT: Record<Person, string> = {
+	ich: "werde",
+	du: "wirst",
+	"er/sie/es": "wird",
+	wir: "werden",
+	ihr: "werdet",
+	"sie/Sie": "werden",
+};
+
 const WERDEN_KONJUNKTIV_II: Record<Person, string> = {
 	ich: "würde",
 	du: "würdest",
@@ -62,6 +89,24 @@ const WERDEN_KONJUNKTIV_II: Record<Person, string> = {
 	wir: "würden",
 	ihr: "würdet",
 	"sie/Sie": "würden",
+};
+
+const HABEN_PRAETERITUM: Record<Person, string> = {
+	ich: "hatte",
+	du: "hattest",
+	"er/sie/es": "hatte",
+	wir: "hatten",
+	ihr: "hattet",
+	"sie/Sie": "hatten",
+};
+
+const SEIN_PRAETERITUM: Record<Person, string> = {
+	ich: "war",
+	du: "warst",
+	"er/sie/es": "war",
+	wir: "waren",
+	ihr: "wart",
+	"sie/Sie": "waren",
 };
 
 function extractStem(infinitiv: string): string {
@@ -140,4 +185,21 @@ export function conjugateKonjunktivII(verb: Verb, person: Person): string {
 	}
 
 	return root + KONJUNKTIV_II_ENDINGS[person];
+}
+
+export function conjugateFuturI(verb: Verb, person: Person): string {
+	return `${WERDEN_PRESENT[person]} ${verb.infinitiv}`;
+}
+
+export function conjugatePlusquamperfekt(verb: Verb, person: Person): string {
+	const auxForms = verb.auxiliary === "haben" ? HABEN_PRAETERITUM : SEIN_PRAETERITUM;
+	return `${auxForms[person]} ${verb.partizip_ii}`;
+}
+
+export function conjugateKonjunktivI(verb: Verb, person: Person): string {
+	if (verb.infinitiv === "sein") {
+		return SEIN_KONJUNKTIV_I[person];
+	}
+	const stem = extractStem(verb.infinitiv);
+	return stem + KONJUNKTIV_I_ENDINGS[person];
 }

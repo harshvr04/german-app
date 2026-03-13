@@ -10744,5 +10744,497 @@
     "level": "B1",
     "meaning": "to agree",
     "example": "Ich stimme dir in dieser Sache völlig zu."
+  },
+  {
+    "infinitiv": "amüsieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "amüsiert",
+    "partizip_ii": "amüsiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to amuse oneself, to have fun",
+    "example": "Bei dem Fest haben wir uns sehr gut amüsiert."
+  },
+  {
+    "infinitiv": "beeilen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beeilt",
+    "partizip_ii": "beeilt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to hurry",
+    "example": "Wir müssen uns beeilen. Sonst verpassen wir den Zug."
+  },
+  {
+    "infinitiv": "befinden",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "befand",
+    "partizip_ii": "befunden",
+    "konjunktiv_ii_root": "befänd",
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to be located",
+    "example": "Das Bord-Bistro befindet sich in der Mitte des Zuges."
+  },
+  {
+    "infinitiv": "bedanken",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "bedankt",
+    "partizip_ii": "bedankt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "für",
+        "case": "acc",
+        "meaning": "to thank for"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to thank",
+    "example": "Ich möchte mich noch einmal sehr herzlich für Ihre Hilfe bedanken."
+  },
+  {
+    "infinitiv": "bemühen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "bemüht",
+    "partizip_ii": "bemüht",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to make an effort, to try hard",
+    "example": "Er hat sich sehr bemüht, etwas Gutes zu kochen."
+  },
+  {
+    "infinitiv": "beschweren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beschwert",
+    "partizip_ii": "beschwert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to complain about"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to complain",
+    "example": "Wo können wir uns beschweren?"
+  },
+  {
+    "infinitiv": "beteiligen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "beteiligt",
+    "partizip_ii": "beteiligt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "an",
+        "case": "dat",
+        "meaning": "to participate in"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to participate",
+    "example": "Wir wollen unserer Lehrerin ein Geschenk kaufen. Wer möchte sich beteiligen?"
+  },
+  {
+    "infinitiv": "bewerben",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": "e→i",
+    "present_forms": null,
+    "praeteritum_root": "bewarb",
+    "partizip_ii": "beworben",
+    "konjunktiv_ii_root": "bewürb",
+    "prepositions": [
+      {
+        "preposition": "um",
+        "case": "acc",
+        "meaning": "to apply for"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to apply (for a job)",
+    "example": "Ich habe mich um diese Stelle beworben."
+  },
+  {
+    "infinitiv": "eignen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "eignet",
+    "partizip_ii": "geeignet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "für",
+        "case": "acc",
+        "meaning": "to be suited for"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to be suitable",
+    "example": "Dieses Hotel eignet sich besonders für Familien mit Kindern."
+  },
+  {
+    "infinitiv": "entschließen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "entschloss",
+    "partizip_ii": "entschlossen",
+    "konjunktiv_ii_root": "entschlöss",
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to decide, to resolve",
+    "example": "Mein Nachbar hat sich nun doch entschlossen, sein Auto zu verkaufen."
+  },
+  {
+    "infinitiv": "ereignen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "ereignet",
+    "partizip_ii": "ereignet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to occur, to happen",
+    "example": "Der Unfall ereignete sich am frühen Morgen."
+  },
+  {
+    "infinitiv": "erholen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "erholt",
+    "partizip_ii": "erholt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "von",
+        "case": "dat",
+        "meaning": "to recover from"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to recover, to relax",
+    "example": "Im Urlaub habe ich mich sehr gut erholt."
+  },
+  {
+    "infinitiv": "erkälten",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "erkältet",
+    "partizip_ii": "erkältet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to catch a cold",
+    "example": "Der Junge hat sich beim Baden erkältet."
+  },
+  {
+    "infinitiv": "erkundigen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "erkundigt",
+    "partizip_ii": "erkundigt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "nach",
+        "case": "dat",
+        "meaning": "to inquire about"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to inquire",
+    "example": "Hast du dich schon nach einem Zug erkundigt?"
+  },
+  {
+    "infinitiv": "irren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "irrt",
+    "partizip_ii": "geirrt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to be mistaken",
+    "example": "Du irrst dich. Das Auto war nicht grün, sondern rot."
+  },
+  {
+    "infinitiv": "konzentrieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "konzentriert",
+    "partizip_ii": "konzentriert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "auf",
+        "case": "acc",
+        "meaning": "to concentrate on"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to concentrate",
+    "example": "Bitte stör mich jetzt nicht. Ich muss mich auf meine Arbeit konzentrieren."
+  },
+  {
+    "infinitiv": "langweilen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "langweilt",
+    "partizip_ii": "gelangweilt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to bore, to be bored",
+    "example": "Langweilst du dich?"
+  },
+  {
+    "infinitiv": "melden",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "meldet",
+    "partizip_ii": "gemeldet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to report, to answer (phone)",
+    "example": "Ich habe schon zweimal angerufen. Aber es meldet sich niemand."
+  },
+  {
+    "infinitiv": "nähern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "nähert",
+    "partizip_ii": "genähert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to approach",
+    "example": "Er nähert sich dem Unfallort ganz langsam."
+  },
+  {
+    "infinitiv": "rasieren",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "rasiert",
+    "partizip_ii": "rasiert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to shave",
+    "example": "Dein Bart ist aber lang! Du solltest dich mal wieder rasieren."
+  },
+  {
+    "infinitiv": "siezen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "siezt",
+    "partizip_ii": "gesiezt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to address formally (Sie)",
+    "example": "Obwohl sie sich schon lange kennen, siezen sie sich."
+  },
+  {
+    "infinitiv": "überlegen",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "überlegte",
+    "partizip_ii": "überlegt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to think over, to consider",
+    "example": "Ich kann mich nicht entscheiden. Ich muss mir das noch überlegen."
+  },
+  {
+    "infinitiv": "verabreden",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verabredet",
+    "partizip_ii": "verabredet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to arrange to meet with"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to arrange to meet",
+    "example": "Wir haben uns mit Freunden verabredet."
+  },
+  {
+    "infinitiv": "verabschieden",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verabschiedet",
+    "partizip_ii": "verabschiedet",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "von",
+        "case": "dat",
+        "meaning": "to say goodbye to"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to say goodbye",
+    "example": "Ich wurde von meinen Freunden sehr nett verabschiedet."
+  },
+  {
+    "infinitiv": "verlieben",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "verliebt",
+    "partizip_ii": "verliebt",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "in",
+        "case": "acc",
+        "meaning": "to fall in love with"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to fall in love",
+    "example": "Ich habe mich verliebt."
+  },
+  {
+    "infinitiv": "weigern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "weigert",
+    "partizip_ii": "geweigert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to refuse",
+    "example": "Ich weigere mich diese Arbeit zu tun."
+  },
+  {
+    "infinitiv": "wundern",
+    "type": "regular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "wundert",
+    "partizip_ii": "gewundert",
+    "konjunktiv_ii_root": null,
+    "prepositions": [
+      {
+        "preposition": "über",
+        "case": "acc",
+        "meaning": "to be surprised about"
+      }
+    ],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to be surprised, to wonder",
+    "example": "Es hat mich gewundert, dass das Essen hier so günstig ist."
+  },
+  {
+    "infinitiv": "zwingen",
+    "type": "irregular",
+    "auxiliary": "haben",
+    "stem_change_pres": null,
+    "present_forms": null,
+    "praeteritum_root": "zwang",
+    "partizip_ii": "gezwungen",
+    "konjunktiv_ii_root": "zwäng",
+    "prepositions": [],
+    "connections": [],
+    "level": "B2",
+    "meaning": "to force, to compel",
+    "example": "Bitte zwing mich nicht etwas zu essen. Ich bin wirklich nicht hungrig."
   }
 ]

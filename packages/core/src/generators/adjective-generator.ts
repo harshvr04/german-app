@@ -25,6 +25,34 @@ const SAMPLE_NOUNS: Record<GenderOrPlural, string> = {
 	pl: "Leute",
 };
 
+const CASE_LABELS: Record<Case, string> = {
+	nom: "NOM",
+	acc: "ACC",
+	dat: "DAT",
+	gen: "GEN",
+};
+
+const PARADIGM_LABELS: Record<AdjectiveParadigm, string> = {
+	definite: "After definite article (der/die/das)",
+	no_article: "No article",
+	indefinite_possessive_or_kein: "After ein/kein/possessive",
+};
+
+function buildDeclensionRow(
+	adj: Adjective,
+	paradigm: AdjectiveParadigm,
+	grammaticalCase: Case,
+): string {
+	const header = `${PARADIGM_LABELS[paradigm]}: ${adj.word} (${CASE_LABELS[grammaticalCase]})`;
+	const cells = GENDERS.map((g) => {
+		const art = PARADIGM_EXAMPLES[paradigm](g);
+		const declined = declineAdjective(adj.word, paradigm, grammaticalCase, g);
+		const form = art ? `${art} ${declined}` : declined;
+		return `${g}: ${form}`;
+	}).join("\n");
+	return `${header}\n${cells}`;
+}
+
 function makeDeclensionCard(
 	adj: Adjective,
 	paradigm: AdjectiveParadigm,
@@ -39,8 +67,16 @@ function makeDeclensionCard(
 	return {
 		id: `adj-${paradigm}-${grammaticalCase}-${gender}-${adj.word}`,
 		question: `${prefix}_____ ${noun} (${adj.word}, ${grammaticalCase.toUpperCase()})`,
+		hint: adj.meaning,
 		answer: `${prefix}${declined} ${noun}`,
+		details: buildDeclensionRow(adj, paradigm, grammaticalCase),
 	};
+}
+
+function buildComparisonTable(adj: Adjective): string {
+	const komp = adj.komparativ ?? `${adj.word}er`;
+	const sup = adj.superlativ ?? `${adj.word}sten`;
+	return `Positiv:     ${adj.word}\nKomparativ:  ${komp}\nSuperlativ:  am ${sup}`;
 }
 
 function komparativCard(adj: Adjective): Card {
@@ -48,7 +84,9 @@ function komparativCard(adj: Adjective): Card {
 	return {
 		id: `adj-komp-${adj.word}`,
 		question: `Komparativ von "${adj.word}"?`,
+		hint: adj.meaning,
 		answer: form,
+		details: buildComparisonTable(adj),
 	};
 }
 
@@ -57,7 +95,9 @@ function superlativCard(adj: Adjective): Card {
 	return {
 		id: `adj-super-${adj.word}`,
 		question: `Superlativ von "${adj.word}"?`,
+		hint: adj.meaning,
 		answer: `am ${form}`,
+		details: buildComparisonTable(adj),
 	};
 }
 

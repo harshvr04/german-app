@@ -5,12 +5,25 @@ import { shuffle } from "./shuffle.js";
 
 const ARTICLE_MAP = { m: "der", f: "die", n: "das" } as const;
 const CASES: Case[] = ["nom", "acc", "dat", "gen"];
+const CASE_LABELS: Record<Case, string> = { nom: "NOM", acc: "ACC", dat: "DAT", gen: "GEN" };
+
+function buildNounTable(noun: Noun): string {
+	const header = `${ARTICLE_MAP[noun.gender]} ${noun.word} (Sg. / Pl.)`;
+	const rows = CASES.map((c) => {
+		const sg = declineNoun(noun, c, "singular");
+		const pl = declineNoun(noun, c, "plural");
+		return `${CASE_LABELS[c]}  ${sg.article} ${sg.noun} / ${pl.article} ${pl.noun}`;
+	}).join("\n");
+	return `${header}\n${rows}`;
+}
 
 function genderCard(noun: Noun): Card {
 	return {
 		id: `noun-gender-${noun.word}`,
 		question: `der / die / das ${noun.word}?`,
+		hint: noun.meaning,
 		answer: `${ARTICLE_MAP[noun.gender]} ${noun.word}`,
+		details: buildNounTable(noun),
 	};
 }
 
@@ -19,7 +32,9 @@ function pluralCard(noun: Noun): Card {
 	return {
 		id: `noun-plural-${noun.word}`,
 		question: `Plural von ${noun.word}?`,
+		hint: noun.meaning,
 		answer: `die ${pluralForm}`,
+		details: buildNounTable(noun),
 	};
 }
 
@@ -32,7 +47,9 @@ function declensionCard(noun: Noun, grammaticalCase: Case, number: GrammaticalNu
 	return {
 		id: `noun-${grammaticalCase}-${number}-${noun.word}`,
 		question: `${nomArticle} ${nomForm} → ${grammaticalCase.toUpperCase()} ${numLabel}?`,
+		hint: noun.meaning,
 		answer: `${article} ${form}`,
+		details: buildNounTable(noun),
 	};
 }
 

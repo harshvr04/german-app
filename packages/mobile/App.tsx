@@ -4,11 +4,15 @@ import { extractBaseWord } from "@german/core/session";
 import type { Level } from "@german/core/types";
 import { LEVELS } from "@german/core/types";
 import { StatusBar } from "expo-status-bar";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { AppState } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { CompleteScreen } from "./src/components/CompleteScreen";
 import { DictionaryScreen } from "./src/components/DictionaryScreen";
+import { ExitScreen } from "./src/components/ExitScreen";
 import { FlashcardScreen } from "./src/components/FlashcardScreen";
 import { SetupScreen } from "./src/components/SetupScreen";
+import { SplashVideo } from "./src/components/SplashVideo";
 import { loadAdjectives, loadNouns, loadOthers, loadVerbs } from "./src/data/loader";
 import { useSession } from "./src/hooks/useSession";
 import { useStarredWords } from "./src/hooks/useStarredWords";
@@ -25,6 +29,8 @@ export default function App() {
 		reset: resetCounter,
 	} = useWordCounter(mobileHistoryStorage);
 	const starred = useStarredWords(mobileStarredStorage);
+	const [showSplash, setShowSplash] = useState(true);
+	const [showExit, setShowExit] = useState(false);
 	const [dictionaryMode, setDictionaryMode] = useState<Level | "all" | null>(null);
 
 	const starredCountByLevel = useMemo(() => {
@@ -89,21 +95,57 @@ export default function App() {
 		startWithCards(cards, { level: levels[0]!, category: "starred", batchSize: cards.length });
 	}, [starred.starredWords, loadLevelData, startWithCards]);
 
-	if (dictionaryMode) {
+	const handleExit = useCallback(() => {
+		setShowExit(true);
+	}, []);
+
+	const appStateRef = useRef(AppState.currentState);
+	useEffect(() => {
+		const sub = AppState.addEventListener("change", (nextState) => {
+			if (appStateRef.current.match(/inactive|background/) && nextState === "active") {
+				if (showExit) {
+					setShowExit(false);
+					setShowSplash(true);
+				}
+			}
+			appStateRef.current = nextState;
+		});
+		return () => sub.remove();
+	}, [showExit]);
+
+	if (showSplash) {
 		return (
 			<>
+				<StatusBar style="light" />
+				<SplashVideo onFinish={() => setShowSplash(false)} />
+			</>
+		);
+	}
+
+	if (showExit) {
+		return (
+			<>
+				<StatusBar style="light" />
+				<ExitScreen />
+			</>
+		);
+	}
+
+	if (dictionaryMode) {
+		return (
+			<SafeAreaProvider>
 				<StatusBar style="light" />
 				<DictionaryScreen
 					level={dictionaryMode === "all" ? null : dictionaryMode}
 					onBack={handleDictionaryBack}
 				/>
-			</>
+			</SafeAreaProvider>
 		);
 	}
 
 	if (state.phase === "setup") {
 		return (
-			<>
+			<SafeAreaProvider>
 				<StatusBar style="light" />
 				<SetupScreen
 					onComplete={start}
@@ -117,8 +159,9 @@ export default function App() {
 					onResetCounter={async (l) => {
 						await resetCounter(l);
 					}}
+					onExit={handleExit}
 				/>
-			</>
+			</SafeAreaProvider>
 		);
 	}
 
@@ -129,7 +172,7 @@ export default function App() {
 		const cardLevel = (card.level ?? state.config.level) as Level;
 
 		return (
-			<>
+			<SafeAreaProvider>
 				<StatusBar style="light" />
 				<FlashcardScreen
 					card={card}
@@ -144,14 +187,14 @@ export default function App() {
 					category={state.config.category}
 					sessionLevel={state.config.level}
 				/>
-			</>
+			</SafeAreaProvider>
 		);
 	}
 
 	return (
-		<>
+		<SafeAreaProvider>
 			<StatusBar style="light" />
 			<CompleteScreen stats={state.stats} onNewSession={handleReset} />
-		</>
+		</SafeAreaProvider>
 	);
 }

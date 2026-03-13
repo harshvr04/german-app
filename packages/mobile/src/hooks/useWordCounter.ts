@@ -18,21 +18,30 @@ export function useWordCounter(storage: SessionHistoryStorage) {
 		return initial;
 	});
 
-	const loadCounts = useCallback(async () => {
-		const updated = {} as Record<Level, WordCount>;
-		for (const level of LEVELS) {
-			if (!hasDataForLevel(level)) {
-				updated[level] = { count: 0, total: 0 };
-				continue;
+	const loadCounts = useCallback(
+		async (signal?: { cancelled: boolean }) => {
+			const updated = {} as Record<Level, WordCount>;
+			for (const level of LEVELS) {
+				if (!hasDataForLevel(level)) {
+					updated[level] = { count: 0, total: 0 };
+					continue;
+				}
+				const words = await storage.getEncounteredWords(level);
+				if (signal?.cancelled) return;
+				updated[level] = { count: words.length, total: getTotalWordCount(level) };
 			}
-			const words = await storage.getEncounteredWords(level);
-			updated[level] = { count: words.length, total: getTotalWordCount(level) };
-		}
-		setCounts(updated);
-	}, [storage]);
+			if (signal?.cancelled) return;
+			setCounts(updated);
+		},
+		[storage],
+	);
 
 	useEffect(() => {
-		loadCounts();
+		const signal = { cancelled: false };
+		loadCounts(signal);
+		return () => {
+			signal.cancelled = true;
+		};
 	}, [loadCounts]);
 
 	const reset = useCallback(

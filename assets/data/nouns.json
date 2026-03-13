@@ -13840,5 +13840,59 @@
     "level": "B1",
     "meaning": "ingredients",
     "example": "Welche Zutaten braucht man für diesen Kuchen?"
+  },
+  {
+    "word": "Bancomat",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "ATM",
+    "example": "Ich hole noch schnell Geld vom Bankomaten."
+  },
+  {
+    "word": "Chefin",
+    "gender": "f",
+    "plural_suffix": "-nen",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "boss (female)",
+    "example": "Das kann ich nicht allein entscheiden, da muss ich erst die Chefin fragen."
+  },
+  {
+    "word": "Schreck",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "fright, scare",
+    "example": "Ich habe einen großen Schreck bekommen."
+  },
+  {
+    "word": "Stewardess",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "flight attendant",
+    "example": "Die Stewardess bringt das Mittagessen."
+  },
+  {
+    "word": "Volleyball",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "volleyball",
+    "example": "Im Sommer spiele ich gern Volleyball."
+  },
+  {
+    "word": "Senioren",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "senior citizens",
+    "example": "Dieser Computerkurs ist für Senioren."
   }
 ]

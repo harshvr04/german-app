@@ -169,22 +169,51 @@ describe("generateNounCards", () => {
 		const datPlCards = cards.filter((c) => c.id.includes("-dat-plural-"));
 		expect(datPlCards.length).toBe(nouns.length);
 	});
+
+	it("noun cards include meaning as hint", () => {
+		const cards = generateNounCards(nouns, 100);
+		const tischCard = cards.find((c) => c.id === "noun-gender-Tisch");
+		expect(tischCard?.hint).toBe("table");
+	});
+
+	it("noun cards include declension table in details", () => {
+		const cards = generateNounCards(nouns, 100);
+		const card = cards.find((c) => c.id === "noun-gender-Tisch");
+		expect(card?.details).toBeDefined();
+		expect(card?.details).toContain("Sg. / Pl.");
+		expect(card?.details).toContain("NOM");
+		expect(card?.details).toContain("ACC");
+		expect(card?.details).toContain("DAT");
+		expect(card?.details).toContain("GEN");
+	});
 });
 
 // --- Verb generator ---
 
 describe("generateVerbCards", () => {
-	it("generates 4 cards per verb (one per tense)", () => {
-		const cards = generateVerbCards(verbs, 100);
-		expect(cards.length).toBe(4); // 1 verb × 4 tenses
+	it("generates 2 cards per verb at A1 (Präsens + Perfekt)", () => {
+		const cards = generateVerbCards(verbs, 100, [], "A1");
+		expect(cards.length).toBe(2);
 	});
 
-	it("includes all tense types", () => {
-		const cards = generateVerbCards(verbs, 100);
+	it("generates 4 cards per verb at A2", () => {
+		const cards = generateVerbCards(verbs, 100, [], "A2");
+		expect(cards.length).toBe(4);
+	});
+
+	it("generates 6 cards per verb at B1", () => {
+		const cards = generateVerbCards(verbs, 100, [], "B1");
+		expect(cards.length).toBe(6);
+	});
+
+	it("includes all tense types at B1", () => {
+		const cards = generateVerbCards(verbs, 100, [], "B1");
 		const types = cards.map((c) => c.id.split("-")[1]);
 		expect(types).toContain("pres");
 		expect(types).toContain("praet");
 		expect(types).toContain("perfekt");
+		expect(types).toContain("futur1");
+		expect(types).toContain("plusq");
 		expect(types).toContain("konj2");
 	});
 
@@ -203,14 +232,72 @@ describe("generateVerbCards", () => {
 	});
 
 	it("verb cards include full conjugation table in details", () => {
-		const cards = generateVerbCards(verbs, 100);
+		const cards = generateVerbCards(verbs, 100, [], "B1");
 		for (const card of cards) {
 			expect(card.details).toBeDefined();
 			const lines = card.details!.split("\n");
-			expect(lines.length).toBe(6);
-			expect(lines[0]).toMatch(/^ich /);
-			expect(lines[5]).toMatch(/^sie\/Sie /);
+			expect(lines.length).toBe(7);
+			expect(lines[0]).toMatch(/Präsens|Präteritum|Perfekt|Futur I|Plusquamperfekt|Konjunktiv II/);
+			expect(lines[1]).toMatch(/^ich /);
+			expect(lines[6]).toMatch(/^sie\/Sie /);
 		}
+	});
+
+	it("A1 only includes Präsens and Perfekt tenses", () => {
+		const cards = generateVerbCards(verbs, 100, [], "A1");
+		const types = cards.map((c) => c.id.split("-")[1]);
+		expect(types).toContain("pres");
+		expect(types).toContain("perfekt");
+		expect(types).not.toContain("praet");
+		expect(types).not.toContain("futur1");
+		expect(types).not.toContain("plusq");
+		expect(types).not.toContain("konj2");
+	});
+
+	it("A2 includes Präsens, Perfekt, Futur I, Präteritum", () => {
+		const cards = generateVerbCards(verbs, 100, [], "A2");
+		const types = cards.map((c) => c.id.split("-")[1]);
+		expect(types).toContain("pres");
+		expect(types).toContain("perfekt");
+		expect(types).toContain("futur1");
+		expect(types).toContain("praet");
+		expect(types).not.toContain("plusq");
+		expect(types).not.toContain("konj2");
+	});
+
+	it("verb cards include meaning as hint", () => {
+		const cards = generateVerbCards(verbs, 100, [], "A1");
+		for (const card of cards) {
+			expect(card.hint).toBe("to make");
+		}
+	});
+
+	it("generates 7 cards per verb at B2", () => {
+		const cards = generateVerbCards(verbs, 100, [], "B2");
+		expect(cards.length).toBe(7);
+	});
+
+	it("B2 includes all B1 tenses plus Konjunktiv I", () => {
+		const cards = generateVerbCards(verbs, 100, [], "B2");
+		const types = cards.map((c) => c.id.split("-")[1]);
+		expect(types).toContain("pres");
+		expect(types).toContain("perfekt");
+		expect(types).toContain("futur1");
+		expect(types).toContain("praet");
+		expect(types).toContain("plusq");
+		expect(types).toContain("konj2");
+		expect(types).toContain("konj1");
+	});
+
+	it("B1 does not include Konjunktiv I", () => {
+		const cards = generateVerbCards(verbs, 100, [], "B1");
+		const types = cards.map((c) => c.id.split("-")[1]);
+		expect(types).not.toContain("konj1");
+	});
+
+	it("excludes words correctly", () => {
+		const cards = generateVerbCards(verbs, 100, ["machen"], "A1");
+		expect(cards.length).toBe(0);
 	});
 });
 
@@ -315,6 +402,31 @@ describe("generateAdjectiveCards", () => {
 	it("respects batch size", () => {
 		const cards = generateAdjectiveCards(adjectives, 3);
 		expect(cards.length).toBeLessThanOrEqual(3);
+	});
+
+	it("adjective cards include meaning as hint", () => {
+		const cards = generateAdjectiveCards(adjectives, 100);
+		const kompCard = cards.find((c) => c.id === "adj-komp-gut");
+		expect(kompCard?.hint).toBe("good");
+	});
+
+	it("declension cards include details for the asked case", () => {
+		const cards = generateAdjectiveCards(adjectives, 100);
+		const declCard = cards.find(
+			(c) => c.id.startsWith("adj-definite-") || c.id.startsWith("adj-no_article-"),
+		);
+		expect(declCard?.details).toBeDefined();
+		expect(declCard?.details).toMatch(/NOM|ACC|DAT|GEN/);
+		expect(declCard?.details).toContain("m:");
+		expect(declCard?.details).toContain("f:");
+	});
+
+	it("komparativ/superlativ cards include comparison table in details", () => {
+		const cards = generateAdjectiveCards(adjectives, 100);
+		const kompCard = cards.find((c) => c.id === "adj-komp-gut");
+		expect(kompCard?.details).toContain("Positiv:");
+		expect(kompCard?.details).toContain("Komparativ:");
+		expect(kompCard?.details).toContain("Superlativ:");
 	});
 });
 
