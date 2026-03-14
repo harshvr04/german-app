@@ -11488,8 +11488,9 @@
     "konjunktiv_ii_root": "drohte",
     "prepositions": [
       {
-        "prep": "mit",
-        "case": "dativ"
+        "preposition": "mit",
+        "case": "dat",
+        "meaning": "to threaten with"
       }
     ],
     "connections": [],
