@@ -7,7 +7,7 @@ import {
 	WORD_COUNTER_INFO,
 } from "@german/core/types";
 import type { Category, Level, SessionConfig, VocabDirection } from "@german/core/types";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { hasDataForLevel } from "../data/loader";
 import { InfoModal } from "./InfoModal";
 
@@ -51,6 +51,13 @@ export function SetupScreen({
 	const [vocabDirection, setVocabDirection] = useState<VocabDirection | undefined>(undefined);
 	const [infoModalVisible, setInfoModalVisible] = useState(false);
 
+	const showAndroidBanner = useMemo(() => {
+		const ua = navigator.userAgent;
+		const isAndroid = /android/i.test(ua);
+		const isMobileOrTablet = window.innerWidth <= 1024;
+		return isAndroid && isMobileOrTablet;
+	}, []);
+
 	const totalCount = LEVELS.reduce(
 		(acc, l) => {
 			const wc = wordCounts[l];
@@ -90,11 +97,19 @@ export function SetupScreen({
 			<div className="header">
 				<div className="header-row">
 					<div className="app-title">German Practice</div>
-					{step !== "level" && (
+					{step === "level" && showAndroidBanner ? (
+						<a
+							className="android-banner"
+							href="https://github.com/harshvr04/german-app/raw/main/builds/german-practice.apk"
+							download
+						>
+							Get Android App
+						</a>
+					) : step !== "level" ? (
 						<button className="back-btn" type="button" onClick={goBack}>
 							←
 						</button>
-					)}
+					) : null}
 				</div>
 				{breadcrumbs.length > 0 && (
 					<div className="breadcrumb-row">

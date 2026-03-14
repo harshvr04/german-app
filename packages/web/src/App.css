@@ -176,6 +176,16 @@ body,
 	margin-top: 8px;
 }
 
+.android-banner {
+	background: #2a2a4e;
+	color: #3ddc84;
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-size: 11px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
 /* Counter */
 .counter-row {
 	display: flex;
