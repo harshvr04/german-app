@@ -39,6 +39,7 @@ german-app/
   packages/
     core/                     # Shared library: types, schemas, engine, generators, session
     mobile/                   # React Native (Expo) app
+    web/                      # Vite + React web app (Cloudflare Pages)
     cli/                      # Terminal UI (Ink)
     tool-b/                   # Claude API vocabulary metadata generator
 ```
@@ -121,9 +122,43 @@ React Native app built with Expo SDK 54, React 19, and React Native 0.81.
 
 **Storage:** AsyncStorage for session history, encountered words (per level), starred words, and anonymous analytics ID.
 
-**Config:** `src/config.ts` contains `REPORT_WEBHOOK_URL` for Google Apps Script webhook (used for both issue reports and analytics).
+**Config:** `src/config.ts` reads `REPORT_WEBHOOK_URL` for the Google Apps Script webhook (used for both issue reports and analytics). On mobile, the URL is hardcoded in `src/config.ts` since it's baked into the APK regardless.
 
 **Analytics:** On each app open, a single ping is sent to the webhook with an anonymous UUID (generated on first launch), OS, and OS version. The Google Apps Script upserts a row per UUID in an "Analytics" sheet tab, incrementing the open count. No personal data is collected.
+
+### @german/web
+
+Web app built with Vite + React, deployed to [Cloudflare Pages](https://german-practice.pages.dev) (free tier). Same feature set as mobile: flashcards, dictionary, verb conjugation browser, starred words, word counter, and issue reporting with rate limiting.
+
+**Screens:** Same as mobile (minus SplashVideo and ExitScreen).
+
+**Keyboard shortcuts (FlashcardScreen):**
+
+| Key | Action |
+|-----|--------|
+| Space / Enter | Reveal answer |
+| Arrow Right / `g` | Mark correct |
+| Arrow Left / `w` | Mark wrong |
+| `d` | Toggle details |
+| Escape | Back to setup |
+
+**Storage:** localStorage for session history, encountered words, starred words, and rate-limit tracking.
+
+**Rate limiting (issue reports):** 20 reports per 24 hours, 30-second cooldown between submissions (client-side via localStorage).
+
+**Development:**
+
+```bash
+pnpm web          # Start dev server (http://localhost:5173)
+pnpm build        # Build all packages including web
+```
+
+**Deployment:**
+
+```bash
+cd packages/web
+npx wrangler pages deploy dist --project-name german-practice --commit-dirty=true
+```
 
 ### @german/cli
 
@@ -204,6 +239,7 @@ b2-nouns.txt, b2-verbs.txt, b2-adjectives.txt, b2-others.txt
 | `pnpm typecheck` | Type-check all packages |
 | `pnpm lint` | Lint & format check (Biome) |
 | `pnpm mobile` | Start Expo dev server |
+| `pnpm web` | Start web dev server (Vite) |
 | `pnpm german` | Run CLI app |
 | `pnpm tool-b` | Run vocabulary generator |
 
@@ -298,26 +334,66 @@ eas build --profile preview --platform ios --local
 1. Add the category to the `Category` type and `CATEGORIES` constant in `packages/core/src/types/german.ts`
 2. Create a generator in `packages/core/src/generators/`
 3. Add the generator to `packages/core/src/generators/index.ts`
-4. Handle the new category in `resolveCards()` in both `packages/mobile/src/hooks/useSession.ts` and `packages/cli/src/hooks/useSession.ts`
+4. Handle the new category in `resolveCards()` in `packages/mobile/src/hooks/useSession.ts`, `packages/web/src/hooks/useSession.ts`, and `packages/cli/src/hooks/useSession.ts`
+
+## Sensitive Configuration
+
+The Google Apps Script webhook URL is the only sensitive value. It is **not** committed for the web package.
+
+| Package | How the webhook URL is configured |
+|---------|-----------------------------------|
+| **web** | `packages/web/.env` file (gitignored). Set `VITE_REPORT_WEBHOOK_URL=<url>`. Read at build time via `import.meta.env`. |
+| **mobile** | Hardcoded in `packages/mobile/src/config.ts`. The URL is baked into the APK — no way to hide it from a determined user. Acceptable since the webhook only appends rows to a Google Sheet. |
+
+If the `.env` file is missing or the variable is empty, the "Report Issue" button is simply hidden.
+
+**To get the current deployment link and Google Sheet access**, reach out to helpmesis25@gmail.com.
+
+### Setting up your own webhook
+
+To create your own Google Apps Script webhook for issue reporting:
+
+1. Create a new Google Sheet
+2. Open **Extensions → Apps Script**
+3. Add a `doPost(e)` function that parses `e.postData.contents` as JSON and appends a row with: timestamp, word, level, category, issue type, and comment
+4. Deploy as a **Web App** (Execute as: Me, Access: Anyone)
+5. Copy the deployment URL and set it as:
+   - **Web:** `VITE_REPORT_WEBHOOK_URL` in `packages/web/.env`
+   - **Mobile:** `REPORT_WEBHOOK_URL` in `packages/mobile/src/config.ts`
+
+The webhook receives POST requests with this JSON body:
+
+```json
+{
+  "word": "der Tisch",
+  "level": "A1",
+  "category": "vocab",
+  "issueType": "Spelling Mistake",
+  "comment": "",
+  "timestamp": "2026-03-14T12:00:00Z"
+}
+```
+
+Without a webhook URL configured, all report functionality is disabled and the app works normally.
 
 ## Architecture
 
 ```
-┌──────────────────────────────────────────────────┐
-│                  @german/core                     │
-│                                                   │
-│  types/    schemas/    engine/    generators/      │
-│  session/  data/       dictionary/                │
-└──────┬───────────────────────┬────────────────────┘
-       │                       │
-       ▼                       ▼
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│ @german/     │     │ @german/     │     │ @german/     │
-│ mobile       │     │ cli          │     │ tool-b       │
-│              │     │              │     │              │
-│ Expo RN      │     │ Ink          │     │ Claude API   │
-│ AsyncStorage │     │ File Storage │     │ Zod          │
-└──────────────┘     └──────────────┘     └──────────────┘
+┌───────────────────────────────────────────────────────┐
+│                     @german/core                       │
+│                                                        │
+│  types/    schemas/    engine/    generators/           │
+│  session/  data/       dictionary/                     │
+└───┬──────────────┬──────────────┬──────────────────────┘
+    │              │              │
+    ▼              ▼              ▼
+┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
+│ @german/ │ │ @german/ │ │ @german/ │ │ @german/ │
+│ mobile   │ │ web      │ │ cli      │ │ tool-b   │
+│          │ │          │ │          │ │          │
+│ Expo RN  │ │ Vite     │ │ Ink      │ │ Claude   │
+│ AsyncStr │ │ localStr │ │ File FS  │ │ API      │
+└──────────┘ └──────────┘ └──────────┘ └──────────┘
 ```
 
 ### Data Flow

@@ -1,3 +1,3 @@
-// Set this to your Google Apps Script webhook URL to enable the "Report Issue" button
-export const REPORT_WEBHOOK_URL =
-	"https://script.google.com/macros/s/AKfycbzUBDdt50WA3G8Kal_bWqLP7oNv0ALql4yrGNQj89HhJsYgTNJ53cuSynwh1qQn-sjATg/exec";
+// Report webhook URL — read from VITE_REPORT_WEBHOOK_URL env var at build time.
+// Set it in a .env file or pass via CLI: VITE_REPORT_WEBHOOK_URL=https://... pnpm build
+export const REPORT_WEBHOOK_URL = import.meta.env.VITE_REPORT_WEBHOOK_URL ?? "";
