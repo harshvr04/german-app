@@ -3458,5 +3458,325 @@
     "level": "B1",
     "meaning": "reliable",
     "example": "Der Kollege kommt bestimmt gleich. Er ist immer sehr zuverlässig."
+  },
+  {
+    "word": "alkoholfrei",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "non-alcoholic",
+    "example": "Ich hätte gern ein alkoholfreies Bier."
+  },
+  {
+    "word": "altmodisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "altmodischer",
+    "superlativ": "am altmodischsten",
+    "level": "B2",
+    "meaning": "old-fashioned",
+    "example": "Diese Kleidung ist ziemlich altmodisch."
+  },
+  {
+    "word": "blau",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "blauer",
+    "superlativ": "am blauesten",
+    "level": "B2",
+    "meaning": "blue",
+    "example": "Der Himmel ist heute strahlend blau."
+  },
+  {
+    "word": "brav",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "braver",
+    "superlativ": "am bravsten",
+    "level": "B2",
+    "meaning": "well behaved / good",
+    "example": "Das Kind war heute sehr brav."
+  },
+  {
+    "word": "doof",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "doofer",
+    "superlativ": "am doofsten",
+    "level": "B2",
+    "meaning": "stupid / dumb (colloquial)",
+    "example": "Das war eine doofe Idee."
+  },
+  {
+    "word": "einverstanden",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "agreed / in agreement",
+    "example": "Bist du damit einverstanden?"
+  },
+  {
+    "word": "gelb",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "gelber",
+    "superlativ": "am gelbsten",
+    "level": "B2",
+    "meaning": "yellow",
+    "example": "Die Blätter werden im Herbst gelb."
+  },
+  {
+    "word": "gemischt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "mixed",
+    "example": "Ich hätte gern einen gemischten Salat."
+  },
+  {
+    "word": "grau",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "grauer",
+    "superlativ": "am grauesten",
+    "level": "B2",
+    "meaning": "grey",
+    "example": "Der Himmel ist heute grau und trüb."
+  },
+  {
+    "word": "gütig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "gütiger",
+    "superlativ": "am gütigsten",
+    "level": "B2",
+    "meaning": "kind / benevolent",
+    "example": "Sie ist eine gütige Frau."
+  },
+  {
+    "word": "heiter",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "heiterer",
+    "superlativ": "am heitersten",
+    "level": "B2",
+    "meaning": "bright (weather) / cheerful",
+    "example": "Das Wetter bleibt heiter und trocken."
+  },
+  {
+    "word": "lauwarm",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "lauwärmer",
+    "superlativ": "am lauwärmsten",
+    "level": "B2",
+    "meaning": "lukewarm",
+    "example": "Der Kaffee ist nur noch lauwarm."
+  },
+  {
+    "word": "lebhaft",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "lebhafter",
+    "superlativ": "am lebhaftesten",
+    "level": "B2",
+    "meaning": "lively / vivid",
+    "example": "Die Kinder sind heute sehr lebhaft."
+  },
+  {
+    "word": "lila",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "purple",
+    "example": "Sie hat eine lila Bluse an."
+  },
+  {
+    "word": "lockig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "lockiger",
+    "superlativ": "am lockigsten",
+    "level": "B2",
+    "meaning": "curly",
+    "example": "Sie hat schöne lockige Haare."
+  },
+  {
+    "word": "modisch",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "modischer",
+    "superlativ": "am modischsten",
+    "level": "B2",
+    "meaning": "fashionable",
+    "example": "Sie trägt immer modische Kleidung."
+  },
+  {
+    "word": "mäßig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "mäßiger",
+    "superlativ": "am mäßigsten",
+    "level": "B2",
+    "meaning": "moderate",
+    "example": "Das Essen war nur mäßig gut."
+  },
+  {
+    "word": "nackt",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "naked / bare",
+    "example": "Die Kinder laufen barfuß und mit nackten Armen."
+  },
+  {
+    "word": "nördlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "northern / to the north",
+    "example": "Hamburg liegt nördlich von Hannover."
+  },
+  {
+    "word": "pikant",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "pikanter",
+    "superlativ": "am pikantesten",
+    "level": "B2",
+    "meaning": "spicy / savoury",
+    "example": "Die Soße ist schön pikant."
+  },
+  {
+    "word": "rosa",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "pink",
+    "example": "Sie trägt ein rosa Kleid."
+  },
+  {
+    "word": "rot",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "röter",
+    "superlativ": "am rötesten",
+    "level": "B2",
+    "meaning": "red",
+    "example": "Die Ampel ist rot."
+  },
+  {
+    "word": "sanft",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "sanfter",
+    "superlativ": "am sanftesten",
+    "level": "B2",
+    "meaning": "soft / gentle",
+    "example": "Ein sanfter Wind weht über das Feld."
+  },
+  {
+    "word": "seekrank",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "seasick",
+    "example": "Auf dem Schiff wurde er seekrank."
+  },
+  {
+    "word": "südlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "southern / to the south",
+    "example": "München liegt südlich von Nürnberg."
+  },
+  {
+    "word": "unentschieden",
+    "is_declinable": false,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "undecided / drawn (match)",
+    "example": "Das Spiel endete unentschieden."
+  },
+  {
+    "word": "unmöglich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "impossible",
+    "example": "Das ist völlig unmöglich."
+  },
+  {
+    "word": "unordentlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "unordentlicher",
+    "superlativ": "am unordentlichsten",
+    "level": "B2",
+    "meaning": "untidy / messy",
+    "example": "Dein Zimmer ist sehr unordentlich."
+  },
+  {
+    "word": "winzig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "winziger",
+    "superlativ": "am winzigsten",
+    "level": "B2",
+    "meaning": "tiny",
+    "example": "Das Baby hat winzige Finger."
+  },
+  {
+    "word": "zornig",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "zorniger",
+    "superlativ": "am zornigsten",
+    "level": "B2",
+    "meaning": "angry / furious",
+    "example": "Er wurde zornig, als er die Nachricht hörte."
+  },
+  {
+    "word": "ähnlich",
+    "is_declinable": true,
+    "is_comparable": true,
+    "komparativ": "ähnlicher",
+    "superlativ": "am ähnlichsten",
+    "level": "B2",
+    "meaning": "similar",
+    "example": "Die beiden Schwestern sehen sich sehr ähnlich."
+  },
+  {
+    "word": "östlich",
+    "is_declinable": true,
+    "is_comparable": false,
+    "komparativ": null,
+    "superlativ": null,
+    "level": "B2",
+    "meaning": "eastern / to the east",
+    "example": "Dresden liegt östlich von Leipzig."
   }
 ]

@@ -13894,5 +13894,2111 @@
     "level": "B2",
     "meaning": "senior citizens",
     "example": "Dieser Computerkurs ist für Senioren."
+  },
+  {
+    "word": "Acker",
+    "gender": "m",
+    "plural_suffix": "-̈",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "field (arable)",
+    "example": "Der Bauer pflügt den Acker im Frühling."
+  },
+  {
+    "word": "Affe",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "B2",
+    "meaning": "monkey",
+    "example": "Die Affen klettern auf die Bäume im Zoo."
+  },
+  {
+    "word": "Ahnung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "idea / clue",
+    "example": "Ich habe keine Ahnung, wo er ist."
+  },
+  {
+    "word": "Aktentasche",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "briefcase",
+    "example": "Er trägt seine Aktentasche jeden Tag ins Büro."
+  },
+  {
+    "word": "Alptraum",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "nightmare",
+    "example": "Ich hatte letzte Nacht einen schlimmen Alptraum."
+  },
+  {
+    "word": "Altpapier",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "recycled paper / waste paper",
+    "example": "Bitte wirf die Zeitungen ins Altpapier."
+  },
+  {
+    "word": "Ananas",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "pineapple",
+    "example": "Die Ananas schmeckt süß und frisch."
+  },
+  {
+    "word": "Anfänger",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "beginner",
+    "example": "Dieser Kurs ist nur für Anfänger geeignet."
+  },
+  {
+    "word": "Anrichte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "sideboard",
+    "example": "Die Teller stehen auf der Anrichte."
+  },
+  {
+    "word": "Ansichtskarte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "postcard (picture)",
+    "example": "Ich schicke dir eine Ansichtskarte aus dem Urlaub."
+  },
+  {
+    "word": "Armband",
+    "gender": "n",
+    "plural_suffix": "-̈er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "bracelet",
+    "example": "Sie trägt ein goldenes Armband am Handgelenk."
+  },
+  {
+    "word": "Armbanduhr",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "wrist watch",
+    "example": "Meine Armbanduhr ist stehen geblieben."
+  },
+  {
+    "word": "Armee",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "army",
+    "example": "Er dient seit zwei Jahren in der Armee."
+  },
+  {
+    "word": "Aula",
+    "gender": "f",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "school hall / auditorium",
+    "example": "Die Versammlung findet in der Aula statt."
+  },
+  {
+    "word": "Bach",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "stream / brook",
+    "example": "Ein kleiner Bach fließt durch den Wald."
+  },
+  {
+    "word": "Belohnung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "reward",
+    "example": "Als Belohnung bekommt er ein Eis."
+  },
+  {
+    "word": "Biene",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "bee",
+    "example": "Die Biene fliegt von Blume zu Blume."
+  },
+  {
+    "word": "Blockflöte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "recorder (instrument)",
+    "example": "In der Grundschule lernt man oft Blockflöte."
+  },
+  {
+    "word": "Bockwurst",
+    "gender": "f",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "boiled sausage",
+    "example": "Ich hätte gern eine Bockwurst mit Senf."
+  },
+  {
+    "word": "Boden",
+    "gender": "m",
+    "plural_suffix": "-̈",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "ground / floor / soil",
+    "example": "Das Glas ist auf den Boden gefallen."
+  },
+  {
+    "word": "Bonbon",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "sweet / candy",
+    "example": "Möchtest du ein Bonbon?"
+  },
+  {
+    "word": "Boot",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "boat",
+    "example": "Wir fahren mit dem Boot über den See."
+  },
+  {
+    "word": "Bord",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "board (on board)",
+    "example": "Alle Passagiere sind an Bord."
+  },
+  {
+    "word": "Brand",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "fire (blaze)",
+    "example": "Die Feuerwehr hat den Brand schnell gelöscht."
+  },
+  {
+    "word": "Brett",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "board / plank",
+    "example": "Die Nachricht hängt am schwarzen Brett."
+  },
+  {
+    "word": "Bräutigam",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "bridegroom",
+    "example": "Der Bräutigam wartet am Altar auf seine Braut."
+  },
+  {
+    "word": "Bude",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "stall / stand / room",
+    "example": "An der Bude kaufen wir Bratwurst."
+  },
+  {
+    "word": "Bundesstraße",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "federal road / A-road",
+    "example": "Die Bundesstraße führt durch das Dorf."
+  },
+  {
+    "word": "Bushaltestelle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "bus stop",
+    "example": "Wir warten an der Bushaltestelle."
+  },
+  {
+    "word": "Bär",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "B2",
+    "meaning": "bear",
+    "example": "Im Wald lebt ein großer Bär."
+  },
+  {
+    "word": "Bäuerin",
+    "gender": "f",
+    "plural_suffix": "-nen",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "female farmer / farmer's wife",
+    "example": "Die Bäuerin verkauft frische Eier auf dem Markt."
+  },
+  {
+    "word": "Bügeleisen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "iron (for clothes)",
+    "example": "Das Bügeleisen ist noch heiß."
+  },
+  {
+    "word": "Campingplatz",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "camping site",
+    "example": "Wir übernachten auf dem Campingplatz am See."
+  },
+  {
+    "word": "Chirurg",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "B2",
+    "meaning": "surgeon",
+    "example": "Der Chirurg hat die Operation durchgeführt."
+  },
+  {
+    "word": "Chor",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "choir",
+    "example": "Sie singt jeden Freitag im Chor."
+  },
+  {
+    "word": "Delikatessengeschäft",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "delicatessen",
+    "example": "Im Delikatessengeschäft gibt es feine Käsesorten."
+  },
+  {
+    "word": "Diele",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "hallway / entrance hall",
+    "example": "Bitte stell die Schuhe in die Diele."
+  },
+  {
+    "word": "Dom",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cathedral",
+    "example": "Der Kölner Dom ist weltberühmt."
+  },
+  {
+    "word": "Dutzend",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "a dozen",
+    "example": "Ich kaufe ein Dutzend Eier."
+  },
+  {
+    "word": "Eimer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "bucket",
+    "example": "Füll bitte den Eimer mit Wasser."
+  },
+  {
+    "word": "Eisbahn",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "ice rink",
+    "example": "Im Winter gehen wir zur Eisbahn."
+  },
+  {
+    "word": "Eisbecher",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "ice cream sundae",
+    "example": "Ich bestelle einen großen Eisbecher mit Sahne."
+  },
+  {
+    "word": "Ellbogen",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "elbow",
+    "example": "Er hat sich den Ellbogen gestoßen."
+  },
+  {
+    "word": "Endspiel",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "final (sport)",
+    "example": "Morgen ist das Endspiel der Meisterschaft."
+  },
+  {
+    "word": "Ente",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "duck",
+    "example": "Die Enten schwimmen auf dem Teich."
+  },
+  {
+    "word": "Erbsen",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "peas",
+    "example": "Zum Mittagessen gibt es Erbsen mit Reis."
+  },
+  {
+    "word": "Erdbeere",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "strawberry",
+    "example": "Die Erdbeeren sind im Sommer am besten."
+  },
+  {
+    "word": "Erdnuss",
+    "gender": "f",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "peanut",
+    "example": "Er ist allergisch gegen Erdnüsse."
+  },
+  {
+    "word": "Esszimmer",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "dining room",
+    "example": "Wir essen immer im Esszimmer."
+  },
+  {
+    "word": "Etui",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "pencil case",
+    "example": "Die Stifte sind in meinem Etui."
+  },
+  {
+    "word": "Examen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "examination (formal)",
+    "example": "Sie hat das Examen mit Auszeichnung bestanden."
+  },
+  {
+    "word": "D-Zug",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "express train",
+    "example": "Der D-Zug nach München fährt um zehn Uhr ab."
+  },
+  {
+    "word": "Cola",
+    "gender": "f",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "coke / cola",
+    "example": "Ich trinke eine Cola mit Eis."
+  },
+  {
+    "word": "Cornflakes",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cereals / cornflakes",
+    "example": "Zum Frühstück esse ich Cornflakes mit Milch."
+  },
+  {
+    "word": "Erdkunde",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "geography",
+    "example": "In Erdkunde lernen wir über Länder und Kontinente."
+  },
+  {
+    "word": "Chemie",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "chemistry",
+    "example": "Chemie ist mein Lieblingsfach in der Schule."
+  },
+  {
+    "word": "Fels",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "rock (mineral / cliff)",
+    "example": "Der Fels ragt steil aus dem Meer."
+  },
+  {
+    "word": "Filzstift",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "felt tip pen",
+    "example": "Male das Bild mit Filzstiften aus."
+  },
+  {
+    "word": "Flamme",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "flame",
+    "example": "Die Flammen schlugen aus dem Fenster."
+  },
+  {
+    "word": "Forelle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "trout",
+    "example": "Ich bestelle die Forelle mit Kartoffeln."
+  },
+  {
+    "word": "Frikadelle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "meatball",
+    "example": "Meine Oma macht die besten Frikadellen."
+  },
+  {
+    "word": "Fräulein",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "Miss / young woman",
+    "example": "Fräulein, können Sie mir helfen?"
+  },
+  {
+    "word": "Füller",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "fountain pen",
+    "example": "Ich schreibe lieber mit einem Füller."
+  },
+  {
+    "word": "Gans",
+    "gender": "f",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "goose",
+    "example": "Zu Weihnachten essen wir eine Gans."
+  },
+  {
+    "word": "Gasherd",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "gas cooker",
+    "example": "Wir kochen auf einem Gasherd."
+  },
+  {
+    "word": "Gedächtnis",
+    "gender": "n",
+    "plural_suffix": "-se",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "memory",
+    "example": "Er hat ein sehr gutes Gedächtnis."
+  },
+  {
+    "word": "Geflügel",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "poultry",
+    "example": "Geflügel muss gut durchgebraten werden."
+  },
+  {
+    "word": "Gehirn",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "brain",
+    "example": "Das Gehirn braucht viel Sauerstoff."
+  },
+  {
+    "word": "Geige",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "violin",
+    "example": "Sie spielt seit zehn Jahren Geige."
+  },
+  {
+    "word": "Geruch",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "smell / odour",
+    "example": "Ein seltsamer Geruch kommt aus der Küche."
+  },
+  {
+    "word": "Gesamtschule",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "comprehensive school",
+    "example": "Mein Bruder geht auf eine Gesamtschule."
+  },
+  {
+    "word": "Gipfel",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "summit / peak",
+    "example": "Wir haben den Gipfel nach vier Stunden erreicht."
+  },
+  {
+    "word": "Gips",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "plaster (cast)",
+    "example": "Sein Arm ist im Gips."
+  },
+  {
+    "word": "Gipsverband",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "plaster cast",
+    "example": "Der Arzt hat einen Gipsverband angelegt."
+  },
+  {
+    "word": "Griff",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "handle / grip",
+    "example": "Der Griff der Tür ist kaputt."
+  },
+  {
+    "word": "Gruß",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "greeting",
+    "example": "Viele Grüße aus Berlin!"
+  },
+  {
+    "word": "Gummi",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "rubber / eraser",
+    "example": "Hast du einen Gummi zum Radieren?"
+  },
+  {
+    "word": "Gurke",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cucumber",
+    "example": "Ich schneide die Gurke für den Salat."
+  },
+  {
+    "word": "Gürtel",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "belt",
+    "example": "Der Gürtel passt nicht mehr."
+  },
+  {
+    "word": "Hafen",
+    "gender": "m",
+    "plural_suffix": "-̈",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "harbour / port",
+    "example": "Das Schiff liegt im Hafen."
+  },
+  {
+    "word": "Hafenstadt",
+    "gender": "f",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "port city",
+    "example": "Hamburg ist eine große Hafenstadt."
+  },
+  {
+    "word": "Hagel",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "hail",
+    "example": "Der Hagel hat die Ernte zerstört."
+  },
+  {
+    "word": "Hansaplast",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "sticking plaster / band-aid",
+    "example": "Hast du ein Hansaplast für meinen Finger?"
+  },
+  {
+    "word": "Hase",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "B2",
+    "meaning": "hare",
+    "example": "Der Hase läuft über das Feld."
+  },
+  {
+    "word": "Hecke",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "hedge",
+    "example": "Die Hecke muss geschnitten werden."
+  },
+  {
+    "word": "Heiligabend",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "Christmas Eve",
+    "example": "An Heiligabend öffnen wir die Geschenke."
+  },
+  {
+    "word": "Helm",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "helmet",
+    "example": "Beim Radfahren muss man einen Helm tragen."
+  },
+  {
+    "word": "Heuschnupfen",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "hay fever",
+    "example": "Im Frühling leide ich unter Heuschnupfen."
+  },
+  {
+    "word": "Himbeere",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "raspberry",
+    "example": "Ich pflücke Himbeeren im Garten."
+  },
+  {
+    "word": "Hubschrauber",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "helicopter",
+    "example": "Der Hubschrauber landet auf dem Dach."
+  },
+  {
+    "word": "Hälfte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "a half",
+    "example": "Die Hälfte der Klasse fehlt heute."
+  },
+  {
+    "word": "Illustrierte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "magazine (illustrated)",
+    "example": "Sie liest eine Illustrierte im Wartezimmer."
+  },
+  {
+    "word": "Jahr",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "year",
+    "example": "Dieses Jahr fahren wir nach Spanien."
+  },
+  {
+    "word": "Jahreszeit",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "season",
+    "example": "Der Frühling ist meine liebste Jahreszeit."
+  },
+  {
+    "word": "Jahrhundert",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "century",
+    "example": "Diese Kirche stammt aus dem 15. Jahrhundert."
+  },
+  {
+    "word": "Jura",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "law (studies)",
+    "example": "Sie studiert Jura an der Universität."
+  },
+  {
+    "word": "Juwelier",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "jeweller",
+    "example": "Er kauft den Ring beim Juwelier."
+  },
+  {
+    "word": "Kalbfleisch",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "veal",
+    "example": "Das Kalbfleisch ist sehr zart."
+  },
+  {
+    "word": "Kamin",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "fireplace / hearth",
+    "example": "Im Winter sitzen wir gern am Kamin."
+  },
+  {
+    "word": "Kamm",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "comb",
+    "example": "Hast du einen Kamm für mich?"
+  },
+  {
+    "word": "Kaninchen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "rabbit",
+    "example": "Die Kinder haben zwei Kaninchen im Garten."
+  },
+  {
+    "word": "Kapelle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "chapel",
+    "example": "Die kleine Kapelle steht auf dem Hügel."
+  },
+  {
+    "word": "Kathedrale",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cathedral",
+    "example": "Die Kathedrale ist ein beeindruckendes Gebäude."
+  },
+  {
+    "word": "Kaugummi",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "chewing gum",
+    "example": "In der Schule darf man keinen Kaugummi kauen."
+  },
+  {
+    "word": "Kekse",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "biscuit / cookie",
+    "example": "Zum Tee gibt es Kekse."
+  },
+  {
+    "word": "Kinn",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "chin",
+    "example": "Er stützt sein Kinn auf die Hand."
+  },
+  {
+    "word": "Kirsche",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cherry",
+    "example": "Im Sommer pflücken wir Kirschen vom Baum."
+  },
+  {
+    "word": "Klempner",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "plumber",
+    "example": "Wir brauchen einen Klempner, das Rohr ist kaputt."
+  },
+  {
+    "word": "Klippe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cliff",
+    "example": "Von der Klippe hat man einen tollen Blick aufs Meer."
+  },
+  {
+    "word": "Kohl",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cabbage",
+    "example": "Rotkohl passt gut zu Braten."
+  },
+  {
+    "word": "Kohle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "coal",
+    "example": "Früher hat man mit Kohle geheizt."
+  },
+  {
+    "word": "Komödie",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "comedy",
+    "example": "Wir schauen heute Abend eine Komödie."
+  },
+  {
+    "word": "Konditorei",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cake shop / patisserie",
+    "example": "In der Konditorei gibt es leckere Torten."
+  },
+  {
+    "word": "Korb",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "basket",
+    "example": "Sie legt das Obst in den Korb."
+  },
+  {
+    "word": "Kotelett",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "chop / cutlet",
+    "example": "Ich hätte gern ein Schweinekotelett."
+  },
+  {
+    "word": "Krawatte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "tie",
+    "example": "Zum Anzug trägt er eine rote Krawatte."
+  },
+  {
+    "word": "Krug",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "jug / pitcher",
+    "example": "Bitte stell den Krug mit Wasser auf den Tisch."
+  },
+  {
+    "word": "Kuh",
+    "gender": "f",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cow",
+    "example": "Die Kühe stehen auf der Weide."
+  },
+  {
+    "word": "Kusine",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "female cousin",
+    "example": "Meine Kusine wohnt in Hamburg."
+  },
+  {
+    "word": "Käfig",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cage",
+    "example": "Der Vogel sitzt in seinem Käfig."
+  },
+  {
+    "word": "Kännchen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "small pot (for coffee/tea)",
+    "example": "Ein Kännchen Kaffee, bitte."
+  },
+  {
+    "word": "Königin",
+    "gender": "f",
+    "plural_suffix": "-nen",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "queen",
+    "example": "Die Königin lebt im Schloss."
+  },
+  {
+    "word": "Labor",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "laboratory",
+    "example": "Die Experimente finden im Labor statt."
+  },
+  {
+    "word": "Lachs",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "salmon",
+    "example": "Zum Abendessen gibt es Lachs mit Reis."
+  },
+  {
+    "word": "Lamm",
+    "gender": "n",
+    "plural_suffix": "-̈er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "lamb",
+    "example": "Das kleine Lamm steht auf der Wiese."
+  },
+  {
+    "word": "Lammfleisch",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "lamb (meat)",
+    "example": "In Griechenland isst man viel Lammfleisch."
+  },
+  {
+    "word": "Lenkrad",
+    "gender": "n",
+    "plural_suffix": "-̈er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "steering wheel",
+    "example": "Halt das Lenkrad mit beiden Händen fest."
+  },
+  {
+    "word": "Liga",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "league (sport)",
+    "example": "Unsere Mannschaft spielt in der ersten Liga."
+  },
+  {
+    "word": "Limonade",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "lemonade",
+    "example": "An heißen Tagen trinke ich gern Limonade."
+  },
+  {
+    "word": "Lineal",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "ruler",
+    "example": "Zeichne die Linie mit dem Lineal."
+  },
+  {
+    "word": "Linie",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "line / bus route",
+    "example": "Die Linie 5 fährt zum Bahnhof."
+  },
+  {
+    "word": "Lippenstift",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "lipstick",
+    "example": "Sie trägt einen roten Lippenstift."
+  },
+  {
+    "word": "Loch",
+    "gender": "n",
+    "plural_suffix": "-̈er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "hole",
+    "example": "In meiner Socke ist ein Loch."
+  },
+  {
+    "word": "Lohn",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "wages / pay",
+    "example": "Der Lohn wird am Ende des Monats gezahlt."
+  },
+  {
+    "word": "Luxus",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "luxury",
+    "example": "Ein eigenes Schwimmbad ist purer Luxus."
+  },
+  {
+    "word": "Löwe",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "B2",
+    "meaning": "lion",
+    "example": "Der Löwe ist der König der Tiere."
+  },
+  {
+    "word": "Massenmedien",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "mass media",
+    "example": "Die Massenmedien berichten über das Ereignis."
+  },
+  {
+    "word": "Mathematik",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "mathematics",
+    "example": "Mathematik ist nicht mein Lieblingsfach."
+  },
+  {
+    "word": "Matrose",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": true,
+    "level": "B2",
+    "meaning": "sailor",
+    "example": "Der Matrose arbeitet auf einem großen Schiff."
+  },
+  {
+    "word": "Maurer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "builder / bricklayer",
+    "example": "Der Maurer baut eine neue Mauer."
+  },
+  {
+    "word": "Meerschweinchen",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "guinea pig",
+    "example": "Die Kinder haben ein Meerschweinchen als Haustier."
+  },
+  {
+    "word": "Meinungsumfrage",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "opinion poll / survey",
+    "example": "Die Meinungsumfrage zeigt ein knappes Ergebnis."
+  },
+  {
+    "word": "Meisterschaft",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "championship",
+    "example": "Unser Team hat die Meisterschaft gewonnen."
+  },
+  {
+    "word": "Menschenmenge",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "crowd",
+    "example": "Eine große Menschenmenge wartete vor dem Stadion."
+  },
+  {
+    "word": "Metzgerei",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "butcher's shop",
+    "example": "Ich kaufe das Fleisch in der Metzgerei."
+  },
+  {
+    "word": "Mikrowellenherd",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "microwave",
+    "example": "Ich wärme die Suppe im Mikrowellenherd auf."
+  },
+  {
+    "word": "Missverständnis",
+    "gender": "n",
+    "plural_suffix": "-se",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "misunderstanding",
+    "example": "Das war nur ein Missverständnis."
+  },
+  {
+    "word": "Mofa",
+    "gender": "n",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "moped",
+    "example": "Mit 15 darf man Mofa fahren."
+  },
+  {
+    "word": "Monat",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "month",
+    "example": "In drei Monaten beginnt der Sommer."
+  },
+  {
+    "word": "Mord",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "murder",
+    "example": "Die Polizei ermittelt in einem Mordfall."
+  },
+  {
+    "word": "Nuss",
+    "gender": "f",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "nut",
+    "example": "Ich esse gern Nüsse als Snack."
+  },
+  {
+    "word": "Ohrringe",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "earrings",
+    "example": "Sie trägt goldene Ohrringe."
+  },
+  {
+    "word": "Ostern",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "Easter",
+    "example": "An Ostern suchen die Kinder Eier im Garten."
+  },
+  {
+    "word": "Packung",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "packet / pack",
+    "example": "Ich kaufe eine Packung Milch."
+  },
+  {
+    "word": "Pampelmuse",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "grapefruit",
+    "example": "Zum Frühstück esse ich eine halbe Pampelmuse."
+  },
+  {
+    "word": "Parkett",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "stalls (theatre) / parquet floor",
+    "example": "Wir sitzen im Parkett, dritte Reihe."
+  },
+  {
+    "word": "Parkhaus",
+    "gender": "n",
+    "plural_suffix": "-̈er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "multi-storey car park",
+    "example": "Das Auto steht im Parkhaus am Bahnhof."
+  },
+  {
+    "word": "Parkplatz",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "car park / parking space",
+    "example": "Ich suche einen Parkplatz in der Nähe."
+  },
+  {
+    "word": "Partei",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "political party",
+    "example": "Welche Partei wählst du bei der Wahl?"
+  },
+  {
+    "word": "Partnerstadt",
+    "gender": "f",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "twin town",
+    "example": "Unsere Partnerstadt liegt in Frankreich."
+  },
+  {
+    "word": "Personalausweis",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "identity card",
+    "example": "Zeigen Sie bitte Ihren Personalausweis."
+  },
+  {
+    "word": "Persönlichkeit",
+    "gender": "f",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "personality",
+    "example": "Sie hat eine starke Persönlichkeit."
+  },
+  {
+    "word": "Pfeil",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "arrow",
+    "example": "Der Pfeil zeigt nach rechts."
+  },
+  {
+    "word": "Pfirsich",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "peach",
+    "example": "Die Pfirsiche sind reif und süß."
+  },
+  {
+    "word": "Pflichtfach",
+    "gender": "n",
+    "plural_suffix": "-̈er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "compulsory subject",
+    "example": "Mathematik ist ein Pflichtfach."
+  },
+  {
+    "word": "Pfund",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "pound (weight / currency)",
+    "example": "Ich hätte gern ein Pfund Tomaten."
+  },
+  {
+    "word": "Physik",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "physics",
+    "example": "In Physik lernen wir über Elektrizität."
+  },
+  {
+    "word": "Pokal",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cup / trophy",
+    "example": "Die Mannschaft hat den Pokal gewonnen."
+  },
+  {
+    "word": "Praline",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "chocolate (praline)",
+    "example": "Er schenkt ihr eine Schachtel Pralinen."
+  },
+  {
+    "word": "Quadratmeter",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "square metre",
+    "example": "Die Wohnung hat 80 Quadratmeter."
+  },
+  {
+    "word": "Quatsch",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "nonsense / rubbish",
+    "example": "Red keinen Quatsch!"
+  },
+  {
+    "word": "Rang",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "circle (theatre) / rank",
+    "example": "Wir sitzen im zweiten Rang."
+  },
+  {
+    "word": "Raststätte",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "motorway services",
+    "example": "Lass uns an der nächsten Raststätte anhalten."
+  },
+  {
+    "word": "Reißverschluss",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "zip / zipper",
+    "example": "Der Reißverschluss an meiner Jacke klemmt."
+  },
+  {
+    "word": "Riegel",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "bar (e.g. of chocolate)",
+    "example": "Ich esse einen Riegel Schokolade."
+  },
+  {
+    "word": "Rotwein",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "red wine",
+    "example": "Zum Rindfleisch trinken wir Rotwein."
+  },
+  {
+    "word": "Rowdy",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "lout / hooligan",
+    "example": "Die Rowdys haben Ärger gemacht."
+  },
+  {
+    "word": "Ruderboot",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "rowing boat",
+    "example": "Wir mieten ein Ruderboot auf dem See."
+  },
+  {
+    "word": "Röntgenbild",
+    "gender": "n",
+    "plural_suffix": "-er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "x-ray",
+    "example": "Der Arzt schaut sich das Röntgenbild an."
+  },
+  {
+    "word": "Seemann",
+    "gender": "m",
+    "plural_suffix": "-leute",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "sailor / seaman",
+    "example": "Der alte Seemann erzählt Geschichten vom Meer."
+  },
+  {
+    "word": "Seide",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "silk",
+    "example": "Das Kleid ist aus reiner Seide."
+  },
+  {
+    "word": "Sekt",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "sparkling wine / champagne",
+    "example": "Wir stoßen mit Sekt auf das neue Jahr an."
+  },
+  {
+    "word": "Sekunde",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "second",
+    "example": "Warte eine Sekunde, ich komme gleich."
+  },
+  {
+    "word": "Senf",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "mustard",
+    "example": "Ich mag Bratwurst mit Senf."
+  },
+  {
+    "word": "Silvester",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "New Year's Eve",
+    "example": "An Silvester gibt es ein großes Feuerwerk."
+  },
+  {
+    "word": "Skilehrer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "ski instructor",
+    "example": "Der Skilehrer zeigt uns die richtige Technik."
+  },
+  {
+    "word": "Slip",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "panties / briefs",
+    "example": "Sie kauft neue Slips im Kaufhaus."
+  },
+  {
+    "word": "Soldat",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": true,
+    "level": "B2",
+    "meaning": "soldier",
+    "example": "Der Soldat dient in der Armee."
+  },
+  {
+    "word": "Speck",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "bacon",
+    "example": "Ich brate Speck zum Frühstück."
+  },
+  {
+    "word": "Spinat",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "spinach",
+    "example": "Spinat ist sehr gesund."
+  },
+  {
+    "word": "Sprudel",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "fizzy drink / sparkling water",
+    "example": "Ich trinke lieber Sprudel als stilles Wasser."
+  },
+  {
+    "word": "Stahl",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "steel",
+    "example": "Die Brücke ist aus Stahl gebaut."
+  },
+  {
+    "word": "Steppdecke",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "duvet / quilt",
+    "example": "Im Winter brauche ich eine warme Steppdecke."
+  },
+  {
+    "word": "Stich",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "sting / stitch",
+    "example": "Der Stich der Wespe tut sehr weh."
+  },
+  {
+    "word": "Tannenbaum",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "fir tree / Christmas tree",
+    "example": "Wir schmücken den Tannenbaum mit Kerzen."
+  },
+  {
+    "word": "Tapete",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "wallpaper",
+    "example": "Die Tapete im Wohnzimmer ist alt."
+  },
+  {
+    "word": "Teekanne",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "teapot",
+    "example": "Gieß bitte heißes Wasser in die Teekanne."
+  },
+  {
+    "word": "Terrasse",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "terrace / patio",
+    "example": "Im Sommer essen wir auf der Terrasse."
+  },
+  {
+    "word": "Theke",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "counter / bar",
+    "example": "Er bestellt ein Bier an der Theke."
+  },
+  {
+    "word": "Toastbrot",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "toast / sliced bread",
+    "example": "Ich esse Toastbrot mit Marmelade."
+  },
+  {
+    "word": "Trimester",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "term (school)",
+    "example": "Das Trimester endet im Dezember."
+  },
+  {
+    "word": "Trompete",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "trumpet",
+    "example": "Er spielt Trompete in der Schulband."
+  },
+  {
+    "word": "Tropfen",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "drop (of liquid)",
+    "example": "Ein Tropfen Wasser fällt vom Dach."
+  },
+  {
+    "word": "Truthahn",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "turkey",
+    "example": "Zu Thanksgiving essen viele einen Truthahn."
+  },
+  {
+    "word": "Tuch",
+    "gender": "n",
+    "plural_suffix": "-̈er",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cloth / scarf",
+    "example": "Sie wischt den Tisch mit einem Tuch ab."
+  },
+  {
+    "word": "Turm",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "tower",
+    "example": "Vom Turm hat man eine tolle Aussicht."
+  },
+  {
+    "word": "Turnhalle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "gymnasium / sports hall",
+    "example": "Der Sportunterricht findet in der Turnhalle statt."
+  },
+  {
+    "word": "Turnier",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "tournament",
+    "example": "Unsere Schule nimmt am Turnier teil."
+  },
+  {
+    "word": "Turnschuhe",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "trainers / sneakers",
+    "example": "Zum Sport braucht man Turnschuhe."
+  },
+  {
+    "word": "Umkleideraum",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "changing room",
+    "example": "Die Umkleideräume sind neben dem Schwimmbad."
+  },
+  {
+    "word": "Umschlag",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "envelope",
+    "example": "Steck den Brief in den Umschlag."
+  },
+  {
+    "word": "Vati",
+    "gender": "m",
+    "plural_suffix": "-s",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "dad / daddy",
+    "example": "Vati, kannst du mir helfen?"
+  },
+  {
+    "word": "Vetter",
+    "gender": "m",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "male cousin",
+    "example": "Mein Vetter kommt aus München."
+  },
+  {
+    "word": "Vokabeln",
+    "gender": "f",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "vocabulary (words)",
+    "example": "Ich muss die Vokabeln für den Test lernen."
+  },
+  {
+    "word": "Vormittag",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "morning (before noon)",
+    "example": "Am Vormittag habe ich einen Termin."
+  },
+  {
+    "word": "Wange",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "cheek",
+    "example": "Das Kind hat rote Wangen vor Kälte."
+  },
+  {
+    "word": "Weihnachten",
+    "gender": "n",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "Christmas",
+    "example": "An Weihnachten besuchen wir die Großeltern."
+  },
+  {
+    "word": "Weihnachtsbaum",
+    "gender": "m",
+    "plural_suffix": "-̈e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "Christmas tree",
+    "example": "Der Weihnachtsbaum steht im Wohnzimmer."
+  },
+  {
+    "word": "Weißbrot",
+    "gender": "n",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "white bread",
+    "example": "Ich kaufe ein Weißbrot beim Bäcker."
+  },
+  {
+    "word": "Weißwein",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "white wine",
+    "example": "Zum Fisch trinken wir Weißwein."
+  },
+  {
+    "word": "Welle",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "wave",
+    "example": "Die Wellen am Strand sind heute hoch."
+  },
+  {
+    "word": "Wellensittich",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "budgerigar / budgie",
+    "example": "Unser Wellensittich kann ein paar Wörter sagen."
+  },
+  {
+    "word": "Wespe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "wasp",
+    "example": "Eine Wespe fliegt um das Essen herum."
+  },
+  {
+    "word": "Wintergarten",
+    "gender": "m",
+    "plural_suffix": "-̈",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "conservatory",
+    "example": "Wir sitzen gern im Wintergarten."
+  },
+  {
+    "word": "Witwe",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "widow",
+    "example": "Die Witwe lebt allein in dem großen Haus."
+  },
+  {
+    "word": "Witwer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "widower",
+    "example": "Er ist seit zwei Jahren Witwer."
+  },
+  {
+    "word": "Woche",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "week",
+    "example": "Nächste Woche habe ich Urlaub."
+  },
+  {
+    "word": "Wochenende",
+    "gender": "n",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "weekend",
+    "example": "Am Wochenende fahren wir aufs Land."
+  },
+  {
+    "word": "Zebrastreifen",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "zebra crossing",
+    "example": "Bitte überqueren Sie die Straße am Zebrastreifen."
+  },
+  {
+    "word": "Zeh",
+    "gender": "m",
+    "plural_suffix": "-en",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "toe",
+    "example": "Ich habe mir den großen Zeh gestoßen."
+  },
+  {
+    "word": "Zugführer",
+    "gender": "m",
+    "plural_suffix": "∅",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "train driver / conductor",
+    "example": "Der Zugführer gibt das Signal zur Abfahrt."
+  },
+  {
+    "word": "Zunge",
+    "gender": "f",
+    "plural_suffix": "-n",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "tongue",
+    "example": "Zeig mal deine Zunge, sagt der Arzt."
+  },
+  {
+    "word": "Zwillinge",
+    "gender": "m",
+    "plural_suffix": "-e",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "twins",
+    "example": "Die Zwillinge sehen sich sehr ähnlich."
+  },
+  {
+    "word": "Ärztin",
+    "gender": "f",
+    "plural_suffix": "-nen",
+    "is_n_dekl": false,
+    "level": "B2",
+    "meaning": "female doctor",
+    "example": "Die Ärztin untersucht den Patienten."
   }
 ]

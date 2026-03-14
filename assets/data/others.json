@@ -2428,5 +2428,209 @@
     "level": "B2",
     "meaning": "in front, at the front",
     "example": "Bitte vorn beim Fahrer einsteigen!"
+  },
+  {
+    "word": "ab und zu",
+    "level": "B2",
+    "meaning": "now and again / occasionally",
+    "example": "Ab und zu gehe ich ins Kino."
+  },
+  {
+    "word": "am Apparat",
+    "level": "B2",
+    "meaning": "speaking (on the phone)",
+    "example": "Herr Müller am Apparat, guten Tag."
+  },
+  {
+    "word": "BH",
+    "level": "B2",
+    "meaning": "bra (Büstenhalter)",
+    "example": "Sie kauft einen neuen BH im Kaufhaus."
+  },
+  {
+    "word": "einander",
+    "level": "B2",
+    "meaning": "one another / each other",
+    "example": "Sie helfen einander bei den Hausaufgaben."
+  },
+  {
+    "word": "einige",
+    "level": "B2",
+    "meaning": "some / a few",
+    "example": "Einige Schüler fehlen heute."
+  },
+  {
+    "word": "es gibt",
+    "level": "B2",
+    "meaning": "there is / there are",
+    "example": "Es gibt viele Restaurants in der Stadt."
+  },
+  {
+    "word": "es kommt darauf an",
+    "level": "B2",
+    "meaning": "it depends",
+    "example": "Kommst du mit? – Es kommt darauf an."
+  },
+  {
+    "word": "es macht nichts",
+    "level": "B2",
+    "meaning": "it doesn't matter",
+    "example": "Tut mir leid! – Es macht nichts."
+  },
+  {
+    "word": "gar nicht",
+    "level": "B2",
+    "meaning": "not at all",
+    "example": "Das hat mir gar nicht gefallen."
+  },
+  {
+    "word": "guten Tag",
+    "level": "B2",
+    "meaning": "hello / good day",
+    "example": "Guten Tag, wie kann ich Ihnen helfen?"
+  },
+  {
+    "word": "hin und zurück",
+    "level": "B2",
+    "meaning": "there and back / return (ticket)",
+    "example": "Einmal Berlin, hin und zurück, bitte."
+  },
+  {
+    "word": "globale Erwärmung",
+    "level": "B2",
+    "meaning": "global warming",
+    "example": "Die globale Erwärmung ist ein ernstes Problem."
+  },
+  {
+    "word": "im Voraus",
+    "level": "B2",
+    "meaning": "in advance",
+    "example": "Bitte bezahlen Sie im Voraus."
+  },
+  {
+    "word": "in Ordnung",
+    "level": "B2",
+    "meaning": "OK / alright",
+    "example": "Alles in Ordnung? – Ja, danke."
+  },
+  {
+    "word": "inbegriffen",
+    "level": "B2",
+    "meaning": "included",
+    "example": "Das Frühstück ist im Preis inbegriffen."
+  },
+  {
+    "word": "jener",
+    "level": "B2",
+    "meaning": "that (demonstrative)",
+    "example": "Jener Mann dort ist mein Lehrer."
+  },
+  {
+    "word": "jährlich",
+    "level": "B2",
+    "meaning": "annually / yearly",
+    "example": "Die Miete steigt jährlich um drei Prozent."
+  },
+  {
+    "word": "Kanufahren",
+    "level": "B2",
+    "meaning": "canoeing",
+    "example": "Im Sommer gehen wir oft Kanufahren."
+  },
+  {
+    "word": "Menschen",
+    "level": "B2",
+    "meaning": "people / human beings",
+    "example": "Viele Menschen warten auf den Bus."
+  },
+  {
+    "word": "mit freundlichen Grüßen",
+    "level": "B2",
+    "meaning": "yours sincerely",
+    "example": "Mit freundlichen Grüßen, Max Müller."
+  },
+  {
+    "word": "Norden",
+    "level": "B2",
+    "meaning": "north",
+    "example": "Im Norden Deutschlands liegt die Nordsee."
+  },
+  {
+    "word": "obgleich",
+    "level": "B2",
+    "meaning": "although",
+    "example": "Er ging spazieren, obgleich es regnete."
+  },
+  {
+    "word": "Osten",
+    "level": "B2",
+    "meaning": "east",
+    "example": "Die Sonne geht im Osten auf."
+  },
+  {
+    "word": "Silber",
+    "level": "B2",
+    "meaning": "silver",
+    "example": "Der Ring ist aus Silber."
+  },
+  {
+    "word": "Sitten",
+    "level": "B2",
+    "meaning": "customs / traditions",
+    "example": "Jedes Land hat seine eigenen Sitten und Bräuche."
+  },
+  {
+    "word": "Ski fahren",
+    "level": "B2",
+    "meaning": "to ski",
+    "example": "Im Winter fahren wir in den Alpen Ski."
+  },
+  {
+    "word": "SMS",
+    "level": "B2",
+    "meaning": "text message",
+    "example": "Schick mir bitte eine SMS."
+  },
+  {
+    "word": "Süden",
+    "level": "B2",
+    "meaning": "south",
+    "example": "Im Süden Deutschlands liegen die Alpen."
+  },
+  {
+    "word": "täglich",
+    "level": "B2",
+    "meaning": "daily",
+    "example": "Ich lese täglich die Zeitung."
+  },
+  {
+    "word": "Unrecht haben",
+    "level": "B2",
+    "meaning": "to be wrong",
+    "example": "Du hast Unrecht, das stimmt nicht."
+  },
+  {
+    "word": "vorgestern",
+    "level": "B2",
+    "meaning": "day before yesterday",
+    "example": "Vorgestern war ich beim Arzt."
+  },
+  {
+    "word": "Weise",
+    "level": "B2",
+    "meaning": "way / manner",
+    "example": "Auf diese Weise geht es schneller."
+  },
+  {
+    "word": "Westen",
+    "level": "B2",
+    "meaning": "west",
+    "example": "Die Sonne geht im Westen unter."
+  },
+  {
+    "word": "willkommen",
+    "level": "B2",
+    "meaning": "welcome",
+    "example": "Herzlich willkommen in unserem Haus!"
   }
 ]
