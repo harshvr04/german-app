@@ -186,6 +186,15 @@ const SEIN_PRAETERITUM: Record<Person, string> = {
 	"sie/Sie": "waren",
 };
 
+const WERDEN_PRAETERITUM: Record<Person, string> = {
+	ich: "wurde",
+	du: "wurdest",
+	"er/sie/es": "wurde",
+	wir: "wurden",
+	ihr: "wurdet",
+	"sie/Sie": "wurden",
+};
+
 function extractStem(infinitiv: string): string {
 	if (infinitiv.endsWith("eln") || infinitiv.endsWith("ern")) {
 		return infinitiv.slice(0, -3);
@@ -236,6 +245,8 @@ export function conjugatePresent(verb: Verb, person: Person): string {
 }
 
 export function conjugatePraeteritum(verb: Verb, person: Person): string {
+	if (verb.infinitiv === "werden") return WERDEN_PRAETERITUM[person];
+
 	const root = verb.praeteritum_root;
 
 	if (verb.type === "irregular") {
@@ -251,6 +262,8 @@ export function conjugatePerfekt(verb: Verb, person: Person): string {
 }
 
 export function conjugateKonjunktivII(verb: Verb, person: Person): string {
+	if (verb.infinitiv === "werden") return WERDEN_KONJUNKTIV_II[person];
+
 	if (verb.type === "regular") {
 		return `${WERDEN_KONJUNKTIV_II[person]} ${verb.infinitiv}`;
 	}
