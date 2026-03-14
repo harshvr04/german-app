@@ -1,6 +1,6 @@
 # German Practice
 
-A casual German language learning app for practicing vocabulary, nouns (gender/declension), verbs (conjugation across 7 tenses), and adjectives (declension/comparison). Built as a monorepo with a React Native mobile app, a terminal CLI, and an AI-powered vocabulary generator.
+A casual German language learning app for practicing vocabulary, nouns (gender/declension), verbs (conjugation across 7 tenses), and adjectives (declension/comparison). Built as a monorepo with a React Native mobile app, a [web app](https://german-practice.pages.dev), a terminal CLI, and an AI-powered vocabulary generator.
 
 Vibe-coded by Harshvardhan Rao.
 
