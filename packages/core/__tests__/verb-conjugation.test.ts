@@ -7,6 +7,8 @@ import {
 	conjugatePlusquamperfekt,
 	conjugatePraeteritum,
 	conjugatePresent,
+	formatConjugatedForm,
+	formatSeparableVerb,
 } from "../src/engine/verb-conjugation.js";
 import type { Verb } from "../src/schemas/index.js";
 import type { Person } from "../src/types/german.js";
@@ -485,5 +487,323 @@ describe("conjugateKonjunktivI", () => {
 
 	it("modal verb (können): er/sie/es könne", () => {
 		expect(conjugateKonjunktivI(koennen, "er/sie/es")).toBe("könne");
+	});
+});
+
+// --- Additional edge-case coverage ---
+
+const reisen: Verb = {
+	infinitiv: "reisen",
+	type: "regular",
+	auxiliary: "sein",
+	stem_change_pres: null,
+	present_forms: null,
+	praeteritum_root: "reis",
+	partizip_ii: "gereist",
+	konjunktiv_ii_root: null,
+	prepositions: [],
+	connections: [],
+	level: "A2",
+	meaning: "to travel",
+	example: "Wir reisen nach Berlin.",
+};
+
+const sammeln: Verb = {
+	infinitiv: "sammeln",
+	type: "regular",
+	auxiliary: "haben",
+	stem_change_pres: null,
+	present_forms: null,
+	praeteritum_root: "sammel",
+	partizip_ii: "gesammelt",
+	konjunktiv_ii_root: null,
+	prepositions: [],
+	connections: [],
+	level: "A2",
+	meaning: "to collect",
+	example: "Er sammelt Briefmarken.",
+};
+
+const fahren: Verb = {
+	infinitiv: "fahren",
+	type: "irregular",
+	auxiliary: "sein",
+	stem_change_pres: "a→ä",
+	present_forms: null,
+	praeteritum_root: "fuhr",
+	partizip_ii: "gefahren",
+	konjunktiv_ii_root: "führ",
+	prepositions: [],
+	connections: [],
+	level: "A1",
+	meaning: "to drive",
+	example: "Ich fahre mit dem Auto.",
+};
+
+describe("conjugatePresent – sibilant stem (reisen)", () => {
+	it("du → reist (sibilant drops -s from -st ending)", () => {
+		expect(conjugatePresent(reisen, "du")).toBe("reist");
+	});
+
+	it("ich → reise", () => {
+		expect(conjugatePresent(reisen, "ich")).toBe("reise");
+	});
+
+	it("er/sie/es → reist", () => {
+		expect(conjugatePresent(reisen, "er/sie/es")).toBe("reist");
+	});
+});
+
+describe("conjugatePresent – -eln stem (sammeln)", () => {
+	it("ich → samme (stem strips -eln)", () => {
+		expect(conjugatePresent(sammeln, "ich")).toBe("samme");
+	});
+
+	it("wir → sammen", () => {
+		expect(conjugatePresent(sammeln, "wir")).toBe("sammen");
+	});
+});
+
+describe("conjugatePresent – stem change a→ä (fahren)", () => {
+	it("du → fährst", () => {
+		expect(conjugatePresent(fahren, "du")).toBe("fährst");
+	});
+
+	it("er/sie/es → fährt", () => {
+		expect(conjugatePresent(fahren, "er/sie/es")).toBe("fährt");
+	});
+
+	it("ich → fahre (no stem change for ich)", () => {
+		expect(conjugatePresent(fahren, "ich")).toBe("fahre");
+	});
+
+	it("wir → fahren (no stem change for wir)", () => {
+		expect(conjugatePresent(fahren, "wir")).toBe("fahren");
+	});
+});
+
+describe("all tenses for sein", () => {
+	it("Präsens: ich bin", () => {
+		expect(conjugatePresent(sein, "ich")).toBe("bin");
+	});
+
+	it("Perfekt: ich bin gewesen", () => {
+		expect(conjugatePerfekt(sein, "ich")).toBe("bin gewesen");
+	});
+
+	it("Futur I: ich werde sein", () => {
+		expect(conjugateFuturI(sein, "ich")).toBe("werde sein");
+	});
+
+	it("Präteritum: ich war", () => {
+		expect(conjugatePraeteritum(sein, "ich")).toBe("war");
+	});
+
+	it("Plusquamperfekt: ich war gewesen", () => {
+		expect(conjugatePlusquamperfekt(sein, "ich")).toBe("war gewesen");
+	});
+
+	it("Konjunktiv II: ich wäre", () => {
+		expect(conjugateKonjunktivII(sein, "ich")).toBe("wäre");
+	});
+
+	it("Konjunktiv I: ich sei", () => {
+		expect(conjugateKonjunktivI(sein, "ich")).toBe("sei");
+	});
+});
+
+describe("all tenses for fahren (irregular, sein aux, stem change)", () => {
+	it("Präsens: du fährst", () => {
+		expect(conjugatePresent(fahren, "du")).toBe("fährst");
+	});
+
+	it("Perfekt: er/sie/es ist gefahren", () => {
+		expect(conjugatePerfekt(fahren, "er/sie/es")).toBe("ist gefahren");
+	});
+
+	it("Futur I: wir werden fahren", () => {
+		expect(conjugateFuturI(fahren, "wir")).toBe("werden fahren");
+	});
+
+	it("Präteritum: ich fuhr", () => {
+		expect(conjugatePraeteritum(fahren, "ich")).toBe("fuhr");
+	});
+
+	it("Plusquamperfekt: sie/Sie waren gefahren", () => {
+		expect(conjugatePlusquamperfekt(fahren, "sie/Sie")).toBe("waren gefahren");
+	});
+
+	it("Konjunktiv II: ich führe", () => {
+		expect(conjugateKonjunktivII(fahren, "ich")).toBe("führe");
+	});
+
+	it("Konjunktiv I: er/sie/es fahre", () => {
+		expect(conjugateKonjunktivI(fahren, "er/sie/es")).toBe("fahre");
+	});
+});
+
+describe("conjugateKonjunktivII – fallback to praeteritum_root when no K2 root", () => {
+	it("irregular verb without K2 root uses praeteritum_root", () => {
+		const verb: Verb = {
+			...gehen,
+			konjunktiv_ii_root: null,
+		};
+		// Falls back to praeteritum_root "ging"
+		expect(conjugateKonjunktivII(verb, "ich")).toBe("ginge");
+		expect(conjugateKonjunktivII(verb, "du")).toBe("gingest");
+	});
+});
+
+describe("conjugatePerfekt – all persons with sein auxiliary", () => {
+	const cases: [Person, string][] = [
+		["ich", "bin gegangen"],
+		["du", "bist gegangen"],
+		["er/sie/es", "ist gegangen"],
+		["wir", "sind gegangen"],
+		["ihr", "seid gegangen"],
+		["sie/Sie", "sind gegangen"],
+	];
+
+	for (const [person, expected] of cases) {
+		it(`${person} → ${expected}`, () => {
+			expect(conjugatePerfekt(gehen, person)).toBe(expected);
+		});
+	}
+});
+
+describe("conjugatePraeteritum – sein (present_forms verb)", () => {
+	const cases: [Person, string][] = [
+		["ich", "war"],
+		["du", "warst"],
+		["er/sie/es", "war"],
+		["wir", "waren"],
+		["ihr", "wart"],
+		["sie/Sie", "waren"],
+	];
+
+	for (const [person, expected] of cases) {
+		it(`${person} → ${expected}`, () => {
+			expect(conjugatePraeteritum(sein, person)).toBe(expected);
+		});
+	}
+});
+
+describe("formatSeparableVerb", () => {
+	it("separable verb abfahren → ab|fahren", () => {
+		expect(formatSeparableVerb(fahren)).toBe("fahren"); // fahren itself is not separable
+		const abfahren: Verb = {
+			...fahren,
+			infinitiv: "abfahren",
+			partizip_ii: "abgefahren",
+		};
+		expect(formatSeparableVerb(abfahren)).toBe("ab|fahren");
+	});
+
+	it("separable verb anfangen → an|fangen", () => {
+		const anfangen: Verb = {
+			...machen,
+			infinitiv: "anfangen",
+			partizip_ii: "angefangen",
+		};
+		expect(formatSeparableVerb(anfangen)).toBe("an|fangen");
+	});
+
+	it("separable verb aufstehen → auf|stehen", () => {
+		const aufstehen: Verb = {
+			...gehen,
+			infinitiv: "aufstehen",
+			partizip_ii: "aufgestanden",
+		};
+		expect(formatSeparableVerb(aufstehen)).toBe("auf|stehen");
+	});
+
+	it("inseparable verb vergessen stays unchanged", () => {
+		const vergessen: Verb = {
+			...geben,
+			infinitiv: "vergessen",
+			partizip_ii: "vergessen",
+		};
+		expect(formatSeparableVerb(vergessen)).toBe("vergessen");
+	});
+
+	it("inseparable verb beginnen stays unchanged", () => {
+		const beginnen: Verb = {
+			...gehen,
+			infinitiv: "beginnen",
+			partizip_ii: "begonnen",
+		};
+		expect(formatSeparableVerb(beginnen)).toBe("beginnen");
+	});
+
+	it("non-prefixed verb machen stays unchanged", () => {
+		expect(formatSeparableVerb(machen)).toBe("machen");
+	});
+
+	it("sein stays unchanged", () => {
+		expect(formatSeparableVerb(sein)).toBe("sein");
+	});
+
+	it("separable verb with longer prefix: entgegenkommen → entgegen|kommen", () => {
+		const entgegenkommen: Verb = {
+			...gehen,
+			infinitiv: "entgegenkommen",
+			partizip_ii: "entgegengekommen",
+		};
+		expect(formatSeparableVerb(entgegenkommen)).toBe("entgegen|kommen");
+	});
+
+	it("separable verb einkaufen → ein|kaufen", () => {
+		const einkaufen: Verb = {
+			...machen,
+			infinitiv: "einkaufen",
+			partizip_ii: "eingekauft",
+		};
+		expect(formatSeparableVerb(einkaufen)).toBe("ein|kaufen");
+	});
+});
+
+describe("formatConjugatedForm", () => {
+	const abfahren: Verb = {
+		...fahren,
+		infinitiv: "abfahren",
+		partizip_ii: "abgefahren",
+		praeteritum_root: "abfuhr",
+		konjunktiv_ii_root: "abführ",
+	};
+
+	it("simple tense: abfahre → ab|fahre", () => {
+		expect(formatConjugatedForm(abfahren, "abfahre")).toBe("ab|fahre");
+	});
+
+	it("simple tense: abfährst → ab|fährst", () => {
+		expect(formatConjugatedForm(abfahren, "abfährst")).toBe("ab|fährst");
+	});
+
+	it("Perfekt: habe abgefahren stays unchanged (partizip keeps prefix)", () => {
+		expect(formatConjugatedForm(abfahren, "habe abgefahren")).toBe("habe abgefahren");
+	});
+
+	it("Plusquamperfekt: hatte abgefahren stays unchanged", () => {
+		expect(formatConjugatedForm(abfahren, "hatte abgefahren")).toBe("hatte abgefahren");
+	});
+
+	it("Futur: werde abfahren stays unchanged (infinitive keeps prefix)", () => {
+		expect(formatConjugatedForm(abfahren, "werde abfahren")).toBe("werde abfahren");
+	});
+
+	it("Konjunktiv II würde: würde abfahren stays unchanged", () => {
+		expect(formatConjugatedForm(abfahren, "würde abfahren")).toBe("würde abfahren");
+	});
+
+	it("Präteritum: abfuhr → ab|fuhr", () => {
+		expect(formatConjugatedForm(abfahren, "abfuhr")).toBe("ab|fuhr");
+	});
+
+	it("non-separable verb unchanged", () => {
+		expect(formatConjugatedForm(machen, "mache")).toBe("mache");
+	});
+
+	it("non-separable verb compound tense unchanged", () => {
+		expect(formatConjugatedForm(machen, "habe gemacht")).toBe("habe gemacht");
 	});
 });

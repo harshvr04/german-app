@@ -1,6 +1,83 @@
 import type { Verb } from "../schemas/index.js";
 import type { Person } from "../types/german.js";
 
+const INSEPARABLE_PREFIXES = ["be", "emp", "ent", "er", "ge", "hinter", "miss", "ver", "zer"];
+
+/**
+ * Returns the infinitive formatted with "|" to show the separable prefix,
+ * e.g. "ab|fahren", "an|fangen". Non-separable verbs are returned unchanged.
+ *
+ * Detection: separable verbs have "ge" inserted after the prefix in their
+ * Partizip II (e.g. "abgefahren"). We try each "ge" occurrence and pick the
+ * one whose prefix is NOT a known inseparable prefix.
+ */
+/**
+ * Returns the separable prefix of a verb, or null if the verb is not separable.
+ */
+export function getSeparablePrefix(verb: Verb): string | null {
+	const pp = verb.partizip_ii;
+	const inf = verb.infinitiv;
+
+	// Search from the end so longer prefixes (e.g. "entgegen") win over
+	// shorter false matches (e.g. "entge" from the first "ge" in "entgegengekommen").
+	let searchFrom = pp.length - 3;
+	while (searchFrom >= 1) {
+		const geIdx = pp.lastIndexOf("ge", searchFrom);
+		if (geIdx <= 0) break;
+
+		const prefix = pp.slice(0, geIdx);
+		const baseVerb = inf.slice(prefix.length);
+		const basePartizip = pp.slice(geIdx + 2);
+		if (
+			!INSEPARABLE_PREFIXES.includes(prefix) &&
+			inf.startsWith(prefix) &&
+			baseVerb.length > 3 &&
+			basePartizip.length >= 3 &&
+			/(?:en|eln|ern)$/.test(baseVerb)
+		) {
+			return prefix;
+		}
+
+		searchFrom = geIdx - 1;
+	}
+
+	return null;
+}
+
+export function formatSeparableVerb(verb: Verb): string {
+	const prefix = getSeparablePrefix(verb);
+	if (!prefix) return verb.infinitiv;
+	return `${prefix}|${verb.infinitiv.slice(prefix.length)}`;
+}
+
+/**
+ * Inserts "|" after the separable prefix in a conjugated form.
+ * E.g. for "abfahren": "abfahre" → "ab|fahre", "werde abfahren" → "werde ab|fahren"
+ * Skips compound tenses where the partizip is used (Perfekt/Plusquamperfekt)
+ * since the prefix stays attached there ("habe abgefahren" stays as-is).
+ * Non-separable verbs are returned unchanged.
+ */
+export function formatConjugatedForm(verb: Verb, conjugated: string): string {
+	const prefix = getSeparablePrefix(verb);
+	if (!prefix) return conjugated;
+
+	// Skip compound tenses where the prefix doesn't separate:
+	// Perfekt/Plusquamperfekt (contains partizip II) and Futur I (contains infinitive)
+	if (conjugated.includes(verb.partizip_ii) || conjugated.includes(verb.infinitiv)) {
+		return conjugated;
+	}
+
+	return conjugated
+		.split(" ")
+		.map((word) => {
+			if (word.startsWith(prefix) && word.length > prefix.length) {
+				return `${prefix}|${word.slice(prefix.length)}`;
+			}
+			return word;
+		})
+		.join(" ");
+}
+
 const PRESENT_ENDINGS: Record<Person, string> = {
 	ich: "e",
 	du: "st",

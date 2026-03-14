@@ -6,6 +6,8 @@ import {
 	conjugatePlusquamperfekt,
 	conjugatePraeteritum,
 	conjugatePresent,
+	formatConjugatedForm,
+	formatSeparableVerb,
 } from "../engine/verb-conjugation.js";
 import type { Verb } from "../schemas/index.js";
 import type { Card, Level, Person } from "../types/german.js";
@@ -14,14 +16,16 @@ import { shuffle } from "./shuffle.js";
 const PERSONS: Person[] = ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"];
 
 function randomPerson(): Person {
-	return PERSONS[Math.floor(Math.random() * PERSONS.length)]!;
+	return PERSONS[Math.floor(Math.random() * PERSONS.length)] as Person;
 }
 
 type ConjugationFn = (verb: Verb, person: Person) => string;
 
 function buildConjugationTable(verb: Verb, tense: string, conjugate: ConjugationFn): string {
-	const header = `${verb.infinitiv} (${tense})`;
-	const rows = PERSONS.map((p) => `${p} ${conjugate(verb, p)}`).join("\n");
+	const header = `${formatSeparableVerb(verb)} (${tense})`;
+	const rows = PERSONS.map((p) => `${p} ${formatConjugatedForm(verb, conjugate(verb, p))}`).join(
+		"\n",
+	);
 	return `${header}\n${rows}`;
 }
 
@@ -29,9 +33,9 @@ function presentCard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-pres-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Präsens)?`,
+		question: `${person} (${formatSeparableVerb(verb)}, Präsens)?`,
 		hint: verb.meaning,
-		answer: `${person} ${conjugatePresent(verb, person)}`,
+		answer: `${person} ${formatConjugatedForm(verb, conjugatePresent(verb, person))}`,
 		details: buildConjugationTable(verb, "Präsens", conjugatePresent),
 	};
 }
@@ -40,9 +44,9 @@ function perfektCard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-perfekt-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Perfekt)?`,
+		question: `${person} (${formatSeparableVerb(verb)}, Perfekt)?`,
 		hint: verb.meaning,
-		answer: `${person} ${conjugatePerfekt(verb, person)}`,
+		answer: `${person} ${formatConjugatedForm(verb, conjugatePerfekt(verb, person))}`,
 		details: buildConjugationTable(verb, "Perfekt", conjugatePerfekt),
 	};
 }
@@ -51,9 +55,9 @@ function praeteritumCard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-praet-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Präteritum)?`,
+		question: `${person} (${formatSeparableVerb(verb)}, Präteritum)?`,
 		hint: verb.meaning,
-		answer: `${person} ${conjugatePraeteritum(verb, person)}`,
+		answer: `${person} ${formatConjugatedForm(verb, conjugatePraeteritum(verb, person))}`,
 		details: buildConjugationTable(verb, "Präteritum", conjugatePraeteritum),
 	};
 }
@@ -62,9 +66,9 @@ function futurICard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-futur1-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Futur I)?`,
+		question: `${person} (${formatSeparableVerb(verb)}, Futur I)?`,
 		hint: verb.meaning,
-		answer: `${person} ${conjugateFuturI(verb, person)}`,
+		answer: `${person} ${formatConjugatedForm(verb, conjugateFuturI(verb, person))}`,
 		details: buildConjugationTable(verb, "Futur I", conjugateFuturI),
 	};
 }
@@ -73,9 +77,9 @@ function plusquamperfektCard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-plusq-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Plusquamperfekt)?`,
+		question: `${person} (${formatSeparableVerb(verb)}, Plusquamperfekt)?`,
 		hint: verb.meaning,
-		answer: `${person} ${conjugatePlusquamperfekt(verb, person)}`,
+		answer: `${person} ${formatConjugatedForm(verb, conjugatePlusquamperfekt(verb, person))}`,
 		details: buildConjugationTable(verb, "Plusquamperfekt", conjugatePlusquamperfekt),
 	};
 }
@@ -84,9 +88,9 @@ function konjunktivICard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-konj1-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Konjunktiv I)?`,
+		question: `${person} (${formatSeparableVerb(verb)}, Konjunktiv I)?`,
 		hint: verb.meaning,
-		answer: `${person} ${conjugateKonjunktivI(verb, person)}`,
+		answer: `${person} ${formatConjugatedForm(verb, conjugateKonjunktivI(verb, person))}`,
 		details: buildConjugationTable(verb, "Konjunktiv I", conjugateKonjunktivI),
 	};
 }
@@ -95,9 +99,9 @@ function konjunktivIICard(verb: Verb): Card {
 	const person = randomPerson();
 	return {
 		id: `verb-konj2-${verb.infinitiv}-${person}`,
-		question: `${person} (${verb.infinitiv}, Konjunktiv II)?`,
+		question: `${person} (${formatSeparableVerb(verb)}, Konjunktiv II)?`,
 		hint: verb.meaning,
-		answer: `${person} ${conjugateKonjunktivII(verb, person)}`,
+		answer: `${person} ${formatConjugatedForm(verb, conjugateKonjunktivII(verb, person))}`,
 		details: buildConjugationTable(verb, "Konjunktiv II", conjugateKonjunktivII),
 	};
 }

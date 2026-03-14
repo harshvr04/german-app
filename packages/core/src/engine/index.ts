@@ -7,5 +7,8 @@ export {
 	conjugateKonjunktivII,
 	conjugateFuturI,
 	conjugatePlusquamperfekt,
+	formatSeparableVerb,
+	formatConjugatedForm,
+	getSeparablePrefix,
 } from "./verb-conjugation.js";
 export { declineNoun, getArticle } from "./noun-declension.js";

@@ -1,3 +1,4 @@
+import { formatSeparableVerb } from "../engine/verb-conjugation.js";
 import type { Adjective, Noun, Other, Verb } from "../schemas/index.js";
 import type { DictionaryEntry, Level } from "../types/german.js";
 
@@ -19,7 +20,7 @@ export function buildDictionary(
 			level: n.level as Level,
 		})),
 		...verbs.map((v) => ({
-			word: v.infinitiv,
+			word: formatSeparableVerb(v),
 			meaning: v.meaning,
 			example: v.example,
 			level: v.level as Level,

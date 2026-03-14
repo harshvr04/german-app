@@ -6,6 +6,8 @@ import {
 	conjugatePlusquamperfekt,
 	conjugatePraeteritum,
 	conjugatePresent,
+	formatConjugatedForm,
+	formatSeparableVerb,
 } from "@german/core/engine";
 import type { Verb } from "@german/core/schemas";
 import type { Level, Person } from "@german/core/types";
@@ -108,8 +110,8 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 	}, [verbs, query]);
 
 	const availableTenses = useMemo(
-		() => (selectedVerb ? tensesForLevel(selectedVerb.level as Level) : []),
-		[selectedVerb],
+		() => (selectedVerb ? (level ? tensesForLevel(level) : ALL_TENSES) : []),
+		[selectedVerb, level],
 	);
 
 	const handleSelectVerb = (verb: Verb) => {
@@ -175,7 +177,7 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 						<Pressable style={styles.entry} onPress={() => handleSelectVerb(item)}>
 							<View style={styles.wordRow}>
 								{!level && <Text style={styles.levelBadge}>{item.level}</Text>}
-								<Text style={styles.word}>{item.infinitiv}</Text>
+								<Text style={styles.word}>{formatSeparableVerb(item)}</Text>
 							</View>
 							<Text style={styles.meaning}>{item.meaning}</Text>
 						</Pressable>
@@ -191,7 +193,7 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 			<SafeAreaView style={styles.container}>
 				<View style={styles.header}>
 					<View style={styles.headerRow}>
-						<Text style={styles.appTitle}>{selectedVerb.infinitiv}</Text>
+						<Text style={styles.appTitle}>{formatSeparableVerb(selectedVerb)}</Text>
 						<Pressable style={styles.backButton} onPress={handleBackFromTenses}>
 							<Text style={styles.backButtonText}>←</Text>
 						</Pressable>
@@ -226,7 +228,7 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 				<View style={styles.header}>
 					<View style={styles.headerRow}>
 						<Text style={styles.appTitle}>
-							{selectedVerb.infinitiv} — {selectedTense.label}
+							{formatSeparableVerb(selectedVerb)} — {selectedTense.label}
 						</Text>
 						<Pressable style={styles.backButton} onPress={handleBackFromConjugation}>
 							<Text style={styles.backButtonText}>←</Text>
@@ -240,7 +242,7 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 						<View key={person} style={styles.conjugationRow}>
 							<Text style={styles.personText}>{person}</Text>
 							<Text style={styles.conjugatedText}>
-								{selectedTense.conjugate(selectedVerb, person)}
+								{formatConjugatedForm(selectedVerb, selectedTense.conjugate(selectedVerb, person))}
 							</Text>
 						</View>
 					))}
