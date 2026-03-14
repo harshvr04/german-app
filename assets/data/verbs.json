@@ -4608,8 +4608,15 @@
     "infinitiv": "abhängen",
     "type": "irregular",
     "auxiliary": "haben",
-    "stem_change_pres": "a→ä",
-    "present_forms": null,
+    "stem_change_pres": null,
+    "present_forms": {
+      "ich": "hänge ab",
+      "du": "hängst ab",
+      "er/sie/es": "hängt ab",
+      "wir": "hängen ab",
+      "ihr": "hängt ab",
+      "sie/Sie": "hängen ab"
+    },
     "praeteritum_root": "abhing",
     "partizip_ii": "abgehangen",
     "konjunktiv_ii_root": "abhing",

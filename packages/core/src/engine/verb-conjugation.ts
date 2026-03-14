@@ -4,19 +4,42 @@ import type { Person } from "../types/german.js";
 const INSEPARABLE_PREFIXES = ["be", "emp", "ent", "er", "ge", "hinter", "miss", "ver", "zer"];
 
 /**
- * Returns the infinitive formatted with "|" to show the separable prefix,
- * e.g. "ab|fahren", "an|fangen". Non-separable verbs are returned unchanged.
- *
- * Detection: separable verbs have "ge" inserted after the prefix in their
- * Partizip II (e.g. "abgefahren"). We try each "ge" occurrence and pick the
- * one whose prefix is NOT a known inseparable prefix.
+ * Strips "sich " prefix from reflexive verb infinitives.
  */
+function getBaseInfinitiv(verb: Verb): string {
+	return verb.infinitiv.startsWith("sich ") ? verb.infinitiv.slice(5) : verb.infinitiv;
+}
+
+const REFLEXIVE_PRONOUNS: Record<Person, string> = {
+	ich: "mich",
+	du: "dich",
+	"er/sie/es": "sich",
+	wir: "uns",
+	ihr: "euch",
+	"sie/Sie": "sich",
+};
+
+/**
+ * Inserts the reflexive pronoun into a conjugated form.
+ * Simple tenses (no spaces): appended — "ausruhe" → "ausruhe mich"
+ * Compound tenses (spaces): after first word — "habe ausgeruht" → "habe mich ausgeruht"
+ */
+function insertReflexive(verb: Verb, person: Person, form: string): string {
+	if (!verb.infinitiv.startsWith("sich ")) return form;
+	const pronoun = REFLEXIVE_PRONOUNS[person];
+	const spaceIdx = form.indexOf(" ");
+	if (spaceIdx !== -1) {
+		return `${form.slice(0, spaceIdx)} ${pronoun} ${form.slice(spaceIdx + 1)}`;
+	}
+	return `${form} ${pronoun}`;
+}
+
 /**
  * Returns the separable prefix of a verb, or null if the verb is not separable.
  */
 export function getSeparablePrefix(verb: Verb): string | null {
 	const pp = verb.partizip_ii;
-	const inf = verb.infinitiv;
+	const inf = getBaseInfinitiv(verb);
 
 	// Search from the end so longer prefixes (e.g. "entgegen") win over
 	// shorter false matches (e.g. "entge" from the first "ge" in "entgegengekommen").
@@ -46,8 +69,10 @@ export function getSeparablePrefix(verb: Verb): string | null {
 
 export function formatSeparableVerb(verb: Verb): string {
 	const prefix = getSeparablePrefix(verb);
+	const baseInf = getBaseInfinitiv(verb);
+	const sichPrefix = verb.infinitiv.startsWith("sich ") ? "sich " : "";
 	if (!prefix) return verb.infinitiv;
-	return `${prefix}|${verb.infinitiv.slice(prefix.length)}`;
+	return `${sichPrefix}${prefix}|${baseInf.slice(prefix.length)}`;
 }
 
 /**
@@ -61,14 +86,23 @@ export function formatConjugatedForm(verb: Verb, conjugated: string): string {
 	const prefix = getSeparablePrefix(verb);
 	if (!prefix) return conjugated;
 
+	const baseInf = getBaseInfinitiv(verb);
+
 	// Skip compound tenses where the prefix doesn't separate:
-	// Perfekt/Plusquamperfekt (contains partizip II) and Futur I (contains infinitive)
-	if (conjugated.includes(verb.partizip_ii) || conjugated.includes(verb.infinitiv)) {
+	// Perfekt/Plusquamperfekt (contains partizip II) and Futur I/Konj II (helper + infinitive)
+	const words = conjugated.split(" ");
+	if (words.includes(verb.partizip_ii)) {
+		return conjugated;
+	}
+	// In compound tenses the infinitive appears after a helper verb (not first word).
+	// In simple tenses the conjugated form may coincidentally match the infinitive
+	// (e.g. wir ausruhen) but it will be the first word — still needs "|".
+	const infIdx = words.indexOf(baseInf);
+	if (infIdx > 0) {
 		return conjugated;
 	}
 
-	return conjugated
-		.split(" ")
+	return words
 		.map((word) => {
 			if (word.startsWith(prefix) && word.length > prefix.length) {
 				return `${prefix}|${word.slice(prefix.length)}`;
@@ -222,10 +256,10 @@ function applyStemChange(stem: string, change: string): string {
 
 export function conjugatePresent(verb: Verb, person: Person): string {
 	if (verb.present_forms) {
-		return verb.present_forms[person];
+		return insertReflexive(verb, person, verb.present_forms[person]);
 	}
 
-	let stem = extractStem(verb.infinitiv);
+	let stem = extractStem(getBaseInfinitiv(verb));
 
 	if (verb.stem_change_pres && (person === "du" || person === "er/sie/es")) {
 		stem = applyStemChange(stem, verb.stem_change_pres);
@@ -241,7 +275,7 @@ export function conjugatePresent(verb: Verb, person: Person): string {
 		ending = "t";
 	}
 
-	return stem + ending;
+	return insertReflexive(verb, person, stem + ending);
 }
 
 export function conjugatePraeteritum(verb: Verb, person: Person): string {
@@ -250,46 +284,50 @@ export function conjugatePraeteritum(verb: Verb, person: Person): string {
 	const root = verb.praeteritum_root;
 
 	if (verb.type === "irregular") {
-		return root + PRAETERITUM_IRREGULAR_ENDINGS[person];
+		return insertReflexive(verb, person, root + PRAETERITUM_IRREGULAR_ENDINGS[person]);
 	}
 
-	return root + PRAETERITUM_REGULAR_ENDINGS[person];
+	return insertReflexive(verb, person, root + PRAETERITUM_REGULAR_ENDINGS[person]);
 }
 
 export function conjugatePerfekt(verb: Verb, person: Person): string {
 	const auxForms = verb.auxiliary === "haben" ? HABEN_PRESENT : SEIN_PRESENT;
-	return `${auxForms[person]} ${verb.partizip_ii}`;
+	return insertReflexive(verb, person, `${auxForms[person]} ${verb.partizip_ii}`);
 }
 
 export function conjugateKonjunktivII(verb: Verb, person: Person): string {
 	if (verb.infinitiv === "werden") return WERDEN_KONJUNKTIV_II[person];
 
+	const baseInf = getBaseInfinitiv(verb);
+
 	if (verb.type === "regular") {
-		return `${WERDEN_KONJUNKTIV_II[person]} ${verb.infinitiv}`;
+		return insertReflexive(verb, person, `${WERDEN_KONJUNKTIV_II[person]} ${baseInf}`);
 	}
 
 	const root = verb.konjunktiv_ii_root ?? verb.praeteritum_root;
 
 	if (verb.type === "mixed") {
-		return root + PRAETERITUM_REGULAR_ENDINGS[person];
+		return insertReflexive(verb, person, root + PRAETERITUM_REGULAR_ENDINGS[person]);
 	}
 
-	return root + KONJUNKTIV_II_ENDINGS[person];
+	return insertReflexive(verb, person, root + KONJUNKTIV_II_ENDINGS[person]);
 }
 
 export function conjugateFuturI(verb: Verb, person: Person): string {
-	return `${WERDEN_PRESENT[person]} ${verb.infinitiv}`;
+	const baseInf = getBaseInfinitiv(verb);
+	return insertReflexive(verb, person, `${WERDEN_PRESENT[person]} ${baseInf}`);
 }
 
 export function conjugatePlusquamperfekt(verb: Verb, person: Person): string {
 	const auxForms = verb.auxiliary === "haben" ? HABEN_PRAETERITUM : SEIN_PRAETERITUM;
-	return `${auxForms[person]} ${verb.partizip_ii}`;
+	return insertReflexive(verb, person, `${auxForms[person]} ${verb.partizip_ii}`);
 }
 
 export function conjugateKonjunktivI(verb: Verb, person: Person): string {
-	if (verb.infinitiv === "sein") {
+	const baseInf = getBaseInfinitiv(verb);
+	if (baseInf === "sein") {
 		return SEIN_KONJUNKTIV_I[person];
 	}
-	const stem = extractStem(verb.infinitiv);
-	return stem + KONJUNKTIV_I_ENDINGS[person];
+	const stem = extractStem(baseInf);
+	return insertReflexive(verb, person, stem + KONJUNKTIV_I_ENDINGS[person]);
 }
