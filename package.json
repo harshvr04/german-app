@@ -9,6 +9,7 @@
     "german": "pnpm --filter @german/cli run start",
     "tool-b": "pnpm --filter @german/tool-b run start",
     "mobile": "pnpm --filter @german/mobile run start",
+    "web": "pnpm --filter @german/web run dev",
     "prepare": "husky"
   },
   "devDependencies": {
