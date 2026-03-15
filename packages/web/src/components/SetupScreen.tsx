@@ -9,6 +9,7 @@ import {
 import type { Category, Level, SessionConfig, VocabDirection } from "@german/core/types";
 import { useMemo, useState } from "react";
 import { hasDataForLevel } from "../data/loader";
+import type { Theme } from "../theme";
 import { InfoModal } from "./InfoModal";
 
 type Step = "level" | "category" | "vocabDirection" | "batchSize";
@@ -30,6 +31,8 @@ interface Props {
 	starredCountByLevel: Record<Level, number>;
 	wordCounts: Record<Level, WordCount>;
 	onResetCounter: (level: Level) => void;
+	theme: Theme;
+	onThemeChange: (theme: Theme) => void;
 }
 
 export function SetupScreen({
@@ -44,6 +47,8 @@ export function SetupScreen({
 	starredCountByLevel,
 	wordCounts,
 	onResetCounter,
+	theme,
+	onThemeChange,
 }: Props) {
 	const [step, setStep] = useState<Step>("level");
 	const [level, setLevel] = useState<Level | null>(null);
@@ -132,7 +137,25 @@ export function SetupScreen({
 				)}
 			</div>
 
-			<div className="section-title">{title}</div>
+			<div className="section-title-row">
+				<div className="section-title">{title}</div>
+				{step === "level" && (
+					<div className="theme-toggle">
+						<button
+							type="button"
+							className={`theme-circle-sm theme-circle-dark ${theme === "dark" ? "active" : ""}`}
+							onClick={() => onThemeChange("dark")}
+							aria-label="Dark theme"
+						/>
+						<button
+							type="button"
+							className={`theme-circle-sm theme-circle-light ${theme === "light" ? "active" : ""}`}
+							onClick={() => onThemeChange("light")}
+							aria-label="Light theme"
+						/>
+					</div>
+				)}
+			</div>
 
 			<div className="scroll-list">
 				{step === "level" && (
@@ -239,7 +262,7 @@ export function SetupScreen({
 							<button
 								className="dict-option"
 								type="button"
-								style={{ borderColor: "#f0a500", color: "#f0a500" }}
+								style={{ borderColor: "var(--warning)", color: "var(--warning)" }}
 								onClick={() => onStarredReview(level)}
 							>
 								★ Starred ({starredCountByLevel[level]})

@@ -1,9 +1,10 @@
 import type { Card } from "@german/core/types";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { REPORT_WEBHOOK_URL } from "../config";
-import { colors, spacing, typography } from "../theme";
+import { scale, spacing, typography } from "../theme";
+import { useTheme } from "../theme/ThemeContext";
 import { ReportModal } from "./ReportModal";
 
 interface Props {
@@ -33,6 +34,7 @@ export function FlashcardScreen({
 	category,
 	sessionLevel,
 }: Props) {
+	const { colors } = useTheme();
 	const [revealed, setRevealed] = useState(false);
 	const [showDetails, setShowDetails] = useState(false);
 	const [reportModalVisible, setReportModalVisible] = useState(false);
@@ -44,56 +46,118 @@ export function FlashcardScreen({
 		setShowDetails(false);
 	}, [index]);
 
+	const themed = useMemo(
+		() =>
+			StyleSheet.create({
+				container: { flex: 1, backgroundColor: colors.background },
+				backButtonText: { ...typography.body, color: colors.textSecondary },
+				starText: { fontSize: scale(22), color: colors.textSecondary },
+				starTextActive: { color: colors.warning },
+				levelBadge: { ...typography.caption, color: colors.warning, fontWeight: "600" },
+				revisionBanner: {
+					backgroundColor: colors.warning,
+					borderRadius: scale(8),
+					paddingVertical: spacing.xs,
+					paddingHorizontal: spacing.md,
+					alignSelf: "flex-start",
+					marginBottom: spacing.sm,
+				},
+				revisionText: { ...typography.caption, color: colors.background, fontWeight: "700" },
+				progress: { ...typography.caption, color: colors.textSecondary },
+				progressBarContainer: {
+					height: scale(4),
+					backgroundColor: colors.surface,
+					borderRadius: scale(2),
+					marginTop: spacing.sm,
+					overflow: "hidden",
+				},
+				progressBar: { height: scale(4), backgroundColor: colors.correct, borderRadius: scale(2) },
+				card: { backgroundColor: colors.surface, borderRadius: scale(16), padding: spacing.lg },
+				question: { ...typography.question, color: colors.text },
+				hint: { ...typography.caption, color: colors.textSecondary, marginTop: spacing.sm },
+				tapPrompt: {
+					...typography.caption,
+					color: colors.textSecondary,
+					marginTop: spacing.lg,
+					textAlign: "center",
+				},
+				divider: { height: 1, backgroundColor: colors.border, marginBottom: spacing.md },
+				answer: { ...typography.answer, color: colors.answerText },
+				example: {
+					...typography.caption,
+					color: colors.textSecondary,
+					marginTop: spacing.sm,
+					fontStyle: "italic",
+				},
+				detailsToggleText: { ...typography.caption, color: colors.accent },
+				detailsBox: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					padding: spacing.md,
+					marginTop: spacing.sm,
+				},
+				detailsText: {
+					...typography.caption,
+					color: colors.textSecondary,
+					fontFamily: "monospace",
+				},
+				wrongButton: { backgroundColor: colors.wrong },
+				rightButton: { backgroundColor: colors.correct },
+				reportText: { ...typography.caption, color: colors.textDisabled },
+			}),
+		[colors],
+	);
+
 	const progress = (index + 1) / total;
 
 	return (
-		<SafeAreaView style={styles.container}>
+		<SafeAreaView style={themed.container}>
 			{/* Header */}
 			<View style={styles.header}>
 				{revisionRound != null && (
-					<View style={styles.revisionBanner}>
-						<Text style={styles.revisionText}>Revision Round {revisionRound}</Text>
+					<View style={themed.revisionBanner}>
+						<Text style={themed.revisionText}>Revision Round {revisionRound}</Text>
 					</View>
 				)}
 				<View style={styles.headerRow}>
 					<View style={styles.headerLeft}>
-						<Text style={styles.progress}>
+						<Text style={themed.progress}>
 							Card {index + 1} / {total}
 						</Text>
-						{card.level && <Text style={styles.levelBadge}>{card.level}</Text>}
+						{card.level && <Text style={themed.levelBadge}>{card.level}</Text>}
 					</View>
 					<View style={styles.headerRight}>
 						{isStarred != null && onToggleStar && (
 							<Pressable style={styles.starButton} onPress={onToggleStar} hitSlop={8}>
-								<Text style={[styles.starText, isStarred && styles.starTextActive]}>
+								<Text style={[themed.starText, isStarred && themed.starTextActive]}>
 									{isStarred ? "★" : "☆"}
 								</Text>
 							</Pressable>
 						)}
 						<Pressable style={styles.backButton} onPress={onBack}>
-							<Text style={styles.backButtonText}>✕</Text>
+							<Text style={themed.backButtonText}>✕</Text>
 						</Pressable>
 					</View>
 				</View>
-				<View style={styles.progressBarContainer}>
-					<View style={[styles.progressBar, { width: `${progress * 100}%` }]} />
+				<View style={themed.progressBarContainer}>
+					<View style={[themed.progressBar, { width: `${progress * 100}%` }]} />
 				</View>
 			</View>
 
 			{/* Card */}
 			<ScrollView style={styles.cardScroll} contentContainerStyle={styles.cardScrollContent}>
-				<Pressable style={styles.card} onPress={() => !revealed && setRevealed(true)}>
-					<Text style={styles.question}>{card.question}</Text>
-					{card.hint && <Text style={styles.hint}>{card.hint}</Text>}
+				<Pressable style={themed.card} onPress={() => !revealed && setRevealed(true)}>
+					<Text style={themed.question}>{card.question}</Text>
+					{card.hint && <Text style={themed.hint}>{card.hint}</Text>}
 
 					{revealed ? (
 						<View style={styles.answerSection}>
-							<View style={styles.divider} />
-							<Text style={styles.answer}>{card.answer}</Text>
-							{card.example && <Text style={styles.example}>e.g. {card.example}</Text>}
+							<View style={themed.divider} />
+							<Text style={themed.answer}>{card.answer}</Text>
+							{card.example && <Text style={themed.example}>e.g. {card.example}</Text>}
 						</View>
 					) : (
-						<Text style={styles.tapPrompt}>Tap to reveal answer</Text>
+						<Text style={themed.tapPrompt}>Tap to reveal answer</Text>
 					)}
 				</Pressable>
 
@@ -101,13 +165,13 @@ export function FlashcardScreen({
 				{revealed && card.details && (
 					<>
 						<Pressable style={styles.detailsToggle} onPress={() => setShowDetails((prev) => !prev)}>
-							<Text style={styles.detailsToggleText}>
+							<Text style={themed.detailsToggleText}>
 								{showDetails ? "Hide details" : "Additional details"}
 							</Text>
 						</Pressable>
 						{showDetails && (
-							<View style={styles.detailsBox}>
-								<Text style={styles.detailsText}>{card.details}</Text>
+							<View style={themed.detailsBox}>
+								<Text style={themed.detailsText}>{card.details}</Text>
 							</View>
 						)}
 					</>
@@ -116,7 +180,7 @@ export function FlashcardScreen({
 				{/* Report issue */}
 				{REPORT_WEBHOOK_URL.length > 0 && (
 					<Pressable style={styles.reportButton} onPress={() => setReportModalVisible(true)}>
-						<Text style={styles.reportText}>Report issue</Text>
+						<Text style={themed.reportText}>Report issue</Text>
 					</Pressable>
 				)}
 			</ScrollView>
@@ -132,10 +196,10 @@ export function FlashcardScreen({
 			{/* Action buttons */}
 			{revealed && (
 				<View style={styles.buttons}>
-					<Pressable style={[styles.button, styles.wrongButton]} onPress={onWrong}>
+					<Pressable style={[styles.button, themed.wrongButton]} onPress={onWrong}>
 						<Text style={styles.buttonText}>✗ Wrong</Text>
 					</Pressable>
-					<Pressable style={[styles.button, styles.rightButton]} onPress={onRight}>
+					<Pressable style={[styles.button, themed.rightButton]} onPress={onRight}>
 						<Text style={styles.buttonText}>✓ Got it</Text>
 					</Pressable>
 				</View>
@@ -145,10 +209,6 @@ export function FlashcardScreen({
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: colors.background,
-	},
 	header: {
 		paddingHorizontal: spacing.lg,
 		paddingTop: spacing.lg,
@@ -172,54 +232,9 @@ const styles = StyleSheet.create({
 		paddingHorizontal: spacing.sm,
 		paddingVertical: spacing.xs,
 	},
-	backButtonText: {
-		...typography.body,
-		color: colors.textSecondary,
-	},
 	starButton: {
 		paddingHorizontal: spacing.xs,
 		paddingVertical: spacing.xs,
-	},
-	starText: {
-		fontSize: 22,
-		color: colors.textSecondary,
-	},
-	starTextActive: {
-		color: colors.warning,
-	},
-	levelBadge: {
-		...typography.caption,
-		color: colors.warning,
-		fontWeight: "600",
-	},
-	revisionBanner: {
-		backgroundColor: colors.warning,
-		borderRadius: 8,
-		paddingVertical: spacing.xs,
-		paddingHorizontal: spacing.md,
-		alignSelf: "flex-start",
-		marginBottom: spacing.sm,
-	},
-	revisionText: {
-		...typography.caption,
-		color: colors.background,
-		fontWeight: "700",
-	},
-	progress: {
-		...typography.caption,
-		color: colors.textSecondary,
-	},
-	progressBarContainer: {
-		height: 4,
-		backgroundColor: colors.surface,
-		borderRadius: 2,
-		marginTop: spacing.sm,
-		overflow: "hidden",
-	},
-	progressBar: {
-		height: 4,
-		backgroundColor: colors.correct,
-		borderRadius: 2,
 	},
 	cardScroll: {
 		flex: 1,
@@ -227,62 +242,12 @@ const styles = StyleSheet.create({
 	cardScrollContent: {
 		padding: spacing.lg,
 	},
-	card: {
-		backgroundColor: colors.surface,
-		borderRadius: 16,
-		padding: spacing.lg,
-	},
-	question: {
-		...typography.question,
-		color: colors.text,
-	},
-	hint: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginTop: spacing.sm,
-	},
-	tapPrompt: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginTop: spacing.lg,
-		textAlign: "center",
-	},
 	answerSection: {
 		marginTop: spacing.md,
-	},
-	divider: {
-		height: 1,
-		backgroundColor: colors.border,
-		marginBottom: spacing.md,
-	},
-	answer: {
-		...typography.answer,
-		color: colors.correct,
-	},
-	example: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginTop: spacing.sm,
-		fontStyle: "italic",
 	},
 	detailsToggle: {
 		marginTop: spacing.md,
 		alignSelf: "center",
-	},
-	detailsToggleText: {
-		...typography.caption,
-		color: colors.accent,
-	},
-	detailsBox: {
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		padding: spacing.md,
-		marginTop: spacing.sm,
-	},
-	detailsText: {
-		...typography.caption,
-		color: colors.textSecondary,
-		fontFamily: "monospace",
 	},
 	buttons: {
 		flexDirection: "row",
@@ -292,27 +257,17 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		flex: 1,
-		borderRadius: 12,
+		borderRadius: scale(12),
 		paddingVertical: spacing.md,
 		alignItems: "center",
 	},
-	wrongButton: {
-		backgroundColor: colors.wrong,
-	},
-	rightButton: {
-		backgroundColor: colors.correct,
-	},
 	buttonText: {
 		...typography.body,
-		color: colors.text,
+		color: "#FFFFFF",
 		fontWeight: "700",
 	},
 	reportButton: {
 		marginTop: spacing.md,
 		alignSelf: "center",
-	},
-	reportText: {
-		...typography.caption,
-		color: colors.textDisabled,
 	},
 });

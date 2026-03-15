@@ -21,8 +21,20 @@ import { useStarredWords } from "./src/hooks/useStarredWords";
 import { useWordCounter } from "./src/hooks/useWordCounter";
 import { mobileHistoryStorage } from "./src/storage/session-history";
 import { mobileStarredStorage } from "./src/storage/starred";
+import { useTheme } from "./src/theme/ThemeContext";
+import { ThemeProvider } from "./src/theme/ThemeContext";
 
 export default function App() {
+	return (
+		<ThemeProvider>
+			<AppContent />
+		</ThemeProvider>
+	);
+}
+
+function AppContent() {
+	const { theme } = useTheme();
+	const statusBarStyle = theme === "light" ? "dark" : "light";
 	useAnalytics();
 	const { state, start, startWithCards, answerRight, answerWrong, reset } =
 		useSession(mobileHistoryStorage);
@@ -132,7 +144,7 @@ export default function App() {
 	if (showSplash) {
 		return (
 			<>
-				<StatusBar style="light" />
+				<StatusBar style="dark" backgroundColor="#FFCC00" />
 				<SplashVideo onFinish={() => setShowSplash(false)} />
 			</>
 		);
@@ -141,7 +153,7 @@ export default function App() {
 	if (showExit) {
 		return (
 			<>
-				<StatusBar style="light" />
+				<StatusBar style="dark" backgroundColor="#FFCC00" />
 				<ExitScreen />
 			</>
 		);
@@ -150,7 +162,7 @@ export default function App() {
 	if (dictionaryMode) {
 		return (
 			<SafeAreaProvider>
-				<StatusBar style="light" />
+				<StatusBar style={statusBarStyle} />
 				<DictionaryScreen
 					level={dictionaryMode === "all" ? null : dictionaryMode}
 					onBack={handleDictionaryBack}
@@ -162,7 +174,7 @@ export default function App() {
 	if (verbDictMode) {
 		return (
 			<SafeAreaProvider>
-				<StatusBar style="light" />
+				<StatusBar style={statusBarStyle} />
 				<VerbDictionaryScreen
 					level={verbDictMode === "all" ? null : verbDictMode}
 					onBack={handleVerbDictionaryBack}
@@ -174,7 +186,7 @@ export default function App() {
 	if (state.phase === "setup") {
 		return (
 			<SafeAreaProvider>
-				<StatusBar style="light" />
+				<StatusBar style={statusBarStyle} />
 				<SetupScreen
 					onComplete={start}
 					onDictionary={handleDictionary}
@@ -203,7 +215,7 @@ export default function App() {
 
 		return (
 			<SafeAreaProvider>
-				<StatusBar style="light" />
+				<StatusBar style={statusBarStyle} />
 				<FlashcardScreen
 					card={card}
 					index={state.currentIndex}
@@ -223,7 +235,7 @@ export default function App() {
 
 	return (
 		<SafeAreaProvider>
-			<StatusBar style="light" />
+			<StatusBar style={statusBarStyle} />
 			<CompleteScreen stats={state.stats} onNewSession={handleReset} />
 		</SafeAreaProvider>
 	);

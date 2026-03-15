@@ -3,7 +3,7 @@ import type { LevelWordData } from "@german/core/generators";
 import { extractBaseWord } from "@german/core/session";
 import type { Level } from "@german/core/types";
 import { LEVELS } from "@german/core/types";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import "./App.css";
 import { CompleteScreen } from "./components/CompleteScreen";
 import { DictionaryScreen } from "./components/DictionaryScreen";
@@ -16,8 +16,18 @@ import { useStarredWords } from "./hooks/useStarredWords";
 import { useWordCounter } from "./hooks/useWordCounter";
 import { webHistoryStorage } from "./storage/session-history";
 import { webStarredStorage } from "./storage/starred";
+import type { Theme } from "./theme";
 
 export default function App() {
+	const [theme, setTheme] = useState<Theme>(() => {
+		return (localStorage.getItem("theme") as Theme) || "dark";
+	});
+
+	useEffect(() => {
+		localStorage.setItem("theme", theme);
+		document.documentElement.classList.toggle("light", theme === "light");
+	}, [theme]);
+
 	const { state, start, startWithCards, answerRight, answerWrong, reset } =
 		useSession(webHistoryStorage);
 	const {
@@ -116,6 +126,8 @@ export default function App() {
 				onResetCounter={async (l) => {
 					await resetCounter(l);
 				}}
+				theme={theme}
+				onThemeChange={setTheme}
 			/>
 		);
 	}

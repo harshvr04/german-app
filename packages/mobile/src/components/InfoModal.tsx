@@ -1,5 +1,7 @@
+import { useMemo } from "react";
 import { Modal, Pressable, StyleSheet, Text, View } from "react-native";
-import { colors, spacing, typography } from "../theme";
+import { scale, spacing, typography } from "../theme";
+import { useTheme } from "../theme/ThemeContext";
 
 interface Props {
 	visible: boolean;
@@ -9,17 +11,62 @@ interface Props {
 }
 
 export function InfoModal({ visible, onClose, onReset, message }: Props) {
+	const { colors } = useTheme();
+
+	const themed = useMemo(
+		() =>
+			StyleSheet.create({
+				card: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(16),
+					padding: spacing.lg,
+					width: "100%",
+					maxWidth: scale(340),
+					borderWidth: 1,
+					borderColor: colors.border,
+				},
+				title: {
+					...typography.title,
+					color: colors.text,
+					marginBottom: spacing.md,
+				},
+				body: {
+					...typography.caption,
+					color: colors.textSecondary,
+					lineHeight: scale(20),
+					marginBottom: spacing.lg,
+				},
+				resetButton: {
+					backgroundColor: colors.accent,
+					borderRadius: scale(8),
+					paddingVertical: spacing.sm,
+					alignItems: "center",
+					marginBottom: spacing.sm,
+				},
+				resetText: {
+					...typography.caption,
+					color: "#FFFFFF",
+					fontWeight: "600",
+				},
+				closeText: {
+					...typography.caption,
+					color: colors.textSecondary,
+				},
+			}),
+		[colors],
+	);
+
 	return (
 		<Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
 			<Pressable style={styles.overlay} onPress={onClose}>
-				<View style={styles.card} onStartShouldSetResponder={() => true}>
-					<Text style={styles.title}>Words Encountered</Text>
-					<Text style={styles.body}>{message}</Text>
-					<Pressable style={styles.resetButton} onPress={onReset}>
-						<Text style={styles.resetText}>Reset Counter</Text>
+				<View style={themed.card} onStartShouldSetResponder={() => true}>
+					<Text style={themed.title}>Words Encountered</Text>
+					<Text style={themed.body}>{message}</Text>
+					<Pressable style={themed.resetButton} onPress={onReset}>
+						<Text style={themed.resetText}>Reset Counter</Text>
 					</Pressable>
 					<Pressable style={styles.closeButton} onPress={onClose}>
-						<Text style={styles.closeText}>Close</Text>
+						<Text style={themed.closeText}>Close</Text>
 					</Pressable>
 				</View>
 			</Pressable>
@@ -35,44 +82,8 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		padding: spacing.lg,
 	},
-	card: {
-		backgroundColor: colors.surface,
-		borderRadius: 16,
-		padding: spacing.lg,
-		width: "100%",
-		maxWidth: 340,
-		borderWidth: 1,
-		borderColor: colors.border,
-	},
-	title: {
-		...typography.title,
-		color: colors.text,
-		marginBottom: spacing.md,
-	},
-	body: {
-		...typography.caption,
-		color: colors.textSecondary,
-		lineHeight: 20,
-		marginBottom: spacing.lg,
-	},
-	resetButton: {
-		backgroundColor: colors.accent,
-		borderRadius: 8,
-		paddingVertical: spacing.sm,
-		alignItems: "center",
-		marginBottom: spacing.sm,
-	},
-	resetText: {
-		...typography.caption,
-		color: colors.text,
-		fontWeight: "600",
-	},
 	closeButton: {
 		paddingVertical: spacing.sm,
 		alignItems: "center",
-	},
-	closeText: {
-		...typography.caption,
-		color: colors.textSecondary,
 	},
 });

@@ -17,7 +17,8 @@ import { FlatList, Pressable, ScrollView, StyleSheet, Text, TextInput, View } fr
 import { SafeAreaView } from "react-native-safe-area-context";
 import { REPORT_WEBHOOK_URL } from "../config";
 import { hasDataForLevel, loadVerbs } from "../data/loader";
-import { colors, spacing, typography } from "../theme";
+import { scale, spacing, typography } from "../theme";
+import { useTheme } from "../theme/ThemeContext";
 import { ReportModal } from "./ReportModal";
 
 interface Props {
@@ -92,6 +93,7 @@ function loadVerbsForDict(level: Level | null): Verb[] {
 type Screen = "list" | "tenses" | "conjugation";
 
 export function VerbDictionaryScreen({ level, onBack }: Props) {
+	const { colors } = useTheme();
 	const [screen, setScreen] = useState<Screen>("list");
 	const [query, setQuery] = useState("");
 	const [selectedVerb, setSelectedVerb] = useState<Verb | null>(null);
@@ -112,6 +114,86 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 	const availableTenses = useMemo(
 		() => (selectedVerb ? (level ? tensesForLevel(level) : ALL_TENSES) : []),
 		[selectedVerb, level],
+	);
+
+	const themed = useMemo(
+		() =>
+			StyleSheet.create({
+				container: { flex: 1, backgroundColor: colors.background },
+				appTitle: { ...typography.title, color: colors.text, flex: 1 },
+				backButtonText: { ...typography.body, color: colors.textSecondary },
+				count: { ...typography.caption, color: colors.textSecondary, marginTop: spacing.xs },
+				searchInput: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					paddingVertical: spacing.sm,
+					paddingHorizontal: spacing.md,
+					...typography.body,
+					color: colors.text,
+					borderWidth: 1,
+					borderColor: colors.border,
+				},
+				entry: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					padding: spacing.md,
+					marginBottom: spacing.sm,
+				},
+				levelBadge: { fontSize: scale(10), color: colors.accent, fontWeight: "700" },
+				word: { ...typography.question, color: colors.text },
+				meaning: { ...typography.caption, color: colors.textSecondary, marginTop: spacing.xs },
+				sectionTitle: {
+					...typography.body,
+					color: colors.textSecondary,
+					paddingHorizontal: spacing.lg,
+					marginBottom: spacing.md,
+				},
+				tenseOption: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					paddingVertical: spacing.md,
+					paddingHorizontal: spacing.lg,
+					marginBottom: spacing.sm,
+				},
+				tenseText: { ...typography.body, color: colors.text },
+				verbMeaning: { ...typography.body, color: colors.textSecondary, marginTop: spacing.xs },
+				verbExample: {
+					...typography.caption,
+					color: colors.textSecondary,
+					fontStyle: "italic",
+					marginTop: spacing.xs,
+				},
+				conjugationRow: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					padding: spacing.md,
+					marginBottom: spacing.sm,
+					flexDirection: "row",
+					justifyContent: "space-between",
+					alignItems: "center",
+				},
+				personText: { ...typography.body, color: colors.textSecondary, width: scale(90) },
+				conjugatedText: { ...typography.body, color: colors.text, flex: 1, textAlign: "right" },
+				verbInfoSection: {
+					marginTop: spacing.lg,
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					padding: spacing.md,
+				},
+				infoLabel: { ...typography.caption, color: colors.textSecondary, marginTop: spacing.sm },
+				infoValue: { ...typography.body, color: colors.text },
+				reportButton: {
+					marginTop: spacing.lg,
+					alignSelf: "center",
+					paddingVertical: spacing.sm,
+					paddingHorizontal: spacing.lg,
+					borderRadius: scale(8),
+					borderWidth: 1,
+					borderColor: colors.border,
+				},
+				reportText: { ...typography.caption, color: colors.textSecondary },
+			}),
+		[colors],
 	);
 
 	const handleSelectVerb = (verb: Verb) => {
@@ -139,22 +221,22 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 	// --- Verb List Screen ---
 	if (screen === "list") {
 		return (
-			<SafeAreaView style={styles.container}>
+			<SafeAreaView style={themed.container}>
 				<View style={styles.header}>
 					<View style={styles.headerRow}>
-						<Text style={styles.appTitle}>{title}</Text>
+						<Text style={themed.appTitle}>{title}</Text>
 						<Pressable style={styles.backButton} onPress={onBack}>
-							<Text style={styles.backButtonText}>←</Text>
+							<Text style={themed.backButtonText}>←</Text>
 						</Pressable>
 					</View>
-					<Text style={styles.count}>
+					<Text style={themed.count}>
 						{filtered.length} {filtered.length === 1 ? "verb" : "verbs"}
 					</Text>
 				</View>
 
 				<View style={styles.searchContainer}>
 					<TextInput
-						style={styles.searchInput}
+						style={themed.searchInput}
 						placeholder="Search verbs..."
 						placeholderTextColor={colors.textDisabled}
 						value={query}
@@ -174,12 +256,12 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 					windowSize={5}
 					removeClippedSubviews
 					renderItem={({ item }) => (
-						<Pressable style={styles.entry} onPress={() => handleSelectVerb(item)}>
+						<Pressable style={themed.entry} onPress={() => handleSelectVerb(item)}>
 							<View style={styles.wordRow}>
-								{!level && <Text style={styles.levelBadge}>{item.level}</Text>}
-								<Text style={styles.word}>{formatSeparableVerb(item)}</Text>
+								{!level && <Text style={themed.levelBadge}>{item.level}</Text>}
+								<Text style={themed.word}>{formatSeparableVerb(item)}</Text>
 							</View>
-							<Text style={styles.meaning}>{item.meaning}</Text>
+							<Text style={themed.meaning}>{item.meaning}</Text>
 						</Pressable>
 					)}
 				/>
@@ -190,30 +272,30 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 	// --- Tense Selection Screen ---
 	if (screen === "tenses" && selectedVerb) {
 		return (
-			<SafeAreaView style={styles.container}>
+			<SafeAreaView style={themed.container}>
 				<View style={styles.header}>
 					<View style={styles.headerRow}>
-						<Text style={styles.appTitle}>{formatSeparableVerb(selectedVerb)}</Text>
+						<Text style={themed.appTitle}>{formatSeparableVerb(selectedVerb)}</Text>
 						<Pressable style={styles.backButton} onPress={handleBackFromTenses}>
-							<Text style={styles.backButtonText}>←</Text>
+							<Text style={themed.backButtonText}>←</Text>
 						</Pressable>
 					</View>
-					<Text style={styles.verbMeaning}>{selectedVerb.meaning}</Text>
+					<Text style={themed.verbMeaning}>{selectedVerb.meaning}</Text>
 					{selectedVerb.example !== "" && (
-						<Text style={styles.verbExample}>{selectedVerb.example}</Text>
+						<Text style={themed.verbExample}>{selectedVerb.example}</Text>
 					)}
 				</View>
 
-				<Text style={styles.sectionTitle}>Select Tense</Text>
+				<Text style={themed.sectionTitle}>Select Tense</Text>
 
 				<ScrollView style={styles.list} contentContainerStyle={styles.listContent}>
 					{availableTenses.map((tense) => (
 						<Pressable
 							key={tense.key}
-							style={styles.tenseOption}
+							style={themed.tenseOption}
 							onPress={() => handleSelectTense(tense)}
 						>
-							<Text style={styles.tenseText}>{tense.label}</Text>
+							<Text style={themed.tenseText}>{tense.label}</Text>
 						</Pressable>
 					))}
 				</ScrollView>
@@ -224,40 +306,40 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 	// --- Conjugation Screen ---
 	if (screen === "conjugation" && selectedVerb && selectedTense) {
 		return (
-			<SafeAreaView style={styles.container}>
+			<SafeAreaView style={themed.container}>
 				<View style={styles.header}>
 					<View style={styles.headerRow}>
-						<Text style={styles.appTitle}>
+						<Text style={themed.appTitle}>
 							{formatSeparableVerb(selectedVerb)} — {selectedTense.label}
 						</Text>
 						<Pressable style={styles.backButton} onPress={handleBackFromConjugation}>
-							<Text style={styles.backButtonText}>←</Text>
+							<Text style={themed.backButtonText}>←</Text>
 						</Pressable>
 					</View>
-					<Text style={styles.verbMeaning}>{selectedVerb.meaning}</Text>
+					<Text style={themed.verbMeaning}>{selectedVerb.meaning}</Text>
 				</View>
 
 				<ScrollView style={styles.list} contentContainerStyle={styles.conjugationContent}>
 					{PERSONS.map((person) => (
-						<View key={person} style={styles.conjugationRow}>
-							<Text style={styles.personText}>{person}</Text>
-							<Text style={styles.conjugatedText}>
+						<View key={person} style={themed.conjugationRow}>
+							<Text style={themed.personText}>{person}</Text>
+							<Text style={themed.conjugatedText}>
 								{formatConjugatedForm(selectedVerb, selectedTense.conjugate(selectedVerb, person))}
 							</Text>
 						</View>
 					))}
 
-					<View style={styles.verbInfoSection}>
-						<Text style={styles.infoLabel}>Type</Text>
-						<Text style={styles.infoValue}>{selectedVerb.type}</Text>
-						<Text style={styles.infoLabel}>Auxiliary</Text>
-						<Text style={styles.infoValue}>{selectedVerb.auxiliary}</Text>
-						<Text style={styles.infoLabel}>Partizip II</Text>
-						<Text style={styles.infoValue}>{selectedVerb.partizip_ii}</Text>
+					<View style={themed.verbInfoSection}>
+						<Text style={themed.infoLabel}>Type</Text>
+						<Text style={themed.infoValue}>{selectedVerb.type}</Text>
+						<Text style={themed.infoLabel}>Auxiliary</Text>
+						<Text style={themed.infoValue}>{selectedVerb.auxiliary}</Text>
+						<Text style={themed.infoLabel}>Partizip II</Text>
+						<Text style={themed.infoValue}>{selectedVerb.partizip_ii}</Text>
 						{selectedVerb.prepositions.length > 0 && (
 							<>
-								<Text style={styles.infoLabel}>Prepositions</Text>
-								<Text style={styles.infoValue}>
+								<Text style={themed.infoLabel}>Prepositions</Text>
+								<Text style={themed.infoValue}>
 									{selectedVerb.prepositions.map((p) => `${p.preposition} + ${p.case}`).join(", ")}
 								</Text>
 							</>
@@ -265,8 +347,8 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 					</View>
 
 					{REPORT_WEBHOOK_URL.length > 0 && (
-						<Pressable style={styles.reportButton} onPress={() => setReportVisible(true)}>
-							<Text style={styles.reportText}>Report Issue</Text>
+						<Pressable style={themed.reportButton} onPress={() => setReportVisible(true)}>
+							<Text style={themed.reportText}>Report Issue</Text>
 						</Pressable>
 					)}
 				</ScrollView>
@@ -285,10 +367,6 @@ export function VerbDictionaryScreen({ level, onBack }: Props) {
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: colors.background,
-	},
 	header: {
 		paddingHorizontal: spacing.lg,
 		paddingTop: spacing.xl,
@@ -299,37 +377,13 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		alignItems: "center",
 	},
-	appTitle: {
-		...typography.title,
-		color: colors.text,
-		flex: 1,
-	},
 	backButton: {
 		paddingHorizontal: spacing.sm,
 		paddingVertical: spacing.xs,
 	},
-	backButtonText: {
-		...typography.body,
-		color: colors.textSecondary,
-	},
-	count: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginTop: spacing.xs,
-	},
 	searchContainer: {
 		paddingHorizontal: spacing.lg,
 		paddingBottom: spacing.md,
-	},
-	searchInput: {
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		paddingVertical: spacing.sm,
-		paddingHorizontal: spacing.md,
-		...typography.body,
-		color: colors.text,
-		borderWidth: 1,
-		borderColor: colors.border,
 	},
 	list: {
 		flex: 1,
@@ -338,109 +392,13 @@ const styles = StyleSheet.create({
 		paddingHorizontal: spacing.lg,
 		paddingBottom: spacing.xl,
 	},
-	entry: {
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		padding: spacing.md,
-		marginBottom: spacing.sm,
-	},
 	wordRow: {
 		flexDirection: "row",
 		alignItems: "center",
 		gap: spacing.sm,
 	},
-	levelBadge: {
-		fontSize: 10,
-		color: colors.accent,
-		fontWeight: "700",
-	},
-	word: {
-		...typography.question,
-		color: colors.text,
-	},
-	meaning: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginTop: spacing.xs,
-	},
-	sectionTitle: {
-		...typography.body,
-		color: colors.textSecondary,
-		paddingHorizontal: spacing.lg,
-		marginBottom: spacing.md,
-	},
-	tenseOption: {
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		paddingVertical: spacing.md,
-		paddingHorizontal: spacing.lg,
-		marginBottom: spacing.sm,
-	},
-	tenseText: {
-		...typography.body,
-		color: colors.text,
-	},
-	verbMeaning: {
-		...typography.body,
-		color: colors.textSecondary,
-		marginTop: spacing.xs,
-	},
-	verbExample: {
-		...typography.caption,
-		color: colors.textSecondary,
-		fontStyle: "italic",
-		marginTop: spacing.xs,
-	},
 	conjugationContent: {
 		paddingHorizontal: spacing.lg,
 		paddingBottom: spacing.xl,
-	},
-	conjugationRow: {
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		padding: spacing.md,
-		marginBottom: spacing.sm,
-		flexDirection: "row",
-		justifyContent: "space-between",
-		alignItems: "center",
-	},
-	personText: {
-		...typography.body,
-		color: colors.textSecondary,
-		width: 90,
-	},
-	conjugatedText: {
-		...typography.body,
-		color: colors.text,
-		flex: 1,
-		textAlign: "right",
-	},
-	verbInfoSection: {
-		marginTop: spacing.lg,
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		padding: spacing.md,
-	},
-	infoLabel: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginTop: spacing.sm,
-	},
-	infoValue: {
-		...typography.body,
-		color: colors.text,
-	},
-	reportButton: {
-		marginTop: spacing.lg,
-		alignSelf: "center",
-		paddingVertical: spacing.sm,
-		paddingHorizontal: spacing.lg,
-		borderRadius: 8,
-		borderWidth: 1,
-		borderColor: colors.border,
-	},
-	reportText: {
-		...typography.caption,
-		color: colors.textSecondary,
 	},
 });

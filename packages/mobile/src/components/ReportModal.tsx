@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Modal, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { REPORT_WEBHOOK_URL } from "../config";
-import { colors, spacing, typography } from "../theme";
+import { scale, spacing, typography } from "../theme";
+import { useTheme } from "../theme/ThemeContext";
 
 const ISSUE_TYPES = [
 	"Spelling Mistake",
@@ -20,6 +21,7 @@ interface Props {
 }
 
 export function ReportModal({ visible, onClose, word, level, category }: Props) {
+	const { colors } = useTheme();
 	const [sent, setSent] = useState(false);
 	const [failed, setFailed] = useState(false);
 	const [selectedType, setSelectedType] = useState<string | null>(null);
@@ -42,6 +44,84 @@ export function ReportModal({ visible, onClose, word, level, category }: Props) 
 			if (timerRef.current) clearTimeout(timerRef.current);
 		};
 	}, [visible]);
+
+	const themed = useMemo(
+		() =>
+			StyleSheet.create({
+				card: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(16),
+					padding: spacing.lg,
+					width: "100%",
+					maxWidth: scale(340),
+					borderWidth: 1,
+					borderColor: colors.border,
+				},
+				title: {
+					...typography.title,
+					color: colors.text,
+					marginBottom: spacing.xs,
+				},
+				subtitle: {
+					...typography.caption,
+					color: colors.textSecondary,
+					marginBottom: spacing.md,
+				},
+				option: {
+					backgroundColor: colors.primary,
+					borderRadius: scale(8),
+					paddingVertical: spacing.sm + scale(4),
+					paddingHorizontal: spacing.md,
+					marginBottom: spacing.sm,
+				},
+				optionText: {
+					...typography.body,
+					color: colors.text,
+					textAlign: "center",
+				},
+				commentInput: {
+					backgroundColor: colors.background,
+					borderRadius: scale(8),
+					borderWidth: 1,
+					borderColor: colors.border,
+					color: colors.text,
+					...typography.caption,
+					padding: spacing.sm,
+					minHeight: scale(60),
+					textAlignVertical: "top",
+					marginBottom: spacing.md,
+				},
+				submitButton: {
+					backgroundColor: colors.accent,
+					borderRadius: scale(8),
+					paddingVertical: spacing.sm + scale(4),
+					alignItems: "center",
+					marginBottom: spacing.sm,
+				},
+				submitText: {
+					...typography.body,
+					color: "#FFFFFF",
+					fontWeight: "600",
+				},
+				cancelText: {
+					...typography.caption,
+					color: colors.textSecondary,
+				},
+				sentText: {
+					...typography.title,
+					color: colors.correct,
+					textAlign: "center",
+					paddingVertical: spacing.lg,
+				},
+				failedText: {
+					...typography.body,
+					color: colors.wrong,
+					textAlign: "center",
+					paddingVertical: spacing.md,
+				},
+			}),
+		[colors],
+	);
 
 	const handleSelect = (issueType: string) => {
 		setSelectedType(issueType);
@@ -102,31 +182,31 @@ export function ReportModal({ visible, onClose, word, level, category }: Props) 
 	return (
 		<Modal visible={visible} transparent animationType="fade" onRequestClose={handleClose}>
 			<Pressable style={styles.overlay} onPress={handleClose}>
-				<View style={styles.card} onStartShouldSetResponder={() => true}>
+				<View style={themed.card} onStartShouldSetResponder={() => true}>
 					{sent ? (
-						<Text style={styles.sentText}>Sent!</Text>
+						<Text style={themed.sentText}>Sent!</Text>
 					) : failed ? (
 						<>
-							<Text style={styles.failedText}>No connection</Text>
+							<Text style={themed.failedText}>No connection</Text>
 							<Pressable
-								style={styles.submitButton}
+								style={themed.submitButton}
 								onPress={() => {
 									setFailed(false);
 									handleSubmit();
 								}}
 							>
-								<Text style={styles.submitText}>Retry</Text>
+								<Text style={themed.submitText}>Retry</Text>
 							</Pressable>
 							<Pressable style={styles.cancelButton} onPress={handleClose}>
-								<Text style={styles.cancelText}>Close</Text>
+								<Text style={themed.cancelText}>Close</Text>
 							</Pressable>
 						</>
 					) : selectedType ? (
 						<>
-							<Text style={styles.title}>Add a comment</Text>
-							<Text style={styles.subtitle}>{selectedType}</Text>
+							<Text style={themed.title}>Add a comment</Text>
+							<Text style={themed.subtitle}>{selectedType}</Text>
 							<TextInput
-								style={styles.commentInput}
+								style={themed.commentInput}
 								placeholder={
 									isOther ? "Describe the issue (max 50 words)" : "Optional details (max 50 words)"
 								}
@@ -140,27 +220,27 @@ export function ReportModal({ visible, onClose, word, level, category }: Props) 
 								maxLength={300}
 							/>
 							<Pressable
-								style={[styles.submitButton, commentRequired && styles.submitButtonDisabled]}
+								style={[themed.submitButton, commentRequired && styles.submitButtonDisabled]}
 								onPress={handleSubmit}
 								disabled={commentRequired}
 							>
-								<Text style={styles.submitText}>Submit</Text>
+								<Text style={themed.submitText}>Submit</Text>
 							</Pressable>
 							<Pressable style={styles.cancelButton} onPress={() => setSelectedType(null)}>
-								<Text style={styles.cancelText}>Back</Text>
+								<Text style={themed.cancelText}>Back</Text>
 							</Pressable>
 						</>
 					) : (
 						<>
-							<Text style={styles.title}>Report Issue</Text>
-							<Text style={styles.subtitle}>{word}</Text>
+							<Text style={themed.title}>Report Issue</Text>
+							<Text style={themed.subtitle}>{word}</Text>
 							{ISSUE_TYPES.map((type) => (
-								<Pressable key={type} style={styles.option} onPress={() => handleSelect(type)}>
-									<Text style={styles.optionText}>{type}</Text>
+								<Pressable key={type} style={themed.option} onPress={() => handleSelect(type)}>
+									<Text style={themed.optionText}>{type}</Text>
 								</Pressable>
 							))}
 							<Pressable style={styles.cancelButton} onPress={handleClose}>
-								<Text style={styles.cancelText}>Cancel</Text>
+								<Text style={themed.cancelText}>Cancel</Text>
 							</Pressable>
 						</>
 					)}
@@ -178,83 +258,12 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		padding: spacing.lg,
 	},
-	card: {
-		backgroundColor: colors.surface,
-		borderRadius: 16,
-		padding: spacing.lg,
-		width: "100%",
-		maxWidth: 340,
-		borderWidth: 1,
-		borderColor: colors.border,
-	},
-	title: {
-		...typography.title,
-		color: colors.text,
-		marginBottom: spacing.xs,
-	},
-	subtitle: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginBottom: spacing.md,
-	},
-	option: {
-		backgroundColor: colors.primary,
-		borderRadius: 8,
-		paddingVertical: spacing.sm + 4,
-		paddingHorizontal: spacing.md,
-		marginBottom: spacing.sm,
-	},
-	optionText: {
-		...typography.body,
-		color: colors.text,
-		textAlign: "center",
-	},
-	commentInput: {
-		backgroundColor: colors.background,
-		borderRadius: 8,
-		borderWidth: 1,
-		borderColor: colors.border,
-		color: colors.text,
-		...typography.caption,
-		padding: spacing.sm,
-		minHeight: 60,
-		textAlignVertical: "top",
-		marginBottom: spacing.md,
-	},
-	submitButton: {
-		backgroundColor: colors.accent,
-		borderRadius: 8,
-		paddingVertical: spacing.sm + 4,
-		alignItems: "center",
-		marginBottom: spacing.sm,
-	},
 	submitButtonDisabled: {
 		opacity: 0.4,
-	},
-	submitText: {
-		...typography.body,
-		color: colors.text,
-		fontWeight: "600",
 	},
 	cancelButton: {
 		paddingVertical: spacing.sm,
 		alignItems: "center",
 		marginTop: spacing.xs,
-	},
-	cancelText: {
-		...typography.caption,
-		color: colors.textSecondary,
-	},
-	sentText: {
-		...typography.title,
-		color: colors.correct,
-		textAlign: "center",
-		paddingVertical: spacing.lg,
-	},
-	failedText: {
-		...typography.body,
-		color: colors.wrong,
-		textAlign: "center",
-		paddingVertical: spacing.md,
 	},
 });

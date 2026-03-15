@@ -2,7 +2,7 @@ import { useEventListener } from "expo";
 import { VideoView, useVideoPlayer } from "expo-video";
 import { useCallback, useEffect, useRef } from "react";
 import { StyleSheet, View } from "react-native";
-import { colors } from "../theme";
+import { scale } from "../theme";
 
 interface Props {
 	onFinish: () => void;
@@ -40,12 +40,12 @@ export function SplashVideo({ onFinish }: Props) {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: colors.background,
+		backgroundColor: "#FFCC00",
 		justifyContent: "center",
 		alignItems: "center",
 	},
 	video: {
 		...StyleSheet.absoluteFillObject,
-		margin: 16,
+		margin: scale(16),
 	},
 });

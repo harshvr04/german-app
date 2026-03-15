@@ -13,7 +13,8 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { hasDataForLevel, loadAdjectives, loadNouns, loadOthers, loadVerbs } from "../data/loader";
-import { colors, spacing, typography } from "../theme";
+import { scale, spacing, typography } from "../theme";
+import { useTheme } from "../theme/ThemeContext";
 
 interface Props {
 	level: Level | null;
@@ -33,6 +34,7 @@ function loadLevelEntries(level: Level): DictionaryEntry[] {
 const dictionaryCache = new Map<string, DictionaryEntry[]>();
 
 export function DictionaryScreen({ level, onBack }: Props) {
+	const { colors } = useTheme();
 	const cacheKey = level ?? "all";
 	const cached = dictionaryCache.get(cacheKey);
 
@@ -119,16 +121,58 @@ export function DictionaryScreen({ level, onBack }: Props) {
 
 	const title = level ? `Dictionary — ${level}` : "Dictionary — All Levels";
 
+	const themed = useMemo(
+		() =>
+			StyleSheet.create({
+				container: { flex: 1, backgroundColor: colors.background },
+				appTitle: { ...typography.title, color: colors.text },
+				backButtonText: { ...typography.body, color: colors.textSecondary },
+				count: { ...typography.caption, color: colors.textSecondary, marginTop: spacing.xs },
+				searchInput: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					paddingVertical: spacing.sm,
+					paddingHorizontal: spacing.md,
+					...typography.body,
+					color: colors.text,
+					borderWidth: 1,
+					borderColor: colors.border,
+				},
+				patience: {
+					...typography.caption,
+					color: colors.textSecondary,
+					fontStyle: "italic",
+					marginTop: spacing.md,
+				},
+				entry: {
+					backgroundColor: colors.surface,
+					borderRadius: scale(12),
+					padding: spacing.md,
+					marginBottom: spacing.sm,
+				},
+				levelBadge: { fontSize: scale(10), color: colors.accent, fontWeight: "700" },
+				word: { ...typography.question, color: colors.text },
+				meaning: { ...typography.body, color: colors.textSecondary, marginTop: spacing.xs },
+				example: {
+					...typography.caption,
+					color: colors.textSecondary,
+					fontStyle: "italic",
+					marginTop: spacing.xs,
+				},
+			}),
+		[colors],
+	);
+
 	return (
-		<SafeAreaView style={styles.container}>
+		<SafeAreaView style={themed.container}>
 			<View style={styles.header}>
 				<View style={styles.headerRow}>
-					<Text style={styles.appTitle}>{title}</Text>
+					<Text style={themed.appTitle}>{title}</Text>
 					<Pressable style={styles.backButton} onPress={onBack}>
-						<Text style={styles.backButtonText}>←</Text>
+						<Text style={themed.backButtonText}>←</Text>
 					</Pressable>
 				</View>
-				<Text style={styles.count}>
+				<Text style={themed.count}>
 					{allEntries
 						? `${filtered.length} ${filtered.length === 1 ? "word" : "words"}${!fullyLoaded ? " (loading more…)" : ""}`
 						: "Loading..."}
@@ -137,7 +181,7 @@ export function DictionaryScreen({ level, onBack }: Props) {
 
 			<View style={styles.searchContainer}>
 				<TextInput
-					style={styles.searchInput}
+					style={themed.searchInput}
 					placeholder="Search words..."
 					placeholderTextColor={colors.textDisabled}
 					value={query}
@@ -155,7 +199,7 @@ export function DictionaryScreen({ level, onBack }: Props) {
 			) : searchPending ? (
 				<View style={styles.loading}>
 					<ActivityIndicator size="large" color={colors.accent} />
-					<Text style={styles.patience}>Bitte haben Sie Geduld!</Text>
+					<Text style={themed.patience}>Bitte haben Sie Geduld!</Text>
 				</View>
 			) : (
 				<FlatList
@@ -167,13 +211,13 @@ export function DictionaryScreen({ level, onBack }: Props) {
 					windowSize={5}
 					removeClippedSubviews
 					renderItem={({ item }) => (
-						<View style={styles.entry}>
+						<View style={themed.entry}>
 							<View style={styles.wordRow}>
-								{!level && <Text style={styles.levelBadge}>{item.level}</Text>}
-								<Text style={styles.word}>{item.word}</Text>
+								{!level && <Text style={themed.levelBadge}>{item.level}</Text>}
+								<Text style={themed.word}>{item.word}</Text>
 							</View>
-							<Text style={styles.meaning}>{item.meaning}</Text>
-							{item.example !== "" && <Text style={styles.example}>{item.example}</Text>}
+							<Text style={themed.meaning}>{item.meaning}</Text>
+							{item.example !== "" && <Text style={themed.example}>{item.example}</Text>}
 						</View>
 					)}
 				/>
@@ -183,10 +227,6 @@ export function DictionaryScreen({ level, onBack }: Props) {
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: colors.background,
-	},
 	header: {
 		paddingHorizontal: spacing.lg,
 		paddingTop: spacing.xl,
@@ -197,47 +237,18 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		alignItems: "center",
 	},
-	appTitle: {
-		...typography.title,
-		color: colors.text,
-	},
 	backButton: {
 		paddingHorizontal: spacing.sm,
 		paddingVertical: spacing.xs,
-	},
-	backButtonText: {
-		...typography.body,
-		color: colors.textSecondary,
-	},
-	count: {
-		...typography.caption,
-		color: colors.textSecondary,
-		marginTop: spacing.xs,
 	},
 	searchContainer: {
 		paddingHorizontal: spacing.lg,
 		paddingBottom: spacing.md,
 	},
-	searchInput: {
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		paddingVertical: spacing.sm,
-		paddingHorizontal: spacing.md,
-		...typography.body,
-		color: colors.text,
-		borderWidth: 1,
-		borderColor: colors.border,
-	},
 	loading: {
 		flex: 1,
 		justifyContent: "center",
 		alignItems: "center",
-	},
-	patience: {
-		...typography.caption,
-		color: colors.textSecondary,
-		fontStyle: "italic",
-		marginTop: spacing.md,
 	},
 	list: {
 		flex: 1,
@@ -246,35 +257,9 @@ const styles = StyleSheet.create({
 		paddingHorizontal: spacing.lg,
 		paddingBottom: spacing.xl,
 	},
-	entry: {
-		backgroundColor: colors.surface,
-		borderRadius: 12,
-		padding: spacing.md,
-		marginBottom: spacing.sm,
-	},
 	wordRow: {
 		flexDirection: "row",
 		alignItems: "center",
 		gap: spacing.sm,
-	},
-	levelBadge: {
-		fontSize: 10,
-		color: colors.accent,
-		fontWeight: "700",
-	},
-	word: {
-		...typography.question,
-		color: colors.text,
-	},
-	meaning: {
-		...typography.body,
-		color: colors.textSecondary,
-		marginTop: spacing.xs,
-	},
-	example: {
-		...typography.caption,
-		color: colors.textSecondary,
-		fontStyle: "italic",
-		marginTop: spacing.xs,
 	},
 });

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BackHandler, Image, Platform, StyleSheet, View } from "react-native";
-import { colors } from "../theme";
+import { scale } from "../theme";
 
 export function ExitScreen() {
 	useEffect(() => {
@@ -26,13 +26,13 @@ export function ExitScreen() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: colors.background,
+		backgroundColor: "#FFCC00",
 		justifyContent: "center",
 		alignItems: "center",
 	},
 	logo: {
-		width: 200,
-		height: 200,
-		borderRadius: 24,
+		width: scale(200),
+		height: scale(200),
+		borderRadius: scale(24),
 	},
 });
