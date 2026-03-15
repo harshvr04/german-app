@@ -73,9 +73,13 @@ function makeDeclensionCard(
 	};
 }
 
+function stripAm(s: string): string {
+	return s.startsWith("am ") ? s.slice(3) : s;
+}
+
 function buildComparisonTable(adj: Adjective): string {
 	const komp = adj.komparativ ?? `${adj.word}er`;
-	const sup = adj.superlativ ?? `${adj.word}sten`;
+	const sup = adj.superlativ ? stripAm(adj.superlativ) : `${adj.word}sten`;
 	return `Positiv:     ${adj.word}\nKomparativ:  ${komp}\nSuperlativ:  am ${sup}`;
 }
 
@@ -91,7 +95,7 @@ function komparativCard(adj: Adjective): Card {
 }
 
 function superlativCard(adj: Adjective): Card {
-	const form = adj.superlativ ?? `${adj.word}sten`;
+	const form = adj.superlativ ? stripAm(adj.superlativ) : `${adj.word}sten`;
 	return {
 		id: `adj-super-${adj.word}`,
 		question: `Superlativ von "${adj.word}"?`,
