@@ -3883,21 +3883,6 @@
     "example": "Ein neues Auto ist sehr teuer."
   },
   {
-    "infinitiv": "spazieren gehen",
-    "type": "irregular",
-    "auxiliary": "sein",
-    "stem_change_pres": null,
-    "present_forms": null,
-    "praeteritum_root": "spazieren ging",
-    "partizip_ii": "spazieren gegangen",
-    "konjunktiv_ii_root": "spazieren ging",
-    "prepositions": [],
-    "connections": ["gehen"],
-    "level": "A2",
-    "meaning": "to go for a walk",
-    "example": "Wir gehen sonntags immer spazieren."
-  },
-  {
     "infinitiv": "speichern",
     "type": "regular",
     "auxiliary": "haben",
