@@ -2,9 +2,17 @@ import { formatSeparableVerb } from "../engine/verb-conjugation.js";
 import type { Adjective, Noun, Other, Verb } from "../schemas/index.js";
 import type { DictionaryEntry, Level } from "../types/german.js";
 
+function getArticle(gender: string): string {
+	if (gender === "m") return "der";
+	if (gender === "f") return "die";
+	if (gender === "n") return "das";
+	return "";
+}
+
 /**
  * Combines all word types into a sorted list of dictionary entries.
  * Verbs use `infinitiv` as the word field; all others use `word`.
+ * Nouns are prefixed with their definite article (der/die/das).
  */
 export function buildDictionary(
 	nouns: Noun[],
@@ -14,7 +22,7 @@ export function buildDictionary(
 ): DictionaryEntry[] {
 	const entries: DictionaryEntry[] = [
 		...nouns.map((n) => ({
-			word: n.word,
+			word: `${getArticle(n.gender)} ${n.word}`,
 			meaning: n.meaning,
 			example: n.example,
 			level: n.level as Level,
